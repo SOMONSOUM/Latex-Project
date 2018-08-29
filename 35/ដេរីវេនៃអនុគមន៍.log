@@ -1,0 +1,2519 @@
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2018.6.11)  23 AUG 2018 10:56
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**ដេរីវេនៃអនុគមន៍.tex
+(./ដេរីវេនៃអនុគមន៍.tex
+LaTeX2e <2018-04-01> patch level 4
+Babel <3.20> and hyphenation patterns for 84 language(s) loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2018/03/24 v5.7 Page Geometry
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count88
+\Gm@cntv=\count89
+\c@Gm@tempcnt=\count90
+\Gm@bindingoffset=\dimen103
+\Gm@wd@mp=\dimen104
+\Gm@odd@mp=\dimen105
+\Gm@even@mp=\dimen106
+\Gm@layoutwidth=\dimen107
+\Gm@layoutheight=\dimen108
+\Gm@layouthoffset=\dimen109
+\Gm@layoutvoffset=\dimen110
+\Gm@dimlist=\toks15
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2017/09/02 v2.17a AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks16
+\ex@=\dimen111
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen112
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count91
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count92
+\leftroot@=\count93
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count94
+\DOTSCASE@=\count95
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen113
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count96
+\c@MaxMatrixCols=\count97
+\dotsspace@=\muskip10
+\c@parentequation=\count98
+\dspbrk@lvl=\count99
+\tag@help=\toks17
+\row@=\count100
+\column@=\count101
+\maxfields@=\count102
+\andhelp@=\toks18
+\eqnshift@=\dimen114
+\alignsep@=\dimen115
+\tagshift@=\dimen116
+\tagwidth@=\dimen117
+\totwidth@=\dimen118
+\lineht@=\dimen119
+\@envbody=\toks19
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks20
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2017/10/31 v2.20.4
+\thm@style=\toks21
+\thm@bodyfont=\toks22
+\thm@headfont=\toks23
+\thm@notefont=\toks24
+\thm@headpunct=\toks25
+\thm@preskip=\skip46
+\thm@postskip=\skip47
+\thm@headsep=\skip48
+\dth@everypar=\toks26
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2018-04-30 L3 programming layer (loader) 
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3-code.tex
+Package: expl3 2018-04-30 L3 programming layer (code)
+\c_max_int=\count103
+\l_tmpa_int=\count104
+\l_tmpb_int=\count105
+\g_tmpa_int=\count106
+\g_tmpb_int=\count107
+\g__kernel_prg_map_int=\count108
+\c_log_iow=\count109
+\l_iow_line_count_int=\count110
+\l__iow_line_target_int=\count111
+\l__iow_one_indent_int=\count112
+\l__iow_indent_int=\count113
+\c_zero_dim=\dimen120
+\c_max_dim=\dimen121
+\l_tmpa_dim=\dimen122
+\l_tmpb_dim=\dimen123
+\g_tmpa_dim=\dimen124
+\g_tmpb_dim=\dimen125
+\c_zero_skip=\skip49
+\c_max_skip=\skip50
+\l_tmpa_skip=\skip51
+\l_tmpb_skip=\skip52
+\g_tmpa_skip=\skip53
+\g_tmpb_skip=\skip54
+\c_zero_muskip=\muskip11
+\c_max_muskip=\muskip12
+\l_tmpa_muskip=\muskip13
+\l_tmpb_muskip=\muskip14
+\g_tmpa_muskip=\muskip15
+\g_tmpb_muskip=\muskip16
+\l_keys_choice_int=\count114
+\c__fp_leading_shift_int=\count115
+\c__fp_middle_shift_int=\count116
+\c__fp_trailing_shift_int=\count117
+\c__fp_big_leading_shift_int=\count118
+\c__fp_big_middle_shift_int=\count119
+\c__fp_big_trailing_shift_int=\count120
+\c__fp_Bigg_leading_shift_int=\count121
+\c__fp_Bigg_middle_shift_int=\count122
+\c__fp_Bigg_trailing_shift_int=\count123
+\c__intarray_sp_dim=\dimen126
+\g__intarray_font_int=\count124
+\l__sort_length_int=\count125
+\l__sort_min_int=\count126
+\l__sort_top_int=\count127
+\l__sort_max_int=\count128
+\l__sort_true_max_int=\count129
+\l__sort_block_int=\count130
+\l__sort_begin_int=\count131
+\l__sort_end_int=\count132
+\l__sort_A_int=\count133
+\l__sort_B_int=\count134
+\l__sort_C_int=\count135
+\l__tl_analysis_normal_int=\count136
+\l__tl_analysis_index_int=\count137
+\l__tl_analysis_nesting_int=\count138
+\l__tl_analysis_type_int=\count139
+\l__regex_internal_a_int=\count140
+\l__regex_internal_b_int=\count141
+\l__regex_internal_c_int=\count142
+\l__regex_balance_int=\count143
+\l__regex_group_level_int=\count144
+\l__regex_mode_int=\count145
+\c__regex_cs_in_class_mode_int=\count146
+\c__regex_cs_mode_int=\count147
+\l__regex_catcodes_int=\count148
+\l__regex_default_catcodes_int=\count149
+\c__regex_catcode_L_int=\count150
+\c__regex_catcode_O_int=\count151
+\c__regex_catcode_A_int=\count152
+\c__regex_all_catcodes_int=\count153
+\l__regex_show_lines_int=\count154
+\l__regex_min_state_int=\count155
+\l__regex_max_state_int=\count156
+\l__regex_left_state_int=\count157
+\l__regex_right_state_int=\count158
+\l__regex_capturing_group_int=\count159
+\l__regex_min_pos_int=\count160
+\l__regex_max_pos_int=\count161
+\l__regex_curr_pos_int=\count162
+\l__regex_start_pos_int=\count163
+\l__regex_success_pos_int=\count164
+\l__regex_curr_char_int=\count165
+\l__regex_curr_catcode_int=\count166
+\l__regex_last_char_int=\count167
+\l__regex_case_changed_char_int=\count168
+\l__regex_curr_state_int=\count169
+\l__regex_step_int=\count170
+\l__regex_min_active_int=\count171
+\l__regex_max_active_int=\count172
+\l__regex_replacement_csnames_int=\count173
+\l__regex_match_count_int=\count174
+\l__regex_min_submatch_int=\count175
+\l__regex_submatch_int=\count176
+\l__regex_zeroth_submatch_int=\count177
+\g__regex_trace_regex_int=\count178
+\c_empty_box=\box28
+\l_tmpa_box=\box29
+\l_tmpb_box=\box30
+\g_tmpa_box=\box31
+\g_tmpb_box=\box32
+\l__box_top_dim=\dimen127
+\l__box_bottom_dim=\dimen128
+\l__box_left_dim=\dimen129
+\l__box_right_dim=\dimen130
+\l__box_top_new_dim=\dimen131
+\l__box_bottom_new_dim=\dimen132
+\l__box_left_new_dim=\dimen133
+\l__box_right_new_dim=\dimen134
+\l__box_internal_box=\box33
+\l__coffin_internal_box=\box34
+\l__coffin_internal_dim=\dimen135
+\l__coffin_offset_x_dim=\dimen136
+\l__coffin_offset_y_dim=\dimen137
+\l__coffin_x_dim=\dimen138
+\l__coffin_y_dim=\dimen139
+\l__coffin_x_prime_dim=\dimen140
+\l__coffin_y_prime_dim=\dimen141
+\c_empty_coffin=\box35
+\l__coffin_aligned_coffin=\box36
+\l__coffin_aligned_internal_coffin=\box37
+\l_tmpa_coffin=\box38
+\l_tmpb_coffin=\box39
+\l__coffin_display_coffin=\box40
+\l__coffin_display_coord_coffin=\box41
+\l__coffin_display_pole_coffin=\box42
+\l__coffin_display_offset_dim=\dimen142
+\l__coffin_display_x_dim=\dimen143
+\l__coffin_display_y_dim=\dimen144
+\g__file_internal_ior=\read1
+\l__coffin_bounding_shift_dim=\dimen145
+\l__coffin_left_corner_dim=\dimen146
+\l__coffin_right_corner_dim=\dimen147
+\l__coffin_bottom_corner_dim=\dimen148
+\l__coffin_top_corner_dim=\dimen149
+\l__coffin_scaled_total_height_dim=\dimen150
+\l__coffin_scaled_width_dim=\dimen151
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3xdvipdfmx.def
+File: l3xdvidpfmx.def 2018-04-30 v L3 Experimental driver: xdvipdfmx
+\g__driver_image_int=\count179
+))
+Package: xparse 2018-04-30 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count180
+\g__xparse_grabber_int=\count181
+\l__xparse_m_args_int=\count182
+\l__xparse_mandatory_args_int=\count183
+\l__xparse_v_nesting_int=\count184
+)
+Package: fontspec 2017/11/09 v2.6g Font selection for XeLaTeX and LuaLaTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
+Package: fontspec-xetex 2017/11/09 v2.6g Font selection for XeLaTeX and LuaLaTe
+X
+\l__fontspec_script_int=\count185
+\l__fontspec_language_int=\count186
+\l__fontspec_strnum_int=\count187
+\l__fontspec_tmp_int=\count188
+\l__fontspec_em_int=\count189
+\l__fontspec_emdef_int=\count190
+\l__fontspec_strong_int=\count191
+\l__fontspec_strongdef_int=\count192
+\l__fontspec_tmpa_dim=\dimen152
+\l__fontspec_tmpb_dim=\dimen153
+\l__fontspec_tmpc_dim=\dimen154
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/tuenc.def
+File: tuenc.def 2017/04/05 v2.0i Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding TU on input line 82.
+))
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \fontspec with sig. 'O{}mO{}' on line 542.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmainfont with sig. 'O{}mO{}' on line 546.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setsansfont with sig. 'O{}mO{}' on line 550.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmonofont with sig. 'O{}mO{}' on line 554.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmathrm with sig. 'O{}mO{}' on line 558.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setboldmathrm with sig. 'O{}mO{}' on line 562.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmathsf with sig. 'O{}mO{}' on line 566.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmathtt with sig. 'O{}mO{}' on line 570.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setromanfont with sig. 'O{}mO{}' on line 574.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontfamily with sig. 'mO{}mO{}' on line 578.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontface with sig. 'mO{}mO{}' on line 582.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \defaultfontfeatures with sig. 't+om' on line 586.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \addfontfeatures with sig. 'm' on line 590.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \addfontfeature with sig. 'm' on line 594.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontfeature with sig. 'mm' on line 598.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newAATfeature with sig. 'mmmm' on line 602.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newopentypefeature with sig. 'mmm' on line 606.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newICUfeature with sig. 'mmm' on line 610.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \aliasfontfeature with sig. 'mm' on line 614.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \aliasfontfeatureoption with sig. 'mmm' on line 618.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontscript with sig. 'mm' on line 622.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontlanguage with sig. 'mm' on line 626.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareFontsExtensions with sig. 'm' on line 630.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \IfFontFeatureActiveTF with sig. 'mmm' on line 634.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \EncodingCommand with sig. 'mO{}m' on line 3632.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \EncodingAccent with sig. 'mm' on line 3638.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \EncodingSymbol with sig. 'mm' on line 3644.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \EncodingComposite with sig. 'mmm' on line 3650.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \EncodingCompositeCommand with sig. 'mmm' on line 3656.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareUnicodeEncoding with sig. 'mm' on line 3681.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \UndeclareSymbol with sig. 'm' on line 3687.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \UndeclareAccent with sig. 'm' on line 3693.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \UndeclareCommand with sig. 'm' on line 3699.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \UndeclareComposite with sig. 'mm' on line 3706.
+.................................................
+
+(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.cfg)
+LaTeX Info: Redefining \itshape on input line 3891.
+LaTeX Info: Redefining \slshape on input line 3896.
+LaTeX Info: Redefining \scshape on input line 3901.
+LaTeX Info: Redefining \upshape on input line 3906.
+LaTeX Info: Redefining \em on input line 3936.
+LaTeX Info: Redefining \emph on input line 3961.
+LaTeX Info: Redefining \- on input line 4015.
+.................................................
+. LaTeX info: "xparse/redefine-command"
+. 
+. Redefining command \oldstylenums with sig. 'm' on line 4110.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \liningnums with sig. 'm' on line 4114.
+.................................................
+))
+(/usr/share/texlive/texmf-dist/tex/xelatex/xunicode/xunicode.sty
+File: xunicode.sty 2011/09/09 v0.981 provides access to latin accents and many 
+other characters in Unicode lower plane
+
+(/usr/share/texmf/tex/latex/tipa/t3enc.def
+File: t3enc.def 2001/12/31 T3 encoding
+)
+\tipaTiiicode=\count193
+\tipasavetokens=\toks27
+\tipachecktokens=\toks28
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: xetex.def on input line 99.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/xetex.def
+File: xetex.def 2017/06/24 v5.0h Graphics/color driver for xetex
+))
+\Gin@req@height=\dimen155
+\Gin@req@width=\dimen156
+))
+(/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
+Package: tcolorbox 2018/03/22 version 4.13 text color boxes
+
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks29
+\pgfutil@tempdima=\dimen157
+\pgfutil@tempdimb=\dimen158
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.t
+ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box43
+(/usr/share/texlive/texmf-dist/tex/latex/ms/everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
+))
+Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
+
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks30
+\pgfkeys@temptoks=\toks31
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.t
+ex
+\pgfkeys@tmptoks=\toks32
+))
+\pgf@x=\dimen159
+\pgf@y=\dimen160
+\pgf@xa=\dimen161
+\pgf@ya=\dimen162
+\pgf@xb=\dimen163
+\pgf@yb=\dimen164
+\pgf@xc=\dimen165
+\pgf@yc=\dimen166
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count194
+\c@pgf@countb=\count195
+\c@pgf@countc=\count196
+\c@pgf@countd=\count197
+\t@pgf@toka=\toks33
+\t@pgf@tokb=\toks34
+\t@pgf@tokc=\toks35
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
+)
+Driver file for pgf: pgfsys-xetex.def
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-xetex.def
+File: pgfsys-xetex.def 2014/07/09  (rcs-revision 1.11)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-dvipdfmx.def
+File: pgfsys-dvipdfmx.def 2014/07/09  (rcs-revision 1.14)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.de
+f
+File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
+)
+\pgfsys@objnum=\count198
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
+tex
+File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
+\pgfsyssoftpath@smallbuffer@items=\count199
+\pgfsyssoftpath@bigbuffer@items=\count266
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
+tex
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
+)) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: xetex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen167
+\pgfmath@count=\count267
+\pgfmath@box=\box44
+\pgfmath@toks=\toks36
+\pgfmath@stack@operand=\toks37
+\pgfmath@stack@operation=\toks38
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonomet
+ric.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.cod
+e.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
+thmetics.code.tex)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count268
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
+x
+File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
+\pgf@picminx=\dimen168
+\pgf@picmaxx=\dimen169
+\pgf@picminy=\dimen170
+\pgf@picmaxy=\dimen171
+\pgf@pathminx=\dimen172
+\pgf@pathmaxx=\dimen173
+\pgf@pathminy=\dimen174
+\pgf@pathmaxy=\dimen175
+\pgf@xx=\dimen176
+\pgf@xy=\dimen177
+\pgf@yx=\dimen178
+\pgf@yy=\dimen179
+\pgf@zx=\dimen180
+\pgf@zy=\dimen181
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
+code.tex
+File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
+\pgf@path@lastx=\dimen182
+\pgf@path@lasty=\dimen183
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
+.tex
+File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
+\pgf@shorten@end@additional=\dimen184
+\pgf@shorten@start@additional=\dimen185
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
+x
+File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
+\pgfpic=\box45
+\pgf@hbox=\box46
+\pgf@layerbox@main=\box47
+\pgf@picture@serial@count=\count269
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
+ode.tex
+File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
+\pgflinewidth=\dimen186
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
+s.code.tex
+File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
+\pgf@pt@x=\dimen187
+\pgf@pt@y=\dimen188
+\pgf@pt@temp=\dimen189
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.t
+ex
+File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing
+.code.tex
+File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
+x
+File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
+\pgfarrowsep=\dimen190
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
+\pgf@max=\dimen191
+\pgf@sys@shading@range@num=\count270
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
+tex
+File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
+\pgfexternal@startupbox=\box48
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
+x
+File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.c
+ode.tex
+File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.
+tex
+File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
+\pgfnodeparttextbox=\box49
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
+.sty
+Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen192
+\pgf@nodesepend=\dimen193
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
+.sty
+Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
+)) (/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks39
+\verbatim@line=\toks40
+\verbatim@in@stream=\read3
+)
+(/usr/share/texlive/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+(/usr/share/texlive/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2018/02/11 v2.5e e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count271
+)
+\tcb@titlebox=\box50
+\tcb@upperbox=\box51
+\tcb@lowerbox=\box52
+\tcb@phantombox=\box53
+\c@tcbbreakpart=\count272
+\c@tcblayer=\count273
+\tcolorbox@number=\count274
+\tcb@temp=\box54
+\tcb@temp=\box55
+\tcb@temp=\box56
+\tcb@temp=\box57
+\tcb@out=\write4
+\tcb@record@out=\write5
+)
+(/usr/share/texlive/texmf-dist/tex/latex/xltxtra/xltxtra.sty
+Package: xltxtra 2016/01/21 v0.6 Improvements for the "XeLaTeX" format
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/realscripts/realscripts.sty
+Package: realscripts 2016/02/13 v0.3d Access OpenType subscripts and superscrip
+ts
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \fakesubscript with sig. 'm' on line 19.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \fakesuperscript with sig. 'm' on line 22.
+.................................................
+.................................................
+. LaTeX info: "xparse/redefine-command"
+. 
+. Redefining command \textsubscript with sig. 's' on line 25.
+.................................................
+.................................................
+. LaTeX info: "xparse/redefine-command"
+. 
+. Redefining command \textsuperscript with sig. 's' on line 28.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \realsubscript with sig. 'm' on line 45.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \realsuperscript with sig. 'm' on line 60.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \textsubsuperscript with sig. 'sO{l}mm' on line 138.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \textsupersubscript with sig. 'sO{l}mm' on line 143.
+.................................................
+\subsupersep=\dimen194
+)
+(/usr/share/texlive/texmf-dist/tex/latex/metalogo/metalogo.sty
+Package: metalogo 2010/05/29 v0.12 Extended TeX logo macros
+\xl@everylogo=\toks41
+\xl@@everylogo=\toks42
+LaTeX Info: Redefining \TeX on input line 193.
+LaTeX Info: Redefining \LaTeX on input line 202.
+LaTeX Info: Redefining \LaTeXe on input line 219.
+)
+\l__xetex_show_hyphens_wrapping_box=\box58
+\l__xetex_show_hyphens_temp_box=\box59
+\l__xetex_show_hyphens_final_box=\box60
+\g__xetex_show_hyphens_word_box=\box61
+)
+(/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
+\ttl@box=\box62
+\beforetitleunit=\skip55
+\aftertitleunit=\skip56
+\ttl@plus=\dimen195
+\ttl@minus=\dimen196
+\ttl@toksa=\toks43
+\titlewidth=\dimen197
+\titlewidthlast=\dimen198
+\titlewidthfirst=\dimen199
+)
+(/usr/share/texlive/texmf-dist/tex/latex/titlesec/titletoc.sty
+Package: titletoc 2011/12/15 v1.6 TOC entries
+\ttl@leftsep=\dimen256
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
+
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+Package hobsub Info: Skipping package `ifluatex' (already loaded).
+Package hobsub Info: Skipping package `ifvtex' (already loaded).
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+Package: pdftexcmds 2018/01/30 v0.27 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: pdfTeX >= 1.30 not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode not found.
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
+)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+)
+\@linkdim=\dimen257
+\Hy@linkcounter=\count275
+\Hy@pagecounter=\count276
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count277
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Hyper figures OFF on input line 4509.
+Package hyperref Info: Link nesting OFF on input line 4514.
+Package hyperref Info: Hyper index ON on input line 4517.
+Package hyperref Info: Plain pages OFF on input line 4524.
+Package hyperref Info: Backreferencing OFF on input line 4529.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4762.
+\c@Hy@tempcnt=\count278
+
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5115.
+\XeTeXLinkMargin=\dimen258
+\Fld@menulength=\count279
+\Field@Width=\dimen259
+\Fld@charsize=\dimen260
+Package hyperref Info: Hyper figures OFF on input line 6369.
+Package hyperref Info: Link nesting OFF on input line 6374.
+Package hyperref Info: Hyper index ON on input line 6377.
+Package hyperref Info: backreferencing OFF on input line 6384.
+Package hyperref Info: Link coloring OFF on input line 6389.
+Package hyperref Info: Link coloring with OCG OFF on input line 6394.
+Package hyperref Info: PDF/A mode OFF on input line 6399.
+LaTeX Info: Redefining \ref on input line 6439.
+LaTeX Info: Redefining \pageref on input line 6443.
+\Hy@abspage=\count280
+\c@Item=\count281
+\c@Hfootnote=\count282
+)
+Package hyperref Info: Driver (autodetected): hxetex.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hxetex.def
+File: hxetex.def 2018/02/06 v6.86b Hyperref driver for XeTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2018/02/06 v6.86b Hyperref: PDF Unicode definition (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/stringenc.sty
+Package: stringenc 2016/05/16 v1.11 Convert strings between diff. encodings (HO
+)
+)
+\pdfm@box=\box63
+\c@Hy@AnnotLevel=\count283
+\HyField@AnnotCount=\count284
+\Fld@listcount=\count285
+\c@bookmark@seq@number=\count286
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip57
+)
+(/usr/share/texlive/texmf-dist/tex/latex/appendix/appendix.sty
+Package: appendix 2009/09/02 v1.2b extra appendix facilities
+\c@@pps=\count287
+\c@@ppsavesec=\count288
+\c@@ppsaveapp=\count289
+)
+(/usr/share/texlive/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
+Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
+\symrsfs=\mathgroup6
+)
+(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2018/01/08 v1.21 mathematical typesetting tools
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count290
+\calc@Bcount=\count291
+\calc@Adimen=\dimen261
+\calc@Bdimen=\dimen262
+\calc@Askip=\skip58
+\calc@Bskip=\skip59
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count292
+\calc@Cskip=\skip60
+)
+(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
+)
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+\g_MT_multlinerow_int=\count293
+\l_MT_multwidth_dim=\dimen263
+\origjot=\skip61
+\l_MT_shortvdotswithinadjustabove_dim=\dimen264
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen265
+\l_MT_above_intertext_sep=\dimen266
+\l_MT_below_intertext_sep=\dimen267
+\l_MT_above_shortintertext_sep=\dimen268
+\l_MT_below_shortintertext_sep=\dimen269
+)
+(/usr/share/texlive/texmf-dist/tex/generic/mathabx/mathabx.sty
+Package: mathabx 2003/07/29 v0.0 Non-standard LaTeX package mathabx
+\symmatha=\mathgroup7
+\symmathb=\mathgroup8
+\symmathx=\mathgroup9
+
+(/usr/share/texlive/texmf-dist/tex/generic/mathabx/mathabx.dcl
+LaTeX Font Info:    Redeclaring math symbol \cdotp on input line 25.
+LaTeX Font Info:    Redeclaring math symbol \times on input line 33.
+LaTeX Font Info:    Redeclaring math symbol \div on input line 34.
+LaTeX Font Info:    Redeclaring math symbol \cdot on input line 35.
+LaTeX Font Info:    Redeclaring math symbol \circ on input line 36.
+LaTeX Font Info:    Redeclaring math symbol \ast on input line 38.
+LaTeX Font Info:    Redeclaring math symbol \pm on input line 41.
+LaTeX Font Info:    Redeclaring math symbol \mp on input line 42.
+LaTeX Font Info:    Redeclaring math symbol \ltimes on input line 43.
+LaTeX Font Info:    Redeclaring math symbol \rtimes on input line 44.
+LaTeX Font Info:    Redeclaring math symbol \diamond on input line 45.
+LaTeX Font Info:    Redeclaring math symbol \bullet on input line 46.
+LaTeX Font Info:    Redeclaring math symbol \star on input line 47.
+LaTeX Font Info:    Redeclaring math symbol \amalg on input line 51.
+LaTeX Font Info:    Redeclaring math symbol \dotplus on input line 58.
+LaTeX Font Info:    Redeclaring math symbol \square on input line 63.
+LaTeX Font Info:    Redeclaring math symbol \divideontimes on input line 71.
+LaTeX Font Info:    Redeclaring math symbol \bigstar on input line 75.
+LaTeX Font Info:    Redeclaring math symbol \equiv on input line 83.
+LaTeX Font Info:    Redeclaring math symbol \sim on input line 84.
+LaTeX Font Info:    Redeclaring math symbol \approx on input line 85.
+LaTeX Font Info:    Redeclaring math symbol \simeq on input line 86.
+LaTeX Font Info:    Redeclaring math symbol \asymp on input line 89.
+LaTeX Font Info:    Redeclaring math symbol \nsim on input line 97.
+LaTeX Font Info:    Redeclaring math symbol \ncong on input line 100.
+LaTeX Font Info:    Redeclaring math symbol \risingdotseq on input line 118.
+LaTeX Font Info:    Redeclaring math symbol \fallingdotseq on input line 119.
+LaTeX Font Info:    Redeclaring math symbol \circeq on input line 125.
+LaTeX Font Info:    Redeclaring math symbol \eqcirc on input line 126.
+LaTeX Font Info:    Redeclaring math symbol \triangleq on input line 127.
+LaTeX Font Info:    Redeclaring math symbol \neg on input line 134.
+LaTeX Font Info:    Redeclaring math symbol \ll on input line 136.
+LaTeX Font Info:    Redeclaring math symbol \gg on input line 137.
+LaTeX Font Info:    Redeclaring math symbol \vdash on input line 139.
+LaTeX Font Info:    Redeclaring math symbol \dashv on input line 140.
+LaTeX Font Info:    Redeclaring math symbol \nvdash on input line 141.
+LaTeX Font Info:    Redeclaring math symbol \vDash on input line 143.
+LaTeX Font Info:    Redeclaring math symbol \nvDash on input line 145.
+LaTeX Font Info:    Redeclaring math symbol \Vdash on input line 147.
+LaTeX Font Info:    Redeclaring math symbol \nVdash on input line 149.
+LaTeX Font Info:    Redeclaring math symbol \flat on input line 158.
+LaTeX Font Info:    Redeclaring math symbol \natural on input line 159.
+LaTeX Font Info:    Redeclaring math symbol \sharp on input line 160.
+LaTeX Font Info:    Redeclaring math symbol \infty on input line 161.
+LaTeX Font Info:    Redeclaring math symbol \propto on input line 162.
+LaTeX Font Info:    Redeclaring math symbol \dagger on input line 163.
+LaTeX Font Info:    Redeclaring math symbol \ddagger on input line 164.
+LaTeX Font Info:    Redeclaring math symbol \between on input line 170.
+LaTeX Font Info:    Redeclaring math symbol \smile on input line 171.
+LaTeX Font Info:    Redeclaring math symbol \frown on input line 172.
+LaTeX Font Info:    Redeclaring math symbol \leftthreetimes on input line 174.
+LaTeX Font Info:    Redeclaring math symbol \rightthreetimes on input line 175.
+
+LaTeX Font Info:    Redeclaring math symbol \pitchfork on input line 176.
+LaTeX Font Info:    Redeclaring math symbol \nVDash on input line 182.
+LaTeX Font Info:    Redeclaring math symbol \Vvdash on input line 184.
+LaTeX Font Info:    Redeclaring math symbol \therefore on input line 189.
+LaTeX Font Info:    Redeclaring math symbol \because on input line 190.
+LaTeX Font Info:    Redeclaring math symbol \measuredangle on input line 202.
+LaTeX Font Info:    Redeclaring math symbol \sphericalangle on input line 203.
+LaTeX Font Info:    Redeclaring math symbol \setminus on input line 218.
+LaTeX Font Info:    Redeclaring math symbol \mid on input line 222.
+LaTeX Font Info:    Redeclaring math symbol \forall on input line 279.
+LaTeX Font Info:    Redeclaring math symbol \complement on input line 280.
+LaTeX Font Info:    Redeclaring math symbol \partial on input line 281.
+LaTeX Font Info:    Redeclaring math symbol \exists on input line 284.
+LaTeX Font Info:    Redeclaring math symbol \nexists on input line 285.
+LaTeX Font Info:    Redeclaring math symbol \Finv on input line 286.
+LaTeX Font Info:    Redeclaring math symbol \Game on input line 287.
+LaTeX Font Info:    Redeclaring math symbol \emptyset on input line 288.
+LaTeX Font Info:    Redeclaring math symbol \top on input line 290.
+LaTeX Font Info:    Redeclaring math symbol \bot on input line 291.
+LaTeX Font Info:    Redeclaring math symbol \perp on input line 292.
+LaTeX Font Info:    Redeclaring math symbol \curlywedge on input line 296.
+LaTeX Font Info:    Redeclaring math symbol \curlyvee on input line 297.
+LaTeX Font Info:    Redeclaring math symbol \in on input line 299.
+LaTeX Font Info:    Redeclaring math symbol \owns on input line 300.
+LaTeX Font Info:    Redeclaring math symbol \cap on input line 312.
+LaTeX Font Info:    Redeclaring math symbol \cup on input line 313.
+LaTeX Font Info:    Redeclaring math symbol \uplus on input line 314.
+LaTeX Font Info:    Redeclaring math symbol \sqcap on input line 315.
+LaTeX Font Info:    Redeclaring math symbol \sqcup on input line 316.
+LaTeX Font Info:    Redeclaring math symbol \wedge on input line 318.
+LaTeX Font Info:    Redeclaring math symbol \vee on input line 320.
+LaTeX Font Info:    Redeclaring math symbol \barwedge on input line 327.
+LaTeX Font Info:    Redeclaring math symbol \veebar on input line 328.
+LaTeX Font Info:    Redeclaring math symbol \doublebarwedge on input line 329.
+LaTeX Font Info:    Redeclaring math symbol \doublecap on input line 331.
+LaTeX Font Info:    Redeclaring math symbol \doublecup on input line 333.
+LaTeX Font Info:    Redeclaring math symbol \subset on input line 344.
+LaTeX Font Info:    Redeclaring math symbol \supset on input line 345.
+LaTeX Font Info:    Redeclaring math symbol \subseteq on input line 348.
+LaTeX Font Info:    Redeclaring math symbol \supseteq on input line 349.
+LaTeX Font Info:    Redeclaring math symbol \nsubseteq on input line 350.
+LaTeX Font Info:    Redeclaring math symbol \nsupseteq on input line 351.
+LaTeX Font Info:    Redeclaring math symbol \subsetneq on input line 352.
+LaTeX Font Info:    Redeclaring math symbol \supsetneq on input line 353.
+LaTeX Font Info:    Redeclaring math symbol \varsubsetneq on input line 354.
+LaTeX Font Info:    Redeclaring math symbol \varsupsetneq on input line 355.
+LaTeX Font Info:    Redeclaring math symbol \subseteqq on input line 357.
+LaTeX Font Info:    Redeclaring math symbol \supseteqq on input line 358.
+LaTeX Font Info:    Redeclaring math symbol \nsubseteqq on input line 359.
+LaTeX Font Info:    Redeclaring math symbol \nsupseteqq on input line 360.
+LaTeX Font Info:    Redeclaring math symbol \subsetneqq on input line 361.
+LaTeX Font Info:    Redeclaring math symbol \supsetneqq on input line 362.
+LaTeX Font Info:    Redeclaring math symbol \varsubsetneqq on input line 363.
+LaTeX Font Info:    Redeclaring math symbol \varsupsetneqq on input line 364.
+LaTeX Font Info:    Redeclaring math symbol \Subset on input line 366.
+LaTeX Font Info:    Redeclaring math symbol \Supset on input line 367.
+LaTeX Font Info:    Redeclaring math symbol \sqsubseteq on input line 380.
+LaTeX Font Info:    Redeclaring math symbol \sqsupseteq on input line 381.
+LaTeX Font Info:    Redeclaring math symbol \triangleleft on input line 407.
+LaTeX Font Info:    Redeclaring math symbol \vartriangleleft on input line 408.
+
+LaTeX Font Info:    Redeclaring math symbol \triangleright on input line 409.
+LaTeX Font Info:    Redeclaring math symbol \vartriangleright on input line 410
+.
+LaTeX Font Info:    Redeclaring math symbol \ntriangleleft on input line 411.
+LaTeX Font Info:    Redeclaring math symbol \ntriangleright on input line 412.
+LaTeX Font Info:    Redeclaring math symbol \trianglelefteq on input line 413.
+LaTeX Font Info:    Redeclaring math symbol \trianglerighteq on input line 414.
+
+LaTeX Font Info:    Redeclaring math symbol \ntrianglelefteq on input line 415.
+
+LaTeX Font Info:    Redeclaring math symbol \ntrianglerighteq on input line 416
+.
+LaTeX Font Info:    Redeclaring math symbol \blacktriangledown on input line 42
+7.
+LaTeX Font Info:    Redeclaring math symbol \blacktriangleleft on input line 42
+8.
+LaTeX Font Info:    Redeclaring math symbol \blacktriangleright on input line 4
+29.
+LaTeX Font Info:    Redeclaring math symbol \nless on input line 437.
+LaTeX Font Info:    Redeclaring math symbol \ngtr on input line 438.
+LaTeX Font Info:    Redeclaring math symbol \leq on input line 439.
+LaTeX Font Info:    Redeclaring math symbol \geq on input line 441.
+LaTeX Font Info:    Redeclaring math symbol \nleq on input line 443.
+LaTeX Font Info:    Redeclaring math symbol \ngeq on input line 445.
+LaTeX Font Info:    Redeclaring math symbol \lneq on input line 451.
+LaTeX Font Info:    Redeclaring math symbol \gneq on input line 452.
+LaTeX Font Info:    Redeclaring math symbol \leqq on input line 453.
+LaTeX Font Info:    Redeclaring math symbol \geqq on input line 454.
+LaTeX Font Info:    Redeclaring math symbol \nleqq on input line 455.
+LaTeX Font Info:    Redeclaring math symbol \ngeqq on input line 456.
+LaTeX Font Info:    Redeclaring math symbol \lneqq on input line 457.
+LaTeX Font Info:    Redeclaring math symbol \gneqq on input line 458.
+LaTeX Font Info:    Redeclaring math symbol \lvertneqq on input line 459.
+LaTeX Font Info:    Redeclaring math symbol \gvertneqq on input line 460.
+LaTeX Font Info:    Redeclaring math symbol \eqslantless on input line 461.
+LaTeX Font Info:    Redeclaring math symbol \eqslantgtr on input line 462.
+LaTeX Font Info:    Redeclaring math symbol \lessgtr on input line 465.
+LaTeX Font Info:    Redeclaring math symbol \gtrless on input line 466.
+LaTeX Font Info:    Redeclaring math symbol \lesseqgtr on input line 467.
+LaTeX Font Info:    Redeclaring math symbol \gtreqless on input line 468.
+LaTeX Font Info:    Redeclaring math symbol \lesseqqgtr on input line 469.
+LaTeX Font Info:    Redeclaring math symbol \gtreqqless on input line 470.
+LaTeX Font Info:    Redeclaring math symbol \lesssim on input line 472.
+LaTeX Font Info:    Redeclaring math symbol \gtrsim on input line 473.
+LaTeX Font Info:    Redeclaring math symbol \lnsim on input line 476.
+LaTeX Font Info:    Redeclaring math symbol \gnsim on input line 477.
+LaTeX Font Info:    Redeclaring math symbol \lessapprox on input line 478.
+LaTeX Font Info:    Redeclaring math symbol \gtrapprox on input line 479.
+LaTeX Font Info:    Redeclaring math symbol \lnapprox on input line 482.
+LaTeX Font Info:    Redeclaring math symbol \gnapprox on input line 483.
+LaTeX Font Info:    Redeclaring math symbol \lessdot on input line 485.
+LaTeX Font Info:    Redeclaring math symbol \gtrdot on input line 486.
+LaTeX Font Info:    Redeclaring math symbol \lll on input line 488.
+LaTeX Font Info:    Redeclaring math symbol \ggg on input line 489.
+LaTeX Font Info:    Redeclaring math symbol \prec on input line 498.
+LaTeX Font Info:    Redeclaring math symbol \succ on input line 499.
+LaTeX Font Info:    Redeclaring math symbol \nprec on input line 500.
+LaTeX Font Info:    Redeclaring math symbol \nsucc on input line 501.
+LaTeX Font Info:    Redeclaring math symbol \preccurlyeq on input line 502.
+LaTeX Font Info:    Redeclaring math symbol \succcurlyeq on input line 503.
+LaTeX Font Info:    Redeclaring math symbol \preceq on input line 506.
+LaTeX Font Info:    Redeclaring math symbol \succeq on input line 507.
+LaTeX Font Info:    Redeclaring math symbol \npreceq on input line 508.
+LaTeX Font Info:    Redeclaring math symbol \nsucceq on input line 509.
+LaTeX Font Info:    Redeclaring math symbol \curlyeqprec on input line 512.
+LaTeX Font Info:    Redeclaring math symbol \curlyeqsucc on input line 513.
+LaTeX Font Info:    Redeclaring math symbol \precsim on input line 517.
+LaTeX Font Info:    Redeclaring math symbol \succsim on input line 518.
+LaTeX Font Info:    Redeclaring math symbol \precnsim on input line 521.
+LaTeX Font Info:    Redeclaring math symbol \succnsim on input line 522.
+LaTeX Font Info:    Redeclaring math symbol \precapprox on input line 523.
+LaTeX Font Info:    Redeclaring math symbol \succapprox on input line 524.
+LaTeX Font Info:    Redeclaring math symbol \precnapprox on input line 527.
+LaTeX Font Info:    Redeclaring math symbol \succnapprox on input line 528.
+LaTeX Font Info:    Redeclaring math symbol \leftarrow on input line 540.
+LaTeX Font Info:    Redeclaring math symbol \rightarrow on input line 542.
+LaTeX Font Info:    Redeclaring math symbol \nwarrow on input line 546.
+LaTeX Font Info:    Redeclaring math symbol \nearrow on input line 547.
+LaTeX Font Info:    Redeclaring math symbol \swarrow on input line 548.
+LaTeX Font Info:    Redeclaring math symbol \searrow on input line 549.
+LaTeX Font Info:    Redeclaring math symbol \leftrightarrow on input line 550.
+LaTeX Font Info:    Redeclaring math symbol \nleftarrow on input line 552.
+LaTeX Font Info:    Redeclaring math symbol \nrightarrow on input line 553.
+LaTeX Font Info:    Redeclaring math symbol \nleftrightarrow on input line 554.
+
+LaTeX Font Info:    Redeclaring math symbol \mapstochar on input line 557.
+LaTeX Font Info:    Redeclaring math symbol \leftharpoonup on input line 560.
+LaTeX Font Info:    Redeclaring math symbol \rightharpoonup on input line 561.
+LaTeX Font Info:    Redeclaring math symbol \leftharpoondown on input line 562.
+
+LaTeX Font Info:    Redeclaring math symbol \rightharpoondown on input line 563
+.
+LaTeX Font Info:    Redeclaring math symbol \upharpoonleft on input line 564.
+LaTeX Font Info:    Redeclaring math symbol \downharpoonleft on input line 565.
+
+LaTeX Font Info:    Redeclaring math symbol \upharpoonright on input line 566.
+LaTeX Font Info:    Redeclaring math symbol \restriction on input line 567.
+LaTeX Font Info:    Redeclaring math symbol \downharpoonright on input line 568
+.
+LaTeX Font Info:    Redeclaring math symbol \leftrightharpoons on input line 56
+9.
+LaTeX Font Info:    Redeclaring math symbol \Leftarrow on input line 575.
+LaTeX Font Info:    Redeclaring math symbol \Rightarrow on input line 576.
+LaTeX Font Info:    Redeclaring math symbol \Leftrightarrow on input line 579.
+LaTeX Font Info:    Redeclaring math symbol \nLeftarrow on input line 581.
+LaTeX Font Info:    Redeclaring math symbol \nRightarrow on input line 582.
+LaTeX Font Info:    Redeclaring math symbol \nLeftrightarrow on input line 583.
+
+LaTeX Font Info:    Redeclaring math symbol \leftleftarrows on input line 593.
+LaTeX Font Info:    Redeclaring math symbol \rightrightarrows on input line 594
+.
+LaTeX Font Info:    Redeclaring math symbol \upuparrows on input line 595.
+LaTeX Font Info:    Redeclaring math symbol \downdownarrows on input line 596.
+LaTeX Font Info:    Redeclaring math symbol \leftrightarrows on input line 597.
+
+LaTeX Font Info:    Redeclaring math symbol \rightleftarrows on input line 598.
+
+LaTeX Font Info:    Redeclaring math symbol \rhook on input line 612.
+LaTeX Font Info:    Redeclaring math symbol \lhook on input line 613.
+LaTeX Font Info:    Redeclaring math symbol \diagup on input line 614.
+LaTeX Font Info:    Redeclaring math symbol \diagdown on input line 615.
+LaTeX Font Info:    Redeclaring math symbol \Lsh on input line 617.
+LaTeX Font Info:    Redeclaring math symbol \Rsh on input line 619.
+LaTeX Font Info:    Redeclaring math symbol \looparrowleft on input line 624.
+LaTeX Font Info:    Redeclaring math symbol \looparrowright on input line 626.
+LaTeX Font Info:    Redeclaring math symbol \curvearrowleft on input line 631.
+LaTeX Font Info:    Redeclaring math symbol \curvearrowright on input line 633.
+
+LaTeX Font Info:    Redeclaring math symbol \circlearrowleft on input line 641.
+
+LaTeX Font Info:    Redeclaring math symbol \circlearrowright on input line 642
+.
+LaTeX Font Info:    Redeclaring math symbol \rightsquigarrow on input line 645.
+
+LaTeX Font Info:    Redeclaring math symbol \leftrightsquigarrow on input line 
+646.
+LaTeX Font Info:    Redeclaring math symbol \oplus on input line 658.
+LaTeX Font Info:    Redeclaring math symbol \ominus on input line 659.
+LaTeX Font Info:    Redeclaring math symbol \otimes on input line 661.
+LaTeX Font Info:    Redeclaring math symbol \odot on input line 663.
+LaTeX Font Info:    Redeclaring math symbol \oslash on input line 675.
+LaTeX Font Info:    Redeclaring math symbol \boxplus on input line 683.
+LaTeX Font Info:    Redeclaring math symbol \boxminus on input line 684.
+LaTeX Font Info:    Redeclaring math symbol \boxtimes on input line 686.
+LaTeX Font Info:    Redeclaring math symbol \boxdot on input line 688.
+\mayacnter=\count294
+\mayacnta=\count295
+\mayacntb=\count296
+\mayacntc=\count297
+\mayawidth=\dimen270
+LaTeX Font Info:    Redeclaring math symbol \intop on input line 753.
+LaTeX Font Info:    Redeclaring math symbol \ointop on input line 760.
+LaTeX Font Info:    Redeclaring math delimiter \lbrace on input line 842.
+LaTeX Info: Redefining \{ on input line 846.
+LaTeX Font Info:    Redeclaring math delimiter \rbrace on input line 848.
+LaTeX Info: Redefining \} on input line 852.
+LaTeX Font Info:    Redeclaring math delimiter \langle on input line 858.
+LaTeX Font Info:    Redeclaring math delimiter \rangle on input line 859.
+LaTeX Font Info:    Redeclaring math delimiter \vert on input line 863.
+LaTeX Font Info:    Redeclaring math delimiter \Vert on input line 865.
+LaTeX Font Info:    Redeclaring math delimiter \uparrow on input line 868.
+LaTeX Font Info:    Redeclaring math delimiter \downarrow on input line 869.
+LaTeX Font Info:    Redeclaring math delimiter \updownarrow on input line 870.
+LaTeX Font Info:    Redeclaring math delimiter \Uparrow on input line 871.
+LaTeX Font Info:    Redeclaring math delimiter \Downarrow on input line 872.
+LaTeX Font Info:    Redeclaring math delimiter \Updownarrow on input line 873.
+LaTeX Font Info:    Redeclaring math delimiter \lgroup on input line 880.
+LaTeX Font Info:    Redeclaring math delimiter \rgroup on input line 881.
+LaTeX Font Info:    Redeclaring math delimiter \lceil on input line 882.
+LaTeX Font Info:    Redeclaring math delimiter \rceil on input line 883.
+LaTeX Font Info:    Redeclaring math delimiter \lfloor on input line 884.
+LaTeX Font Info:    Redeclaring math delimiter \rfloor on input line 885.
+LaTeX Font Info:    Redeclaring math symbol \braceld on input line 903.
+LaTeX Font Info:    Redeclaring math symbol \bracerd on input line 905.
+LaTeX Font Info:    Redeclaring math symbol \bracelu on input line 907.
+LaTeX Font Info:    Redeclaring math symbol \braceru on input line 909.
+LaTeX Font Info:    Redeclaring math accent \widehat on input line 944.
+LaTeX Font Info:    Redeclaring math accent \widetilde on input line 946.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/wasysym/wasysym.sty
+Package: wasysym 2003/10/30 v2.0 Wasy-2 symbol support package
+\symwasy=\mathgroup10
+LaTeX Font Info:    Overwriting symbol font `wasy' in version `bold'
+(Font)                  U/wasy/m/n --> U/wasy/b/n on input line 90.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/enumerate.sty
+Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
+\@enLab=\toks44
+)
+(/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2011/09/28 v3.5.2 Customized lists
+\labelindent=\skip62
+\enit@outerparindent=\dimen271
+\enit@toks=\toks45
+\enit@inbox=\box64
+\enitdp@description=\count298
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2018/04/20 v1.8s multicolumn formatting (FMi)
+\c@tracingmulticols=\count299
+\mult@box=\box65
+\multicol@leftmargin=\dimen272
+\c@unbalance=\count300
+\c@collectmore=\count301
+\doublecol@number=\count302
+\multicoltolerance=\count303
+\multicolpretolerance=\count304
+\full@width=\dimen273
+\page@free=\dimen274
+\premulticols=\dimen275
+\postmulticols=\dimen276
+\multicolsep=\skip63
+\multicolbaselineskip=\skip64
+\partial@page=\box66
+\last@line=\box67
+\maxbalancingoverflow=\dimen277
+\mult@rightbox=\box68
+\mult@grightbox=\box69
+\mult@gfirstbox=\box70
+\mult@firstbox=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\c@columnbadness=\count305
+\c@finalcolumnbadness=\count306
+\last@try=\dimen278
+\multicolovershoot=\dimen279
+\multicolundershoot=\dimen280
+\mult@nat@firstbox=\box89
+\colbreak@box=\box90
+\mc@col@check@num=\count307
+)
+(/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen281
+\pgffor@skip=\dimen282
+\pgffor@stack=\toks46
+\pgffor@toks=\toks47
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
+.code.tex
+File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
+\pgf@plot@mark@count=\count308
+\pgfplotmarksize=\dimen283
+)
+\tikz@lastx=\dimen284
+\tikz@lasty=\dimen285
+\tikz@lastxsaved=\dimen286
+\tikz@lastysaved=\dimen287
+\tikzleveldistance=\dimen288
+\tikzsiblingdistance=\dimen289
+\tikz@figbox=\box91
+\tikz@figbox@bg=\box92
+\tikz@tempbox=\box93
+\tikz@tempbox@bg=\box94
+\tikztreelevel=\count309
+\tikznumberofchildren=\count310
+\tikznumberofcurrentchild=\count311
+\tikz@fig@count=\count312
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
+\pgfmatrixcurrentrow=\count313
+\pgfmatrixcurrentcolumn=\count314
+\pgf@matrix@numberofcolumns=\count315
+)
+\tikz@expandcount=\count316
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryarrows.code.tex
+File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.
+tex
+File: pgflibraryarrows.code.tex 2013/09/23 v3.0.1a (rcs-revision 1.16)
+\arrowsize=\dimen290
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2013/07/15 v3.0.1a (rcs-revision 1.9)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarythrough.code.tex
+File: tikzlibrarythrough.code.tex 2008/02/03 v3.0.1a (rcs-revision 1.1)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshadows.code.tex
+File: tikzlibraryshadows.code.tex 2008/01/13 v3.0.1a (rcs-revision 1.3)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryfadings.code.tex
+File: tikzlibraryfadings.code.tex 2009/11/15 v3.0.1a (rcs-revision 1.2)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryfadings.code
+.tex
+File: pgflibraryfadings.code.tex 2008/02/07 v3.0.1a (rcs-revision 1.3)
+))) (/usr/share/texlive/texmf-dist/tex/latex/framed/framed.sty
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip65
+\fb@frw=\dimen291
+\fb@frh=\dimen292
+\FrameRule=\dimen293
+\FrameSep=\dimen294
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarysnakes.code.tex
+File: tikzlibrarysnakes.code.tex 2013/07/15 v3.0.1a (rcs-revision 1.7)
+
+
+Package pgf Warning: Snakes have been superseded by decorations. Please use the
+ decoration libraries instead of the snakes library on input line 14.
+
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarydecorations.pathmorphing.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarydecorations.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.cod
+e.tex
+\pgfdecoratedcompleteddistance=\dimen295
+\pgfdecoratedremainingdistance=\dimen296
+\pgfdecoratedinputsegmentcompleteddistance=\dimen297
+\pgfdecoratedinputsegmentremainingdistance=\dimen298
+\pgf@decorate@distancetomove=\dimen299
+\pgf@decorate@repeatstate=\count317
+\pgfdecorationsegmentamplitude=\dimen300
+\pgfdecorationsegmentlength=\dimen301
+)
+\tikz@lib@dec@box=\box95
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrary
+decorations.pathmorphing.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarydecorations.pathreplacing.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrary
+decorations.pathreplacing.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarydecorations.shapes.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrary
+decorations.shapes.code.tex)))
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2018/05/02 3.20 The Babel package
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/switch.def
+File: switch.def 2018/05/02 3.20 Babel switching mechanism
+)
+(/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2018/05/02 3.20 Babel common definitions
+\babel@savecnt=\count318
+\U@D=\dimen302
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/xebabel.def
+(/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def))
+\bbl@dirlevel=\count319
+)
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
+))
+(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2016/04/27 v1.618033 publication quality tables
+\heavyrulewidth=\dimen303
+\lightrulewidth=\dimen304
+\cmidrulewidth=\dimen305
+\belowrulesep=\dimen306
+\belowbottomsep=\dimen307
+\aboverulesep=\dimen308
+\abovetopsep=\dimen309
+\cmidrulesep=\dimen310
+\cmidrulekern=\dimen311
+\defaultaddspace=\dimen312
+\@cmidla=\count320
+\@cmidlb=\count321
+\@aboverulesep=\dimen313
+\@belowrulesep=\dimen314
+\@thisruleclass=\count322
+\@lastruleclass=\count323
+\@thisrulewidth=\dimen315
+)
+\g__fontspec_family_KhmerOSBattambang_int=\count324
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font "Khmer OS Battambang/BI" (it probably doesn't exist).
+.................................................
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font "Khmer OS Battambang/B" (it probably doesn't exist).
+.................................................
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font "Khmer OS Battambang/I" (it probably doesn't exist).
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'KhmerOSBattambang(0)' created for font 'Khmer OS Battambang'
+. with options [Ligatures=TeX,Scale = 0.8333333334,Script=Khmer].
+.  
+.  This font family consists of the following NFSS series/shapes:
+.  
+. - 'normal' (m/n) with NFSS spec.: <->s*[0.8333333334]"Khmer OS
+. Battambang/OT:script=khmr;language=DFLT;mapping=tex-text;"
+. - 'small caps'  (m/sc) with NFSS spec.: 
+.................................................
+LaTeX Info: Redefining \rmfamily on input line 47.
+LaTeX Font Info:    Font shape `TU/KhmerOSBattambang(0)/m/n' will be
+(Font)              scaled to size 9.99994pt on input line 47.
+.................................................
+. fontspec info: "no-scripts"
+. 
+. Font "Times New Roman" does not contain any OpenType `Script' information.
+.................................................
+\g__fontspec_family_TimesNewRoman_int=\count325
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font "Times New Roman/BI" (it probably doesn't exist).
+.................................................
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font "Times New Roman/B" (it probably doesn't exist).
+.................................................
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font "Times New Roman/I" (it probably doesn't exist).
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'TimesNewRoman(0)' created for font 'Times New Roman' with
+. options [].
+.  
+.  This font family consists of the following NFSS series/shapes:
+.  
+. - 'normal' (m/n) with NFSS spec.: <->"Times New Roman/OT"
+. - 'small caps'  (m/sc) with NFSS spec.: 
+.................................................
+\c@definition=\count326
+\c@theorem=\count327
+\c@notation=\count328
+\c@exercise=\count329
+\c@example=\count330
+\c@general=\count331
+
+(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
+s
+\f@nch@headwidth=\skip66
+\f@nch@O@elh=\skip67
+\f@nch@O@erh=\skip68
+\f@nch@O@olh=\skip69
+\f@nch@O@orh=\skip70
+\f@nch@O@elf=\skip71
+\f@nch@O@erf=\skip72
+\f@nch@O@olf=\skip73
+\f@nch@O@orf=\skip74
+)
+(./ដេរីវេនៃអនុគមន៍.aux)
+\openout1 = `ដេរីវេនៃអនុគមន៍.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for U/mathx/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 122.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 122.
+ (/usr/share/texmf/tex/latex/tipa/t3cmr.fd
+File: t3cmr.fd 2001/12/31 TIPA font definitions
+)
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: xetex
+*geometry* verbose mode - [ preamble ] result:
+* driver: xetex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(85.35826pt, 455.24411pt, 56.9055pt)
+* v-part:(T,H,B)=(71.13188pt, 717.00946pt, 56.9055pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=455.24411pt
+* \textheight=717.00946pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=13.08827pt
+* \topmargin=-38.1381pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=35.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+.................................................
+. fontspec info: "setup-math"
+. 
+. Adjusting the maths setup (use [no-math] to avoid this).
+.................................................
+\symlegacymaths=\mathgroup11
+LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 122.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 122.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 122.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 122.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 122.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 122.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 122.
+LaTeX Font Info:    Redeclaring math accent \check on input line 122.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 122.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 122.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 122.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 122.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 122.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 122.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 122.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 122.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 122.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 122.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 122.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 122.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 122.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 122.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 122.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 122.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `normal' on input line 122.
+
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> TU/TimesNewRoman(0)/m/n on input line 1
+22.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `bold' on input line 122.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> TU/TimesNewRoman(0)/m/n on input line 
+122.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  TU/TimesNewRoman(0)/m/n --> TU/TimesNewRoman(0)/m/n on 
+input line 122.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> TU/TimesNewRoman(0)/m/it on input line
+ 122.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> TU/TimesNewRoman(0)/bx/n on input line
+ 122.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 122.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 122.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  TU/TimesNewRoman(0)/m/n --> TU/TimesNewRoman(0)/bx/n on
+ input line 122.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> TU/TimesNewRoman(0)/bx/it on input li
+ne 122.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> TU/lmss/bx/n on input line 122.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/bx/n on input line 122.
+ABD: EveryShipout initializing macros
+\AtBeginShipoutBox=\box96
+Package hyperref Info: Link coloring OFF on input line 122.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count332
+)
+LaTeX Info: Redefining \ref on input line 122.
+LaTeX Info: Redefining \pageref on input line 122.
+LaTeX Info: Redefining \nameref on input line 122.
+
+(./ដេរីវេនៃអនុគមន៍.out) (./ដេរីវេនៃអនុគមន៍.out)
+\@outlinefile=\write6
+\openout6 = `ដេរីវេនៃអនុគមន៍.out'.
+
+LaTeX Font Info:    Font shape `TU/KhmerOSBattambang(0)/m/n' will be
+(Font)              scaled to size 11.99991pt on input line 123.
+\g__fontspec_family_KhmerOSMuolLight_int=\count333
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font "Khmer OS Muol Light/BI" (it probably doesn't exist).
+.................................................
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font "Khmer OS Muol Light/B" (it probably doesn't exist).
+.................................................
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font "Khmer OS Muol Light/I" (it probably doesn't exist).
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'KhmerOSMuolLight(0)' created for font 'Khmer OS Muol Light'
+. with options [Scale = 0.8333333334,Script=Khmer].
+.  
+.  This font family consists of the following NFSS series/shapes:
+.  
+. - 'normal' (m/n) with NFSS spec.: <->s*[0.8333333334]"Khmer OS Muol
+. Light/OT:script=khmr;language=DFLT;"
+. - 'small caps'  (m/sc) with NFSS spec.: 
+.................................................
+
+
+LaTeX Font Warning: Font shape `TU/KhmerOSMuolLight(0)/bx/n' undefined
+(Font)              using `TU/KhmerOSMuolLight(0)/m/n' instead on input line 12
+3.
+
+LaTeX Font Info:    Font shape `TU/KhmerOSMuolLight(0)/m/n' will be
+(Font)              scaled to size 11.99991pt on input line 123.
+LaTeX Font Info:    Font shape `TU/KhmerOSMuolLight(0)/bx/n' will be
+(Font)              scaled to size 11.99991pt on input line 123.
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/se-ascii-print.def
+File: se-ascii-print.def 2016/05/16 v1.11 stringenc: Printable ASCII characters
+
+)
+
+LaTeX Font Warning: Font shape `TU/KhmerOSBattambang(0)/m/it' undefined
+(Font)              using `TU/KhmerOSBattambang(0)/m/n' instead on input line 1
+25.
+
+
+LaTeX Font Warning: Font shape `TU/KhmerOSBattambang(0)/bx/n' undefined
+(Font)              using `TU/KhmerOSBattambang(0)/m/n' instead on input line 1
+26.
+
+LaTeX Font Info:    Font shape `TU/KhmerOSMuolLight(0)/bx/n' will be
+(Font)              scaled to size 9.99994pt on input line 126.
+LaTeX Font Info:    Try loading font information for U+msa on input line 126.
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 126.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 126.
+
+(/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
+LaTeX Font Info:    Try loading font information for U+wasy on input line 126.
+
+(/usr/share/texlive/texmf-dist/tex/latex/wasysym/uwasy.fd
+File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
+)
+LaTeX Font Info:    Font shape `TU/KhmerOSBattambang(0)/m/it' will be
+(Font)              scaled to size 9.99994pt on input line 128.
+LaTeX Font Info:    Font shape `TU/KhmerOSBattambang(0)/bx/n' will be
+(Font)              scaled to size 9.99994pt on input line 129.
+Missing character: There is no • in font Khmer OS Battambang/OT:script=khmr;lan
+guage=DFLT;mapping=tex-text;!
+Missing character: There is no • in font Khmer OS Battambang/OT:script=khmr;lan
+guage=DFLT;mapping=tex-text;!
+Missing character: There is no • in font Khmer OS Battambang/OT:script=khmr;lan
+guage=DFLT;mapping=tex-text;!
+Missing character: There is no • in font Khmer OS Battambang/OT:script=khmr;lan
+guage=DFLT;mapping=tex-text;!
+
+Overfull \vbox (3.13403pt too high) has occurred while \output is active []
+
+Missing character: There is no p in font Khmer OS Battambang/OT:script=khmr;lan
+guage=DFLT;mapping=tex-text;!
+Missing character: There is no p in font Khmer OS Battambang/OT:script=khmr;lan
+guage=DFLT;mapping=tex-text;!
+LaTeX Font Info:    Font shape `TU/KhmerOSMuolLight(0)/m/n' will be
+(Font)              scaled to size 9.99994pt on input line 164.
+\g__fontspec_family_KhmerOSBokor_int=\count334
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font "Khmer OS Bokor/BI" (it probably doesn't exist).
+.................................................
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font "Khmer OS Bokor/B" (it probably doesn't exist).
+.................................................
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font "Khmer OS Bokor/I" (it probably doesn't exist).
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'KhmerOSBokor(0)' created for font 'Khmer OS Bokor' with options
+. [Scale = 0.8333333334,Script=Khmer].
+.  
+.  This font family consists of the following NFSS series/shapes:
+.  
+. - 'normal' (m/n) with NFSS spec.: <->s*[0.8333333334]"Khmer OS
+. Bokor/OT:script=khmr;language=DFLT;"
+. - 'small caps'  (m/sc) with NFSS spec.: 
+.................................................
+LaTeX Font Info:    Font shape `TU/KhmerOSBokor(0)/m/n' will be
+(Font)              scaled to size 9.99994pt on input line 164.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\char' on input line 164.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\numexpr' on input line 164.
+
+[1
+
+]
+Overfull \hbox (15.26558pt too wide) detected at line 193
+[]
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\char' on input line 197.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\numexpr' on input line 197.
+
+[2]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\char' on input line 228.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\numexpr' on input line 228.
+
+[3]
+
+LaTeX Font Warning: Font shape `TU/KhmerOSBokor(0)/bx/n' undefined
+(Font)              using `TU/KhmerOSBokor(0)/m/n' instead on input line 244.
+
+LaTeX Font Info:    Font shape `TU/KhmerOSBokor(0)/bx/n' will be
+(Font)              scaled to size 9.99994pt on input line 244.
+LaTeX Font Info:    Font shape `TU/KhmerOSBattambang(0)/m/n' will be
+(Font)              scaled to size 6.66663pt on input line 261.
+LaTeX Font Info:    Font shape `TU/KhmerOSBattambang(0)/m/n' will be
+(Font)              scaled to size 4.99997pt on input line 261.
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\char' on input line 261.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\numexpr' on input line 261.
+
+[4]
+Missing character: There is no p in font Khmer OS Battambang/OT:script=khmr;lan
+guage=DFLT;mapping=tex-text;!
+Missing character: There is no p in font Khmer OS Battambang/OT:script=khmr;lan
+guage=DFLT;mapping=tex-text;!
+Missing character: There is no p in font Khmer OS Battambang/OT:script=khmr;lan
+guage=DFLT;mapping=tex-text;!
+Missing character: There is no p in font Khmer OS Battambang/OT:script=khmr;lan
+guage=DFLT;mapping=tex-text;!
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\char' on input line 303.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\numexpr' on input line 303.
+
+[5]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\char' on input line 340.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\numexpr' on input line 340.
+
+[6]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\char' on input line 372.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\numexpr' on input line 372.
+
+[7]
+Missing character: There is no p in font Khmer OS Battambang/OT:script=khmr;lan
+guage=DFLT;mapping=tex-text;!
+Missing character: There is no p in font Khmer OS Battambang/OT:script=khmr;lan
+guage=DFLT;mapping=tex-text;!
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\char' on input line 413.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\numexpr' on input line 413.
+
+[8]
+Missing character: There is no p in font Khmer OS Battambang/OT:script=khmr;lan
+guage=DFLT;mapping=tex-text;!
+Missing character: There is no p in font Khmer OS Battambang/OT:script=khmr;lan
+guage=DFLT;mapping=tex-text;!
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\char' on input line 451.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\numexpr' on input line 451.
+
+[9]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\char' on input line 475.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\numexpr' on input line 475.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\char' on input line 475.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\numexpr' on input line 475.
+
+[10]
+Missing character: There is no p in font Khmer OS Battambang/OT:script=khmr;lan
+guage=DFLT;mapping=tex-text;!
+Missing character: There is no p in font Khmer OS Battambang/OT:script=khmr;lan
+guage=DFLT;mapping=tex-text;!
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\char' on input line 519.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\numexpr' on input line 519.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\char' on input line 519.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\numexpr' on input line 519.
+
+[11]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\char' on input line 547.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\numexpr' on input line 547.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\char' on input line 547.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\numexpr' on input line 547.
+
+[12]
+Missing character: There is no p in font Khmer OS Battambang/OT:script=khmr;lan
+guage=DFLT;mapping=tex-text;!
+Missing character: There is no p in font Khmer OS Battambang/OT:script=khmr;lan
+guage=DFLT;mapping=tex-text;!
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\char' on input line 585.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\numexpr' on input line 585.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\char' on input line 585.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\numexpr' on input line 585.
+
+[13]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\char' on input line 609.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\numexpr' on input line 609.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\char' on input line 609.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\numexpr' on input line 609.
+
+[14]
+Missing character: There is no p in font Khmer OS Battambang/OT:script=khmr;lan
+guage=DFLT;mapping=tex-text;!
+Missing character: There is no p in font Khmer OS Battambang/OT:script=khmr;lan
+guage=DFLT;mapping=tex-text;!
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\char' on input line 645.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\numexpr' on input line 645.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\char' on input line 645.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\numexpr' on input line 645.
+
+[15]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\char' on input line 670.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\numexpr' on input line 670.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\char' on input line 670.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\numexpr' on input line 670.
+
+[16]
+Missing character: There is no p in font Khmer OS Battambang/OT:script=khmr;lan
+guage=DFLT;mapping=tex-text;!
+Missing character: There is no p in font Khmer OS Battambang/OT:script=khmr;lan
+guage=DFLT;mapping=tex-text;!
+Missing character: There is no p in font Khmer OS Battambang/OT:script=khmr;lan
+guage=DFLT;mapping=tex-text;!
+Missing character: There is no p in font Khmer OS Battambang/OT:script=khmr;lan
+guage=DFLT;mapping=tex-text;!
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\char' on input line 728.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\numexpr' on input line 728.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\char' on input line 728.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\numexpr' on input line 728.
+
+[17]
+Missing character: There is no p in font Khmer OS Battambang/OT:script=khmr;lan
+guage=DFLT;mapping=tex-text;!
+Missing character: There is no p in font Khmer OS Battambang/OT:script=khmr;lan
+guage=DFLT;mapping=tex-text;!
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\char' on input line 779.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\numexpr' on input line 779.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\char' on input line 779.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\numexpr' on input line 779.
+
+[18]
+Missing character: There is no p in font Khmer OS Battambang/OT:script=khmr;lan
+guage=DFLT;mapping=tex-text;!
+Missing character: There is no p in font Khmer OS Battambang/OT:script=khmr;lan
+guage=DFLT;mapping=tex-text;!
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\char' on input line 816.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\numexpr' on input line 816.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\char' on input line 816.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\numexpr' on input line 816.
+
+[19]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\char' on input line 842.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\numexpr' on input line 842.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\char' on input line 842.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\numexpr' on input line 842.
+
+[20]
+Missing character: There is no p in font Khmer OS Battambang/OT:script=khmr;lan
+guage=DFLT;mapping=tex-text;!
+Missing character: There is no p in font Khmer OS Battambang/OT:script=khmr;lan
+guage=DFLT;mapping=tex-text;!
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\char' on input line 883.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\numexpr' on input line 883.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\char' on input line 883.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\numexpr' on input line 883.
+
+[21]
+Overfull \hbox (10.40031pt too wide) detected at line 890
+[]
+ []
+
+Missing character: There is no p in font Khmer OS Battambang/OT:script=khmr;lan
+guage=DFLT;mapping=tex-text;!
+Missing character: There is no p in font Khmer OS Battambang/OT:script=khmr;lan
+guage=DFLT;mapping=tex-text;!
+
+Overfull \hbox (27.13487pt too wide) detected at line 925
+[]
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\char' on input line 925.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\numexpr' on input line 925.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\char' on input line 925.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\numexpr' on input line 925.
+
+[22]
+Overfull \hbox (33.4335pt too wide) detected at line 947
+[]
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\char' on input line 947.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\numexpr' on input line 947.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\char' on input line 947.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\numexpr' on input line 947.
+
+[23]
+Missing character: There is no p in font Khmer OS Battambang/OT:script=khmr;lan
+guage=DFLT;mapping=tex-text;!
+Missing character: There is no p in font Khmer OS Battambang/OT:script=khmr;lan
+guage=DFLT;mapping=tex-text;!
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\char' on input line 980.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\numexpr' on input line 980.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\char' on input line 980.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\numexpr' on input line 980.
+
+[24]
+Missing character: There is no p in font Khmer OS Battambang/OT:script=khmr;lan
+guage=DFLT;mapping=tex-text;!
+Missing character: There is no p in font Khmer OS Battambang/OT:script=khmr;lan
+guage=DFLT;mapping=tex-text;!
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\char' on input line 1016.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\numexpr' on input line 1016.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\char' on input line 1016.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\numexpr' on input line 1016.
+
+[25]
+Missing character: There is no p in font Khmer OS Battambang/OT:script=khmr;lan
+guage=DFLT;mapping=tex-text;!
+Missing character: There is no p in font Khmer OS Battambang/OT:script=khmr;lan
+guage=DFLT;mapping=tex-text;!
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\char' on input line 1061.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\numexpr' on input line 1061.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\char' on input line 1061.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\numexpr' on input line 1061.
+
+[26]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\char' on input line 1093.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\numexpr' on input line 1093.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\char' on input line 1093.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\numexpr' on input line 1093.
+
+[27]
+Missing character: There is no p in font Khmer OS Battambang/OT:script=khmr;lan
+guage=DFLT;mapping=tex-text;!
+Missing character: There is no p in font Khmer OS Battambang/OT:script=khmr;lan
+guage=DFLT;mapping=tex-text;!
+Missing character: There is no p in font Khmer OS Battambang/OT:script=khmr;lan
+guage=DFLT;mapping=tex-text;!
+Missing character: There is no p in font Khmer OS Battambang/OT:script=khmr;lan
+guage=DFLT;mapping=tex-text;!
+Missing character: There is no p in font Khmer OS Battambang/OT:script=khmr;lan
+guage=DFLT;mapping=tex-text;!
+Missing character: There is no p in font Khmer OS Battambang/OT:script=khmr;lan
+guage=DFLT;mapping=tex-text;!
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\char' on input line 1163.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\numexpr' on input line 1163.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\char' on input line 1163.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\numexpr' on input line 1163.
+
+[28]
+Missing character: There is no p in font Khmer OS Battambang/OT:script=khmr;lan
+guage=DFLT;mapping=tex-text;!
+Missing character: There is no p in font Khmer OS Battambang/OT:script=khmr;lan
+guage=DFLT;mapping=tex-text;!
+Missing character: There is no p in font Khmer OS Battambang/OT:script=khmr;lan
+guage=DFLT;mapping=tex-text;!
+Missing character: There is no p in font Khmer OS Battambang/OT:script=khmr;lan
+guage=DFLT;mapping=tex-text;!
+Missing character: There is no p in font Khmer OS Battambang/OT:script=khmr;lan
+guage=DFLT;mapping=tex-text;!
+Missing character: There is no p in font Khmer OS Battambang/OT:script=khmr;lan
+guage=DFLT;mapping=tex-text;!
+Missing character: There is no p in font Khmer OS Battambang/OT:script=khmr;lan
+guage=DFLT;mapping=tex-text;!
+Missing character: There is no p in font Khmer OS Battambang/OT:script=khmr;lan
+guage=DFLT;mapping=tex-text;!
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\char' on input line 1223.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\numexpr' on input line 1223.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\char' on input line 1223.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\numexpr' on input line 1223.
+
+[29]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1223.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1223.
+ (./ដេរីវេនៃអនុគមន៍.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1223.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1223.
+
+
+
+Package rerunfilecheck Warning: File `ដេរីវេនៃអនុគមន៍.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `ដេរីវេនៃអនុគមន៍.out':
+(rerunfilecheck)             Before: 47C953BD84F2498E6FD4C3BFD1DBBF85
+(rerunfilecheck)             After:  D7A1ED9B8541EA0652FBA2BF2EE8DAFF.
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 38532 strings out of 492970
+ 757271 string characters out of 6136052
+ 852363 words of memory out of 5000000
+ 42004 multiletter control sequences out of 15000+600000
+ 539737 words of font info for 79 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 54i,15n,83p,10492b,526s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on ដេរីវេនៃអនុគមន៍.pdf (29 pages).

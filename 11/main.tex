@@ -1,0 +1,325 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[top=0.5cm, left=1cm, bottom=1.5cm, right=1.5cm]{geometry}
+\usepackage{tikz}
+\usepackage{subcaption}
+\usepackage{wrapfig}
+\usepackage{mathpazo}% change math font
+\usepackage{enumitem}% change list environment like enumerate, itemize and description
+\usepackage{multicol}% multi columns
+\usepackage{tikz}% graphic drawing
+\usepackage[no-math]{fontspec}% font specfication
+\setmainfont{Khmer OS Content}% set default font to Khmer OS
+\usepackage{tcolorbox}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{wasysym}
+%
+\SetEnumitemKey{I}{%
+	leftmargin=*,
+	label={\protect\tikz[baseline=-0.9ex]\protect\node[draw=gray,thick,circle,minimum height=.65cm,inner sep=1pt,text=black,fill=cyan!20!white]{\Roman*};},%
+	font=\small\sffamily\bfseries,%
+	labelsep=1ex,%
+	topsep=0pt}
+%
+\SetEnumitemKey{a}{%
+	leftmargin=*,%
+	label={\protect\tikz[baseline=-0.9ex]\protect\node[draw=gray,thick,circle,minimum height=.5cm,inner sep=1pt,text=blue,fill=magenta!5!white]{\alph*};},%
+	font=\small\sffamily\bfseries,%
+	labelsep=1ex,%
+	topsep=0pt}
+%
+\SetEnumitemKey{1}{leftmargin=*,%
+	label={\protect\tikz[baseline=-0.9ex]\protect\node[draw=gray,thick,circle,minimum height=.5cm,inner sep=1pt,text=black,fill=blue!20!white]{\arabic*};},%
+	font=\small\sffamily\bfseries,%
+	labelsep=1ex,%
+	topsep=0pt}
+%
+\def\hard{\leavevmode\makebox[0pt][r]{\large\ensuremath{\star}\hspace{2em}}}
+%
+\def\hhard{\leavevmode\makebox[0pt][r]{\large\ensuremath{\star\star}\hspace{2em}}}
+%
+\everymath{\protect\displaystyle\protect\color{black}}
+%
+\pagecolor{cyan!1!white}
+%
+\newcommand{\heart}{\ensuremath\heartsuit}
+\newcommand{\butt}{\rotatebox[origin=c]{180}{\heart}}
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+		\node[shape=circle,draw,inner sep=2pt] (char) {#1};}}
+\setsansfont[Ligatures=TeX,AutoFakeBold=0,AutoFakeSlant=0.25]{Khmer OS Muol Light}% sans serif font
+\begin{document}
+	\begin{center}
+		\sffamily\color{black}
+		\circled{០១}\\
+		\heart ព្រីមីទីវ និង អាំងតេក្រាលមិនកំណត់\heart \\
+		រៀបរៀង និងបង្រៀនដោយៈ ស៊ុំ សំអុន\\
+		\phone ទូរស័ព្ទៈ ០៩៦ ៩៤០	៥៨៤០\phone
+	\end{center}
+	\begin{enumerate}[I]
+		\item បង្ហាញថា អនុគមន៍ $F(x)$ ជាព្រីមីទីវនៃអនុគមន៍ $f(x)$ ដែល៖
+		\begin{enumerate}[a]
+			\item $F(x)=3e^{x^2-1}+x$ និង $f(x)=6xe^{x^2-1}+1~;~x\in(-\infty;+\infty)$
+			\item $F(x)=\frac{5}{3}(e^x-4)^3$  និង $f(x)=5e^x(e^x-4)^2~;~x\in(-\infty;+\infty)$
+			\item $F(x)=\ln(e^{3x}-x)$ និង $f(x)=\frac{3e^{3x}-1}{e^{3x}-x}~;~x\in(-\infty; +\infty)$
+			\item $F(x)=\ln\bigg(\frac{x-1}{x+1}\bigg)$ និង $f(x)=\frac{2}{x^2-1}~;~x\in(1;+\infty)$
+			\item $F(x)=\ln\bigg(\frac{x}{x^2+1}\bigg)$ និង $f(x)=\frac{1-x^2}{x(x^2+1)}~;~x\in(0; +\infty)$
+			\item $F(x)=\ln\sqrt{\frac{x-2}{x+2}}$ និង $f(x)=\frac{2}{x^2-4}~;~x\in(2;+\infty)$
+			\item $F(x)=\ln\bigg(x\sqrt{x^2+1}\bigg)$ និង $f(x)=\frac{2x^2+1}{x(x^2+1)}~;~x\in(0; +\infty)$
+		\end{enumerate}
+		\item រកព្រីមីទីវ $F(x)$ នៃអនុគមន៍ $f(x)$៖
+		\begin{multicols}{2}
+			\begin{enumerate}[a]
+				\item $f(x)=x^2-e^x$ ដែល $F(0)=1$
+				\item $f(x)=3e^x-2$ ដែល $F(0)=5$
+				\item $f(x)=\frac{1}{\cos^2 x}$ ដែល $F\bigg(\frac{\pi}{4}\bigg)=1$
+				\item $f(x)=\frac{1}{\sin^2x}$ ដែល $F\bigg(\frac{\pi}{4}\bigg)=2$
+				\item $f(x)=\frac{1}{e^x}+2$ ដែល $F(0)=5$
+				\item $f(x)=\frac{10}{\sqrt{x}}$ ដែល $F(1)=10$
+			\end{enumerate}
+		\end{multicols}
+		\item រកព្រីមីទីវ $F(x)$ នៃអនុគមន៍ $f(x)$ ដែលក្រាបនៃ $F(x)$ កាត់តាមចំណុច $A$៖
+		\begin{multicols}{2}
+			\begin{enumerate}[a]
+				\item $f(x)=x^3+x$ និង $A(2;1)$
+				\item $f(x)=4x^3+1$ និង $A(1;6)$
+				\item $f(x)=\sin x$ និង $A(0;3)$
+				\item $f(x)=\cos x$ និង $A\bigg(\frac{\pi}{2};0\bigg)$
+				\item $f(x)=\frac{1}{\cos^2 x}$ និង $A\bigg(\frac{\pi}{4}; 0\bigg)$
+				\item $f(x)=\frac{1}{x^3}$ និង $A\bigg(\frac{1}{2}; 1\bigg)$
+				\item $f(x)=\frac{1}{\sqrt{x}}$ និង $A(9;-2)$
+				\item $f(x)=\frac{1}{\sqrt[3]{x^2}}$ និង $A(1;2)$
+				\item $f(x)=\frac{1}{\sin^2x}$ និង $A\bigg(\frac{\pi}{4};2\bigg)$
+				
+			\end{enumerate}
+		\end{multicols}
+		\item គណនាអាំងតេក្រាលមិនកំណត់នៃអនុគមន៍ខាងក្រោម៖
+		\begin{multicols}{4}
+			\begin{enumerate}[a]
+				\item $\int 2 dx$
+				\item $\int (3x^2+2x+1 ) dx$
+				\item $\int 2000\sqrt{x} dx$
+				\item $\int (4x^2+3x+3) dx$
+				\item $\int \frac{1}{2\sqrt{x}} dx$
+				\item $\int \frac{4}{\sqrt{x}} dx$
+				\item $\int \frac{1}{x} dx$
+				\item $\int \frac{2018}{x} dx$
+				\item $\int \frac{4}{5x} dx$
+				\item $\int \frac{1}{x^2} dx$
+				\item $\int \frac{20}{x^{20} }dx$
+				\item $\int -\frac{3}{x^{2018}} dx$
+			\end{enumerate}
+		\end{multicols}
+		\item គណនាអាំងតេក្រាលមិនកំណត់នៃអនុគមន៍ត្រីកោណមាត្រខាងក្រោម៖
+		\begin{multicols}{4}
+			\begin{enumerate}[a]
+				\item $\int 2\cos x dx$
+				\item $\int (2x-4\sin x) dx$
+				\item $\int 200\cos4x dx$
+				\item $\int (1-\tan^2 x) dx$
+				\item $\int (1-\cot^2 x) dx$
+				\item $\int (1-\sin 400x) dx$
+				\item $\int (3x^2-\cot^2 x) dx$
+				\item $\int 2\tan^2x dx$
+				\item $\int (x+\tan^2 x) dx$
+				\item $\int (x^2-cot^2 x) dx$
+				\item $\int \frac{\cos2x}{\cos x -\sin x}dx$
+				\item $\int \frac{\sin2x}{\cos x} dx$
+				\item\hard $\int \frac{\cos2x}{\cos^2x\sin^2x} dx$
+				\item\hard $\int \frac{dx}{\cos^2x\sin^2x}$
+			\end{enumerate}
+		\end{multicols}
+		\item គណនាអាំងតេក្រាលមិនកំណត់នៃអនុគមន៍អ៊ិចស្ប៉ូណង់ស្យែលខាងក្រោម
+		\begin{multicols}{4}
+			\begin{enumerate}[a]
+				\item $\int 3e^x dx$
+				\item $\int (4e^x+x) dx$
+				\item $\int (5x-e^x) dx$
+				\item $\int \bigg(\frac{1}{e^x}+2x\bigg) dx$
+				\item $\int (1-e^x)^2 dx$ 
+				\item $\int (\sqrt[3]{x^2}+2e^x) dx$ 
+				\item $\int (\sqrt{2}e^x-x^{-2}) dx$
+				\item $\int (4e^x+8x^3) dx$
+			\end{enumerate}
+		\end{multicols}
+		\item គណនាអាំងតេក្រាលនៃអនុគមន៍ខាងក្រោមដោយប្រើអថេរជំនួយ៖
+		\begin{multicols}{4}
+			\begin{enumerate}[a]
+				\item $\int 2x(x^2+4) dx$
+				\item $\int 3(x-1)^2 dx$
+				\item $\int \frac{4x}{2x^2+3} dx$
+				\item $\int \tan x dx$
+				\item $\int \cot x dx$
+				\item $\int \frac{\ln x}{x} dx$
+				\item $\int \frac{x^2+2x}{x^3+3x^2+1} dx$
+				\item $\int \cos x\sin x dx$ 
+				\item $\int \cos^3x\sin x dx$
+				\item $\int \sin^4x\cos x dx$ 
+				\item $\int (x+1)e^{x^2+2x} dx$
+				\item $\int x(x+1)^5 dx$
+				\item $\int 6xe^{3x^2} dx$
+				\item $\int \frac{e^x}{e^x-1} dx$
+				\item $\int (3x-1)e^{3x^2-6x}$
+				\item $\int \frac{2x-3}{x^2-3x} dx$
+			\end{enumerate}
+		\end{multicols}
+		\begin{center}
+			\sffamily\color{black}
+			សូមសំណាងល្អ!
+		\end{center}\newpage
+		\begin{center}
+			\sffamily\color{black}
+			\circled{០២}\\
+			\heart ព្រីមីទីវ និង អាំងតេក្រាលមិនកំណត់\heart \\
+			រៀបរៀង និងបង្រៀនដោយៈ ស៊ុំ សំអុន\\
+			\phone ទូរស័ព្ទៈ ០៩៦ ៩៤០	៥៨៤០\phone
+		\end{center}
+		\item គណនាអាំតេក្រាលដោយផ្នែកនៃអនុគមន៍ខាងក្រោម៖
+		\begin{multicols}{4}
+			\begin{enumerate}[a]
+				\item $\int x\sin2x dx$
+				\item $\int xcos3x dx$
+				\item $\int (2x+3)e^x dx$
+				\item $\int (1-x)e^{-x} dx$
+				\item $\int 2x\ln x dx$
+				\item $\int (1-x^2)\ln x dx$
+				\item $\int e^x\sin x dx$
+				\item $\int e^{-x}\cos x dx$
+				\item $\int x(1+\tan^2x) dx$
+				\item $\int \ln x dx$
+				\item $\int x\ln x dx$
+				\item $\int x^2\ln 2x dx$
+				\item $\int e^{2x}\cos2xdx$
+				\item $\int x(1+\cot^2x) dx$
+				\item $\int (2x+1)\cos x dx$
+				\item $\int x \tan^2x dx$
+				\item $\int x^2\cos x dx$
+				\item $\int 2xe^x dx$
+				\item $\int -3xe^{-x} dx$ 
+				\item $\int (2x+3)e^x dx$
+			\end{enumerate}
+		\end{multicols}
+		\item គណនាអាំងតេក្រាលមិនកំណត់នៃអនុគមន៍សនិទានខាងក្រោម៖
+		\begin{multicols}{3}
+			\begin{enumerate}[a]
+				\item $\int \frac{1}{x^2-1}dx$
+				\item $\int \frac{4}{4-x^2}dx$
+				\item $\int \frac{3x+4}{x^2+3x+2} dx$
+				\item $\int \frac{xdx}{(x+1)(2x+1)}$
+				\item $\int \frac{(x+1)dx}{(x-1)(x-2)}$
+				\item $\int \frac{(6x+7)dx}{x^2+4x+4}$
+				\item $\int \frac{x^3dx}{x^2-2x+1}$
+				\item $\int \frac{x+2}{x^2(x-1)}dx$
+				\item $\int \frac{x^2-3x+2}{x(x^2+2x+1)}dx$
+				\item $\int \frac{x+1}{x^2+5x+6}dx$
+				\item $\int \frac{8}{x^3+6x^2+8x}dx$
+				\item $\int \frac{9-7x}{(x+2)(x^2-9)}dx$
+				\item $\int \frac{x-3}{2x^2-5x+3}dx$
+				\item $\int \frac{1}{6x^2-5x+1}dx$
+				\item $\int \frac{5x+1}{x^2+3x+2}dx$
+				\item $\int \frac{-6x^2+7x-3}{x^2(x^2-4x+3)}dx$
+			\end{enumerate}
+		\end{multicols}
+		\item គណនាអាំងតេក្រាលមិនកំណត់នៃអនុគមន៍ខាងក្រោម៖
+		\begin{multicols}{3}
+			\begin{enumerate}[1]
+				\item $\int \sin2x\cos3x dx$
+				\item $\int \sin4x\cos6x dx$
+				\item $\int \sin7x\cos5x dx$
+				\item $\int \sin9x\cos4x dx$
+				\item $\int \cos2x\cos x dx$
+				\item $\int \cos3x\cos5x dx$
+				\item $\int \cos7x\cos3x dx$
+				\item $\int \cos8x\cos10x dx$
+				\item $\int \sin6x\sin2x dx$
+				\item $\int \sin5x\sin8x dx$
+				\item $\int \sin^2x\cos^3x dx$
+				\item $\int \sin^4x\cos^3x dx$
+				\item $\int \sin^6x\cos^5x dx$
+				\item $\int \sin^8x\cos^5x dx$
+				\item $\int \cos^2x\sin^3x dx$
+				\item $\int \cos^4x\sin^3x dx$
+				\item $\int \cos^6x\sin^5x dx$
+				\item $\int \cos^8x\sin^5x dx$
+				\item $\int \sin^4x\cos^5x dx$
+				\item $\int \sin^5x\cos^4x dx$
+				\item $\int \sin^3x\cos^5x dx$
+				\item $\int \sin^5x\cos^3x dx$
+				\item $\int \sin^3x\cos^6x dx$
+				\item $\int \cos^3x\sin^6x dx$
+				\item $\int \sin^2x\cos^2x dx$
+				\item $\int \cos^2x\sin^4x dx$
+				\item $\int \tan^2x dx$
+				\item $\int \tan^3x dx$
+				\item $\int \tan^4x dx$
+				\item $\int \tan^5x dx$
+				\item $\int \tan^6x dx$
+				\item $\int \tan^7x dx$
+				\item $\int \tan^8x dx$
+				\item $\int \cot^2x dx$
+				\item $\int \cot^3x dx$
+				\item $\int \cot^4x dx$
+				\item $\int \cot^5x dx$
+				\item $\int \cot^6x dx$
+				\item $\int \cot^7x dx$
+				\item $\int \sin^2x dx$
+				\item $\int \sin^3x dx$
+				\item $\int \sin^4x dx$
+				\item $\int \sin^5x dx$
+				\item $\int \sin^6x dx$
+				\item $\int \cos^2x dx$
+				\item $\int \cos^3x dx$
+				\item $\int \cos^4x dx$
+				\item $\int \cos^5x dx$
+				\item $\int \cos^6x dx$
+				\item $\int \tan^9x dx$
+				\item $\int \cot^8x dx$
+			\end{enumerate}
+		\end{multicols}
+		\item គេមានអនុគមន៍ $f(x)=\frac{\cos x}{\cos x+\sin x}$ និង $g(x)=\frac{\sin x}{\cos x+\sin x}$ ។
+		\begin{enumerate}[1]
+			\item គណនាអាំងតេក្រាល $\int [f(x)+g(x)] dx$ និង $\int [f(x)-g(x)] dx$
+			\item ទាញរកអាំងតេក្រាល $\int f(x) dx$ និង $\int g(x) dx$
+		\end{enumerate}
+		\item គេមានអនុគមន៍ $I=\int \frac{\cos x}{2\cos x+3\sin x}$ និង $J=\int \frac{\sin x}{2\cos x+3\sin x}$ ។
+		\begin{enumerate}[1]
+			\item គណនាអាំងតេក្រាល $2I+3J$ និង $3I-2J$
+			\item គណនាអាំងតេក្រាល $I$ និង $J$
+			\item គណនាអាំងតេក្រាល $\int \frac{4\cos x+5\sin x}{2\cos x +3\sin x} dx$
+		\end{enumerate}
+		\item គេមានអនុគមន៍ $f(x)=\frac{-\cos x+7\sin x}{3\cos x+4\sin x}$ ។
+		\begin{enumerate}[1]
+			\item ចូរកំណត់រកចំនួនពិត $a$ និង $b$ ដែល $f(x)=a+b\bigg(\frac{-3\cos x+4\sin x}{3\cos x+4\sin x}\bigg)$ ។
+			\item គណនាអាំងតេក្រាល $\int f(x) dx$ ។
+		\end{enumerate}
+		\item គេមានអនុគមន៍ $f(x)=\frac{1}{e^x+1}$ ។
+		\begin{enumerate}[1]
+			\item កំណត់រកចំនួនពិត $a$ និង $b$ ដើម្បីឲ្យ $f(x)=a+\frac{be^x}{e^x+1}$ ។
+			\item គណនាអាំងតេក្រាល $\int f(x) dx$ ។
+		\end{enumerate}
+		\item គេមានអនុគមន៍ $f(x)=\frac{2}{e^{2x}+3e^x+2}$ ។
+		\begin{enumerate}[1]
+			\item កំណត់រកចំនួនពិត $a, ~c~$ និង $c$ ដើម្បីឲ្យ $f(x)=a+\frac{be^x}{e^x+1}+\frac{ce^x}{e^x+2}$ ។
+			\item គណនាអាំងតេក្រាល $\int f(x) dx$ ។
+		\end{enumerate}
+		\begin{center}
+			\sffamily\color{black}
+			សូមសំណាងល្អ!
+		\end{center}\newpage
+		\begin{center}
+			\sffamily\color{black}
+			\circled{០៣}\\
+			\heart អាំងតេក្រាលកំណត់\heart \\
+			រៀបរៀង និងបង្រៀនដោយៈ ស៊ុំ សំអុន\\
+			\phone ទូរស័ព្ទៈ ០៩៦ ៩៤០	៥៨៤០\phone
+		\end{center}
+		\item គេមានអនុគមន៍ $f(x)=\frac{-3x+2}{x^4-2x^3+x^2}$ កំណត់ចំពោះគ្រប់ $x\neq0$ និង$x\neq1$ ។
+		\begin{enumerate}[1]
+			\item កំណត់រកចំនួនពិត $a~,~b~,~c$ និង $d$ ដើម្បីឲ្យ $f(x)=\frac{a}{x}+\frac{b}{x^2}+\frac{c}{x-1}+\frac{d}{(x-1)^2}$ ។
+			\item គណនាអាំងតេក្រាល $\int f(x) dx$ ។
+		\end{enumerate}
+	\end{enumerate}
+	\begin{center}
+		\sffamily\color{black}
+		សូមសំណាងល្អ!
+	\end{center}\newpage
+\end{document}

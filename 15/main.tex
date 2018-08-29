@@ -1,0 +1,140 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[top=0.5cm, left=1cm, bottom=1.5cm, right=1.5cm]{geometry}
+%\usepackage{hightest}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{subcaption}
+\usepackage{wrapfig}
+\usepackage{mathpazo}% change math font
+\usepackage{enumitem}% change list environment like enumerate, itemize and description
+\usepackage{multicol}% multi columns
+\usepackage{tikz}% graphic drawing
+\usepackage[no-math]{fontspec}% font specfication
+\setmainfont{Khmer OS Content}% set default font to Khmer OS
+\usepackage{tcolorbox}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{wasysym}
+\usepackage{multicol}
+\usepackage{color}
+
+\usepackage{comment}
+
+\setlength{\columnseprule}{1pt}
+\def\columnseprulecolor{\color{magenta}}
+
+%
+\SetEnumitemKey{I}{%
+	leftmargin=*,
+	label={\protect\tikz[baseline=-0.9ex]\protect\node[draw=gray,thick,circle,minimum height=.65cm,inner sep=1pt,text=black,fill=cyan!20!white]{\Roman*};},%
+	font=\small\sffamily\bfseries,%
+	labelsep=1ex,%
+	topsep=0pt}
+%
+\SetEnumitemKey{a}{%
+	leftmargin=*,%
+	label={\protect\tikz[baseline=-0.9ex]\protect\node[draw=gray,thick,circle,minimum height=.5cm,inner sep=1pt,text=blue,fill=magenta!5!white]{\alph*};},%
+	font=\small\sffamily\bfseries,%
+	labelsep=1ex,%
+	topsep=0pt}
+%
+\SetEnumitemKey{1}{leftmargin=*,%
+	label={\protect\tikz[baseline=-0.9ex]\protect\node[draw=gray,thick,circle,minimum height=.5cm,inner sep=1pt,text=black,fill=blue!20!white]{\arabic*};},%
+	font=\small\sffamily\bfseries,%
+	labelsep=1ex,%
+	topsep=0pt}
+%
+\def\hard{\leavevmode\makebox[0pt][r]{\large\ensuremath{\star}\hspace{2em}}}
+%
+\def\hhard{\leavevmode\makebox[0pt][r]{\large\ensuremath{\star\star}\hspace{2em}}}
+%
+\everymath{\protect\displaystyle\protect\color{black}}
+%
+\pagecolor{cyan!1!white}
+%
+\newcommand{\heart}{\ensuremath\heartsuit}
+\newcommand{\butt}{\rotatebox[origin=c]{180}{\heart}}
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+		\node[shape=circle,draw,inner sep=2pt] (char) {#1};}}
+\setsansfont[Ligatures=TeX,AutoFakeBold=0,AutoFakeSlant=0.25]{Khmer OS Muol Light}% sans serif font
+\begin{document}
+	\begin{center}
+		\sffamily\color{black}
+%		\circled{០១}\\
+		\heart រូបមន្តសង្ខេប អាំងតេក្រាលមិនកំណត់\heart \\
+		រៀបរៀង និងបង្រៀនដោយៈ ស៊ុំ សំអុន\\
+		\phone ទូរស័ព្ទៈ ០៩៦ ៩៤០	៥៨៤០\phone
+	\end{center}
+	\begin{enumerate}[I]
+		\item លក្ខណៈអាំងតេក្រាល
+		\begin{multicols}{2}
+			\begin{enumerate}[a]
+				\item $\int kf(x)dx=k\int f(x)dx$ 
+				\item $\int [f(x)\pm g(x)]dx=\int f(x)dx\pm\int g(x)dx$
+			\end{enumerate}
+		\end{multicols}
+		\item រូបមន្តគ្រឹះមួយចំនួន
+		\begin{multicols}{2}
+			\begin{enumerate}[1]
+				\item $\int kdx=kx+c~;~c\in\mathbb{R}$
+				\item $\int x^n dx=\frac{x^{n+1}}{n+1}+c~;~c\in\mathbb{R}$
+				\item $\int e^xdx=e^x+c~;~c\in\mathbb{R}$
+				\item $\int \frac{1}{x}dx=\ln|x|+c~;~c\in\mathbb{R}$
+				\item $\int \frac{1}{x^2}dx=-\frac{1}{x}+c~;~c\in\mathbb{R}$
+				\item $\int \frac{1}{x^n}dx=-\frac{1}{(n-1)x^{n-1}}+c~;~c\in\mathbb{R}$
+				\item $\int \frac{1}{\sqrt{x}}dx=2\sqrt{x}+c~;~c\in \mathbb{R}$
+				\item $\int \cos xdx=\sin x+c~;~c\in \mathbb{R}$
+				\item $\int \sin xdx=-\cos x+c~;~c\in \mathbb{R}$
+				\item $\int \cos a xdx=\frac{1}{a}\sin ax+c~;~c\in \mathbb{R}$
+				\item $\int \sin axdx=-\frac{1}{a}\cos ax+c~;~c\in \mathbb{R}$
+				\item $\int(1+\tan^2 x)dx=\int\frac{1}{\cos^2x}dx=\tan x+c$
+				\item $\int(1+\cot^2 x)dx=\int\frac{1}{\sin^2x}dx\\=-\cot x+c$
+			\end{enumerate}
+		\end{multicols}
+		\item អាំងតេក្រាលផលគុណ
+		\begin{multicols}{2}
+			\begin{enumerate}[1]
+				\item $\int u'(x)u^n(x)dx=\frac{u^{n+1}(x)}{n+1}+c~;~c\in\mathbb{R}$
+				\item $\int u'(x)e^{u(x)}dx=e^{u(x)}+c~;~c\in\mathbb{R}$
+				\item $\int u'(x)\sin u(x)dx=-\cos u(x)+c$ 
+				\item $\int u'(x)\cos u(x)dx=\sin u(x)+c$ 
+				\item $\int u'(x)(1+\tan u(x))dx=\tan u(x)+c$
+				\item $\int u'(x)(1+\cot u(x))dx=-\cot u(x)+c$
+			\end{enumerate}
+		\end{multicols}
+		\item អាំងតេក្រាលផលចែក
+		\begin{multicols}{2}
+			\begin{enumerate}[1]
+				\item $\int \frac{u'(x)}{u(x)}dx=\ln u(x)+c~;~c\in\mathbb{R}$
+				\item $\int \frac{u'(x)}{u^2(x)}dx=-\frac{1}{u(x)} +c~;~c\in\mathbb{R}$
+				\item $\int \frac{u'(x)}{\sqrt{u(x)}}dx=2\sqrt{u(x)} +c~;~c\in\mathbb{R}$
+				\item $\int \frac{u'(x)}{u^n(x)}dx=-\frac{1}{(n-1)u^{n-1}(x)} +c$
+				\item $\int \frac{u'(x)}{\cos^2 u(x)}dx=\tan u(x) +c~;~c\in\mathbb{R}$
+				\item $\int \frac{u'(x)}{\sin^2 u(x)}dx=-\cot u(x) +c~;~c\in\mathbb{R}$
+			\end{enumerate}
+		\end{multicols}
+		\item អាំងតេក្រាលដោយផ្នែក $\int udv=uv-\int vdu$ មានពីរទម្រង់សំខានៗ
+			\begin{equation}
+				P(x) \times\begin{cases}
+				e^{ax} & \\
+				\sin ax & \\
+				\cos ax &
+				\end{cases}
+				\text{តាង $u=P(x)$ និង~~}
+				dv=\begin{cases}
+					e^{ax} & \\
+					\sin ax & \\
+					\cos ax &
+					\end{cases}
+			\end{equation}
+			\begin{equation}
+			P(x)\times\ln(ax+b)
+			\text{តាង $u=\ln(ax+b)$ និង~~}
+			dv=P(x)
+			\end{equation}
+	\end{enumerate}
+	\begin{center}
+		\sffamily\color{black}
+		សូមសំណាងល្អ!
+	\end{center}\newpage
+\end{document}

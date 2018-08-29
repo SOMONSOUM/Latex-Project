@@ -1,0 +1,158 @@
+\documentclass[a4paper, 12pt]{exam}
+\makeatletter
+\usepackage[top=0.5cm, left=1cm, bottom=1.8cm, right=1.5cm]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{tcolorbox}
+\usepackage[export]{adjustbox}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{pgf}
+\usepackage{tikz}% graphic drawing
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\usepackage{wasysym}
+\usepackage{mathpazo}% change math font
+\usepackage{enumitem}% change list environment like enumerate, itemize and description
+\usepackage{multicol}% multi columns
+\usepackage{xcolor}
+\newcommand{\teacher}{ស៊ំុ សំអុន}
+\newcommand{\tell}{០៩៦ ៩៤០ ៥៨៤០}
+\newcommand{\class}{ត្រៀមប្រឡង~ឆមាសលើកទី~០១}
+\newcommand{\dateofexam}{សម័យប្រឡង៖~មករា ២០ ២០១៨}
+\newcommand{\subject}{វិញ្ញាសា៖~គណិតវិទ្យា~(វិទ្យាសាស្រ្តពិត)}
+\newcommand{\timelimit}{១២០~នាទី}
+\newcommand{\score}{ពិន្ទុសរុប៖~១២៥~ពិន្ទុ}
+\usepackage[no-math]{fontspec}% font specfication
+\setmainfont{Khmer OS Content}% set default font to Khmer OS
+\setsansfont[Ligatures=TeX,AutoFakeBold=0,AutoFakeSlant=0.25]{Khmer OS Muol Light}% sans serif font
+%
+\newcommand{\heart}{\ensuremath\heartsuit}
+\newcommand{\butt}{\rotatebox[origin=c]{180}{\heart}}
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+		\node[shape=circle,draw,inner sep=2pt] (char) {#1};}}
+%
+\SetEnumitemKey{I}{%
+	leftmargin=*,
+	label={\protect\tikz[baseline=-0.9ex]\protect\node[draw=gray,thick,circle,minimum height=.65cm,inner sep=1pt,text=black,fill=white]{\Roman*};},%
+	font=\small\sffamily\bfseries,%
+	labelsep=1ex,%
+	topsep=0pt}
+%
+\SetEnumitemKey{a}{%
+	leftmargin=*,%
+	label={\protect\tikz[baseline=-0.9ex]\protect\node[draw=gray,thick,circle,minimum height=.5cm,inner sep=1pt,text=blue,fill=magenta!5!white]{\alph*};},%
+	font=\small\sffamily\bfseries,%
+	labelsep=1ex,%
+	topsep=0pt}
+%
+\SetEnumitemKey{1}{leftmargin=*,%
+	label={\protect\tikz[baseline=-0.9ex]\protect\node[draw=gray,thick,circle,minimum height=.5cm,inner sep=1pt,text=black,fill=cyan!20!white]{\arabic*};},%
+	font=\small\sffamily\bfseries,%
+	labelsep=1ex,%
+	topsep=0pt}
+%
+\def\hard{\leavevmode\makebox[0pt][r]{\large\ensuremath{\star}\hspace{2em}}}
+%
+\def\hhard{\leavevmode\makebox[0pt][r]{\large\ensuremath{\star\star}\hspace{2em}}}
+%
+\everymath{\protect\displaystyle\protect\color{black}}
+%
+\pagecolor{cyan!1!white}
+%
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{wasysym}
+\makeatother
+
+\pagestyle{foot}
+\firstpagefooter{}{ ទំព័រ~\thepage\ នៃ \numpages}{}
+\runningfooter{រៀបរៀងដោយ~\teacher}{ ទំព័រ \thepage\ នៃ \numpages}{ទូរស័ព្ទ~\tell}
+\runningfootrule
+
+\begin{document}
+\noindent
+%\sffamily\color{black}
+\begin{tabular*}{\textwidth \sffamily\color{black}}{l @{\extracolsep{\fill}} r @{\extracolsep{6pt}} l}
+\textbf{\class} & \textbf{មណ្ឌលប្រឡង} & \makebox[2in]{\hrulefill}\\
+\textbf{\dateofexam} & \textbf{លេខបន្ទប់} & \makebox[2in]{\hrulefill}\\
+\textbf{\subject} & \textbf{លេខតុ} & \makebox[2in]{\hrulefill}\\
+\textbf{\score} & \textbf{ឈ្មោះបេក្ខជន} & \makebox[2in]{\hrulefill}\\
+\textbf{រយៈពេលសរុប៖ \timelimit} & \textbf{ហេត្ថលេខា} & \makebox[2in]{\hrulefill}
+\end{tabular*}\\
+%\rule[2ex]{\textwidth\color{magenta}}{2pt}
+%\begin{center}
+%	\heart វិញ្ញាសាទី\textbf{០១} នេះមាន \numpages\ ទំព័រ (រួមបញ្ចូលទាំងទំព័រនេះផងដែរ) និង 6 សំណួរ ។\heart
+%%	\sffamily\color{black}
+%%	\circled{០១}
+%\end{center}
+%\begin{center}
+%	\sffamily\color{black}
+%	បទបញ្ជានៃការប្រឡង
+%\end{center}
+%\begin{multicols}{2}
+%	\begin{enumerate}[1]
+%		\item ហាមមើលគ្នាក្នុងពេលកំពុងប្រឡង.
+%		\item មិនត្រូវប្តូរកិច្ចការរបស់ខ្លួនជាមួយមិត្តភក្ភិឡើយ 
+%		\item ហាមខ្ចីរបស់គ្នាប្រើក្នុងពេលកំពុងប្រឡង 
+%		\item ហាមនិយាយឡូឡាក្នុងពេលកំពុងប្រឡង
+%		\item មិនត្រូវនាំអាវុធ ឬគ្រឿងផ្ទុះចូរបន្ទប់ប្រឡង 
+%		\item មិនត្រូវធ្វើសញ្ញាសម្គាល់អ្វីមួយនៅលើក្រដាស់កិច្ចការឡើយ~។ 
+%	\end{enumerate}
+%\end{multicols}
+\noindent
+\rule[2ex]{\textwidth\color{magenta}}{2pt}
+\begin{center}
+	\sffamily\color{black}
+	ប្រធានលំហាត់\\
+\end{center}
+\begin{enumerate}[I]
+	\item ($ 15 $ ពិន្ទុ) គេឲ្យអនុគមន៍ $f$ កំណត់ដោយ $f(x)=\frac{8-8\cos x}{x(e^{2x}-1)} (x\neq0)$ ហើយ $f(0)=\frac{1}{1008}(m-2)$ ។
+	\begin{enumerate}[1]
+		\item គណនាលីមីត $\lim\limits_{x\to0}f(x)$
+		\item កំណត់តម្លៃ $m$ ដើម្បីឲ្យ $f$ ជាប់ត្រង់ $x=0$ ។
+	\end{enumerate}
+	\item ($ 15 $ ពិន្ទុ) គណនាលីមីតខាងក្រោម៖
+	\begin{multicols}{3}
+		\begin{enumerate}[a]
+			\item $ \lim\limits_{x\to 3}\frac{x^2-4x+3}{9-x^2} $
+			\item $ \lim\limits_{x\to 2}\frac{x\sqrt{x}-2\sqrt{2}}{\sqrt{x}-\sqrt{2}} $
+			\item $ \lim\limits_{x\to 0}\frac{e^{x^2}+\sin (x^2)-1}{2x\sin x} $
+		\end{enumerate}
+	\end{multicols}
+	\item ($ 15 $ ពិន្ទុ) គេមានអនុគមន៍ $h$ កំណត់ដោយ $ y=h(x)=\sin(\cos^2x)$~។
+	\begin{enumerate}[1]
+		\item បង្ហាញថា $h'(x)+\sin2x\cdot\cos(\cos^2x)=0$~។
+		\item រកសមីការបន្ទាត់ប៉ះនឹងក្រាបតាងអនុគមន៍ $f$ ត្រង់ $x=\frac{\pi}{4}$~។
+	\end{enumerate}
+	\item ($ 15 $ ពិន្ទុ) គេឲ្យចំនួនកុំផ្លិច $a=\frac{\sqrt{3}}{2}-\frac{1}{2}i$
+	និង $b=2+2\sqrt{3}i$ ។
+	\begin{enumerate}[1]
+		\item សរសេរចំនួនកុំផ្លិច $\frac{a}{b}$ ជាទម្រង់ពីជគណិត ។
+		\item សរសេរចំនួនកផ្លិច $a, b$ និង $\frac{a}{b}$ ជាទម្រង់ត្រីកោណមាត្រ ។
+	\end{enumerate}
+	\item\hard ($ 30 $ ពិន្ទុ) អនុវត្តន៍ $ f $ កំណត់ដោយ $f(x)=x+2-\frac{4}{x-1}$ និងមានខ្សែកោង $C$ ។
+	\begin{enumerate}[a]
+		\item រកដែនកំណត់នៃអនុគមន៍ $f$ ។ គណនា និងសិក្សាសញ្ញាដេរីវេ $f'(x)$ ។
+		\item រកតម្លៃអតិបរមា និងអប្យបរមានៃ $f$ ។
+		\item កំណត់សមីការនៃអាស៊ីមតូតឈរ និងទ្រេតនៃខ្សែកោង $C$ ។
+		\item សិក្សាទីតាំងធៀបរវាងអាស៊ីមតូតទ្រេត និងខ្សែកោង $C$ ។
+		\item សង់តារាងអថេរភាពនៃអនុគមន៍ $f$ និងសង់ខ្សែកោង $C$ ។
+	\end{enumerate}
+	
+	\item\hhard ($ 35 $ ពិន្ទុ) ក្នុងលំហរប្រដាប់ដោយតម្រុយអតូណរម៉ាល់មានទិសដៅវិជ្ជមាន $ (O,\vec{i},\vec{j},\vec{k}) $ គេមានចំណុច​\\
+	$ A(1,0,0),B(0,1,0) $ និង $ C(0,0,1) $~។
+	\begin{enumerate}[a]
+		\item បង្ហាញថាត្រីកោណ $ABC$ ជាត្រីកោណសម័ង្ស ។
+		
+		\item គណនាផលគុណ $ \overrightarrow{n}= \overrightarrow{AB}\times\overrightarrow{AC}$ រួចរកសមីការប្លង់ $(ABC)$~។
+		\item រកចម្ងាយពីចំណុច $D(0, 1, 1)$~ទៅប្លង់ $(ABC)$~។
+		\item រកសមីការស្វ៊ែ $(S)$~ ដែលមានអង្គត់ផ្ចិត $AC$~។
+		\item រកសមីការប្លង់ $(P)$~ ប៉ះស្វ៊ែ $(S)$~ត្រង់ $C$~។ 
+	\end{enumerate}
+\end{enumerate}
+\begin{center}
+	\sffamily\color{black}
+	សូមសំណាងល្អ!
+\end{center}\newpage
+
+\end{document}

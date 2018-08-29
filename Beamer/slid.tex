@@ -1,0 +1,265 @@
+\documentclass{beamer}
+\mode<presentation>{
+\usetheme{Madrid}
+\usefonttheme[onlymath]{serif}
+%\usecolortheme{beaver}
+}
+%\usepackage[utf8]{inputenc}
+%\usepackage{default}
+\usepackage{varwidth}
+\usepackage{pgfplots}
+\pgfplotsset{/pgf/number format/use comma,compat=newest}
+\usepackage{color}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{hyperref}
+\usepackage{tikz}
+\usepackage{enumerate}
+\usepackage{fontspec}
+\newcommand{\en}{\fontspec[Script=Khmer]{Ubuntu}}
+\newcommand{\Kml}{\fontspec[Script=Khmer]{Khmer OS Muol Light}}
+\newcommand{\Kmp}{\fontspec[Script=Khmer]{Khmer  OS Muol Pali}}
+\newcommand{\Kh}{\fontspec[Script=Khmer]{Ang DaunTep}}
+\newcommand{\Kos}{\fontspec[Script=Khmer]{Khmer OS }}
+\title{ {\Kml គណិតវិទ្យា ថ្នាក់ទី១២}}\vspace{1cm}
+\author{ \bf {\Kmp បង្រៀនដោយ: ស្រ៊ុន ប៉េងហួរ}}
+%\institute[]{\includegraphics[height=1in]{logo.png}{\vspace{.3cm}}\\
+%\bf Chapter 2: Analytic Functions {\vspace{.3cm}} \\ Lecture by
+%: {\vspace{.3cm}}\\ {\bf Ph.D SEAM NGONN }}
+\date{\en \today} 
+
+\begin{document}
+\begin{frame}
+\titlepage
+\begin{center}
+\Kmp វិញ្ញាសាត្រៀមប្រលងឆមាសទី ២
+\end{center}
+\end{frame}
+\begin{frame}
+\frametitle{\Kml វិញ្ញាសាទី១  ត្រៀបប្រលងឆមាសទី ២}
+\begin{block}{\centering \Kml លំហាត់ទី ១}
+\Kh គណនាអាំងតេក្រាល $I=\frac{1}{e^x+1}$ ដែល $I(0)=\ln 4$
+\end{block}
+\pause
+	\begin{center}
+	\Kml ដំណោះស្រាយ
+	\end{center}
+\pause
+	\begin{flalign*}\quad 
+	\text{\Kh គេមាន}\quad I=\int\frac{1}{e^x+1}dx
+	&=\int \frac{1+e^x-e^x}{e^x+1}x&\\
+	&=\int\left(1-\frac{e^x}{e^x+1}\right)dx&\\
+	&=\int dx-\int\frac{e^x}{e^x+1}dx&\\
+	&=x-\ln \left|e^x+1\right|+c&\\
+	\end{flalign*}
+\end{frame}
+\begin{frame}
+	\begin{flalign*}\qquad\qquad
+	\text{\Kh ដោយ}\;\; I(0)=\ln 4\;\; \text{\Kh តែ}\;\; I(0)&=0-\ln2+c&\\
+	&=-\ln 2+c&\\
+	\text{\Kh នាំអោយ}\;\; -\ln 2+c&=\ln 4&\\
+	\text{\Kh នោះ}\;\; c&=\ln 4+\ln 2\\
+	&=2\ln 2+\ln2&\\
+	&=3\ln 2
+	\end{flalign*}
+\pause
+	\qquad\qquad\Kh ដូចនេះ $I=\int \frac{1}{e^x+1}dx=x-\ln\left|e^x+1\right|+3\ln 2$
+\end{frame}
+\begin{frame}
+\frametitle{\Kml វិញ្ញាសាទី១  ត្រៀបប្រលងឆមាសទី ២}
+\begin{block}{\centering \Kml លំហាត់ទី ២}
+\Kh គេអោយសមីការឌីផេរ៉ងស្យែល  $(E):\;y''+2y'+y=x^2+2x-2$
+	\begin{enumerate}
+	\item[\Kh ក.] រកពហុធាដឺក្រេទីពីរ $P(x)$ ដែលជាចម្លើមពិសេសមួយនៃ $(E)$  
+	\item[\Kh ខ.] ដោះស្រាយសមីការ $(E'):\;y''+2y'+y=0$  រួចទាញរកអនុគមន៍   $f$ ដែលជាចម្លើយទូទៅនៃសមីការ $(E)$
+	\item[\Kh គ.] រកចម្លើយ $f$  មួយនៃ $(E)$  ដែលខ្សែកោង $(C)$ តាងអនុគមន៍កាត់តាមចំណុច $M(0,1)$ ហើយបន្ទាត់ប៉ះនឹង $(C)$
+ ត្រង់ចំណុចនោះនោះស្របទៅនឹងបន្ទាត់ $(l):\;y=-2x$
+	\end{enumerate}
+\end{block}
+\pause
+	\begin{center}
+	\Kml ដំណោះស្រាយ
+	\end{center}
+\end{frame}
+\begin{frame}
+	\begin{enumerate}
+	\item[\Kh ក.] \Kh រកពហុធាដឺក្រេទីពីរ $P(x)$ 
+	\end{enumerate}
+\pause
+	\begin{flalign*}\qquad\qquad
+	\text{\Kh តាង}\;\;&P(x)=ax^2+bx+c\;\; \text{\Kh ជាចម្លើយពិសេសនៃសមីការ} (E)&\\
+	\text{\Kh គេបាន}\;\;&P\;'(x)=2ax+b&\\
+	&P\;''(x)=2a&
+	\end{flalign*}
+\pause
+	\qquad\qquad\Kh ដោយ $P(x)$ ជាចម្លើយពិសេសនៃសមីការ $(E)$
+\pause
+	\begin{flalign*}\qquad\qquad
+	\text{\Kh គេបាន}\;\; P\;''(x)+2P\;'(x)+P(x)&=x^2+2x-2&\\
+	2ax+2\left(2ax+b\right)+ax^2+bx+c&=ax^2+bx+c&\\
+	ax^2+(4a+b)x+(2a+2b+c)&=x^2+2x-2&
+	\end{flalign*}
+\pause
+	\qquad\qquad\Kh គេបាន
+	$\begin{cases}
+	a=1\\
+	4a+b=2\\
+	2a+2b+c=-2
+	\end{cases}$
+\pause
+	\Kh សមមូល
+	$\begin{cases}
+	a=1\\
+	b=-2\\
+	c=0
+	\end{cases}$\\
+\pause
+	\qquad \Kh ដូចនេះ $P(x)=x^2-2x$ ជាចម្លើយនៃសមីការ $(E)$
+\end{frame}
+\begin{frame}
+	\begin{enumerate}
+	\item[\Kh ខ.] \Kh ដោះស្រាយសមីការ $(E\;'):\;y\;''+2y\;'+y=0$  
+	\end{enumerate}
+\pause
+	\begin{flalign*}\qquad\qquad
+	\text{\Kh គេបានសមីការសម្គាល់}\;\;m^2+2m+1&=0&\\
+	(m+1)^2&=0&\\
+	m&=-1\quad \text{\Kh ឫសឌុប}
+	\end{flalign*}
+\pause
+	\begin{flalign*}\qquad\qquad
+	\text{\Kh គេបានចម្លើយនៃសមីការ $(E\;')$ គឺ}\;\;y&=(Ax+B)e^{mx}&\\
+	&=(Ax+B)e^{-x}&\\
+	\text{\Kh ដូចនេះ ចម្លើយនៃសមីការ $(E\;')$ គឺ}\;\;&=(Ax+B)e^{-x}&\\
+	&\quad\text{\Kh ដែល}\;\; A\;,\;B\in\mathbb R&
+	\end{flalign*}
+\end{frame}
+\begin{frame}
+	\Kh រួចទាញរកអនុគមន៍   $f$ ដែលជាចម្លើយទូទៅនៃសមីការ $(E)$
+\pause
+	\begin{flalign*}\qquad\qquad
+	\text{\Kh ចម្លើយទូទៅនៃសមីការ $(E)$ គឺ}\;\;f&=y+P(x)&\\
+	&=(Ax+B)e^{-x}+x^2-2x&\\
+	\text{\Kh ដូចនេះ ចម្លើយទូទៅនៃសមីការ $(E)$ គឺ}\;\;f&=(Ax+B)e^{-x}+x^2-2x&\\ 		&\quad\text{\Kh ដែល}\;\; A\;,\;B\in\mathbb R&
+	\end{flalign*}
+	\begin{enumerate}
+	\item[\Kh គ.] \Kh រកចម្លើយ $f$  មួយនៃ $(E)$\\[5pt]
+\pause
+	\Kh តាមបំរាប់ គេបាន
+	$\begin{cases}
+	f(0)=1\\[5pt]
+	f\;'(0)=-2
+	\end{cases}$
+	\end{enumerate}
+\end{frame}
+\begin{frame}
+	\begin{flalign*}\qquad\qquad
+	\text{\Kh គេមាន}\quad  f(x)&=(Ax+B)e^{-x}+x^2-2x&\\
+	f\;'(x)&=Ae^{-x}-(Ax+B)e^{-x}+2x-2&\\
+	&=(A-Ax-B)e^{-x}+2x-2&
+	\end{flalign*}
+	\begin{center}
+	 \Kh គេបាន 
+	$\begin{cases}
+	f(0)=B&\\[5pt]
+	f\;'(0)=A-B-2
+	\end{cases}$ \Kh តែ 
+	$\begin{cases}
+	f(0)=1\\[5pt]
+	f\;'(0)=-2
+	\end{cases}$\\[10pt]
+	\Kh សមមូល
+	$\begin{cases}
+	B=1&\\[5pt]
+	A-B-2=-2
+	\end{cases}$ \Kh គេបាន
+	$\begin{cases}
+	B=1\\[5pt]
+	A=1
+	\end{cases}$\\[10pt]
+\Kh ដូចនេះ ចម្លើយទូទៅនៃសមីការ $(E)$ គឺ $f=(x+1)e^{-x}+x^2-2x$
+	\end{center}
+\end{frame}
+\begin{frame}
+\frametitle{\Kml វិញ្ញាសាទី១  ត្រៀបប្រលងឆមាសទី ២}
+\begin{block}{\centering \Kml លំហាត់ទី ៣}
+\Kh នៅក្នុងប្រអប់មួយមានប៊ិចខៀវ $8$ និង ប៊ិចក្រហម $4$ ដែលដូចគ្នាទាំងទំហំ និងគំរូ។ គេដកប៊ិច $5$ ដើមព្រមគ្នាដោយចៃដន្យ
+	\begin{enumerate}
+	\item[\Kh ក.] រកប្រូបាបដែលគេបានប៊ិចទាំង $5$ ជាប៊ិចខៀវ
+	\item[\Kh ខ.] រកប្រូបាបដែលគេចាប់បានប៊ិចក្រហម $3$
+	\item[\Kh គ.] រកប្រូបាបដែលគេចាប់បានប៊ិចក្រហមមួយយ៉ាងតិច
+	\item[\Kh ឃ.] រកប្រូបាបដែលគេចាប់បានប៊ិចក្រហម $2$ ឫ $3$
+	\end{enumerate}
+\end{block}
+\pause
+	\begin{center}
+	\Kml ដំណោះស្រាយ
+	\end{center}
+\end{frame}
+\begin{frame}
+	\begin{enumerate}
+	\item[\Kh ក.] \Kh រកប្រូបាបដែលគេបានប៊ិចទាំង $5$ ជាប៊ិចខៀវ\\
+	\pause
+	\Kh តាង $A$ ជាព្រឹត្តិការណ៍ដែលគេបានប៊ិចទំាង $5$ ជាប៊ិចខៀវ
+	\pause
+	\begin{flalign*}\qquad 
+	\text{\Kh គេបាន}\quad n(A)&=C(8,5)=\frac{8!}{3!5!}=56&\\
+	\text{\Kh ហើយ}\quad n(S)&=C(12,5)=\frac{12!}{5!7!}=792&\\
+	\text{\Kh នោះ}\;\;P(A)&=\frac{n(A)}{n(S)}=\frac{56}{792}\\
+	&=\frac{7}{99}
+	\end{flalign*}
+	\Kh ដូចនេះ ប្រូបាបដែលគេបានប៊ិចទាំង $5$ ជាប៊ិចខៀវគឺ $P(A)=\frac{7}{99}$
+	\end{enumerate}
+\end{frame}
+\begin{frame}
+	\begin{enumerate}
+	\item[\Kh ខ.] \Kh រកប្រូបាបដែលគេចាប់បានប៊ិចក្រហម $3$\\
+	\pause
+	\Kh តាង $B$ ជាព្រឹត្តិការណ៍ដែលគេបានប៊ិចក្រហម $3$\\
+	\pause
+	\Kh មានន័យថា គេចាប់បានប៊ិចក្រហម $3$ និង ខៀវ $2$
+	\pause
+	\begin{flalign*}\qquad 
+	\text{\Kh គេបាន}\quad n(B)&=C(4,3)\times C(8,2)=\frac{4!}{1!3!}\times \frac{8!}{6!2!}&\\
+	n(B)&=112&\\
+	\text{\Kh នោះ}\;\;P(B)&=\frac{n(B)}{n(S)}=\frac{112}{792}\\
+	&=\frac{14}{99}
+	\end{flalign*}
+	\Kh ដូចនេះ ប្រូបាបដែលគេចាប់បានប៊ិចក្រហម $3$ គឺ $P(B)=\frac{14}{99}$
+	\end{enumerate}
+\end{frame}
+\begin{frame}
+	\begin{enumerate}
+	\item[\Kh គ.] \Kh រកប្រូបាបដែលគេចាប់បានប៊ិចក្រហមមួយយ៉ាងតិច\\
+	\pause
+	\Kh តាង $C$ ជាព្រឹត្តិការណ៍ចាប់បានប៊ិចក្រហមមួយយ៉ាងតិច\\
+	\pause
+	ដោយព្រឹត្តិការណ៍ $C$ ជាព្រឹត្តិការណ៍ផ្ទុយពីព្រឹតិ្តការណ៍ $A$
+	\pause
+	\begin{flalign*}\qquad
+	\text{\Kh គេបាន}\;\; P(A)+P(C)&=1&\\
+	P(C)&=1-P(A)&\\
+	&=1-\frac{7}{99}&\\
+	&=\frac{92}{99}
+	\end{flalign*}
+	\end{enumerate}
+	\Kh ដូចនេះ ប្រូបាបដែលគេចាប់បានប៊ិចក្រហមមួយយ៉ាងតិចគឺ$P(C)=\frac{92}{99}$
+\end{frame}
+\begin{frame}
+	\begin{enumerate}
+	\item[\Kh ឃ.] \Kh រកប្រូបាបដែលគេចាប់បានប៊ិចក្រហម $2$ ឫ $3$\\
+	\pause
+	\Kh តាង $D$ ជាព្រឹត្តិការណ៍ដែលគេចាប់បានប៊ិចក្រហម $2$ ឫ $3$\\
+	\pause
+	មានន័យថា គេចាប់បានប៊ិចក្រហម $2$ និង ខៀវ $3$ \\
+	ឬ ក្រហម $3$ និង ខៀវ $2$
+	\pause
+	\begin{flalign*}\qquad 
+	\text{\Kh គេបាន}\quad n(B)&=C(4,2)\times C(8,3)+C(4,3)\times C(8,2)&\\
+	&=\frac{4!}{2!2!}\times \frac{8!}{5!3!}+\frac{4!}{1!3!}\times \frac{8!}{6!2!}=448&\\
+	\text{\Kh នោះ}\;\;P(B)&=\frac{n(D)}{n(S)}=\frac{448}{792}\\
+	&=\frac{56}{99}
+	\end{flalign*}
+	ដូចនេះ ប្រូបាបដែលគេចាប់បានប៊ិចក្រហម $2$ ឫ $3$គឺ $P(D)=\frac{56}{99}$
+	\end{enumerate}
+\end{frame}
+\end{document}

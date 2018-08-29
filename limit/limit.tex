@@ -1,0 +1,802 @@
+\documentclass[a5paper,leqno,fleqn]{book}
+\usepackage{afive}
+\usepackage[8pt]{extsizes}
+\usepackage{fullpage}
+\usepackage[margin=2cm]{geometry}
+\usepackage{float}
+\usepackage{mathpazo}
+\usepackage{multicol}
+\setlength{\multicolsep}{.5ex}
+\newtcbtheorem[number within=chapter]{theorem}{ទ្រឹស្ដីបទ}{frame}{}
+\newtcbtheorem[use counter from=theorem]{corollary}{ស្វ័យសត្យ}{frame}{}
+\newtcbtheorem[use counter from=theorem]{property}{លក្ខណៈ}{frame}{}
+\newtcbtheorem[use counter from=theorem]{definition}{និយមន័យ}{frame}{}
+\newtcbtheorem[number within=chapter]{example}{ឧទាហរណ៏}{frame}{}
+\newtcbtheorem[number within=chapter]{exercise}{លំហាត់}{frame}{}
+\newtcbtheorem[number within=chapter]{generality}{ជាទូទៅ}{frame}{}
+\newtcbtheorem[number within=chapter]{recall}{រំលឹក}{frame}{}
+\newcommand{\prove}{\textcolor{blue}{\bfseries សម្រាយ}}
+\newcommand{\answer}{\textcolor{blue}{\bfseries ចម្លើយ}}
+\renewcommand{\thepage}{\color{magenta}\bfseries\arabic{page}}
+\begin{document}
+\chapter{លីមីតនៃអនុគមន៏}
+\section*{រំលឹកតម្លៃដាច់ខាត}
+\begin{itemize}
+	\begin{multicols}{2}
+	\item $ |x|=x\;\textnormal{បើ}\;x\geq0\;,-x\;\textnormal{បើ}\;x<0 $
+	\item[] តាង $ a $ ជាចំនួនពិតវិជ្ជមាន៖
+	\item $ |x|<a $ សមមូល $ -a<x<a $
+	\item បើ $ |x|>a $ នោះ $ x>a $ ឬ $ x<-a $
+	\item គ្មានចំនួនពិត $ x $ ណាដែល $ |x|<-a $
+	\item គ្រប់ចំនួនពិត $ x $ គេបាន $ |x|>-a $
+	\end{multicols}
+\end{itemize}
+ហាមធ្វើអាជីវកម្មក្រោមរូបភាពគ្រប់រូបភាពលើឯកសារនេះ (ឯកសារផ្ទាល់ខ្លួនប៉ុណ្ណោះ)។
+\section{លីមីតនៃអនុគមន៏ត្រង់ចំនួនកំណត់}
+\begin{definition}{}{}
+	\begin{itemize}
+	\item អនុគមន៏ $ f $ មានលីមីត $ L $ កាលណា $ x $ ខិតជិត $ a $ ពីខាងឆ្វេង បើគ្រប់ចំនួន $ \varepsilon>0 $ មានចំនួន $ \delta>0 $ ដែល $ 0<a-x<\delta $ នាំឲ្យ $ |f(x)-L|<\varepsilon $ ។ គេសរសេរ $ \lim\limits_{x\to a^-}f(x)=L $ ។
+	\item អនុគមន៏ $ f $ មានលីមីត $ L $ កាលណា $ x $ ខិតជិត $ a $ ពីខាងស្ដាំ បើគ្រប់ចំនួន $ \varepsilon>0 $ មានចំនួន $ \delta>0 $ ដែល $ 0<x-a<\delta $ នាំឲ្យ $ |f(x)-L|<\varepsilon $ ។ គេសរសេរ $ \lim\limits_{x\to a^+}f(x)=L $ ។
+	\item អនុគមន៏ $ f $ មានលីមីត $ L $ កាលណា $ x $ ខិតជិត $ a $ បើគ្រប់ចំនួន $ \varepsilon>0 $ មានចំនួន $ \delta>0 $ ដែល $ 0<|x-a|<\delta $ នាំឲ្យ $ |f(x)-L|<\varepsilon $ ។ គេសរសេរ $ \lim\limits_{x\to a}f(x)=L $ ។
+	\item អនុគមន៏ $ f $ មានលីមីត $ +\infty $ កាលណា $ x $ ខិតជិត $ a $ បើគ្រប់ចំនួន $ B>0 $ មានចំនួន $ \delta>0 $ ដែល $ 0<|x-a|<\delta $ នាំឲ្យ $ f(x)>B $ ។ គេសរសេរ $ \lim\limits_{x\to a}f(x)=+\infty $ ។
+	\item អនុគមន៏ $ f $ មានលីមីត $ +\infty $ កាលណា $ x $ ខិតជិត $ a $ បើគ្រប់ចំនួន $ B>0 $ មានចំនួន $ \delta>0 $ ដែល $ 0<|x-a|<\delta $ នាំឲ្យ $ f(x)<-B $ ។ គេសរសេរ $ \lim\limits_{x\to a}f(x)=-\infty $ ។
+	\end{itemize}
+\end{definition}
+\begin{exercise}{}{}
+	ចូរឲ្យនិយមន័យ $ \lim\limits_{x\to a^-}f(x)=+\infty ,\lim\limits_{x\to a^-}f(x)=-\infty ,\lim\limits_{x\to a^+}f(x)=+\infty $ និង $ \lim\limits_{x\to a^+}f(x)=-\infty $~។
+\end{exercise}
+\begin{generality}{}{}
+	\begin{itemize}
+		\begin{multicols}{2}
+		\item $ \lim\limits_{x\to0^+}\dfrac1x=+\infty $
+		\item $ \lim\limits_{x\to0^-}\dfrac1x=-\infty $
+		\end{multicols}
+	\end{itemize}
+\end{generality}
+\section{លីមីតនៃអនុគមន៏ត្រង់អនន្ត}
+\begin{definition}{}{}
+	\begin{itemize}
+	\item អនុគមន៏ $ f $ មានលីមីត $ L $ កាលណា $ x $ ខិតជិត $ +\infty $ បើគ្រប់ចំនួន $ \varepsilon>0 $ មានចំនួន $ A>0 $ ដែល $ x>A $ នាំឲ្យ $ |f(x)-L|<\varepsilon $ ។ គេសរសេរ $ \lim\limits_{x\to+\infty}f(x)=L $ ។
+	\item អនុគមន៏ $ f $ មានលីមីត $ L $ កាលណា $ x $ ខិតជិត $ -\infty $ បើគ្រប់ចំនួន $ \varepsilon>0 $ មានចំនួន $ A>0 $ ដែល $ x<-A $ នាំឲ្យ $ |f(x)-L|<\varepsilon $ ។ គេសរសេរ $ \lim\limits_{x\to-\infty}f(x)=L $ ។
+	\item អនុគមន៏ $ f $ មានលីមីត $ +\infty $ កាលណា $ x $ ខិតជិត $ +\infty $ បើគ្រប់ចំនួន $ B>0 $ មានចំនួន $ A>0 $ ដែល $ x>A $ នាំឲ្យ $ f(x)>B $ ។ គេសរសេរ $ \lim\limits_{x\to+\infty}f(x)=+\infty $ ។
+	\item អនុគមន៏ $ f $ មានលីមីត $ -\infty $ កាលណា $ x $ ខិតជិត $ +\infty $ បើគ្រប់ចំនួន $ B>0 $ មានចំនួន $ A>0 $ ដែល $ x>A $ នាំឲ្យ $ f(x)<-B $ ។ គេសរសេរ $ \lim\limits_{x\to+\infty}f(x)=-\infty $ ។
+	\item អនុគមន៏ $ f $ មានលីមីត $ +\infty $ កាលណា $ x $ ខិតជិត $ -\infty $ បើគ្រប់ចំនួន $ B>0 $ មានចំនួន $ A>0 $ ដែល $ x<-A $ នាំឲ្យ $ f(x)>B $ ។ គេសរសេរ $ \lim\limits_{x\to-\infty}f(x)=+\infty $ ។
+	\item អនុគមន៏ $ f $ មានលីមីត $ -\infty $ កាលណា $ x $ ខិតជិត $ -\infty $ បើគ្រប់ចំនួន $ B>0 $ មានចំនួន $ A>0 $ ដែល $ x<-A $ នាំឲ្យ $ f(x)<-B $ ។ គេសរសេរ $ \lim\limits_{x\to-\infty}f(x)=+\infty $~។
+	\end{itemize}
+\end{definition}
+\begin{generality}{}{}
+	\begin{itemize}
+		\begin{multicols}{2}
+			\item $ \lim\limits_{x\to+\infty}\dfrac1x=0 $
+			\item $ \lim\limits_{x\to-\infty}\dfrac1x=0 $
+		\end{multicols}
+	\end{itemize}
+\end{generality}
+\section{ប្រមាណវិធីលើលីមីត}
+\begin{generality}{}{}
+	បើ $ \lim\limits_{x\to a}f(x)=L $ និង $ \lim\limits_{x\to a}g(x)=M $ ដែល $ a,\; L,\; M $ ជាចំនួនពិត ($ a $  អាចជាអនន្ត)
+	\begin{itemize}
+		\begin{multicols}{2}
+		\item $ \lim\limits_{x\to a}c=c $ ដែល $ c $ ជាចំនួនថេរ
+		\item $ \lim\limits_{x\to a}cf(x)=cL $ ដែល $ c $ ជាចំនួនថេរ
+		\item $ \lim\limits_{x\to a}[f(x)+g(x)]=L+M $
+		\item $ \lim\limits_{x\to a}[f(x)-g(x)]=L-M $
+		\item $ \lim\limits_{x\to a}[f(x)g(x)]=LM $
+		\item $ \lim\limits_{x\to a}\dfrac{f(x)}{g(x)}=\dfrac LM $ បើ $ M\neq0 $
+		\end{multicols}
+	\end{itemize}
+\end{generality}
+\section{លីមីតនៃអនុគមន៏បណ្ដាក់}
+	\begin{generality}{}{}
+		បើ $ u $ ជាអនុគមន៏មានលីមីត $ M $ កាលណា $ x $ ខិតជិត $ a $ និង $ f $ ជាអនុគមន៏មានលីមីត $ L $ កាលណា $ x $ ខិតជិត $ M $ នោះអនុគមន៏បណ្ដាក់ $ f\circ u $ មានលីមីត $ L $ កាលណា $ x $ ខិតជិត $ a $ ។ មានន័យថា $ \textnormal{បើ}\;\lim\limits_{x\to a}u(x)=M\;\textnormal{និង}\;\lim\limits_{x\to M}f(x)=L\;\textnormal{នោះ}\;\lim\limits_{x\to a}f\circ u(x)=L $
+	\end{generality}
+\section{លីមីតតាមការប្រៀបធៀប}
+\begin{generality}{}{}
+	\begin{itemize}
+	\item[\ensuremath{\blacksquare}] ករណីលីមីតត្រង់ចំនួនកំណត់ $ a $
+	\item បើមានអនុគមន៏ $ f,\; g,\; h $ និងចំនួនពិត $ \delta>0 $ ដែល $ \lim\limits_{x\to a}g(x)=\lim\limits_{x\to a}h(x)=L $ និង $ g(x)\leq f(x)\leq h(x) $ ចំពោះគ្រប់ $ x $ ដែល $ 0<|x-a|<\delta $ នោះ $ \lim\limits_{x\to a}f(x)=L $ ។
+	\item[\ensuremath{\blacksquare}] ករណីលីមីតត្រង់ $ +\infty $
+	\item បើមានអនុគមន៏ $ f,\; g $ និងចំនួនពិត $ A $ ដែល $ \lim\limits_{x\to+\infty}g(x)=+\infty $ និង $ f(x)\geq g(x)$ ចំពោះគ្រប់ $ x>A $ នោះ $ \lim\limits_{x\to+\infty}f(x)=+\infty $ ។
+	\item បើមានអនុគមន៏ $ f,\; g $ និងចំនួនពិត $ A $ ដែល $ \lim\limits_{x\to+\infty}g(x)=-\infty $ និង $ f(x)\leq g(x)$ ចំពោះគ្រប់ $ x>A $ នោះ $ \lim\limits_{x\to+\infty}f(x)=-\infty $ ។
+	\item បើមានអនុគមន៏ $ f,\; g,\; h $ និងចំនួនពិត $ A $ ដែល $ \lim\limits_{x\to a}g(x)=\lim\limits_{x\to+\infty}h(x)=L $ និង $ g(x)\leq f(x)\leq h(x) $ ចំពោះគ្រប់ $ x>A $ នោះ $ \lim\limits_{x\to+\infty}f(x)=L $ ។
+	\item[\ensuremath{\blacksquare}] ករណីលីមីតត្រង់ $ -\infty $ យើងជំនួស $ x>A $ ដោយ $ x<A $~។
+	\end{itemize}
+\end{generality}
+\section{លីមីតរាងមិនកំណត់}
+\begin{generality}{}{}
+	តាង $ \lim\limits_{x\to a}f(x)=L $ និង $ \lim\limits_{x\to a}g(x)=M $ ដែល $ a $ ជាចំនួនពិត ឬអនន្ត។ លីមីតរាងមិនកំណត់មានដូចខាងក្រោម៖
+	\begin{itemize}
+		\item បើ $ L=M=0 $ នោះ $ \lim\limits_{x\to a}\dfrac{f(x)}{g(x)} $ មានរាងមិនកំណត់ $ \dfrac00 $
+		\item បើ $ L=\pm\infty $ និង $ M=\pm\infty $ នោះ $ \lim\limits_{x\to a}\dfrac{f(x)}{g(x)} $ មានរាងមិនកំណត់ $ \dfrac{\infty}{\infty} $
+		\item បើ $ L=+\infty $ និង $ M=-\infty $ នោះ $ \lim\limits_{x\to a}[f(x)+g(x)] $ មានរាងមិនកំណត់ $ +\infty-\infty $
+		\item បើ $ L=0 $ និង $ M=\pm\infty $ នោះ $ \lim\limits_{x\to a}[f(x)g(x)] $ មានរាងមិនកំណត់ $ 0\times\infty $
+	\end{itemize}
+\end{generality}
+\section{លីមីតនៃអនុគមន៏មិនពីជគណិត}
+\begin{generality}{}{}
+	បើ $ a $ ជាចំនួនពិតនៅស្ថិតក្នុងដែនកំណត់នៃអនុគមន៏ត្រីកោណមាត្រដែលឲ្យ គេបាន
+	\begin{itemize}
+		\begin{multicols}{4}
+		\item $ \lim\limits_{x\to a}\sin x=\sin a $
+		\item $ \lim\limits_{x\to a}\cos x=\cos a $
+		\item $ \lim\limits_{x\to a}\tan x=\tan a $
+		\item $ \lim\limits_{x\to a}\cot x=\cot a $
+		\end{multicols}
+	\end{itemize}
+	គេមានអនុគមន៏\emph{អ៊ិចស្ប៉ូណង់ស្យែល} $ e^x $ ដែល $ e=\lim\limits_{n\to+\infty}\left(1+\dfrac1n\right)^n= 2.71828\ldots $
+	\begin{itemize}
+		\begin{multicols}{4}
+			\item $ \lim\limits_{x\to+\infty}e^x=+\infty $
+			\item $ \lim\limits_{x\to-\infty}e^x=0 $
+			\item $ \lim\limits_{x\to+\infty}\dfrac{e^x}x=+\infty $
+			\item $ \lim\limits_{x\to+\infty}\dfrac x{e^x}=0 $
+			\item $ \lim\limits_{x\to+\infty}\dfrac{e^x}{x^n}=+\infty $
+			\item $ \lim\limits_{x\to+\infty}\dfrac{x^n}{e^x}=0 $
+			\item[] ដែល $ n>0 $ ។
+		\end{multicols}
+	\end{itemize}
+	គេមានអនុគមន៏\emph{ឡូការីតនេពែ} (ឡូការីតគោល $ e $) $ \ln x $ ដែល $ x>0 $ និង $ n>0 $
+	\begin{itemize}
+		\begin{multicols}{3}
+		\item $ \lim\limits_{x\to+\infty}\ln x=+\infty $
+		\item $ \lim\limits_{x\to0^+}\ln x=-\infty $
+		\item $ \lim\limits_{x\to+\infty}\dfrac{\ln x}x=0 $
+		\item $ \lim\limits_{x\to0^+}x\ln x=0 $
+		\item $ \lim\limits_{x\to+\infty}\dfrac{\ln x}{x^n}=0 $
+		\item $ \lim\limits_{x\to0^+}x^n\ln x=0 $
+		\end{multicols}
+	\end{itemize}
+\end{generality}
+\begin{theorem}{}{}
+	បើ $ x $ ជារង្វាស់មុំគិតជា\emph{រ៉ាដ្យង់}នោះគេបាន
+	\begin{itemize}
+		\begin{multicols}{2}
+			\item $ \lim\limits_{x\to0}\dfrac{\sin x}x=1 $
+			\item $ \lim\limits_{x\to0}\dfrac{\cos x-1}x=0 $
+		\end{multicols}
+	\end{itemize}
+\end{theorem}
+\begin{theorem}{}{}
+	\begin{itemize}
+		\begin{multicols}{2}
+			\item $ \lim\limits_{n\to+\infty}\left(1+\dfrac1n\right)^n=e $
+			\item $ \lim\limits_{x\to0}\dfrac{e^x-1}{x}=1 $
+		\end{multicols}
+	\end{itemize}
+\end{theorem}
+\begin{recall}{}{}
+	\begin{itemize}
+		\begin{multicols}{2}
+		\item $ \cos^2\alpha+\cos^2\alpha=1 $
+		\item $ \cos(\alpha+\beta)=\cos\alpha\cos\beta-\sin\alpha\sin\beta $
+		\item $ \cos(\alpha-\beta)=\cos\alpha\cos\beta+\sin\alpha\sin\beta $
+		\item $ \sin(\alpha+\beta)=\sin\alpha\cos\beta+\cos\alpha\sin\beta $
+		\item $ \sin(\alpha-\beta)=\sin\alpha\cos\beta-\cos\alpha\sin\beta $
+		\item $ \cos2\alpha=\cos^2\alpha-\sin^2\alpha $
+		\item $ \cos2\alpha=2\cos^2\alpha-1 $
+		\item $ \cos2\alpha=1-2\sin^2\alpha $
+		\item $ \sin2\alpha=2\sin\alpha\cos\alpha $
+		\item $ 1-\cos\alpha=2\sin^2\dfrac{\alpha}{2} $
+		\item $ 1+\cos\alpha=2\cos^2\dfrac{\alpha}{2} $
+		\item $ \cos\alpha+\cos\beta=2\cos\dfrac{\alpha+\beta}{2}\cos\dfrac{\alpha-\beta}{2} $
+		\item $ \cos\alpha-\cos\beta=-2\sin\dfrac{\alpha+\beta}{2}\sin\dfrac{\alpha-\beta}{2} $
+		\item $ \sin\alpha+\sin\beta=2\sin\dfrac{\alpha+\beta}{2}\sin\dfrac{\alpha-\beta}{2} $
+		\item $ \sin\alpha-\sin\beta=2\cos\dfrac{\alpha+\beta}{2}\sin\dfrac{\alpha-\beta}{2} $
+		\end{multicols}
+	\end{itemize}
+\end{recall}
+\section*{លំហាត់}
+\begin{example}[segmentation style={solid,draw=blue}]{}{}
+	គេមានអនុគមន៏ $ f(x)=2x+1 $ និង $ \lim\limits_{x\to1}f(x)=3 $~។ បើគេឲ្យ $ \varepsilon=0.01 $ កំណត់តម្លៃមួយនៃ $ \delta $ ដែល $ 0<|x-1|<\delta $ នាំឲ្យ $ |f(x)-3|<\varepsilon $~។
+	\tcbsubtitle{ចម្លើយ}
+	ដោយវិសមភាព
+	\begin{equation*}
+		\begin{array}{rrcll}
+			&|f(x)-4|&<&\varepsilon\\
+			\textnormal{សមមូល}&|(2x+1)-3|&<&0.01\\
+			\textnormal{សមមូល}&|2x-2|&<&0.01\\
+			\textnormal{សមមូល}&2|x-1|&<&0.01\\
+			\textnormal{សមមូល}&|x-1|&<&0.005
+		\end{array}
+	\end{equation*}
+	ដូច្នេះ យើងអាចយក $ \delta=0.005 $~។ (យើងក៏អាចយក $ \delta=0.001 $ ឬ $ 0<\delta<0.005 $~។)
+\end{example}
+\begin{enumerate}
+	\item គេឲ្យតម្លៃ $ \varepsilon>0 $ ។ កំណត់តម្លៃ $ \delta>0 $ ដែល $ 0<|x-a|<\delta $ នាំឲ្យ $ |f(x)-L|<\varepsilon $
+	\begin{enumerate}
+		\item បើគេឲ្យ $ \varepsilon=0.001,\;a=1,\;f(x)=2x-1 $ និង $ L=1 $~។
+		\item បើគេឲ្យ $ \varepsilon=0.0001,\;a=-2,\;f(x)=\dfrac1{x+1} $ និង $ L=-1 $~។
+	\end{enumerate}
+	\begin{example}{}{}
+		បង្ហាញថាលីមីត $ \lim\limits_{x\to2}(1-2x)=-3 $~។
+		\tcbsubtitle{ចម្លើយ}
+		យើងនឹងបង្ហាញថា ចំពោះចំនួន $ \varepsilon>0 $ មាន $ \delta>0 $ ដែល $ 0<|x-2|<\delta $ នាំឲ្យ $ |(1-2x)-(-3)|<\varepsilon $~។ ដោយវិសមភាព
+		\begin{equation*}
+		\begin{array}{rrcl}
+		&|(1-2x)-(-3)|&<&\varepsilon\\
+		\textnormal{សមមូល}&|4-2x|&<&\varepsilon\\
+		\textnormal{សមមូល}&|2x-4|&<&\varepsilon\\
+		\textnormal{សមមូល}&-\varepsilon<2x-4&<&\varepsilon\\
+		\textnormal{សមមូល}&-\varepsilon/2<x-2&<&\varepsilon/2\\
+		\textnormal{សមមូល}&|x-2|&<&\varepsilon/2
+		\end{array}
+		\end{equation*}
+		ដើម្បីបាន $ |(1-2x)-(-3)|<\varepsilon $ យើងអាចយក $ \delta=\varepsilon/2 $ (ឬ $ 0<\delta<\varepsilon/2 $)។ យើងឃើញថា ចំពោះចំនួន $ \varepsilon>0 $ មាន $ \delta=\varepsilon/2>0 $ ដែល $ 0<|x-2|<\delta $ នាំឲ្យ $ |(1-2x)-(-3)|<\varepsilon $~។ ដូច្នេះ $ \lim\limits_{x\to2}(1-2x)=-3 $~។
+	\end{example}
+	\item ចូរបង្ហាញលីមីតខាងក្រោមតាមនិយមន័យ
+	\begin{enumerate}
+		\begin{multicols}{3}
+		\item $ \lim\limits_{x\to1}(3-2x)=1 $
+		\item $ \lim\limits_{x\to-3^+}\dfrac1{x+3}=+\infty $
+		\item $ \lim\limits_{x\to-\infty}\sqrt{1-x}=+\infty $
+		\end{multicols}
+	\end{enumerate}
+	\begin{example}{}{}
+		គណនាលីមីត $ \lim\limits_{x\to-3}\dfrac{2(x^2+1)}{1-\sqrt{1-x}} $~។
+		\tcbsubtitle{ចម្លើយ}
+		\begin{equation*}
+			\begin{array}{ccll}
+				\lim\limits_{x\to-3}\dfrac{2(x^2+1)}{1-\sqrt{1-x}}
+				&=& \dfrac{\lim\limits_{x\to-3}2(x^2+1)}{\lim\limits_{x\to-3}(1-\sqrt{1-x})}&\textnormal{លីមីតផលចែក}\\
+				&=& \dfrac{2\lim\limits_{x\to-3}(x^2+1)}{\lim\limits_{x\to-3}1-\lim\limits_{x\to-3}\sqrt{1-x}}&\textnormal{លីមីតគុណចំនួនថេរ និងផលដក}\\
+				&=&\dfrac{2\times10}{1-2}=-20&\textnormal{ជំនួសតម្លៃ}\\
+			\end{array}
+		\end{equation*}
+		ដូច្នេះ $ \lim\limits_{x\to-3}\dfrac{2(x^2+1)}{1-\sqrt{1-x}}=-20 $~។
+	\end{example}
+	\item គណនាលីមីតខាងក្រោម៖
+	\begin{enumerate}
+		\begin{multicols}{3}
+		\item $ \lim\limits_{x\to2}(x+1)^2+2 $
+		\item $ \lim\limits_{x\to-1^+}\dfrac{x+2}{x+1} $
+		\item $ \lim\limits_{x\to+\infty}(1+x+x^2) $
+		\item $ \lim\limits_{x\to-\infty}\dfrac{-2}{x^2+1} $
+		\item $ \lim\limits_{x\to-\infty}x-\sqrt{2x^2+1} $
+		\item $ \lim\limits_{x\to-2^+}\dfrac{x^2+4}{x^2-4} $
+		\end{multicols}
+	\end{enumerate}
+	\begin{example}{}{}
+		គណនាលីមីត $ \lim\limits_{x\to1}\dfrac{\sqrt x-1}{x-1} $ ដែលមានរាងមិនកំណត់ $ \dfrac00 $~។
+		\tcbsubtitle{ចម្លើយ}
+		\begin{equation*}
+			\begin{array}{ccll}
+				\lim\limits_{x\to1}\dfrac{\sqrt x-1}{x-1}
+				&=& \lim\limits_{x\to1}\left(\dfrac{\sqrt x-1}{x-1}\right)\left(\dfrac{\sqrt x+1}{\sqrt x+1}\right)&\textnormal{គុណកន្សោមឆ្លាស់}\\
+				&=& \lim\limits_{x\to1}\dfrac{x-1}{(x-1)(\sqrt x+1)}&\textnormal{សម្រួលកន្សោម}\;(x-1)\\
+				&=& \lim\limits_{x\to1}\dfrac{1}{\sqrt x+1}&\textnormal{ជំនួសតម្លៃ}\\
+				&=& 1/2
+			\end{array}
+		\end{equation*}
+		ដូច្នេះ $ \lim\limits_{x\to1}\dfrac{\sqrt x-1}{x-1}=\dfrac12 $~។
+	\end{example}
+	\begin{example}{}{}
+		គណនាលីមីត $ \lim\limits_{x\to2}\dfrac{x^2+3x+2}{x^3+x^2+x-14} $
+		\tcbsubtitle{ចម្លើយ}
+		\begin{eqnarray*}
+				\lim\limits_{x\to2}\dfrac{x^2-3x+2}{x^3+x^2+x-14}
+				&=&\lim\limits_{x\to2}\dfrac{x^2-2x-x+2}{x^3-2x^2+3x^2-6x+7x-14}\\
+				&=&\lim\limits_{x\to2}\dfrac{x(x-2)-(x-2)}{x^2(x-2)+3x(x-2)+7(x-2)}\\
+				&=&\lim\limits_{x\to2}\dfrac{(x-2)(x+1)}{(x-2)(x^2+3x+7)}\\
+				&=&\lim\limits_{x\to2}\dfrac{x+1}{x^2+3x+7}\\
+				&=&\dfrac{(2)+1}{(2)^2+3(2)+7}=\dfrac{3}{17}
+		\end{eqnarray*}
+	\end{example}
+	
+	\item[រំលឹក៖] $ a^n-b^n=(a-b)(a^{n-1}+a^{n-2}b+a^{n-3}b^2+\cdots+b^{n-1}) $
+	\item គេមានអនុគមន៏ $ f(x)=3x^3-4x-16 $ និង $ g(x)=3x^3-4x $~។
+	\begin{enumerate}
+		\begin{multicols}{2}
+		\item គណនា $ f(2) $ និង $ g(2) $~។
+		\item ផ្ទៀងផ្ទាត់ថា $ -16=-3\cdot 2^3+4\cdot 2 $~។
+		\end{multicols}
+	\end{enumerate}
+	\item គេមានពីរអនុគមន៏ពហុធា
+	\begin{multicols}{2}
+	$ f(x)=c_0+c_1x+c_2x^2+\cdots+c_nx^n $ និង
+	$ g(x)=c_1x+c_2x^2+\cdots+c_nx^n $
+	\end{multicols}
+	ដែល $ c_0,c_1,c_2,\ldots,c_n\in\mathbb{R} $~។ បើ $ f(a)=0 $ បង្ហាញថា $ c_0=-g(a) $ រូចទាញបញ្ជាក់ថា
+	\[ f(x)=c_1(x-a)+c_2(x^2-a^2)+c_3(x^3-a^3)+\cdots+c_n(x^n-a^n) \]
+	\item គណនាលីមីតខាងក្រោម៖
+	\begin{enumerate}
+		\begin{multicols}{3}
+		\item $ \lim\limits_{x\to 0}\dfrac{x(x+1)}{x(x-1)} $
+		\item $ \lim\limits_{x\to 0}\dfrac{x}{x^2+x} $
+		\item $ \lim\limits_{x\to 0}\dfrac{2x^2+x^3}{2x+3x^2} $
+		\item $ \lim\limits_{x\to0}\dfrac{2x^2+3x}{2x-x^2} $
+		\item $ \lim\limits_{x\to-3}\dfrac{x^2+6x+9}{x^2+5x+6} $
+		\item $ \lim\limits_{x\to-3}\dfrac{x^2+4x+3}{x^2-2x-3} $
+		\item $ \lim\limits_{x\to-3}\dfrac{x^2+x-6}{x^2-9} $
+		\item $ \lim\limits_{x\to-2}\dfrac{x^2+4x+4}{x^2+3x+2} $
+		\item $ \lim\limits_{x\to-2}\dfrac{x^2+x-2}{x^2-x-6} $
+		\item $ \lim\limits_{x\to-1}\dfrac{x^2+2x+1}{x^2-1} $
+		\item $ \lim\limits_{x\to-1}\dfrac{x^2-x-2}{x^2-2x-3} $
+		\item $ \lim\limits_{x\to1}\dfrac{x^2-3x+2}{x^2-4x+3} $
+		\item $ \lim\limits_{x\to2}\dfrac{x^2-4x+4}{x^2-5x+6} $
+		\item $ \lim\limits_{x\to\frac12}\dfrac{4x^2+4x-3}{2x^2+x-1} $
+		\item $ \lim\limits_{x\to\frac12}\dfrac{2x^2+x-1}{2x^2+3x-2} $
+		\item $ \lim\limits_{x\to-\frac{2}{3}}\dfrac{3x^2-4x-4}{-3x^2+7x+6} $
+		\item $ \lim\limits_{x\to 1}\dfrac{x^3-1}{x^2-3x+2} $
+		\item $ \lim\limits_{x\to -1}\dfrac{x^2+5x+4}{x^3+1} $
+		\item $ \lim\limits_{x\to 2}\dfrac{x^3-4x}{x^3-x^2+2x-8} $
+		\item $ \lim\limits_{x\to -2}\dfrac{x^3+3x^2-4}{x^3-2x+4} $
+		\item $ \lim\limits_{x\to -1}\dfrac{x^3+3x^2+3x+1}{x^2-1} $
+		\item $ \lim\limits_{x\to 1}\dfrac{x^2-2x+1}{x^3-2x+1} $
+		\item $ \lim\limits_{x\to 1}\dfrac{2x^5-3x^3+1}{x^3-4x+3} $
+		\item $ \lim\limits_{x\to 1}\dfrac{x^6-3x^3+2}{x^3-3x+2} $
+		\item $ \lim\limits_{x\to 1}\dfrac{x^9-7x^6+6}{x^7-7x^5+6} $
+		\item $ \lim\limits_{x\to 1}\dfrac{3x^4-4x^3+1}{2x^3-3x^2+1} $
+		\item $ \lim\limits_{x\to 1}\dfrac{3x^5-5x^3+2}{2x^4-4x^2+2} $
+		\item $ \lim\limits_{x\to 1}\dfrac{3x^6-6x^3+3}{2x^5-5x^2+3} $
+		\item $ \lim\limits_{x\to -1}\dfrac{x^5+2x-1}{x^3+1} $
+		\item $ \lim\limits_{x\to -1}\dfrac{x^7+x-2}{x^2-x-2} $
+		\item $ \lim\limits_{x\to -1}\dfrac{x^5+2x^2-1}{x^3+2x^2-1} $
+		\end{multicols}
+	\end{enumerate}
+	
+	\item គណនាលីមីតខាងក្រោម បើគេដឹងថា $ n,m $ ជាចំនួនគត់វិជ្ជមាន៖
+	\begin{enumerate}
+		\begin{multicols}{3}
+			\item $ \lim\limits_{x\to -1}\dfrac{x^{2n+1}+1}{x+1} $
+			\item $ \lim\limits_{x\to1}\dfrac{x^n-1}{x-1} $
+			\item $ \lim\limits_{x\to 1}\dfrac{x^n+(n-1)x-n}{x^2+x-2} $
+			\item $ \lim\limits_{x\to 1}\dfrac{x^n-nx+(n-1)}{x^3-x^2-x+1} $
+			\item $ \lim\limits_{x\to 1}\dfrac{2x^n-nx^2+n-2}{x^3-3x+2} $
+			\item $ \lim\limits_{x\to0}\dfrac{1-(x+1)^n}{x^2-x} $
+			\item $ \lim\limits_{x\to1}\dfrac{x^n-2x^m+1}{2x^2+3x-5} $
+			\item $ \lim\limits_{x\to-1}\dfrac{x^{2n}+2x+1}{x^{2m}+5x+4} $
+			\item $ \lim\limits_{x\to 0}\dfrac{(1+x)^m-(1-x)^n}{x} $
+		\end{multicols}
+	\end{enumerate}
+	\item គេមានអនុគមន៏ $ f(x)=x^n+ax+b $ ដែល $ n\geq 2 $ ជាចំនួនគត់ និង $ a,b $ ជាចំនួនពិត។
+	\begin{enumerate}
+		\item កំណត់ $ a,b $ ជាអនុគមន៏នៃ $ n $ បើដឹងថា $ f(1)=0 $ និង $ f'(1)=0 $~។
+		\item គណនាលីមីត $ \lim\limits_{x\to 1}\dfrac{f(x)}{(x-1)^2} $~។
+	\end{enumerate}
+	\item គេមានអនុគមន៏ $ f(x)=x^n+ax+b $ ដែល $ n\geq 3 $ ជាចំនួនគត់សេស និង $ a,b $ ជាចំនួនពិត។
+	\begin{enumerate}
+		\item កំណត់ $ a,b $ ជាអនុគមន៏នៃ $ n $ បើដឹងថា $ f(-1)=0 $ និង $ f'(-1)=0 $~។
+		\item គណនាលីមីត $ \lim\limits_{x\to -1}\dfrac{f(x)}{(x+1)^2} $~។
+	\end{enumerate}
+	\item គេមានអនុគមន៏ $ f(x)=x^n+ax^2+bx+c $ ដែល $ n\geq 3 $ ជាចំនួនគត់ និង $ a,b,c $ ជាចំនួនពិត។
+	\begin{enumerate}
+		\item កំណត់ $ a,b,c $ ជាអនុគមន៏នៃ $ n $ បើដឹងថា $ f(1)=0,f'(1)=0 $ និង $ f''(1)=0 $~។
+		\item គណនាលីមីត $ \lim\limits_{x\to 1}\dfrac{f(x)}{(x-1)^3} $~។
+	\end{enumerate} (ឯកសារផ្ទាល់ខ្លួនប៉ុណ្ណោះ)។
+	\item គេមានអនុគមន៏ $ f(x)=x^n+ax^2+bx+c $ ដែល $ n\geq 3 $ ជាចំនួនគត់សេស និង $ a,b,c $ ជាចំនួនពិត។
+	\begin{enumerate}
+		\item កំណត់ $ a,b,c $ ជាអនុគមន៏នៃ $ n $ បើដឹងថា $ f(-1)=0,f'(-1)=0 $ និង $ f''(-1)=0 $~។
+		\item គណនាលីមីត $ \lim\limits_{x\to -1}\dfrac{f(x)}{(x+1)^3} $~។
+	\end{enumerate}
+	\item គេមាន $ a,b,c\in\mathbb{R}\setminus\{0\} $ ជាបីតួតគ្នានៃស្វ៊ីតនព្វន្តដែលមានផលសងរួមខុសពីសូន្យ។ គណនាលីមីតខាងក្រោមជាអនុគមន៏នៃ $ a,b,c $៖
+	\begin{enumerate}
+		\begin{multicols}{3}
+		\item $ \lim\limits_{x\to 1}\dfrac{ax^2-2bx+c}{cx^2-2bx+a} $
+		\item $ \lim\limits_{x\to -1}\dfrac{ax^2+2bx+c}{a+2bx+cx^2} $
+		\item $ \lim\limits_{x\to -1}\dfrac{ax^3+bx^2+cx+b}{bx^3+cx^2+bx+a} $
+		\end{multicols}
+	\end{enumerate}
+	\item គេឲ្យ $ a,b,c\in\mathbb{R}\setminus\{0\} $ និង $ m,n,p,q\in\mathbb{N}\setminus\{0\} $ ដែល $ m\neq n,\;p\neq q $~។
+	\begin{enumerate}
+		\item $ \lim\limits_{x\to 0}\dfrac{mx^n-nx^m-m+n}{px^q-qx^p-p+q} $
+		\item បើ $ a+b+c=0 $ ចូរគណនា $ \lim\limits_{x\to 1}\dfrac{ax^m+bx^n+c}{ax^p+bx^q+c} $ តាមករណីដូចខាងក្រោម៖
+		\begin{enumerate}
+			\begin{multicols}{2}
+			\item $ ap+bq\neq 0 $
+			\item $ ap+bq=0 $ និង $ am+bn=0 $
+			\end{multicols}
+		\end{enumerate}
+		\item បើ $ a-b+c=0 $ ចូរគណនា $ \lim\limits_{x\to -1}\dfrac{ax^{2m}+bx^{2n+1}+c}{ax^{2p}+bx^{2q+1}+c} $ តាមករណីដូចខាងក្រោម៖
+		\begin{enumerate}
+			\begin{multicols}{2}
+				\item $ 2(ap-bq)\neq b $
+				\item $ 2(ap-bq)=b $ និង $ 2(am-bn)=b $
+			\end{multicols}
+		\end{enumerate}
+	\end{enumerate}
+	\item គណនាលីមីតខាងក្រោម~៖
+	\begin{enumerate}
+		\begin{multicols}{3}
+			\item $ \lim\limits_{x\to 1}\dfrac{\sqrt{x}-1}{x-1} $
+			\item $ \lim\limits_{x\to1}\dfrac{x-1}{1-\sqrt x} $
+			\item $ \lim\limits_{x\to 1}\dfrac{1-\sqrt{x}}{x^2-1} $
+			\item $ \lim\limits_{x\to 2}\dfrac{\sqrt{x}-\sqrt{2}}{x-2} $
+			\item $ \lim\limits_{x\to 2}\dfrac{4-x^2}{\sqrt{x}-\sqrt{2}} $
+			\item $ \lim\limits_{x\to4}\dfrac{\sqrt x-2}{x-4} $
+			\item $ \lim\limits_{x\to-1}\dfrac{\sqrt{x+2}-1}{1-x^2} $
+			\item $ \lim\limits_{x\to 2}\dfrac{1-\sqrt{x-1}}{x-2} $
+			\item $ \lim\limits_{x\to 1}\dfrac{\sqrt{x}-x}{1-x} $
+			\item $ \lim\limits_{x\to 0}\dfrac{\sqrt{1+x}-\sqrt{1-x}}{x} $
+			\item $ \lim\limits_{x\to 2}\dfrac{\sqrt{2x}-2}{2-\sqrt{x+2}} $
+			\item $ \lim\limits_{x\to 1}\dfrac{\sqrt{x}-1}{x^2-3x+2} $
+			\item $ \lim\limits_{x\to -1}\dfrac{x^2+4x+3}{\sqrt{x+2}+x} $
+			\item $ \lim\limits_{x\to 2}\dfrac{\sqrt{x+2}-\sqrt{2x}}{x-2} $
+			\item $ \lim\limits_{x\to 1}\dfrac{\sqrt{x}-x}{x^2-x} $
+			\item $ \lim\limits_{x\to 1}\dfrac{\sqrt[3]{x}-1}{x-1} $
+			\item $ \lim\limits_{x\to 1}\dfrac{x^2-1}{\sqrt[3]{x}-1} $
+			\item $ \lim\limits_{x\to 1}\dfrac{\sqrt[3]{x}-1}{\sqrt{x}-1} $
+			\item $ \lim\limits_{x\to 1}\dfrac{\sqrt[3]{x}-\sqrt{x}}{x-1} $
+			\item $ \lim\limits_{x\to -1}\dfrac{\sqrt[3]{x}+1}{x+1} $
+			\item $ \lim\limits_{x\to -1}\dfrac{1+x^3}{1+\sqrt[3]{x}} $
+			\item $ \lim\limits_{x\to -2}\dfrac{\sqrt[3]{x}+\sqrt[3]{2}}{x^3+8} $
+			\item $ \lim\limits_{x\to 2}\dfrac{\sqrt[3]{1-x}+1}{2-x} $
+			\item $ \lim\limits_{x\to -2}\dfrac{4-x^2}{1+\sqrt[3]{x+1}} $
+			\item $ \lim\limits_{x\to -3}\dfrac{\sqrt[3]{x+2}+1}{x^3+27} $
+			\item $ \lim\limits_{x\to 1}\dfrac{2-\sqrt{x}-\sqrt[3]{x}}{x-1} $
+			\item $ \lim\limits_{x\to 1}\dfrac{\sqrt[3]{x}+2\sqrt{x}-3}{1-x} $
+			\item $ \lim\limits_{x\to1}\dfrac{2x-\sqrt{3x^2+\sqrt{x}}}{x-1} $
+			\item $ \lim\limits_{x\to 1}\dfrac{\sqrt[3]{x^2}-2\sqrt{x}+1}{x-1} $
+			\item $ \lim\limits_{x\to 1}\dfrac{x^2-2\sqrt{x}+1}{1-x} $
+			\item $ \lim\limits_{x\to 1}\dfrac{x^2-2\sqrt[3]{x}+1}{x-1} $
+		\end{multicols}
+	\end{enumerate}
+	\item[សម្គាល់៖] ហាមធ្វើអាជីវកម្មក្រោមរូបភាពណាមួយលើឯកសារនេះ(ឯកសារផ្ទាល់ខ្លួនប៉ុណ្ណោះ)
+	\item បើគេដឹងថា $ n,m $ ជាចំនួនគត់វិជ្ជមាន និង $ a $ ជាចំនួនពិតវិជ្ជមាន គណនាលីមីតខាងក្រោម~៖
+	\begin{enumerate}
+		\begin{multicols}{3}
+			\item $ \lim\limits_{x\to1}\dfrac{\sqrt[n]{x}-1}{x-1} $
+			\item $ \lim\limits_{x\to a}\dfrac{\sqrt[n]{x}-\sqrt[n]{a}}{x-a} $
+			\item $ \lim\limits_{x\to1}\dfrac{\sqrt[n]{x}-\sqrt[m]{x}}{x-1};\; n>m $
+			\item $ \lim\limits_{x\to 1}\dfrac{\sqrt[m]{x}\sqrt[n]{x}-1}{x-1} $
+			\item $ \lim\limits_{x\to -1}\dfrac{\sqrt[2n+1]{x}+1}{x+1} $
+			\item $ \lim\limits_{x\to 1}\dfrac{1-\sqrt[m]{2-\sqrt[n]{x}}}{1-\sqrt[n]{2-\sqrt[m]{x}}} $
+			\item $ \lim\limits_{x\to 1}\dfrac{1-\sqrt[m]{2x-\sqrt[n]{x}}}{1-\sqrt[n]{2x-\sqrt[m]{x}}} $
+			\item $ \lim\limits_{x\to 1}\dfrac{x-\sqrt[m]{2-\sqrt[n]{x}}}{x-\sqrt[n]{2-\sqrt[m]{x}}} $
+			\item $ \lim\limits_{x\to 1}\dfrac{x-\sqrt[m]{2x-\sqrt[n]{x}}}{x-\sqrt[n]{2x-\sqrt[m]{x}}} $
+		\end{multicols}
+	\end{enumerate}
+	\begin{example}{}{}
+		គណនាលីមីត $ \lim\limits_{x\to+\infty}\dfrac{2x^2+3x+4}{x^2-2x+3} $
+		\tcbsubtitle{ចម្លើយ}
+		\begin{equation*}
+		\begin{array}{rcll}
+		\lim\limits_{x\to+\infty}\dfrac{2x^2+3x+4}{x^2-2x+3}
+		&=&\lim\limits_{x\to+\infty}\dfrac{x^2(2+3/x+4/x^2)}{x^2(1-2/x+3/x^2)}&\textnormal{ដឺក្រេធំជាងគេនៃ}\; x\\
+		&=&\lim\limits_{x\to+\infty}\dfrac{2+3/x+4/x^2}{1-2/x+3/x^2}&\textnormal{សម្រួលកត្តា}\; x^2\\
+		&=&\dfrac{2+0+0}{1-0+0}=2&\textnormal{ព្រោះ}\;\lim\limits_{x\to+\infty}\dfrac{1}{x^n}=0
+		\end{array}
+		\end{equation*}
+	\end{example}
+	\item គណនាលីមីតត្រង់អនន្តដូចខាងក្រោម៖
+	\begin{enumerate}
+		\begin{multicols}{3}
+		\item $ \lim\limits_{x\to+\infty}\dfrac{2-x^2}{2x^2+x-1} $
+		\item $ \lim\limits_{x\to-\infty}\dfrac{x+1}{x^2+1} $
+		\item $ \lim\limits_{x\to+\infty}\dfrac{1+x+x^2}{1+2x} $
+		\item $ \lim\limits_{x\to-\infty}\dfrac{x^3+x-1}{3x^2-5x+2} $
+		\item $ \lim\limits_{x\to-\infty}\dfrac{x^3-1}{x^3+1} $
+		\item $ \lim\limits_{x\to+\infty}\dfrac{1+\sqrt{x^2+1}}{1+x+\sqrt{x}} $
+		\item $ \lim\limits_{x\to+\infty}\dfrac{\sqrt{x+\sqrt{x}}-2x}{\sqrt{x^2+2x+2}+1} $
+		\item $ \lim\limits_{x\to+\infty}\dfrac{x\sqrt x+3x^2-2}{2-x^2} $
+		\item $ \lim\limits_{x\to+\infty}\dfrac{\sqrt{x^3+1}+2\sqrt[3]{x^2}}{x\sqrt{x}+\sqrt[3]{x^3+3}} $
+		\item $ \lim\limits_{x\to+\infty}\dfrac{\sqrt{x^2+1}-x+1}{2x-\sqrt{4x^2-x}} $
+		\item $ \lim\limits_{x\to+\infty}\dfrac{x-\sqrt{x^2+x}}{x-\sqrt{x^2-x}} $
+		\item $ \lim\limits_{x\to-\infty}\dfrac{1+\sqrt{x^2+1}+x}{1+\sqrt{4x^2+1}+2x} $
+		\end{multicols}
+	\end{enumerate}
+	\item គណនាលីមីតត្រង់អនន្តដូចខាងក្រោម៖
+	\begin{enumerate}
+		\begin{multicols}{2}
+			\item $ \lim\limits_{x\to+\infty}x-\sqrt{x^2+1} $
+			\item $ \lim\limits_{x\to+\infty}\sqrt{(x+1)^2+2}-2x+3 $
+			\item $ \lim\limits_{x\to+\infty}2-3x+\sqrt{4x^2+4x+5} $
+			\item $ \lim\limits_{x\to-\infty}x+\sqrt{x^2+x+1} $
+			\item $ \lim\limits_{x\to+\infty}\sqrt{x^2+2x+3}-\sqrt{x^2-6x+7} $
+			\item $ \lim\limits_{x\to-\infty}\sqrt{(x-1)(x-2)}-x^2 $
+			\item $ \lim\limits_{x\to+\infty}\sqrt{x}-\sqrt{x^2-1} $
+			\item $ \lim\limits_{x\to-\infty}\sqrt[3]{x^3+x+1}+\sqrt{x^2+1} $
+			\item $ \lim\limits_{x\to+\infty}\sqrt{x+\sqrt{x}}-\sqrt{x} $
+			\item $ \lim\limits_{x\to+\infty}\sqrt{x+\sqrt{x+\sqrt{x}}}-\sqrt{x+\sqrt{x}} $
+		\end{multicols}
+	\end{enumerate}
+	\begin{example}{}{}
+		គណនាលីមីត $ \lim\limits_{x\to0}\dfrac{\sin3x}{2x} $~។
+		\tcbsubtitle{ចម្លើយ}
+		\begin{equation*}
+			\begin{array}{rcll}
+				\lim\limits_{x\to0}\dfrac{\sin3x}{2x}
+				&=&\dfrac32\lim\limits_{x\to0}\dfrac{\sin3x}{3x}&\textnormal{លីមីតនៃអនុគមន៏បណ្ដាក់}\\
+				&=&(3/2)\times1=3/2&\textnormal{ជំនួសតម្លៃ}
+			\end{array}
+		\end{equation*}
+		ដូច្នេះ $ \lim\limits_{x\to0}\dfrac{\sin3x}{2x}=\dfrac32 $~។
+	\end{example}
+	\item គណនាលីមីតខាងក្រោម៖
+	\begin{enumerate}
+		\begin{multicols}{3}
+		\item $ \lim\limits_{x\to 0}\dfrac{\sin5x}{3x} $
+		\item $ \lim\limits_{x\to 0}\dfrac{\sin3x}{\sin2x} $
+		\item $ \lim\limits_{x\to 0}\dfrac{\tan x}{x} $
+		\item $ \lim\limits_{x\to 0}\dfrac{\tan2x}{\tan3x} $
+		\item $ \lim\limits_{x\to 0}\dfrac{\tan 2x-\tan x}{x} $
+		\item $ \lim\limits_{x\to 0}\dfrac{\cos x-\sin x-1}{\cos x+\sin x-1} $
+		\item $ \lim\limits_{x\to 0}\dfrac{x+\sin x}{x} $
+		\item $ \lim\limits_{x\to 0}\dfrac{x-\tan x}{x} $
+		\item $ \lim\limits_{x\to 0}\dfrac{2x^2-\sin x}{x} $
+		\item $ \lim\limits_{x\to 0}\dfrac{x+2\sin^2 x}{x(x+1)} $
+		\item $ \lim\limits_{x\to 0}\dfrac{\sin x}{\sqrt{x+1}-1} $
+		\item $ \lim\limits_{x\to 0}\dfrac{x^2-1+\cos x}{x\sin x} $
+		\item $ \lim\limits_{x\to 0}\dfrac{\sqrt{x^2+1}-\cos x}{x^2} $
+		\item $ \lim\limits_{x\to 0}\dfrac{\cos x-\sqrt{1-2x}}{\sin x} $
+		\item $ \lim\limits_{x\to 1}\dfrac{\sqrt{x}-\sin\pi x-1}{2x} $
+		\item $ \lim\limits_{x\to -1}\dfrac{\sqrt{2+x}+\cos \pi x}{\sin\pi x} $
+		\item $ \lim\limits_{x\to 0}\dfrac{x^2\cos x+\sin x}{x\cos x} $
+		\item $ \lim\limits_{x\to 0}\dfrac{x\sin x+\sin 2x}{x-\sin^2x} $
+		\item $ \lim\limits_{x\to 0}\dfrac{x^2+\sin x}{x\sin x-x} $
+		\item $ \lim\limits_{x\to 0}\dfrac{1-\cos2x}{x^2} $
+		\item $ \lim\limits_{x\to 0}\dfrac{1-\cos2x}{1-\cos3x} $
+		\item $ \lim\limits_{x\to 0}\dfrac{\sin x+\tan x}{x} $
+		\item $ \lim\limits_{x\to 0}\dfrac{\sin x-\tan x}{x} $
+		\item $ \lim\limits_{x\to 0}\dfrac{\sin x-\tan x}{x^2} $
+		\item $ \lim\limits_{x\to 0}\dfrac{\sin x-\tan x}{x^3} $
+		\item $ \lim\limits_{x\to 0}\dfrac{\sin^2x}{1-\cos x} $
+		\item $ \lim\limits_{x\to 0}\dfrac{\sin^22x}{1-\cos x} $
+		\item $ \lim\limits_{x\to \frac{\pi}{2}}\dfrac{\sin x-1}{\cos x} $
+		\item $ \lim\limits_{x\to \frac{\pi}{4}}\dfrac{\cos 2x}{1-\sin 2x} $
+		\item $ \lim\limits_{x\to\pi}\dfrac{\sin x}{\pi-x} $
+		\item $ \lim\limits_{x\to \frac{\pi}{2}}\dfrac{\cos x+\sin 2x}{2x-\pi} $
+		\item $ \lim\limits_{x\to \frac{\pi}{2}}\dfrac{\sin x+\cos 2x}{2x-\pi} $
+		\item $ \lim\limits_{x\to\pi}\dfrac{1+\cos x+\sin x}{\tan2x} $
+		\end{multicols}
+	\end{enumerate}
+	\item គណនាលីមីតខាងក្រោម៖
+	\begin{enumerate}
+		\begin{multicols}{3}
+			\item $ \lim\limits_{x\to\pi}\dfrac{1+\cos x}{(x-\pi)^2} $
+			\item $ \lim\limits_{x\to\frac\pi4}\dfrac{\sqrt2-2\sin x}{\pi-4x} $
+			\item $ \lim\limits_{x\to\frac34}\dfrac{\cos\pi x+\sin\pi x}{4x-3} $
+			\item $ \lim\limits_{x\to1}\dfrac{\sin\pi x+\sin(x-1)}{x^2+2x-3} $
+			\item $ \lim\limits_{x\to0}\dfrac{1-\cos x\cos2x}{x\sin x} $
+			\item $ \lim\limits_{x\to 0}\dfrac{1+\cos x-2\cos^3x}{\sin^2x} $
+			\item $ \lim\limits_{x\to 0}\dfrac{1-\cos 2x\cos 4x}{\sin^2x} $
+			\item $ \lim\limits_{x\to 0}\dfrac{\cos x+\cos 2x-2}{x^2} $
+			\item $ \lim\limits_{x\to 0}\dfrac{\cos 2x+3\cos x-4}{x^2} $
+			\item $ \lim\limits_{x\to 0}\dfrac{\cos 2x-4\cos x+3}{x^4} $
+			\item $ \lim\limits_{x\to 0}\dfrac{\cos^2x+\cos x-2}{1-\cos x} $
+			\item $ \lim\limits_{x\to \frac{\pi}{6}}\dfrac{2\sin^2x-3\sin x+1}{2\sin x-1} $
+			\item $ \lim\limits_{x\to \frac{\pi}{4}}\dfrac{3-4\tan x+\tan^2 x}{3-2\cot x-\cot^2x} $
+			\item $ \lim\limits_{x\to \frac{\pi}{4}}\dfrac{\cos x-\sin x}{\cot x-\tan x} $
+			\item $ \lim\limits_{x\to \frac{\pi}{4}}\dfrac{\tan x-2\sin^2 x}{\cot x-2\cos^2x} $
+			\item $ \lim\limits_{x\to \frac{\pi}{4}}\dfrac{\tan x-2\cos^2 x}{\cot x-2\sin^2x} $
+			\item $ \lim\limits_{x\to \frac{\pi}{4}}\dfrac{\cos 2x}{\sin x-\cos x} $
+			\item $ \lim\limits_{x\to -\frac{\pi}{4}}\dfrac{\cos 2x}{\cos x+\sin x} $
+			\item $ \lim\limits_{x\to 0}\dfrac{\cos^2x-\cos 2x}{x\sin x} $
+			\item $ \lim\limits_{x\to \pi}\dfrac{\cos^2x-\cos 2x}{\cos x+1} $
+			\item $ \lim\limits_{x\to 0}\dfrac{3\sin x-\sin 3x}{x^2\sin x} $
+			\item $ \lim\limits_{x\to 0}\dfrac{\cos 3x-\cos^3 x}{x\sin 2x} $
+			\item $ \lim\limits_{x\to \frac{\pi}{2}}\dfrac{\cos 3x+3\cos x}{\cos^2 x\sin 2x} $
+			\item $ \lim\limits_{x\to \frac{\pi}{2}}\dfrac{\sin^2x-3\sin x+2}{\cos^2x} $
+			\item $ \lim\limits_{x\to \frac{\pi}{3}}\dfrac{4\cos^2x-4\cos x+1}{2\cos^2 x+\cos x-1} $
+		\end{multicols}
+	\end{enumerate}
+	\item គណនាលីមីតខាងក្រោម៖
+	\begin{enumerate}
+		\begin{multicols}{3}
+		\item $ \lim\limits_{x\to 0}x\cot x $
+		\item $ \lim\limits_{x\to 0}\sin x\cot 2x $
+		\item $ \lim\limits_{x\to\frac{\pi}{2}}(2x-\pi)\tan x $
+		\item $ \lim\limits_{x\to \frac{\pi}{2}}\cos x\cot 2x $
+		\item $ \lim\limits_{x\to \frac{\pi}{4}}\sin 4x\tan 2x $
+		\item $ \lim\limits_{x\to+\infty}x\sin\dfrac{1}{x} $
+		\item $ \lim\limits_{x\to 0}\dfrac{\sin x}{x^3}-\dfrac{\tan x}{x^3} $
+		\item $ \lim\limits_{x\to+\infty}\dfrac{\sin x}{x} $
+		\item $ \lim\limits_{x\to +\infty}\dfrac{\cos x-1}{x} $
+		\item $ \lim\limits_{x\to+\infty}\dfrac{x+\cos x}{x+1} $
+		\item $ \lim\limits_{x\to-\infty}\dfrac{\sin^2x}{1+x^2} $
+		\item $ \lim\limits_{n\to +\infty}\dfrac{n+(-1)^n}{n+1} $
+		\item $ \lim\limits_{x\to\frac{3\pi}{2}^-}\dfrac{1+\cos 2x+\sin 4x}{\sqrt{1+\sin x}} $
+		\end{multicols}
+	\end{enumerate}
+	\item ដោយប្រើ $ \lim\limits_{x\to+\infty}(1+\frac{1}{n})^n=e $ បង្ហាញថា៖
+	\begin{enumerate}
+		\begin{multicols}{2}
+			\item $ \lim\limits_{x\to 0^+}(1+x)^{\frac{1}{x}}=e $ (តាង $ n=\dfrac{1}{x} $)
+			\item $ \lim\limits_{x\to -\infty}(1+\frac{1}{n})^n=e $ (តាង $ m=-n $)
+			\item $ \lim\limits_{x\to 0^-}(1+x)^{\frac{1}{x}}=e $ (តាង $ n=\dfrac{1}{x} $)
+			\item $ \lim\limits_{x\to 0}\dfrac{e^x-1}{x}=1 $ (តាង $ y=e^x-1 $)
+		\end{multicols}
+	\end{enumerate}
+	\item គណនាលីមីតខាងក្រោម៖
+	\begin{enumerate}
+		\begin{multicols}{3}
+			\item $ \lim\limits_{x\to 0}\dfrac{e^{2x}-e^x}{x} $
+			\item $ \lim\limits_{x\to 0}\dfrac{e^{-x}-1}{x} $
+			\item $ \lim\limits_{x\to 0}\dfrac{e^{x^2}-1}{x^2} $
+			\item $ \lim\limits_{x\to 0}\dfrac{e^{2x}-1}{x} $
+			\item $ \lim\limits_{x\to 0}\dfrac{e^x-e^{-x}}{x} $
+			\item $ \lim\limits_{x\to 0}\dfrac{e^{2x}-1}{e^x-e^{-x}} $
+			\item $ \lim\limits_{x\to 0}\dfrac{e^{3x}-1}{e^{2x}-1} $
+			\item $ \lim\limits_{x\to 1}\dfrac{e^{x}-e}{x-1} $
+			\item $ \lim\limits_{x\to a}\dfrac{e^x-e^a}{x-a} $
+			\item $ \lim\limits_{x\to 0}\dfrac{e^{2x}+e^x-2}{x} $
+			\item $ \lim\limits_{x\to 0}\dfrac{e^{2x}-2e^x+1}{x^2} $
+			\item $ \lim\limits_{x\to 0}\dfrac{e^x+e^{-x}-2}{x^2} $
+			\item $ \lim\limits_{x\to 0}\dfrac{e^{ax}-e^{bx}}{x} $
+			\item \small{$ \lim\limits_{x\to 0}\dfrac{e^{2x}+2e^x-3}{e^{2x}+e^x-2} $}
+			\item $ \lim\limits_{x\to 0}\dfrac{e^{x(x+1)}-1}{x} $
+			\item $ \lim\limits_{x\to 0}\dfrac{e^x-\sqrt{x+1}}{x} $
+			\item $ \lim\limits_{x\to 0}\dfrac{e^x\sqrt{x+1}-1}{x} $
+			\item $ \lim\limits_{x\to 0}\dfrac{e^{x^2+1}-e}{x(e^x-1)} $
+			\item $ \lim\limits_{x\to 2}\dfrac{x^2-3x+2}{e^{2-x}-1} $
+			\item $ \lim\limits_{x\to 1}\dfrac{e^x-e}{x^2-1} $
+			\item $ \lim\limits_{x\to 0}\dfrac{e^x-\cos x}{x} $
+			\item $ \lim\limits_{x\to 0}\dfrac{e^{x^2}-\cos x}{x^2} $
+			\item $ \lim\limits_{x\to 0}\dfrac{e^x\cos x-1}{x} $
+			\item $ \lim\limits_{x\to 0}\dfrac{e^x+\sin x-\cos x}{x} $
+			\item $ \lim\limits_{x\to 0}\dfrac{e^{x^2}-e^{2x}}{\sin(\pi x)} $
+			\item $ \lim\limits_{x\to 2}\dfrac{e^{x^2}-e^{2x}}{\sin(\pi x)} $
+			\item $ \lim\limits_{x\to 0}\dfrac{e^x\cos x-1}{e^x\sin x} $
+			\item $ \lim\limits_{x\to 0}\dfrac{2^x-1}{x} $
+			\item $ \lim\limits_{x\to 0}\dfrac{3^x-2^x}{x} $
+			\item $ \lim\limits_{x\to 0}\dfrac{3^{x+1}-2^{x+2}+1}{x} $
+			\item $ \lim\limits_{x\to 0}\dfrac{3^x-2^{x+1}+1}{2^x-2^{-x}} $
+			\item $ \lim\limits_{x\to 1}\dfrac{xe^x-e}{x-1} $
+		\end{multicols}
+	\end{enumerate}
+	\item គណនាលីមីតខាងក្រោម៖
+	\begin{enumerate}
+		\begin{multicols}{3}
+			\item $ \lim\limits_{x\to \ln 2}\dfrac{e^{2x}-e^x-2}{e^x-2} $
+			\item $ \lim\limits_{x\to \ln 2}\dfrac{xe^x-2\ln 2}{e^x-2} $
+			\item $ \lim\limits_{x\to 0}\dfrac{\ln(1+x)}{x} $
+			\item $ \lim\limits_{x\to 1}\dfrac{\ln x}{x-1} $
+			\item $ \lim\limits_{x\to 2}\dfrac{\ln x-\ln 2}{x-2} $
+			\item $ \lim\limits_{x\to 2}\dfrac{x\ln x-2\ln 2}{x-2} $
+			\item $ \lim\limits_{x\to 2}\dfrac{x^x-4}{x-2} $
+			\item $ \lim\limits_{x\to 2}\dfrac{x^{x^x}-16}{x-2} $
+			\item $ \lim\limits_{x\to 0}\dfrac{3^x\cos 2x-2^x\cos 3x}{\sin 5x} $
+		\end{multicols}
+	\end{enumerate}
+	\begin{example}{}{}
+		គណនាលីមីត $ \lim\limits_{x\to 0}(\cos x)^{\dfrac{1}{x^2}} $~។
+		\tcbsubtitle{ចម្លើយ}
+		\begin{eqnarray*}
+		\lim_{x\to 0}(\cos x)^{\dfrac{1}{x^2}}
+		&=&\lim_{x\to 0}\left(\left(1+(\cos x-1)\right)^{\dfrac{1}{\cos x-1}}\right)^{\dfrac{\cos x-1}{x^2}}\\
+		&=&e^{-1/2}=1/\sqrt{e}
+		\end{eqnarray*}
+	\end{example}
+	\item គណនាលីមីតខាងក្រោម៖
+	\begin{enumerate}
+		\begin{multicols}{3}
+		\item $ \lim\limits_{x\to +\infty}\left(1+\dfrac{1}{x^2}\right)^x $
+		\item $ \lim\limits_{x\to +\infty}\left(1+\dfrac{1}{x^2}\right)^{x^2} $
+		\item $ \lim\limits_{x\to +\infty}\left(1+\dfrac{1}{2x}\right)^x $
+		\item $ \lim\limits_{x\to +\infty}\left(1+\dfrac{2}{x}\right)^x $
+		\item $ \lim\limits_{x\to +\infty}\left(1+\dfrac{a}{x}\right)^x,\;a\neq 0 $
+		\item $ \lim\limits_{x\to +\infty}\left(1+\dfrac{1}{x+1}\right)^x $
+		\item $ \lim\limits_{x\to +\infty}\left(1+\dfrac{1}{x^2+1}\right)^{x^2} $
+		\item $ \lim\limits_{x\to+\infty}\left(\dfrac{x}{x+1}\right)^x $
+		\item $ \lim\limits_{x\to +\infty}\left(\dfrac{x^2}{x^2+1}\right)^x $
+		\item $ \lim\limits_{x\to +\infty}\left(\dfrac{x-1}{x+1}\right)^{x^2} $
+		\item $ \lim\limits_{x\to+\infty}\left(\dfrac{x^2-x+1}{x^2+x+1}\right)^x $
+		\item $ \lim\limits_{x\to+\infty}\left(\dfrac{x^2-x+1}{x^2+x+1}\right)^{x^2} $
+		\item $ \lim\limits_{x\to 0^+}\left(1+\sin x\right)^{\frac{1}{x}} $
+		\item $ \lim\limits_{x\to 0^+}(1+x^2)^{\cot x} $
+		\item $ \lim\limits_{x\to 1^-}(1+\sin\pi x)^{\frac{x}{1-x}} $
+		\item $ \lim\limits_{x\to 0^+}x^x $
+		\item $ \lim\limits_{x\to 0^+}(\cos x)^{\cot x} $
+		\item $ \lim\limits_{x\to 0^+}(\sin x)^{\tan x} $
+		\item $ \lim\limits_{x\to 0}(x^2+x+1)^{\frac{1}{x}} $
+		\end{multicols}
+	\end{enumerate}
+	\item គណនាលីមីតខាងក្រោម៖
+	\begin{enumerate}
+		\begin{multicols}{3}
+			\item $ \lim\limits_{x\to+\infty}(x-\ln x) $
+			\item $ \lim\limits_{x\to 0^+}\ln\left(\dfrac{x}{x+1}\right) $
+			\item $ \lim\limits_{x\to 0^+}\ln\left(1+\dfrac{1}{x}\right) $
+			\item $ \lim\limits_{x\to 0^+}x\ln x $
+			\item $ \lim\limits_{x\to 0^+}\sin x\ln x $
+			\item $ \lim\limits_{x\to 0^+}\sin x\ln(\sin x) $
+			\item $ \lim\limits_{x\to 0^+}x\ln(\sin x) $
+			\item $ \lim\limits_{x\to 0^+}x^{\frac{1}{x}} $
+			\item $ \lim\limits_{x\to 0^+}(e^x-1)^{\frac{1}{x}} $
+			\item $ \lim\limits_{x\to +\infty}x^{\frac{1}{x}} $
+			\item $ \lim\limits_{x\to +\infty}(e^x+1)^{\frac{1}{x}} $
+			\item $ \lim\limits_{x\to+\infty}\ln(x+1)-\ln x $
+			\item $ \lim\limits_{x\to+\infty}(x-\ln(e^x+1)) $
+			\item $ \lim\limits_{x\to 0^+}(1+\ln x)^{-1} $
+			\item $ \lim\limits_{x\to+\infty}x\ln\left(\dfrac{x^2-x+1}{x^2+x+1}\right) $
+			\item $ \lim\limits_{x\to+\infty}\dfrac{1-\ln x}{1+\ln x} $
+			\item $ \lim\limits_{x\to+\infty}\dfrac{\ln(x^2+1)}{1+\ln x} $
+			\item $ \lim\limits_{x\to +\infty}\dfrac{\ln(2x+1)}{\ln(x+1)} $
+			\item $ \lim\limits_{x\to +\infty}\dfrac{\ln(x^2+1)}{\ln(x+1)} $
+			\item $ \lim\limits_{x\to 0}\dfrac{\ln(2x+1)}{\ln(x+1)} $
+			\item $ \lim\limits_{x\to 0}\dfrac{\ln(x^2+1)}{\ln(x+1)} $
+			\item $ \lim\limits_{x\to 0^+}\dfrac{\ln(\sqrt{x+1}-1)}{\ln x} $
+			\item $ \lim\limits_{x\to 0^+}\dfrac{1+\ln x}{\ln(1-\sqrt{1-x})} $
+			\item $ \lim\limits_{x\to0^+}\ln\dfrac{\sin2x}{\sin3x} $
+			\item $ \lim\limits_{x\to0^+}\dfrac{\ln\sin2x}{\ln\sin3x} $
+			\item $ \lim\limits_{x\to0}\dfrac{\ln\cos2x}{x^2} $
+			\item $ \lim\limits_{x\to0}\dfrac{\ln\cos2x}{\ln\cos3x} $
+		\end{multicols}
+	\end{enumerate}
+	\begin{example}{}{}
+		គេដឹងថា $ \lim\limits_{x\to0}\dfrac{x-\sin x}{x^3}=L $ ជាចំនួនកំណត់ ចូរគណនាតម្លៃ $ L $~។
+		\tcbsubtitle{ចម្លើយ}
+		\begin{eqnarray*}
+		L&=&\lim_{x\to 0}\frac{x-\sin x}{x^3}
+		=\lim_{x\to 0}\frac{x-2\sin\dfrac{x}{2}\cos\dfrac{x}{2}}{x^3}
+		=\lim_{x\to 0}\frac{2\left(\dfrac{x}{2}-\sin\dfrac{x}{2}\cos\dfrac{x}{2}\right)}{8\left(\dfrac{x}{2}\right)^3}
+		\end{eqnarray*}
+		តាង $ u(x)=\dfrac{x}{2} $~។ ដោយ $ \lim\limits_{x\to 0}u(x)=0 $ នោះគេបាន
+		\begin{eqnarray*}
+		L&=&\frac{1}{4}\lim_{u\to 0}\frac{u-\sin u\cos u}{u^3}
+		=\frac{1}{4}\lim_{u\to 0}\frac{u-\sin u+\sin u-\sin u\cos u}{u^3}\\
+		&=&\frac{1}{4}\lim_{u\to 0}\left(\frac{u-\sin u}{u^3}+\frac{(1-\cos u)\sin u}{u^3}\right)
+		=\frac{1}{4}\left(L+\frac{1}{2}\right)
+		\end{eqnarray*}
+		ដូច្នេះ $ L=\dfrac{1}{6} $~។
+	\end{example}
+	\item គេដឹងថា $ \lim\limits_{x\to0}\dfrac{x-\sin x}{x^3}=L $ ដែល $ L $ ជាចំនួនកំណត់។
+	\begin{enumerate}
+		\item គណនាលីមីត $ \lim\limits_{x\to0}\dfrac{2x-\sin2x}{x^3} $ និង $ \lim\limits_{x\to0}\dfrac{2x\cos x-\sin2x}{x^3} $ ជាអនុគមន៏នៃ $ L $~។
+		\item គណនាតម្លៃ $ L $~។ ណែនាំ៖ $  L=\lim\limits_{x\to0}\left(\dfrac{x-\sin x}{x^3}\right)\left(\dfrac{2\cos x}{2\cos x}\right) $~។
+		\item គណនាលីមីត $ \lim\limits_{x\to0}\dfrac{2\cos x+x^2-2}{x^4} $~។
+	\end{enumerate}
+	\begin{example}{}{}
+		គេដឹងថា $ \lim\limits_{x\to0}\dfrac{1+x-e^x}{x^2}=L $ ដែល $ L $ ជាចំនួនកំណត់។ ចូរគណនាតម្លៃ $ L $~។
+		\tcbsubtitle{ចម្លើយ}
+		តាង $ u(x)=\dfrac{x}{2} $~។ ដោយ $ \lim\limits_{x\to 0}u(x)=0 $ នោះគេបាន
+		\begin{eqnarray*}
+		L&=&\lim_{u\to0}\dfrac{1+2u-e^{2u}}{4u^2}=\frac{1}{4}\lim_{u\to 0}\frac{1+u-e^u+u-ue^u+e^u+ue^u-e^{2u}}{u^2}\\
+		&=&\frac{1}{4}\lim_{u\to 0}\left(\frac{1+u-e^u}{u^2}-\frac{e^u-1}{u}+e^u\frac{1+u-e^u}{u^2}\right)\\
+		&=&\frac{1}{4}\left(L-1+L\right)
+		\end{eqnarray*}
+		ដូច្នេះ $ L=-\dfrac{1}{2} $~។
+	\end{example}
+\item[សម្គាល់៖] ហាមធ្វើអាជីវកម្មក្រោមរូបភាពគ្រប់រូបភាពលើឯកសារនេះ (ឯកសារផ្ទាល់ខ្លួនប៉ុណ្ណោះ)។
+	\item បើដឹងថា $ L $ ជាចំនួនកំណត់ ចូរគណនាលីមីតខាងក្រោម៖
+	\begin{enumerate}
+		\begin{multicols}{3}
+			\item $ L=\lim\limits_{x\to 0}\dfrac{x-\sin x}{x^3} $
+			\item $ L=\lim\limits_{x\to 0}\dfrac{1+x-e^x}{x^2} $
+			\item $ L=\lim\limits_{x\to0}\dfrac{2+2x+x^2-2e^x}{x^3} $
+		\end{multicols}
+	\end{enumerate}
+	\item បើដឹងថា $ L $ ជាចំនួនកំណត់ ចូរគណនាលីមីតខាងក្រោម៖
+	\begin{enumerate}
+		\begin{multicols}{2}
+		\item $ L=\lim\limits_{x\to 0}\dfrac{x-\cos x\sin x}{x^3} $
+		\item $ L=\lim\limits_{x\to 0}\dfrac{x\cos x-\sin x}{x^3} $
+		\item $ L=\lim\limits_{x\to 0}\dfrac{x^2+2(\cos x-1)}{x^4} $
+		\item $ L=\lim\limits_{x\to 0}\dfrac{x-\sin x\cos2x}{\tan x-\sin x\cos2x} $
+		\item $ L=\lim\limits_{x\to0}\dfrac{2x^2-\sin x\sin2x}{\tan x-\sin x} $
+		\item $ L=\lim\limits_{x\to 0}\dfrac{\sin2x-2\sin x}{2\sin3x-3\sin2x} $
+		\item $ L=\lim\limits_{x\to 0}\dfrac{1-x^2-\cos\sqrt{2}x}{x^4} $
+		\item $ L=\lim\limits_{x\to 0}\left(\dfrac{\sin x}{x}\right)^{\frac{1}{x^2}} $
+		\item $ L=\lim\limits_{x\to 0^+}\left(\dfrac{e^x-1}{x}\right)^{\frac{1}{x}} $
+		\item $ L=\lim\limits_{x\to0}\dfrac{x-\ln(1+x)}{x^2} $
+		\item $ L=\lim\limits_{x\to 0}\dfrac{(1-x)(1+x)+e^x(e^x-2)}{(e^x-e^{-x})(e^x+e^{-x}-2)} $
+		\item $ L=\lim\limits_{x\to 0}\dfrac{\sin\sqrt{2}x-\sqrt{2}\sin x}{\sqrt{2}\sin\sqrt{3}x-\sqrt{3}\sin\sqrt{2}x} $
+		\end{multicols}
+	\end{enumerate}
+	\item គេមានចំនួនកុំផ្លិច $ z=\cos x+i\sin x $ ដែល $ x $ ជាចំនួនពិត និង $ x\neq k\pi\;,k\in\mathbb{Z} $។
+	\begin{enumerate}
+		\item គណនាផលបូក $ S_n=z+z^2+z^3+\cdots+z^n $ ដែល $ n $ ជាចំនួនគត់វិជ្ជមាន។
+		\item ទាញរកផលបូក 
+		\begin{eqnarray*}
+		A_n&=&\cos x+\cos 2x+\cos 3x+\cdots+\cos nx\\
+		B_n&=&\sin x+\sin 2x+\sin 3x+\cdots+\sin nx
+		\end{eqnarray*}
+		\item គណនា $ \lim\limits_{x\to 0}\dfrac{B_n}{x} $ តាមពីរបៀបផ្សេងគ្នា រួចទាញបញ្ជាក់ថា
+		\[ 1+2+3+\cdots+n=\dfrac{n(n+1)}{2} \]
+		\item គណនា $ \lim\limits_{x\to 0}\dfrac{n-A_n}{x^2} $ តាមពីរបៀបផ្សេងគ្នា រួចទាញបញ្ជាក់ថា
+		\[ 1^2+2^2+3^2+\cdots+n^2=\dfrac{n(n+1)(2n+1)}{6} \]
+		\item[ណែនាំ៖] ប្រើលីមីត $ \lim\limits_{x\to 0}\dfrac{x-\sin x}{x^3}=\dfrac{1}{6} $~។
+	\end{enumerate}
+	
+	\item ដោយប្រើសមភាព $ (k+1)^2-k^2=2k+1 $ ទាញរកផលបូក $ S_n=1+2+3+\cdots+n $~។
+	\item គណនាលីមីត $ \lim\limits_{n\to+\infty}\dfrac{1+2+3+\cdots+n}{n^2} $ និង $ \lim\limits_{n\to+\infty}\dfrac{2(1+2+3+\cdots+n)-n^2}{n} $~។
+	\item ដោយប្រើសមភាព $ (k+1)^3-k^3=3k^2+3k+1 $ ទាញរកផលបូក $ S_n=1^2+2^2+3^2+\cdots+n^2 $~។
+	\item គណនាលីមីត $ \lim\limits_{n\to+\infty}\dfrac{1^2+2^2+3^2+\cdots+n^2}{n^3} $ និង $ \lim\limits_{n\to+\infty}\dfrac{3(1^2+2^2+3^2+\cdots+n^2)-n^3}{n^2} $~។
+	\item ដោយប្រើសមភាព $ (k+1)^4-k^4=4k^3+6k^2+4k+1 $ ទាញរកផលបូក $ S_n=1^3+2^3+3^3+\cdots+n^3 $~។
+	\item គណនាលីមីត $ \lim\limits_{n\to+\infty}\dfrac{1^3+2^3+3^3+\cdots+n^3}{n^4} $ និង $ \lim\limits_{n\to+\infty}\dfrac{4(1^3+2^3+3^3+\cdots+n^3)-n^4}{n^3} $~។
+	\item បើ $ m $ ជាចំនួនគត់វិជ្ជមាន ស្រាយបញ្ជាក់ថា
+	\begin{enumerate}
+		\item $ \lim\limits_{n\to +\infty}\dfrac{1^m+2^m+3^m+\cdots+n^m}{n^{m+1}}=\dfrac{1}{m+1} $
+		\item $ \lim\limits_{n\to +\infty}\dfrac{(m+1)(1^m+2^m+3^m+\cdots+n^m)-n^{m+1}}{n^m}=\dfrac{m+1}{2} $
+	\end{enumerate}
+\end{enumerate}
+\end{document}

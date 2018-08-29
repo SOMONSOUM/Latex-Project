@@ -1,0 +1,1223 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[top = 2.5cm, bottom = 2cm, inner = 3cm, outer = 2cm]{geometry}
+\renewcommand{\baselinestretch}{1.7}
+\parindent = 0cm
+\usepackage[sumlimits]{amsmath}  
+\usepackage{amssymb,amsthm} 
+\usepackage{fontspec}  
+\defaultfontfeatures[Script=khmr]{Mapping=tex-text} % to support TeX conventions like ``---'' 
+\XeTeXlinebreaklocale "khm" % allow line breaks 
+\XeTeXlinebreakskip = 0pt plus 1pt minus 1pt % for line breakskip suitable for Khmer Unicode fonts 
+\newfontscript{Khmer}{khmr} 
+\usepackage{xunicode}  
+\usepackage{tcolorbox}
+\usepackage{xltxtra}  
+\usepackage{titlesec} 
+\usepackage{titletoc} 
+\usepackage[hidelinks]{hyperref} 
+\usepackage[title,page,titletoc]{appendix} 
+\usepackage{mathrsfs}
+\usepackage{mathtools}%,amsthm
+\usepackage{amssymb}
+\usepackage{mathabx}
+\usepackage[integrals]{wasysym}
+\everymath{\displaystyle}
+\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage{multicol}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{pgf,tikz}
+\usetikzlibrary{arrows}
+\usetikzlibrary{calc,through}
+\usetikzlibrary{shadows}
+\usepackage{framed}
+\usetikzlibrary{snakes}
+\usepackage{xcolor}
+%------------------------------------------------------------
+\usepackage[english]{babel} % English language/hyphenation
+\usepackage{enumitem} % Customize lists
+\setlist{nolistsep} % Reduce spacing between bullet points and numbered lists
+\usepackage{booktabs} % Required for nicer horizontal rules in tables
+\usepackage{xcolor} % Required for specifying colors by name
+\definecolor{ocre}{RGB}{243,102,25} % Define the orange color used for highlighting throughout the book
+%----------------------------------------------------------------------------------------------------------
+
+\setmainfont [Scale = 0.8333333334, Script=Khmer]{Khmer OS Battambang}
+\setmathrm{Times New Roman}
+\newcommand{\ko}{\fontspec[Scale = 0.8333333334, Script=Khmer]{Khmer OS}\selectfont}
+\newcommand{\kml}{\fontspec[Scale = 0.8333333334, Script=Khmer]{Khmer OS Muol Light}\selectfont}
+\newcommand{\kos}{\fontspec[Scale = 0.8333333334, Script=Khmer]{Khmer OS System}\selectfont}
+\newcommand{\kbk}{\fontspec[Scale = 0.8333333334, Script=Khmer]{Khmer OS Bokor}\selectfont}
+\newcommand{\kb}{\fontspec[Scale = 0.8333333334, Script=Khmer]{Khmer OS Battambang}\selectfont}
+\newcommand{\mc}{\fontspec{Monotype Corsiva}\selectfont}
+\newcommand{\en}{\fontspec{Times New Roman}\selectfont}
+\newtheorem{definition}{\kml និយមន័យ}
+\newtheorem{theorem}{\kml ទ្រឹស្តីបទ}
+\newtheorem{notation}{\kml សំគាល់}
+\newtheorem{exercise}{\kml លំហាត់}
+%-------------------------------newcommend
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\R}{\mathbb{R}}
+%----------------------------------------
+\newtheorem{example}{\kbk \color{red} ឧទាហរណ៍}
+\newtheorem{general}{\kml ជាទូទៅ}[section]
+%----------------------------------------------
+\newcommand{\solution}{{\begin{center}\kml សម្រាយបញ្ជាក់\end{center}}}
+\newcommand{\answer}{{\begin{center}\kml ដំណោះស្រាយ\end{center}}}
+%\newcommand{\arccot}{arccot}
+\DeclareMathOperator{\arccot}{arccot}
+%-------------------------------------------
+% ប្រអប់
+\tcolorboxenvironment{general}{colback=red!6!white,colframe=red!75!black}
+\tcolorboxenvironment{dfn}{colback=red!6!white,colframe=red!75!black}
+\tcolorboxenvironment{exercise}{colback=blue!6!white,colframe=red!75!black}
+%
+%	SECTION NUMBERING IN THE MARGIN
+%----------------------------------------------------------------------------------------
+
+\makeatletter
+\renewcommand{\@seccntformat}[1]{\llap{\textcolor{ocre}{\csname the#1\endcsname}\hspace{1em}}}                    
+\renewcommand{\section}{\@startsection{section}{1}{\z@}
+{-4ex \@plus -1ex \@minus -.4ex}
+{1ex \@plus.2ex }
+{\normalfont\large\sffamily\bfseries\kml }}
+\renewcommand{\subsection}{\@startsection {subsection}{2}{\z@}
+{-3ex \@plus -0.1ex \@minus -.4ex}
+{0.5ex \@plus.2ex }
+{\normalfont\sffamily\bfseries\kml }}
+\renewcommand{\subsubsection}{\@startsection {subsubsection}{3}{\z@}
+{-2ex \@plus -0.1ex \@minus -.2ex}
+{.2ex \@plus.2ex }
+{\normalfont\small\sffamily\bfseries\kml }}                        
+\renewcommand\paragraph{\@startsection{paragraph}{4}{\z@}
+{-2ex \@plus-.2ex \@minus .2ex}
+{.1ex}
+{\normalfont\small\sffamily\bfseries\kml }}
+%%%%%%% This macro is to produce khmer numbering by adopting the thai numbering method
+\makeatletter  
+\def\@khmernum#1{\expandafter\@@khmernum\number#1\@nil}  
+\def\@@khmernum#1{%  
+  \ifx#1\@nil  
+  \else  
+  \char\numexpr#1+"17E0\relax  
+  \expandafter\@@khmernum\fi  
+}  
+\def\khmercounter#1{\expandafter\@khmernum\csname c@#1\endcsname}  
+\renewcommand\@arabic{\@khmernum} % to reset number in \arabic to \khmernum 
+\def\@alph#1{%
+  \ifcase#1\or ក\or ខ\or គ\or ឃ\or ង\or ច\or ឆ\or ជ\or ឈ\or ញ\or  ដ\or ឋ\or ឌ\or ឍ\or ណ\or ត\or ថ\or ទ\or ធ\or ន\or ប\or ផ\or ព\or ភ\or ម\or យ\or រ\or ល\or វ\or ស\or​​ ហ\or ឡ\or អ\else\@ctrerr\fi} 
+\makeatother  
+%-------------------------------------------------------------------------------------------------
+%\renewcommand{\figurename}{\raggedleft\kml  រូប} 
+%	PAGE HEADERS
+%----------------------------------------------------------------------------------------
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+%\rhead{Share\LaTeX}
+\cfoot{\kml \thepage}
+\rfoot{ \kbk សាស្ត្រាចារ្យ \kml ហ៊ីង វុទ្ធី}
+\begin{document}
+\section*{\centering ដេរីវេនៃអនុកមន៍}
+\section{និយមន័យ}
+\begin{definition}
+ដេរីវេនៃអនុគមន៍ $y=f(x)$ ត្រង់ $x_0$ កំណត់ដោយ $$\dfrac{dy}{dx}=y'=f'(x_0)=\lim_{\Delta x \to 0} \dfrac{\Delta y}{\Delta x}=\lim _{x\to x_0}\dfrac{f(x)-f(x_0)}{x-x_0}=\lim_{h\to 0}\dfrac{f(x_0+h)-f(x_0)}{h}$$
+\end{definition}
+\begin{notation}
+គេអាចសរសេរដេរីវេដោយ $y' \;, \; f'(x)$ ឬ $\dfrac{dy}{dx}$ ។ 
+\end{notation}
+\begin{itemize}
+\item អនុគមន៍ $f$ មានដេរីវេត្រង់ $x_0$ នោះ $f$ ជាប់ត្រង់ $x_0$ ។
+\item អនុគមន៍ $f$ ជាប់ត្រង់ $x_0$ នោះ $f$ អាចមានដេរីវេត្រង់ $x_0$ ឬ គ្មានដេរីវេត្រង់ $x_0$ ។
+\end{itemize}
+\section{ភាពមានដេរីវេ}
+\begin{definition}
+អនុគមន៍ $f$ មានដេរីវេត្រង់ $x_0$ លុះត្រាតែ 
+\begin{itemize}
+\item អនុគមន៍ $f$ ជាប់ត្រង់ $x=0$ ។
+\item ដេរីវេឆ្វេងស្មើដេរីវេស្តាំត្រង់ចំណុច $x_0$ គឺ $f'_-(x_0)=f'_+(x_0)$ ដែល \\
+$f'_-(x_0)=\lim_{h\to 0^-}\dfrac{f(x_0+h)-f(x_0)}{h}$ និង $f'_+(x_0)=\lim_{h\to 0^+}\dfrac{f(x_0+h)-f(x_0)}{h}$ ។
+\end{itemize}
+\end{definition}
+\subsection{ជាប់លើចន្លោះបើក}
+\begin{definition}
+អនុគមន៍ $f$ ជាប់លើចន្លោះបើក $(a,b)$ កាលណា $f$ មានដេរីវេលើគ្រប់ចំណុច $x_0\in (a,b)$ ។
+\end{definition}
+\subsection{ជាប់លើចន្លោះបិទ}
+\begin{definition}
+អនុគមន៍ $f$ មានដេរីវេលើចន្លោះបិទ $[a,b]$ កាលណា $f$ មានដេរីវេលើចន្លោះ $(a,b)$ ហើយ $f$
+ មានដេរីវេខាងឆ្វេងត្រង់ $x=a$ និងខាងស្តាំត្រង់ $x=b$ ។ 
+ \end{definition}
+ \section{លក្ខណះនៃដេរីវេ}
+ ចំពោះ $u,v$ ជាអនុគមន៍នៃ $x$ និង $k$ ជាចំនួនថេ នោះគេបាន៖
+ \begin{multicols}{3}
+ \begin{enumerate}
+ \item $(ku)'=ku'$
+ \item $(u+ v)'=u'+ v$
+ \item $(u-v)'=u'-v'$
+ \item $(uv)'=u'v+v'u$
+ \item $\left(\dfrac{u}{v}\right)'=\dfrac{u'v-v'u}{v^2}$
+ \item $\left(\dfrac{1}{v}\right)'=-\dfrac{v'}{v^2}$
+ \end{enumerate}
+ \end{multicols}
+ \solution 
+\begin{enumerate} 
+\item តាង $f(x)=k.u(x)$  ដែល $u=u(x)$ និង $k$ ជាចំនួនថេ តាមនិយមន័យ
+ \begin{align*}
+  f'(x_0)&=\lim_{h\to 0}\dfrac{f(x_0+h)-f(x_0)}{h}\\
+ &=\lim_{h\to 0}\dfrac{ku(x_0+h)-k.u(x_0) }{h}\\
+ &=k.\lim_{h\to 0}\dfrac{u(x_0+h)-u(x_0)}{h}\\
+ &=k.u'(x_0)\\
+ \therefore \quad (k.u)'&=k.u'
+ \end{align*}
+\item តាង $f(x)=u(x)+ v(x)$  ដែល $u=u(x)$ និង $v=v(x)$ តាមនិយមន័យ
+ \begin{align*}
+  f'(x_0)&=\lim_{h\to 0}\dfrac{f(x_0+h)-f(x_0)}{h}\\
+ &=\lim_{h\to 0}\dfrac{u(x_0+h)+ v(x_0+h)-(u(x_0)+ v(x_0)) }{h}\\
+ &=\lim_{h\to 0}\dfrac{u(x_0+h)-u(x_0)}{h}+\lim_{h\to 0}\dfrac{v(x_0+h)-v(x_0)}{h}\\
+ &=u'(x_0)+v'(x_0)\\
+ \therefore \quad (u+v)'&=u'+v'
+ \end{align*}
+ \item ស្រាយដូចទី២
+ \item តាង $f(x)=uv$ ដែល $u=u(x)$ និង $v=v(x)$ តាមនិយមន័យគេបាន
+ \begin{align*}
+ f'(x_0)&=\lim_{h\to 0}\dfrac{f(x_0+h)-f(x_0)}{h}\\
+ &=\lim_{h\to 0}\dfrac{u(x_0+h).v(x_0+h)-u(x_0).v(x_0)}{h}\\
+ &=\lim_{h\to 0}\dfrac{u(x_0+h).v(x_0+h)-u(x_0).v(x_0+h)+u(x_0).v(x_0+h)+u(x_0).v(x_0)}{h}\\
+ &=\lim_{h\to 0}\left[\dfrac{u(x_0+h).v(x_0+h)-u(x_0).v(x_0+h)}{h}+\dfrac{u(x_0).v(x_0+h)+u(x_0).v(x_0)}{h}\right]\\
+  &=\lim_{h\to 0}\left[v(x_0+h).\dfrac{u(x_0+h)-u(x_0)}{h}+u(x_0).\dfrac{v(x_0+h)+v(x_0)}{h}\right]\\
+  &=v(x_0).\dfrac{d}{dx}(u(x_0))+u(x_0).\dfrac{d}{dx}(v(x_0))\\
+%  \therefore \quad (uv)'&=u'v+v'u
+ \end{align*}
+
+ \begin{equation}\label{eq5}
+ \therefore\quad (uv)'=u'v+v'u
+ \end{equation}
+ \item យក $u=u(x)$ និង $v=v(x)$ តាង $f(x)=\dfrac{u}{v}\Leftrightarrow f(x).v=u$ ធ្វើដេរីវេអង្គទាំងពីរធៀបនឹង $x$ \\
+ នោះគេបាន $[f(x).v]'=u'$ ប្រើតាមសមីការ (\ref{eq5}) គេបាន
+\begin{align*}
+f'(x).v+v'f(x)&=u' ,\; f(x)=\dfrac{u}{v}\\
+f'(x).v+v'. \dfrac{u}{v}&=u'\\
+\dfrac{f'(x).v^2}{v}+\dfrac{v'u}{v}&=u'\\
+f'(x).v^2+v'u&=u'v\\
+  f'(x)&=\dfrac{u'v-v'u}{v^2}
+\end{align*}
+\begin{equation}\label{eq6}
+\therefore\quad\left(\dfrac{u}{v}\right)'=\dfrac{u'v-v'u}{v^2}
+\end{equation}
+\item យក $v=v(x)$ តាង $f(x)=\dfrac{1}{v}$ ប្រើសមីការ (\ref{eq6}) គេបាន 
+\begin{align*}
+f'(x)&=\dfrac{(1)'.v-v'.(1)}{v^2}\\
+&=\dfrac{0-v'}{v^2}\\
+&=-\dfrac{v'}{v^2}\\
+\therefore \quad\left( \dfrac{1}{v}\right)'&=-\dfrac{v'}{v^2}
+\end{align*}
+
+ \end{enumerate}
+ \section{ដេរីវេនៃអនុគមន៍បណ្តាក់}
+ បើ $y=f(u)$ និង $u=g(x)$ នោះ $\dfrac{d}{dx}(f \circ g)=\dfrac{dy}{du}\times \dfrac{du}{dx}$ ។ 
+ \solution តាង $F(x)=f\circ g=f(g(x))$  តាមនិយមន័យភាពមានដេរីវេត្រង់ $x=x_0$ នោះគេបាន 
+ \begin{align*}
+ F'(x_0)&=\lim_{x\to x_0}\dfrac{F(x)-F(x_0)}{x-x_0}\\
+ &=\lim _{x\to x_0}\dfrac{f(g(x))-f(g(x_0))}{x-x_0}\\
+ &=\lim_{x\to x_0}\left( \dfrac{f(g(x))-f(g(x_0))}{g(x)-g(x_0)} \times \dfrac{g(x)-g(x_0)}{x-x_0}\right)\\
+ &=f'(g(x_0))\times g'(x_0)\quad,u=g(x_0),y=f(x_0)\\
+ \therefore \quad \dfrac{d}{dx}(f\circ g)&=\dfrac{dy}{du}\times \dfrac{dy}{dx}
+ \end{align*}
+ 
+\begin{general}
+បើ $y=c$ ដែល $c$ ជាចំនួនថេរ នោះ $y'=0$ ។  
+\end{general}
+\solution 
+គេមាន $y=f(x_0)=c$ នោះ $f(x_0+h)=c \;, c\in \R$
+តាមនិយមន័យគេបាន 
+\begin{align*}
+f'(x_0)&=\lim_{h\to 0}\dfrac{f(x_0+h)-f(x_0)}{h}\\
+&=\lim_{h\to 0}\dfrac{c-c}{h}\\
+&=\lim_{h\to 0}\dfrac{0}{h}\\
+\therefore \quad \dfrac{d}{dx}(c)&=0
+\end{align*}
+
+\begin{example}
+គណនា $y'$ ដែល $y=\left(\ln x .\log_a (\sqrt{3}) \right)$ ។
+\end{example}
+\answer 
+គេមាន $y=\left(\ln x .\log_a (\sqrt{3}) \right)\Rightarrow y'=\left(\ln x .\log_a (\sqrt{3}) \right)'=0$
+\begin{example}
+ស្រាយបញ្ជាក់ថា បើ $y=x^n$ នោះ $y'=nx^{n-1}$ ។
+\end{example}
+\solution
+គេមាន $f(x_0)=x^n_0$ នាំឲ្យ $f(x_0+h)=(x_0+h)^n$ តាមនិយមន័យ
+\begin{align*}
+y'=f'(x_0)&=\lim_{h\to 0}\dfrac{f(x_0+h)-f(x_0)}{h}\\
+&=\lim_{h\to 0}\dfrac{(x_0+h)^n-x^n_0}{h}\\
+&=\lim_{h\to 0}\dfrac{(x_0+h-x_0)(x^{n-1}_0+x^{n-2}.x_0+...+x_0.x^{n-2}x_0+x^{n-1}_0)}{h}\\
+&=\lim_{h\to 0}(x^{n-1}_0+x^{n-1}_0+...+x^{n-1}_0+x^{n+1}_0)\\
+&=x^{n-1}_0(\underbrace{1+1+...+1+1}_{n\; \text{តួរលេខ 1}})\\
+&=n.x^{n-1}_0\\
+\therefore \quad \dfrac{d}{dx}(x^n)&=n.x^{n-1}
+\end{align*}
+%---------------------------- example-----------------------------
+\begin{example}
+គណនា $f'(x)$ 
+\begin{multicols}{3}
+\begin{enumerate}
+\item $f(x)=x^3$
+\item $f(x)=\sqrt{x}$
+\item $f(x)=\sqrt[3]{x^2}$
+\end{enumerate}
+\end{multicols}
+\end{example}
+\answer 
+\begin{enumerate}
+\item $f(x)=x^3 \Rightarrow f'(x)=(x^3)'=3 x^{3-1}=3x^2$
+\item $f(x)=\sqrt{x} \Rightarrow f'(x)=(\sqrt{x})'=(x^{\frac{1}{2}})'=\dfrac{1}{2}x^{\frac{1}{2}-1}=\dfrac{1}{2}x^{-\frac{1}{2}}=\dfrac{1}{2\sqrt{x}}$
+\item $f(x)=\sqrt[3]{x^2}\Rightarrow f'(x)=(\sqrt[3]{x^2})'=(x^{\frac{2}{3}})'=\dfrac{2}{3}x^{\frac{2}{3}-1}=\dfrac{2}{3}x^{-\frac{1}{3}}=\dfrac{2}{3\sqrt[3]{x}}$
+\end{enumerate}
+%-------------------------------- general --------------------------
+\begin{general}
+បើ $y=u^n$ ដែល $u$ ជាអនុគមន៍នៃ $x$ នោះ $y'=n u' u^{n-1}$  ។  
+\end{general}
+\solution
+គេមាន $y=u^n$ គេបាន $y'=\dfrac{dy}{dx}=\dfrac{dy}{du}\times \dfrac{du}{dx}=\dfrac{d}{du}(u^n)\times u'=nu'u^{n-1}$ 
+\begin{example}
+គណនា $y'$ 
+\begin{multicols}{2}
+\begin{enumerate}
+\item $y=(2x+\ln 2)^4$
+\item $y=\sqrt{u}$ ដែល $u$ ជាអនុគមន៍នៃ $x$ ។
+\end{enumerate}
+\end{multicols}
+\end{example}
+\answer
+\begin{enumerate}
+\item $y=(2x+\ln 2)^4\Rightarrow y'=4(2x+\ln 2)'(2x+\ln 2)^{4-1}=4(2+0)(2x+\ln 2)^3=8(2x+\ln 2)^3$
+\item $y=\sqrt{u}=u^{\frac{1}{x}}$ នាំឲ្យ $y'=(u^{\frac{1}{2}})'=\dfrac{1}{2}u'u^{\frac{1}{2}-1}=\dfrac{1}{2}u'u^{-\frac{1}{2}}=\dfrac{u'}{2\sqrt{u}}$ ។ 
+\end{enumerate}
+\section{ដេរីវេនៃអនុគមន៍ត្រីកោណមាត្រ}
+\begin{enumerate}
+%\begin{multicols}{2}
+\item បើ $y=\sin x$ នោះ $y'=\cos x$ 
+\item បើ $y=\cos x$ នោះ $y'=-\sin x$
+%\end{multicols}
+\item បើ $y=\tan x$ នោះ $y'=\dfrac{1}{\cos^2 x}=1+\tan^2 x$
+\item បើ $y=\cot x$ នោះ $y'=-\dfrac{1}{\sin^2 x}=-(1+\cot^2 x)$
+\end{enumerate}
+%------------------------------------solution-----------------------
+\solution
+%-------------------------------------------1--------------------------------------------
+\begin{enumerate}
+\item គេមាន $y=f(x_0)=\sin x_0$ នោះ $f(x_0+h)=\sin (x_0+h)$ តាមនិយមន័យ 
+\begin{align*}
+y'=f'(x_0)&=\lim_{h\to 0}\dfrac{f(x_0+h)-f(x_0)}{h}\\
+&=\lim_{h\to 0}\dfrac{\sin (x_0+h)-\sin x_0}{h}\\
+&=\lim_{h\to 0}\dfrac{\sin x_0\cos h+\sin h.\cos x_0 -\sin x_0}{h}\\
+&=\lim_{h\to 0}\left(\cos x_0.\dfrac{\sin h}{h}-\sin x_0.\dfrac{1-\cos h}{h}  \right)\\
+&=\cos x_0 \quad , \lim_{h\to 0}\dfrac{\sin h}{h}=1, \lim_{h\to 0}\dfrac{1-\cos h}{h}=0\\
+\therefore \quad \dfrac{d}{dx}(\sin x)&=\cos x
+\end{align*} 
+%--------------------------------2-----------------------------
+\item គេមាន $y=f(x_0)=\cos x_0$ នោះ $f(x_0+h)=\cos (x_0+h)$ តាមនិយមន័យ
+\begin{align*}
+y'=f'(x_0)&=\lim_{h\to 0}\dfrac{f(x_0+h)-f(x_0)}{h}\\
+&=\lim_{h\to 0}\dfrac{\cos (x_0+h)-\cos x_0}{h}\\
+&=\lim_{h\to 0}\dfrac{\cos x_0.\cos h-\sin x_0 .\sin h-\cos x_0}{h}\\
+&=\lim_{h\to 0}\left(-\dfrac{\sin h}{h}.\sin x_0-\cos x_0. \dfrac{1-\cos h}{h} \right)\\
+&=-\sin x_0 \quad , \lim_{h\to 0}\dfrac{1-\cos h}{h}=0,\lim_{h\to 0}\dfrac{\sin h}{h}=1\\
+\therefore\quad \dfrac{d}{dx}(\cos x)&=-\sin x
+\end{align*}
+%----------------------------------------3----------------------
+\item តាង $y=\tan x=\dfrac{\sin x}{\cos x}$ តាមសមីការ (\ref{eq6}) គេបាន 
+\begin{align*}
+y'=\left(\dfrac{\sin x}{\cos x} \right)'&=\dfrac{(\sin x)'\cos x-(\cos x)'.\sin x}{(\cos x)^2}\\
+&=\dfrac{\cos x.\cos x-(-\sin x).\sin x}{\cos^2 x}\\
+&=\dfrac{\cos^2 x+\sin^2 x}{\cos^2 x}\\
+&=1+\tan^2 x\\
+&=\dfrac{1}{\cos^2 x} ,\; \sin^2 x+\cos^2 x=1\\
+\therefore \quad (\tan x)'&=\dfrac{1}{\cos^2}=1+\tan^2 x
+\end{align*}
+%--------------------------------------------4-------------------
+\item តាង $y=\cot x=\dfrac{\cos x}{\sin x}$ តាមសមីការ (\ref{eq6}) គេបាន
+\begin{align*}
+y'=\left(\dfrac{\cos x}{\sin x} \right)'&=\dfrac{(\cos x)'.\sin x-(\sin x)'.\cos x}{(\sin^2x)^2}\\
+&=\dfrac{-\sin x. \sin x-\cos x.\cos x}{\sin^2 x}\\
+&=\dfrac{-\sin^2 x-\cos^2 x}{\sin^2 x}\\
+&=-\dfrac{\sin^2 x+\cos^2 x}{\sin^2 x} \;, \sin^2 x+\cos^2 x=1\\
+\therefore \quad (\cot x)'&=-\dfrac{1}{\sin^2 x}=-(1+\cot^2x) 
+\end{align*}
+\end{enumerate}
+%--------------------------------general ------------------------
+\begin{general}
+បើ $u$ ជាអនុគមន៍នៃ $x$ គេបាន 
+\begin{enumerate}
+%\begin{multicols}{2}
+\item បើ $y=\sin u$ នោះ $y'=u'\cos u$ 
+\item បើ $y=\cos u$ នោះ $y'=-u'\sin u$  
+%\end{multicols}
+\item បើ $y=\tan u$ នោះ $y'=\dfrac{u'}{\cos^2 u}=u(1+\tan^2 u)$
+\item បើ $y=\cot u$ នោះ $y'=-\dfrac{u'}{\sin^2 u}=-u'(1+\cot^2 u)$
+\end{enumerate}
+
+\end{general}
+\solution 
+\begin{enumerate}
+
+%---------------------------------------1----------------------
+\item បើ $u$ ជាអនុគមន៍នៃ $x$ នោះ $y=\sin u$ គេបាន 
+\begin{align*}
+\dfrac{dy}{dx}=\dfrac{dy}{du}\times \dfrac{du}{dx}&=\dfrac{d}{du}(\sin u)\times \dfrac{du}{dx}=\cos u \times u'=u'\cos u\\
+\therefore \quad \dfrac{d}{dx}(\sin u)&=u'\cos u
+\end{align*}
+%------------------------------------2-----------------------
+\item បើ $u$ ជាអនុគមន៍នៃ $x$ នោះ $y=\cos u$ គេបាន 
+\begin{align*}
+\dfrac{dy}{dx}=\dfrac{dy}{du}\times \dfrac{du}{dx}&=\dfrac{d}{du}(\cos u)\times \dfrac{du}{dx}=-\sin u \times u'=-u'\sin u\\
+\therefore \quad \dfrac{d}{dx}(\cos u)&=-u'\sin u
+\end{align*}
+%-------------------------------------5---------------------------------
+\item បើ $u$ ជាអនុគមន៍នៃ $x$ នោះ $y=\tan u$ គេបាន 
+\begin{align*}
+\dfrac{dy}{dx}=\dfrac{dy}{du}\times \dfrac{du}{dx}&=\dfrac{d}{du}(\tan u)\times \dfrac{du}{dx}=\dfrac{1}{\cos^2 u} \times u'=(1+\tan^2 u)\times u'\\
+\therefore \quad (\tan u)'&=\dfrac{u'}{\cos^2 u}=u'(1+\tan^2 u)
+\end{align*}
+%--------------------------------------------6--------------------------------------
+\item បើ $u$ ជាអនុគមន៍នៃ $x$ នោះ $y=\cot u$ គេបាន 
+\begin{align*}
+\dfrac{dy}{dx}=\dfrac{dy}{du}\times \dfrac{du}{dx}&=\dfrac{d}{du}(\cot u)\times \dfrac{du}{dx}=-\dfrac{1}{\sin^2 u} \times u'=-(1+\cot^2 u)\times u'\\
+\therefore \quad (\cot u)'&=-\dfrac{u'}{\sin ^2 u}=-u'(1+\cot^2 u)
+\end{align*}
+\end{enumerate}
+%--------------------------------------------- example----------------------------
+\begin{example}
+គណនាដេរីវេនៃអនុគមន៍ខាងក្រោម៖
+\begin{multicols}{2}
+\begin{enumerate}
+\item $y=\sin (2x+1)$
+\item $y=\cos (2x+1)$
+\item $y=\tan (2x+1)$
+\item $y=\cot (2x+1)$ ។
+\end{enumerate}
+\end{multicols}
+\end{example}
+\answer 
+\begin{enumerate}
+\item $y=\sin (2x+1) \Rightarrow y'=(2x+1)'\cos (2x+1)=2\cos (2x+1)$
+\item $y=\cos (2x+1)\Rightarrow y'=-(2x+1)'\sin (2x+1)=-2\sin (2x+1)$
+\item $y=\tan (2x+1)\Rightarrow y'=\dfrac{(2x+1)'}{\cos^2 (2x+1)}=\dfrac{2}{\cos^2 (2x+1)}=2[1+\tan^2(2x+1)]$
+\item $y=\cot (2x+1)\Rightarrow y'=-\dfrac{(2x+1)'}{\sin ^2 (2x+1)}=-\dfrac{2}{\sin^2 (2x+1)}=-2[1+\cot^2 (2x+1)]$ ។
+\end{enumerate}
+\section{ដេរីវេអនុគមន៍អិចស្ប៉ូណង់ស្យែល}
+ស្រាយថាបើ $y=a^x$ នោះ $y'=a^x .\ln a$
+\solution
+គេមាន $y=a^x$ តាមនិយមន័យ គេបាន
+\begin{align*}
+y'=f'(x_0)&=\lim_{h\to 0}\dfrac{f(x_0+h)-f(x_0)}{h}\\
+&=\lim_{h\to 0}\dfrac{a^{x_0+h}-a^{x_0}}{h}\\
+&=\lim_{h\to 0}\dfrac{a^{x_0}(a^h-1)}{h}\\
+&=a^{x_0}\lim_{h\to 0}\dfrac{a^h-1}{h}\;\text{ដោយ}\; \lim_{x\to 0}\dfrac{a^x-1}{x}=\ln a\\
+&=a^{x_0}.\ln a\\
+\therefore \quad (a^x)'&=a^x. \ln a
+\end{align*}
+\begin{general}
+បើ $u$ ជាអនុគមន៍នៃ $x$ នោះ $(a^u)'=u'a^u.\ln a$ ។ 
+\end{general}
+\solution 
+បើ $u$ ជាអនុគមន៍នៃ $x$ នោះ  គេបាន 
+\begin{align*}
+\dfrac{dy}{dx}=\dfrac{dy}{du}\times \dfrac{du}{dx}&=\dfrac{d}{du}(a^u)\times \dfrac{du}{dx}=a^u.\ln a \times u'\\
+\therefore \quad (a^u)'&=u'.a^u .\ln a)
+\end{align*}
+%--------------------example-------
+\begin{example}
+គណនា $y'$ ចំពោះ $u$ ជាអនុគមន៍នៃ $x$ នៃអនុគមន៍ខាងក្រោម៖
+\begin{multicols}{3}
+\begin{enumerate}
+\item $y=e^x$  
+\item $y=a^{x^2-1}$
+\item $y=e^u$ 
+\end{enumerate}
+\end{multicols}
+\end{example}
+\answer
+\begin{enumerate}
+ \item  $y=e^x$ នោះ $y'=(e^x)'=e^x.\ln e=e^x\;,\ln e=1$ 
+ \item $y=a^{x^2-1}$ នោះ $y'=(x^{x^2-1})'a^{x^2-1}\ln a=2x.a^{x^2-1}\ln a$
+\item $y=e^u$ នោះ $y'=(e^u)'=u'e^u.\ln e=u'e^u\;,\;\ln e=1$
+\end{enumerate}
+\section{ដេរីវេនៃអនុគមន៍កោការីត}
+ស្រាយបញ្ជាក់ថា បើ $y=\log _a x \;, a>0,a\neq 1$ នោះ $y'=\dfrac{1}{x\ln a}$ ។
+\solution 
+គេមាន $y=\log_a x$ តាមនិយមន័យ គេបាន
+\begin{align*}
+y'=f'(x_0)&=\lim_{h\to 0}\dfrac{f(x_0+h)-f(x_0)}{h}\\
+&=\lim_{h\to 0}\dfrac{\log_a (x_0+h)-\log_a (x_0)}{h}\\
+&=\lim_{h\to 0}\dfrac{1}{h}\log_a \left(\dfrac{x_0+h}{x_0} \right)\\
+&=\lim_{h\to 0}\log_a \left(1+\dfrac{h}{x_0} \right)^\dfrac{1}{h}\\
+&=\log_a \left(\lim_{h\to 0}\ln \left(1+\dfrac{h}{x_0}\right)^{\dfrac{1}{h}}\right)^\dfrac{1}{x_0}\\
+&=\log_a e^{\dfrac{1}{x_0}}=\dfrac{1}{x_0}\dfrac{\ln e}{\ln a}\\
+\therefore \quad (\log_a x)'&=\dfrac{1}{x\ln a}\;, a>0,a\neq 1
+\end{align*}
+
+\begin{general}
+បើ $u$ ជាអនុគមន៍នៃ $x$ នោះ $(\log_a u)'=\dfrac{u'}{u\ln a}\;, a>0,a\neq 1$ ។ 
+\end{general}
+\solution 
+បើ $u$ ជាអនុគមន៍នៃ $x$ នោះ  គេបាន 
+\begin{align*}
+\dfrac{dy}{dx}=\dfrac{dy}{du}\times \dfrac{du}{dx}&=\dfrac{d}{du}(\log_a u)\times \dfrac{du}{dx}=\dfrac{1}{u\ln a}\times u'\\
+\therefore \quad (\log_a u)'&=\dfrac{u'}{u\ln a} \;, a>0,a\neq 1
+\end{align*}
+
+\section{ដេរីវេនៃអនុគមន៍លោការីតនេពែ}
+ស្រាយបញ្ជាក់ថា បើ $y=\ln x$ នោះ $y'=\dfrac{1}{x}$ ។
+\solution 
+គេមាន $y=\ln x$ តាមនិយមន័យ គេបាន
+\begin{align*}
+y'=f'(x_0)&=\lim_{h\to 0}\dfrac{f(x_0+h)-f(x_0)}{h}\\
+&=\lim_{h\to 0}\dfrac{\ln (x_0+h)-\ln (x_0)}{h}\\
+&=\lim_{h\to 0}\dfrac{\ln \left(\dfrac{x_0+h}{x_0} \right)}{h}\\
+&=\lim_{h\to 0}\dfrac{1}{h}\ln \left(1+\dfrac{h}{x_0} \right)\\
+&=\lim_{h\to 0}\ln \left(1+\dfrac{h}{x_0}\right)^{\dfrac{1}{h}}\\
+&=\ln \left[\lim_{h\to 0}\left(1+\dfrac{1}{\frac{x_0}{h}} \right)^{\frac{x_0}{h}\times \frac{1}{x_0}}  \right]\;, \lim_{h\to 0}\left(1+\dfrac{1}{\frac{x_0}{h}} \right)^{\frac{x_0}{h}}=e\\
+&=\ln e^{\dfrac{1}{x_0}},\ln e=1\\
+\therefore \quad (\ln x)'&=\dfrac{1}{x} 
+\end{align*}
+%----------------------------------------- example ----------------------------
+\begin{example}
+រក $f'(x)$ នៃអនុគមន៍ខាងក្រោម៖
+\begin{multicols}{2}
+\begin{enumerate}
+\item $f(x)=x^2.\log_a x, a>0,a\neq 1$
+\item $f(x)=\sin (2x)+\log_2 (x^2+1)$
+\item $f(x)=\dfrac{e^{2x}+\log_3 x}{x^2}$
+\item $f(x)=\log (x^2 \sqrt{x^3-1})$
+\item $f(x)=(\sin x)^{\log x}$
+\item $f(x)=(\log _a x)^{\ln (2x)},a>0,a\neq 1$
+\end{enumerate}
+\end{multicols}
+\end{example}
+
+%----------------------------------- solution -----------------------
+\solution 
+\begin{enumerate}
+\item $f(x)=x^2.\log_a x, a>0,a\neq 1\Longrightarrow f'(x)=(x^2)'\log_a x+\left(\log_a x \right)'x^2$
+\begin{align*}
+&=2x\log_a x+\dfrac{1}{x\ln a}x^2\\
+\therefore \quad f'(x)&=2x\log _a x+\dfrac{x}{\ln a} , a>0,a\neq 1
+\end{align*}
+\item $f(x)=\sin (2x)+\log_2 (x^2+1)\Longrightarrow f'(x)=-(2x)'\cos (2x)+\dfrac{(x^2+1)'}{(x^2+1)\ln 2}$
+\begin{center}
+$\therefore \quad f'(x)=-2\cos(2x)+\dfrac{2x}{(x^2+1)\ln 2}$
+\end{center}
+\item $f(x)=\dfrac{e^{2x}+\log_3 x}{x^2}\Longrightarrow f'(x)=\dfrac{(e^{2x}+\log_3 x)'x^2-(x^2)'(e^{2x}+\log_3 x)}{x^4}$
+\begin{align*}
+&=\dfrac{(2e^{2x}+\dfrac{1}{x\ln 3})x^2-2x(e^{2x}+\log_3 x)}{x^4}\\
+&=\dfrac{2xe^{2x}+\dfrac{1}{\ln 3}-2e^{2x}-2\log_3 x}{x^3}\\
+\therefore \quad f'(x)&=\dfrac{2e^{2x}(x-1)+\dfrac{1}{\ln 3}-\log_3x^2}{x^3}
+\end{align*}
+\item $f(x)=\log (x^2 \sqrt{x^3-1})=\log x^2 +\log (x^3-1)^{\frac{1}{2}}=2\log x+\dfrac{1}{2}\log (x^3-1)\\
+\therefore \quad f'(x)=\dfrac{2}{x\ln 10}+\dfrac{(x^3-1)'}{2(x^3-1)\ln 10}=\dfrac{2}{x\ln 10}+\dfrac{3x^2}{2(x^3-1)\ln 10} $
+\item $f(x)=(\sin x)^{\log x}\Longleftrightarrow \ln f(x)=\ln (\sin x)^{\log x}$
+\begin{align*}
+\left(\ln f(x) \right)'&=(\log x. \ln (\sin x))'\\
+\dfrac{f'(x)}{f(x)}&=(\log x)'\ln (\sin x)+(\ln (\sin x))'\log x\\
+f'(x)&=f(x)\left(\dfrac{1}{x\ln 10}\ln (\sin x)+\dfrac{(\sin x)' }{\sin x}.\log x \right)\\
+\therefore \quad f'(x)&=(\sin x)^{\log x}\left(\dfrac{\ln (\sin x)}{x\ln 10} +\cot x.\log x\right)
+\end{align*}
+\item $f(x)=(\log _a x)^{\ln (2x)},a>0,a\neq 1\Longleftrightarrow \ln f(x)=\ln (\log_a x)^{\ln (2x)}$
+\begin{align*}
+\left(\ln f(x) \right)'&=\left(\ln (2x).\ln (\log_a x) \right)'\\
+\dfrac{f'(x)}{f(x)}&=(\ln (2x))'\ln (\log_a x)+(\ln (\log _a x))' \ln (2x)\\
+f'(x)&=f(x)\left(\dfrac{(2x)'}{2x}\ln (\log_a x)+\dfrac{(\log _a x)'}{\log_a x}\ln (2x) \right)\\
+\therefore \quad f'(x)&=(\log _a x)^{\ln (2x)}\left(\dfrac{\ln (\log_a x)}{x}+\dfrac{\ln (2x)}{x\ln a \log_a x} \right) ,a>0,a\neq 1
+\end{align*}
+\end{enumerate}
+
+
+\begin{general}
+បើ $u$ ជាអនុគមន៍នៃ $x$ នោះ $(\ln u)'=\dfrac{u'}{u}$ ។ 
+\end{general}
+\solution 
+បើ $u$ ជាអនុគមន៍នៃ $x$ នោះ  គេបាន 
+\begin{align*}
+\dfrac{dy}{dx}=\dfrac{dy}{du}\times \dfrac{du}{dx}&=\dfrac{d}{du}(\ln u)\times \dfrac{du}{dx}=\dfrac{1}{u}\times u'\\
+\therefore \quad (\ln u)'&=\dfrac{u'}{u}
+\end{align*}
+%----------------------------------------- example ----------------------------
+\begin{example}
+រក $f'(x)$ នៃអនុគមន៍ខាងក្រោម៖
+\begin{multicols}{2}
+\begin{enumerate}
+\item $f(x)=x.\ln x$
+\item $f(x)=x^2+\ln (x^2+1)$
+\item $f(x)=\dfrac{e^x+\ln x}{x^2}$
+\item $f(x)=\ln (x^2 \sqrt{x^3-1})$
+\item $f(x)=x^x$
+\item $f(x)=(\sin x)^{\cos x}$
+\end{enumerate}
+\end{multicols}
+\end{example}
+
+%----------------------------------- solution -----------------------
+\solution 
+\begin{enumerate}
+\item $f(x)=x.\ln x\Longrightarrow f'(x)=x'\ln x+(\ln x)' x=\ln x+\dfrac{1}{x}.x=\ln x+1$
+\item $f(x)=x^2+\ln (x^2+1)\Longrightarrow f'(x)=(x^2)'+\dfrac{(x^2+1)'}{x^2+1}=2x+\dfrac{2x}{x^2+1}$
+\item $f(x)=\dfrac{e^x+\ln x}{x^2}\Longrightarrow f'(x)=\dfrac{(e^x+\ln x)'x^2-(x^2)'(e^x+\ln x)}{(x^2)^2}$
+\begin{align*}
+&=\dfrac{\left(e^x+\dfrac{1}{x}\right)x^2-2x(e^x+\ln x)}{x^4}\\
+\therefore \quad f'(x)&=\dfrac{xe^x+1-2e^x-2\ln x}{x^3}
+\end{align*}
+\item $f(x)=\ln (x^2 \sqrt{x^3-1})=\ln x^2 +\ln \sqrt{x^3-1}=2\ln x+ \ln (x^3-1)^{\frac{1}{2}}$
+\begin{align*}
+f'(x)&=2(\ln x)'+\dfrac{1}{2}[\ln (x^3-1)]'\\
+&=2.\dfrac{1}{x}+\dfrac{1}{2}.\dfrac{(x^3-1)'}{x^3-1}\\
+\therefore \quad f'(x)&=\dfrac{2}{x}+\dfrac{3}{2}.\dfrac{x^2}{x^3-1}
+\end{align*}
+\item $f(x)=x^x \Longleftrightarrow \ln f(x)=\ln x^x=x\ln x $
+\begin{align*}
+\left(\ln f(x)\right)'&=(x\ln x)'\\
+\dfrac{f'(x)}{f(x)}&=x'\ln x+(\ln x)'x\\
+f'(x)&=f(x)(\ln x+\dfrac{1}{x}.x)\\
+\therefore \quad f'(x)&=x^x(\ln x+1)
+\end{align*}
+\item $f(x)=(\sin x)^{\cos x}\Longleftrightarrow \ln f(x)=\ln (\sin x)^{\cos x}$
+\begin{align*}
+\left(\ln f(x) \right)'&= (\cos x\ln \sin x)'\\
+\dfrac{f'(x)}{f(x)}&=(\cos x)'\ln \sin x+(\ln \sin x)'\cos x\\
+f'(x)&=f(x)\left(-\sin x\ln sin x+\dfrac{(\sin x)'}{\sin x}.\cos x \right)\\
+\therefore \quad f'(x)&=(\sin x)^{\cos x} \left( \cos x\cot x-\sin x\ln \sin x\right)
+\end{align*}
+\end{enumerate}
+\section{ដេរីវេនៃអនុគមន៍ Arc Sine និង Arc  Tangent}
+\begin{center}
+$y=\arcsin x\Longleftrightarrow x=\sin y$ និង $-\frac{\pi}{2}\leq y \leq \frac{\pi}{2},$\\
+$y=\arctan x \Longleftrightarrow x=\tan y$ និង $-\frac{\pi}{2}\leq y \leq \frac{\pi}{2},$
+\end{center}
+បើ $y=\arcsin x $ នោះ $ y'=\dfrac{1}{\sqrt{1-x^2}}$ ។
+\solution
+បើ $y=\arcsin x$ នោះ $x=\sin y$ ធ្វើដេរីវេអង្គសងខាងធៀបនឹង $x$ គេបាន
+\begin{align*}
+(x)'&=(\sin y)'\Longleftrightarrow 1=y' \cos y\\
+y'&=\dfrac{1}{\cos y} , \sin^2 y+\cos^2 y=1\Longrightarrow \cos y=\pm\sqrt{1-\sin^2 x}
+\end{align*}
+ដោយ $-\frac{\pi}{2}\leq y \frac{\pi}{2}\Longrightarrow\cos y\geq 0 \Longrightarrow \cos y=\sqrt{1-x^2}$ 
+$$\therefore \quad (\arcsin x)'=\dfrac{1}{\sqrt{1-x^2}}$$
+បើ $y=\arctan x $ នោះ $ y'=\dfrac{1}{1+x^2} $ ។
+\solution 
+បើ $y=\arctan x$ នោះ $x=\tan y$ ធ្វើដេរីវេអង្គសងខាងធៀបនឹង $x$ គេបាន
+\begin{align*}
+(x)'&=(\sin y)'\Longleftrightarrow 1=y'(1+\tan^2 y )\\
+y'&=\dfrac{1}{1+\tan^2 y} \\
+\therefore \quad (\arctan x)'&=\dfrac{1}{1+x^2}
+\end{align*}
+\begin{general}
+បើ $u$ ជាអនុគមន៍នៃ $x$ នោះ $(\arcsin u)'=\dfrac{u'}{\sqrt{1-x^2}}$
+\end{general}
+\solution 
+បើ $u$ ជាអនុគមន៍នៃ $x$ នោះ  គេបាន 
+\begin{align*}
+\dfrac{dy}{dx}=\dfrac{dy}{du}\times \dfrac{du}{dx}&=\dfrac{d}{du}(\arcsin u)\times \dfrac{du}{dx}=\dfrac{1}{\sqrt{1-u^2}}\times u'\\
+\therefore \quad (\arcsin u)'&=\dfrac{u'}{\sqrt{1-u^2}}
+\end{align*}
+\begin{general}
+បើ $u$ ជាអនុគមន៍នៃ $x$ នោះ $(\arctan u)'=\dfrac{u'}{1+u^2}$
+\end{general}
+\solution 
+បើ $u$ ជាអនុគមន៍នៃ $x$ នោះ  គេបាន 
+\begin{align*}
+\dfrac{dy}{dx}=\dfrac{dy}{du}\times \dfrac{du}{dx}&=\dfrac{d}{du}(\arctan u)\times \dfrac{du}{dx}=\dfrac{1}{1-u^2}\times u'\\
+\therefore \quad (\arctan u)'&=\dfrac{u'}{1+u^2}
+\end{align*}
+\begin{exercise}
+គណនាដេរីវេនៃអនុគមន៍ខាងក្រោម៖
+\begin{multicols}{2}
+\begin{enumerate}
+\item $f(x)=\arcsin x.\sin x$
+\item $f(x)=\arctan x\cos x$
+\item $f(x)=\sin (\arcsin x)$
+\item $f(x)=\arctan (\tan x)$
+\end{enumerate}
+\end{multicols}
+\end{exercise}
+\solution
+\begin{enumerate}
+\item $f(x)=\arcsin x.\sin x \Longrightarrow f'(x)=(\arcsin x)'\sin x+(\sin x)'\arcsin x$
+\begin{center}
+$\therefore \quad f'(x)=\dfrac{\sin x}{\sqrt{1-x^2}}+\cos x.\arcsin x$
+\end{center}
+\item $f(x)=\arctan x\cos x\Longrightarrow f'(x)=(\arctan x)'\cos x+(\cos x)'\arctan$
+\begin{center}
+$\therefore \quad f'(x)=\dfrac{\cos x}{1+x^2}-\sin x.\arctan x$
+\end{center}
+\item $f(x)=\sin (\arcsin x)\Longrightarrow f'(x)=(\arcsin x)'\cos (\arcsin x)$
+\begin{center}
+$\therefore \quad f'(x)=\dfrac{\cos (\arcsin x)}{\sqrt{1-x^2}}$
+\end{center}
+\item $f(x)=\arctan (\tan x)\Longrightarrow f'(x)=\dfrac{(\tan x)'}{1+(\tan x)^2}=\dfrac{1+\tan^2 x}{1+\tan^2 x}$
+\begin{center}
+$\therefore \quad f'(x)=1$
+\end{center}
+\end{enumerate}
+
+
+
+
+
+
+\newpage 
+\section*{លក្ខណះនៃដេរីវេ}
+បើ $f,g,y,u,v$ ជាអនុគមន៍នៃ $x$ និង $k$ ជាចំនួនថេនោះគេបាន៖
+\begin{enumerate}
+\begin{multicols}{3}
+\item $(u\pm v)'=u'\pm v'$
+\item $(ku)'=k u'$
+\item $(uv)'=u'v+v'u$
+\item $\left( \dfrac{u}{v}\right)'=\dfrac{u'v-v'u}{v^2}$
+\item $\dfrac{dy}{dx}=\dfrac{dy}{du}.\dfrac{du}{dx}$ 
+\item $\left(\dfrac{1}{v}\right)'=-\dfrac{v'}{v^2}$
+\end{multicols}
+\end{enumerate}
+\section*{រូបមន្តនៃដេរីវេ}
+
+បើ $C,a,b,c$ ជាចំនួនថេ និង $u$ ជាអនុគមន៍នៃ $x$ ដែល $n\in \N$ គេបាន៖
+\begin{multicols}{2}
+\begin{enumerate}
+\item $(C)'=0$
+\item $(x)'=1$
+\item $(ax+b)'=a$
+\item $(ax^2+bx+c)'=2ax+b$
+\item $(x^n)'=nx^{n-1}$
+\item $(u^n)'=n.u'.u^{n-1}$
+\item $(x)^{-n}=-\dfrac{n}{x^{n+1}}$
+\item $\left(\dfrac{1}{x}\right)'=-\dfrac{1}{x^2}$
+\item $\left(\dfrac{1}{u} \right)'=-\dfrac{u}{u^2}$
+\item $(\sqrt{x})'=\dfrac{1}{2\sqrt{x}}$
+\item $(\sqrt{u})'=\dfrac{u'}{2\sqrt{u}}$
+\item $(\sqrt[n]{x})'=\dfrac{1}{n\sqrt[n]{x^{n-1}}}$
+\item $(\ln x)'=\dfrac{1}{x}$
+\item $(\ln u)'=\dfrac{u'}{u}$
+\item $(\log_a x)'=\dfrac{1}{x\ln a}, a>0,a\neq 1$
+\item $(\log_a u)'=\dfrac{u'}{u.\ln a},a>0,a\neq 1$
+\item $(a^x)'=a^x\ln a,a>0,a\neq 1$
+\item $(a^u)'=u'a^u\ln a, a>0,a\neq 1$
+\item $(e^x)'=e^x$
+\item $(e^u)'=u'e^u$
+\item $(\sin x)'=\cos x$
+\item $(\sin u)'=u' \cos u$
+\item $(\cos x)'= -\sin x $
+\item $(\cos u)'=-u' \sin u$
+\item $(\tan x)'=\dfrac{1}{\cos^2 x}=1+\tan^2 x$
+\item $(\tan u)'=\dfrac{u'}{\cos^2 u}=u'(1+\tan^2 u)$
+\item $(\cot x)'=-\dfrac{1}{\sin^2 x}=-(1+\cot^2 x)$
+\item $(\cot u)'=-\dfrac{u'}{\sin^2 u}=-(1+\cot^2 u)$
+\item $(\arcsin x)'=\dfrac{1}{\sqrt{1-x^2}}$
+\item $(\arcsin u)'=\dfrac{u'}{\sqrt{1-u^2}}$
+\item $(\arccos x)'=-\dfrac{1}{\sqrt{1-x^2}}$
+\item $(\arccos u)'=-\dfrac{u'}{\sqrt{1-u^2}}$
+\item $(\arctan x)'=\dfrac{1}{1+x^2}$
+\item $(\arctan u)'=\dfrac{u'}{1+u^2}$
+\item $(\arccot x)'=-\dfrac{1}{1+x^2}$
+\item $(\arccot u)'=-\dfrac{u'}{1+u^2}$
+
+
+\item $(u^v)'=\left(v' .\ln u +\dfrac{v.u'}{u} \right).u^v$
+\end{enumerate}
+\end{multicols}
+
+\newpage 
+\section{លំហាត់ និង ដំណោះស្រាយ}
+%--------------------
+\begin{exercise}
+គណនា $f'(x)$ នៃអនុគមន៍ខាងក្រោម៖
+\begin{multicols}{2}
+\begin{enumerate}
+\item $f(x)=x^5-x^4+x^3-x^2+x-1$
+\item $f(x)=2x^2-\sqrt{x}+\dfrac{2}{x}$
+\item $f(x)=(x^4-7x^2+\sin a)^7$
+\item $f(x)=(x^2-\sqrt{x})^{2019}$
+\item $f(x)=\sqrt{x^3-x^2+3}$
+\item $\sqrt[4]{x^3-2x}$
+\item $f(x)=(x+1)(2x-1)^2$
+\item $f(x)=(x^2+2x+3)(x^3-3x-1)$
+\item $f(x)=\dfrac{1}{x-1}$
+\item $f(x)=\dfrac{x\sqrt{x}}{x+1}$
+
+\end{enumerate}
+\end{multicols}
+\end{exercise}
+
+
+
+\solution 
+\begin{enumerate}
+\item $f(x)=x^5-x^4+x^3-x^2+x-1 \Longrightarrow f'(x)=5x^4-4x^3+3x^2-2x+1$
+\item $f(x)=2x^2-\sqrt{x}-\dfrac{2}{x}\Longrightarrow f'(x)=4x^2+\dfrac{1}{2\sqrt{x}}-\dfrac{2}{x^2}$
+\begin{center}
+$f'(x)=7(x^4-7x^2+\sin a)'(x^4-7x^2+\sin a)^{7-1}=7(4x^3-14x)(x^4-7x^2+\sin a)^6$
+\end{center}
+
+\item $f(x)=(x^4-7x^2+\sin a)^7$
+\item $f(x)=(x^2-\sqrt{x})^{2019}\Longrightarrow f'(x)=2019(x^2-\sqrt{x})'(x^2-\sqrt{x})^{2019-1}$
+$$=2019\left(2x-\dfrac{1}{2\sqrt{x}}\right)(x^2-\sqrt{x})^{2018}$$
+\item $f(x)=\sqrt{x^3-x^2+3}\Longrightarrow f'(x)=\dfrac{(x^3-x^2+3)'}{2\sqrt{x^3-x^2+3}}=\dfrac{3x-2}{2\sqrt{x^3-x^2+3}}$
+%-------6 ----
+\item $\sqrt[4]{x^3-2x} \Longleftrightarrow f(x)=(x^3-2x)^{\frac{1}{4}}$
+\begin{align*}
+f'(x)&=\dfrac{1}{4}(x^3-2x)'(x^3-2x)^{\frac{1}{4}-1}\\
+&=\dfrac{1}{4}(3x^2-2)(x^3-2x)^{-\frac{3}{4}}\\
+\therefore \quad f'(x)&=\dfrac{3x^2-2}{4\sqrt[4]{(x^3-2x)^3}}
+\end{align*}
+\item $f(x)=(x+1)(2x-1)^2$
+\begin{align*}
+f'(x)&=(x+1)'(2x-1)^2+[(2x-1)^2]'(x+1)\\
+&=(2x-1)^2+2(2x-1)'(2x-1)(x+1)\\
+&=(2x-1)(2x-1+4x+4)\\
+\therefore \quad f'(x)&=(2x-1)(6x+3)
+\end{align*}
+\item $f(x)=(x^2+2x+3)(x^3-3x-1)$
+\begin{align*}
+ f'(x)&=(x^2+2x+3)'(x^2-3x-1)+(x^2-3x-1)'(x^2+2x+3)\\
+ &=(2x+2)(x^2-3x-1)+(2x-3)(x^2+2x+3)\\
+ &=2x^3-6x^2-2x+2x^2-6x-2+2x^3+4x^2+6x-3x^2-6x-9\\
+ \therefore \quad f'(x)&=4x^3-3x^2-8x-11
+ \end{align*}
+ \item $f(x)=\dfrac{1}{x-1}\Longrightarrow f'(x)=-\dfrac{(x-1)'}{(x-1)^2}=-\dfrac{1}{(x-1)^2}$
+ %---10
+ \item $f(x)=\dfrac{x\sqrt{x}}{x+1}$
+ \begin{align*}
+ f'(x)&=\dfrac{(x\sqrt{x})'(x+1)-(x+1)'x\sqrt{x}}{(x+1)^2}\\
+ &=\dfrac{[x'\sqrt{x}+(\sqrt{x})'x ](x+1)-x\sqrt{x}}{(x+1)^2}\\
+ &=\dfrac{\left(x+\dfrac{x}{2\sqrt{x}}\right)(x+1)-x\sqrt{x}}{(x+1)^2}\\
+ &=\dfrac{x\sqrt{x}+\sqrt{x}+\dfrac{x}{2\sqrt{x}}(x+1)-x\sqrt{x}}{(x+1)^2}\\
+ \therefore \quad f'(x)&= \dfrac{x^2+3x}{2\sqrt{x}(x+1)^2} 
+ \end{align*}
+ 
+ 
+ 
+\end{enumerate}
+
+%---------------------------------------------2-----------------------
+\begin{exercise}
+គណនាដេរីវេនៃអនុគមន៍ខាងក្រោម៖
+\begin{multicols}{2}
+\begin{enumerate}
+\item $f(x)=x.\sin x+\cos x$
+\item $f(x)=\sin^3 x-x.\cos x$
+\item $f(x)=\cos (x^2+1)+2\sin (x^2-1)$
+\item $f(x)=\sin^2\sqrt{x}+\cos^2 (3x)$
+\item $f(x)=\cos (3x+4)+3\cos x.\sin x$
+\item $f(x)=\sin (\sin \sqrt{x})+\cos^3 x$
+\end{enumerate}
+\end{multicols}
+\end{exercise}
+
+%-----------------------------------------answer -----------------------------------
+\answer 
+\begin{enumerate}
+\item $f(x)=x.\sin x+\cos x$
+\begin{align*}
+f'(x)&=x'\sin x+(\sin x)'. x-\sin x\\
+&=\sin x+x.\cos x-\sin x\\
+\therefore \quad f'(x)&=x.\cos x
+\end{align*}
+\item $f(x)=\sin^3 x-x.\cos x$
+\begin{align*}
+f'(x)&=3(\sin x)'\sin^{3-1}x-[x'.\cos x+(\cos x)'.x]\\
+&=3\cos x. \sin^2 x-(\cos x-x.\sin x)\\
+\therefore \quad f'(x)&=3\cos x.\sin^2 x-\cos x +x\sin x
+\end{align*}
+\item $f(x)=\cos (x^2+1)+2\sin (x^2-1)$
+\begin{align*}
+f'(x)&=-(x^2+1)'\sin (x^2+1)+2(x^2-1)'\cos (x^2-1)\\
+\therefore \quad f'(x)&=-2x\sin (x^2+1)+4x\cos (x^2-1)\\
+\end{align*}
+\item $f(x)=\sin^2\sqrt{x}+\cos^2 (3x)$
+\begin{align*}
+f'(x)&=2(\sin \sqrt{x})'\cos^{2-1} \sqrt{x}+2(\cos (3x))' \sin (3x)\\
+&=2(\sqrt{x})'.\cos \sqrt{x}.\cos \sqrt{x}-2(3x)'\sin (3x).\sin (3x)\\
+\therefore \quad f'(x)&=\dfrac{1}{\sqrt{x}}.\cos^2 \sqrt{x}-6\sin^2 (3x)
+\end{align*}
+\item $f(x)=\cos (3x+4)+3\cos x.\sin x$
+\begin{align*}
+f'(x)&=-(3x+4)'.\sin (3x+4)+3[(\cos x)'.\sin x+(\sin x)'.\cos x]\\
+&=-3\sin (3x+4)+3[-\sin x.\sin x+\cos x.\cos x]\\
+\therefore \quad f'(x)&=-3[\sin (3x+4)+\sin^2x -\cos^2 x]
+\end{align*}
+\item $f(x)=\sin (\sin \sqrt{x})+\cos^3 x$
+\begin{align*}
+f'(x)&=(\sin \sqrt{x})'.\cos (\sin \sqrt{x})+3(\cos x)\cos^{3-1}x\\
+&=(\sqrt{x})'.\cos \sqrt{x}.\cos(\sin \sqrt{x})-3\sin x\cos ^2 x\\
+\therefore \quad f'(x)&=\dfrac{1}{2\sqrt{x}}\cos \sqrt{x}.\cos (\sin \sqrt{x})-3\sin x.\cos^2 x
+\end{align*}
+\end{enumerate}
+
+
+%-----------------------------------------3 ----------------------------
+\begin{exercise}
+គណនាដេរីវេនៃអនុគមន៍ខាងក្រោម៖
+\begin{multicols}{2}
+\begin{enumerate}
+\item $f(x)=(1+\tan x)^4$
+\item $f(x)=x^2 \tan x+(1+\cot x)^2$
+\item $f(x)=x.\tan (x^2-1)+x\cot (2x^2 -3)$
+\item $f(x)=\dfrac{\tan (2x)}{1-\cos x}$
+\end{enumerate}
+\end{multicols}
+\end{exercise}
+
+%-----------------------------------answer 3---------------------------------
+\answer 
+\begin{enumerate}
+\item $f(x)=(1+\tan x)^4$
+\begin{align*}
+f'(x)&=4(1+\tan x)'(1+\tan^2 x)^{4-1}\\
+\therefore \quad f'(x)&=4(1+\tan^2 x)(1+\tan x)^3
+\end{align*}
+\item $f(x)=x^2 \tan x+(1+\cot x)^2$
+\begin{align*}
+f'(x)&=(x^2)'\tan x+(\tan x)' x^2 +2(1+\cot x)'(1+\cot x)^{2-1}\\
+\therefore \quad f'(x)&= 2x\tan x+x^2(1+\tan^2 x)-2(1+\cot^2 x)(1+\cot x)
+\end{align*}
+
+\item $f(x)=x.\tan (x^2-1)+x\cot (2x^2 -3)$
+\begin{align*}
+f'(x)&=x'\tan (x^2-1)+[\tan (x^2-1)]'x+x'\cot (2x^2-3)+[\cot (2x^2 -3)]'x\\
+&=\tan (x^2-1)+(x^2-1)'[1+\tan^2 (x^2-1)]x-(2x^2-3)'[1+\cot^2 (2x^2-3)]x\\
+\therefore \quad f'(x)&=\tan (x^2-1)+2x^2 [1+\tan^2 (x^2-1)]-4x^2[1+\cot^2 (2x^2-3)]
+\end{align*}
+\end{enumerate}
+
+
+
+%---------------------------------------------4-----------------------
+\begin{exercise}
+គណនាដេរីវេនៃអនុគមន៍ខាងក្រោម៖
+\begin{multicols}{2}
+\begin{enumerate}
+\item $f(x)=\dfrac{1-x-2x^2}{x^3-\ln 3}$
+\item $f(x)=\dfrac{2x^2+3x+4}{\sqrt{1+2x-x^2}}$
+\item $f(x)=\sin x^2.\tan (2x+3)$
+\item $f(x)=\sin (x^2+5)+\cos (\sin x)$
+\item $f(x)=\dfrac{\sin (\tan \sqrt{x})}{\sin (\sqrt{x})}$
+\end{enumerate}
+\end{multicols}
+\end{exercise}
+%------------------------------------ answer --------------------------------
+\answer 
+\begin{enumerate}
+\item $f(x)=\dfrac{1-x-2x^2}{x^3-\ln 3}$
+\begin{align*}
+f'(x)&=\dfrac{(1-x-2x^2)'(x^3-\ln 3)-(x^3-\ln 3)'(1-x-2x^2)}{(x^3-\ln 3)^2}\\
+&=\dfrac{(-1-4x)(x^3-\ln 3)-3x^2(1-x-2x^2)}{(x^3-\ln 3)^2}\\
+&=\dfrac{-x^3+\ln 3-4x^4+4x\ln 3 -3x^2+3x^3+6x^4}{(x^3-\ln 3)^2}\\
+\therefore \quad f'(x)&=\dfrac{2x^4+2x^3-3x^2+4x.\ln 3+\ln 3}{(x^3-\ln 3)^2}
+\end{align*}
+\item $f(x)=\dfrac{2x^2+3x+4}{\sqrt{1+2x-x^2}} \Longleftrightarrow f(x).\sqrt{1+2x-x^2}=2x^2+3x+4$ ធ្វើដេរីវេអង្គសងខាង គេបាន 
+\begin{align*}
+[f(x)\sqrt{1+2x-x^2}]'&=(2x^2+3x+4)'\\
+f'(x)\sqrt{1+2x-x^2}+(\sqrt{1+2x-x^2})'f(x)&=4x+3\\
+f'(x)\sqrt{1+2x-x^2}+\dfrac{(1+2x-x^2)'}{2\sqrt{1+2x-x^2}}f(x)&=4x+3\\
+f'(x)\sqrt{1+2x-x^2}&=4x+3-\dfrac{1-x}{\sqrt{1+2x-x^2}}.f(x)\\
+\therefore \quad f'(x)&=\dfrac{4x+3}{\sqrt{1+2x-x^2}}+\dfrac{(x-1)(2x^2+3x+4)}{(1+2x-x^2)\sqrt{1+2x-x^2}}
+\end{align*}
+\item $f(x)=\sin x^2.\tan (2x+3)$
+\begin{align*}
+f'(x)&= (\sin x^2)'\tan (2x+3)+(\tan (2x+3))'\sin x^2\\
+&=(x^2)'.\sin x^2. \tan (2x+3)+(2x+3)'[1+\tan^2 (2x+3)]\sin x^2\\
+&=2x\sin x^2 .\tan (2x+3)+2\sin x^2 [1+\tan^2 (2x+3)]\\
+\therefore \quad f'(x)&=2\sin x^2 [\tan^2 (2x+3)+x\tan (2x+3)+1]
+\end{align*}
+\item $f(x)=\sin (x^2+5)+\cos (\sin x)$
+\begin{align*}
+f'(x)&=(x^2+5)'\cos (x^2+5)-(\sin x)'\sin (\sin x)\\
+\therefore \quad f'(x)&=2x\cos (x^2+5)-\cos x\sin (\sin x)
+\end{align*}
+\item $f(x)=\dfrac{\sin (\tan \sqrt{x})}{\sin (\sqrt{x})}\Longleftrightarrow f(x).\sin \sqrt{x}=\sin (\tan \sqrt{x})$
+\begin{align*}
+\left(f(x).\sin \sqrt{x}\right)'&=\left(\sin (\tan \sqrt{x})\right)'\\
+f'(x).\sin \sqrt{x}+(\sin \sqrt{x})'f(x)&=(\tan \sqrt{x})'\cos (\tan \sqrt{x})\\
+f'(x).\sin \sqrt{x} +(\sqrt{x})'\cos \sqrt{x}.f(x)&=(\sqrt{x})'(1+\tan^2 \sqrt{x})\cos (\tan \sqrt{x})\\
+f'(x)\sin \sqrt{x}+\dfrac{1}{2\sqrt{x}}\cos \sqrt{x}.f(x)&=\dfrac{1}{2\sqrt{x}}(1+\tan^2 \sqrt{x})\cos (\tan \sqrt{x}) \\
+f'(x)\sin \sqrt{x} &=\dfrac{1}{2\sqrt{x}}\left[(1+\tan^2 \sqrt{x})\cos (\tan \sqrt{x})-\cos \sqrt{x}f(x)  \right]\\
+\therefore \quad f'(x)&=\dfrac{1}{2\sqrt{x}.\sin \sqrt{x}}\left[(1+\tan^2 \sqrt{x})\cos (\tan \sqrt{x})-\cos \sqrt{x}f(x)  \right]\\
+&,f(x)=\dfrac{\sin (\tan \sqrt{x})}{\sin (\sqrt{x})}
+\end{align*}
+\end{enumerate}
+%----------------------------------------5--------------------------------------------
+\begin{exercise}
+គណនាដេរីវេនៃអនុគមន៍ខាងក្រោម៖
+\begin{multicols}{2}
+\begin{enumerate}
+\item $f(x)=xe^x +\dfrac{1}{2}x^2$
+\item $f(x)=e^{x^2+2x+1}+(x^2-3)e^x$
+\item $f(x)=\dfrac{\sqrt{x}}{e^x}$
+\item $f(x)=x^3 e^{-3x}$
+\item $f(x)=e^{2x}3^{x^2+1}$
+\item $f(x)=e^{\sin x\cos x}$
+\end{enumerate}
+\end{multicols}
+\end{exercise}
+
+%--------------------------------------------------- answer ----------------------------------------
+\answer 
+\begin{enumerate}
+\item $f(x)=xe^x +\dfrac{1}{2}x^2$
+\begin{align*}
+f'(x)=x' e^x +(e^x)'x+\dfrac{1}{2}.2x=e^x+e^xx +x=e^x(1+x)+x
+\end{align*}
+\item $f(x)=e^{x^2+2x+1}+(x^2-3)e^x$
+\begin{align*}
+f'(x)&=(x^2+2x+1)'e^{x^2+2x+1}+(x^2-3)'e^x+(e^x)'(x^2-3)\\
+&=(2x+2)e^{x^2+2x+1}+2xe^x+e^x(x^2-3)\\
+\therefore \quad f'(x)&=2(x+1)e^{x^2+2x+1}+e^x(2x+x^2-3)
+\end{align*}
+\item $f(x)=\dfrac{\sqrt{x}}{e^x}$
+\begin{align*}
+f'(x)&=\dfrac{(\sqrt{x})'e^x+(e^x)' \sqrt{x}}{(e^x)^2}=\dfrac{\frac{1}{2\sqrt{x}}e^x+e^x\sqrt{x}}{e^{2x}}=\dfrac{1+2x}{2\sqrt{x}e^x}
+\end{align*}
+\item $f(x)=x^3 e^{-3x}$
+\begin{align*}
+f'(x)&=(x^3)'e^{-3x}+(e^{-3x})'x^3\\
+&=3x^2 e^{-3x}+(-3x)'e^{-3x}x^3\\
+&=3x^2e^{-3x}-3e^3e^{-3x}\\
+\therefore \quad f'(x)&=3x^2e^{-3x}(1-x)
+\end{align*}
+\item $f(x)=e^{2x}3^{x^2+1}$
+\begin{align*}
+f'(x)&=(e^{2x})'3^{x^2+1}+(3^{x^2+1})'.e^{2x}\\
+&=(2x)'e^{2x}.3^{x^2+1}+(x^2+1)'3^{x^2+1}\ln 3 . e^{2x}\\
+&=2.e^{2x}3^{x^2+1}+2x3^{x^2+1}\ln 3. e^{2x}\\
+\therefore \quad f'(x)&=2e^{2x}3^{x^2+1}(1+x\ln 3)
+\end{align*}
+\item $f(x)=e^{\sin x\cos x}$
+\begin{align*}
+f'(x)&=(\sin x\cos x)'e^{\sin x\cos x}\\
+&=[(\sin x)'\cos x+(\cos x)'\cos x]e^{\sin x\cos x}\\
+\therefore \quad f'(x)&=(\cos^2 x-\sin^2 x)e^{\sin x\cos x}
+\end{align*}
+\end{enumerate}
+
+%--------------------------------- 6-------------
+\begin{exercise}
+គណនាដេរីវេនៃអនុគមន៍ខាងក្រោម៖
+\begin{multicols}{2}
+\begin{enumerate}
+\item $f(x)=(x^2-1)\ln (x^2-1)$
+\item $f(x)=\ln \left( \dfrac{x^2-2}{\sqrt[3]{x^2-2}} \right)$
+\item $f(x)=\ln (\sin x.\cos(2x))$
+\item $f(x)=\ln \left(\sqrt{\dfrac{1+\sin x}{1-\sin x}} \right)$
+\end{enumerate}
+\end{multicols}
+\end{exercise}
+%------------------------------------ answer -----------------------------
+\answer 
+\begin{enumerate}
+\item $f(x)=(x^2-1)\ln (x^2-1)\Longrightarrow f'(x)=(x^2-1)'\ln (x^2-1)+\ln (x^2-1)' (x^2-1)$
+\begin{align*}
+&=2x\ln (x^2-1)+\dfrac{(x^2-1)'}{x^2-1}.(x^2-1)\\
+&=2x\ln (x^2-1)+2x\\
+\therefore \quad f'(x)&=2x[ \ln (x^2-1)+1]
+\end{align*}
+\item $f(x)=\ln \left( \dfrac{x^2-2}{\sqrt[3]{x^2-2}} \right)=\ln (x^2-2)-\ln (x^2-2)^{\frac{1}{3}}$
+\begin{align*}
+f'(x)&=\dfrac{(x^2-2)'}{x^2-2}-\dfrac{1}{3}.\dfrac{(x^2-2)'}{x^2-2}\\
+&=\dfrac{3(2x)-2x}{3(x^2-2)}\\
+\therefore \quad f'(x)&=\dfrac{4x}{3(x^2-2)}
+\end{align*}
+\item $f(x)=\ln (\sin x.\cos(2x))=\ln (\sin x)+\ln (\cos (2x))$
+\begin{align*}
+f'(x)&=\dfrac{(\sin x)'}{\sin x}+\dfrac{(\cos (2x))'}{\cos (2x)}\\
+&=\dfrac{\cos x}{\sin x}-\dfrac{2\sin (2x)}{\cos (2x)}\\
+\therefore \quad f'(x)&= \cot x -2\tan (2x)
+\end{align*}
+\item $f(x)=\ln \left(\sqrt{\dfrac{1+\sin x}{1-\sin x}} \right)=\ln \left( \dfrac{1+\sin x}{1-\sin x} \right)^{\frac{1}{2}}=\dfrac{1}{2}\left(\ln (1+\sin x)-\ln (1-\sin x)\right)$
+\begin{align*}
+f'(x)&=\dfrac{1}{2}\left(\dfrac{(1+\sin x)'}{1+\sin x}-\dfrac{(1-\sin x)'}{1-\sin x} \right)\\
+&=\dfrac{1}{2}\left(\dfrac{\cos x}{1+\sin x}+\dfrac{\cos x}{1-\sin x} \right)\\
+&=\dfrac{1}{2}.\dfrac{\left(\cos x(1-\sin x +1+\sin x) \right)}{1-\sin^2 x}\\
+\therefore \quad f'(x)&=\dfrac{2\cos x}{2\cos^2 x}=\dfrac{1}{\cos x}
+\end{align*}
+\end{enumerate}
+
+%--------------------------------- 7-------------
+\begin{exercise}
+គណនាដេរីវេនៃអនុគមន៍ខាងក្រោម៖
+\begin{multicols}{2}
+\begin{enumerate}
+\item $f(x)=\cos (\arcsin x)$
+\item $f(x)=\cot (\arctan x)$
+\item $f(x)=\tan (\arctan x)$
+\item $f(x)=\arcsin (2x)$
+\item $f(x)=\arcsin \sqrt{x}$
+\item $f(x)=\arctan (\sin x)$
+\item $f(x)=\dfrac{\arctan x}{\arcsin x}$
+\end{enumerate}
+\end{multicols}
+\end{exercise}
+%------------------------------------ answer -----------------------------
+\answer 
+\begin{enumerate}
+\item $f(x)=\cos (\arcsin x)\Longrightarrow f'(x)=-(\arcsin x)'\sin (\arcsin x)$
+\begin{center}
+$\therefore \quad f'(x)=-\dfrac{\sin (\arcsin x)}{\sqrt{1-x^2}}$
+\end{center}
+\item $f(x)=\cot (\arctan x)\Longrightarrow f'(x)=-(\arctan x)'[1+\cot^2 (\arctan x)]$
+\begin{center}
+$\therefore \quad f'(x)=-\dfrac{1+\cot^2 (\arctan x)}{1+x^2}$
+\end{center}
+\item $f(x)=\tan (\arctan x)\Longrightarrow f'(x)=(\arctan x)'[1+\tan^2 (\arctan x)]$
+\begin{center}
+$\therefore \quad f'(x)=\dfrac{1+\tan^2 (\arctan x)}{1+x^2}$
+\end{center}
+\item $f(x)=\arcsin (2x)\Longrightarrow f'(x)=\dfrac{(2x)'}{\sqrt{1-(2x)^2}}$
+\begin{center}
+$\therefore \quad f'(x)=\dfrac{2}{\sqrt{1-4x^2}}$
+\end{center}
+\item $f(x)=\arcsin \sqrt{x}\Longrightarrow f'(x)=\dfrac{(\sqrt{x})'}{\sqrt{1-(\sqrt{x})^2}}=\dfrac{\dfrac{1}{2\sqrt{x}}}{\sqrt{1-x^2}}=\dfrac{1}{2\sqrt{x}\sqrt{1-x^2}}$
+\begin{center}
+$\therefore \quad f'(x)=\dfrac{1}{2\sqrt{x-x^2}}$
+\end{center}
+\item $f(x)=\arctan (\sin x)\Longrightarrow f'(x)=\dfrac{(\sin x)'}{1+(\sin x)^2},\sin^2 x+\cos^2 x=1$
+\begin{center}
+$\therefore \quad f'(x)=\dfrac{\cos x}{2-\cos^2 x}$
+\end{center}
+\item $f(x)=\dfrac{\arctan x}{\arcsin x}\Longrightarrow f'(x)=\dfrac{(\arctan x)'\arcsin x-(\arcsin x)'\arctan x}{(\arcsin x)^2}$
+\begin{center}
+$\therefore \quad f'(x)=\dfrac{\dfrac{\arcsin x}{1+x^2}-\dfrac{\arctan x}{\sqrt{1-x^2}}}{(\arcsin x)^2}$
+\end{center}
+\end{enumerate}
+
+\newpage
+\section{លំហាត់មេរៀន}
+\begin{enumerate}
+\item គណនាដេរីវេនៃអនុគមន៍ខាងក្រោម៖
+\begin{multicols}{2}
+\begin{enumerate}
+\item  $y=x^3+2x^2$
+\item $y=x^3-4x^2$
+%\item $y=x^4+27x$
+\item $y=x^4-27x$
+%\item $y=x^4 +2x^2 -3 $
+\item $y=x^4 -5x^2 +4$
+%\item $y=x^5+16x$ 
+\item $ y=x^5-16x$
+\item $y= \dfrac{x}{x+1}$ 
+%\item $y=\dfrac{x}{1+x^2}$ 
+\item $y=\dfrac{x^2}{1+x^2}$
+ %\item $y=\dfrac{1+x^2}{1+x}$
+ \item $y=x-\dfrac{1}{x}$
+% \item $y=x^3 +2x^2 +x$
+ \item $y=x^3 +2x^2 -x$
+% \item $ y=x^4 -x^3 -x$
+ \item $ y=x^4 -2x^3 +2x$
+ \item $y= \sqrt{1+x^2}$
+ %\item $y=\sqrt{1−x^2}$
+ \item $y=\sqrt[4]{1+x^2}$
+ %\item $y=\dfrac{1}{1+x^4}$
+\end{enumerate}
+\end{multicols}
+\item រក $f'(x)$ នៃអនុគមន៍ខាងក្រោម៖
+\begin{multicols}{2}
+\begin{enumerate}
+\item $ f (x) = \sin x + \cos x$
+\item $f(x)=2\sin x-3\cos x$
+\item $ f(x)=3\sin x+2\cos x$
+\item $ f (x) = x \sin x + \cos x$
+\item  $f(x)=x\cos x-\sin  x$
+\item $f (x) = \cos (2 x)$
+\item $f(x)= \dfrac{1-\sin (2x)}{1-\sin x}$
+\item $f(x)=1+\sin x^2$
+\item $f(x)=\cot x-\cos x$
+\item $f(x)=\sin (2x)-\cos (3x)$
+\item $f (x) = \sin (\cos (3x))$
+\item $f(x)=\dfrac{\sin x^2}{ x^2}$
+\item $f(x)=\tan (1+x^2)$
+\item $ f(x)=\cos 2x-\cos x^2$
+\item $f(x)= (1+\sqrt{1+x})^3$
+\end{enumerate}
+\end{multicols}
+\item រក $y'$ នៃអនុគមន៍ខាងក្រោម៖
+\begin{multicols}{2}
+\begin{enumerate}
+\item $xy = \dfrac{ \pi}{ 6}$
+\item $ \sin (xy) = 1$
+\item $xy =\dfrac{1}{x+y}$
+\item $x+y=xy$
+\item $(y-1)^2 +x=0$
+\item $(y+1)^2 +y-x=0$
+\item $(y-x)^2 +x=0$
+\item $(y+x) +2y-x=0$
+\item $ (y^2 -1)^2 +x=0$ 
+\item $ (y^2 +1)^ 2 -x=0$
+\item $x^3+xy+y^3=3$
+\item $\sin x+sin y=1$
+\item $\sin x+xy+y^5 =\pi$
+\item $\tan x+\tan y=1$
+\end{enumerate}
+\end{multicols}
+\item គណនាដេរីវេនៃអនុគមន៍ខាងក្រោម៖
+\begin{multicols}{2}
+\begin{enumerate}
+\item $f(x)= \sqrt{1-x}$
+\item $f(x)= \sqrt[4]{ x+x^2}$
+\item $y= \sqrt{1-\sqrt{x}}$
+\item $y= \sqrt{x-\sqrt{ x}}$
+\item $y=\sqrt[3]{\sqrt{ 2x+1}}-x^2$
+\item $y= \sqrt[4]{x+x^2} x+x^2$
+\item $y=\sqrt[3]{ x- \sqrt{2x+1}}$
+\item $y= \sqrt[4]{\sqrt[3]{x}}+\sqrt[3]{\sqrt{x}}+\sqrt{x}$
+\end{enumerate}
+\end{multicols}
+\item គណនាដេរីវេនៃអនៃអនុគមន៍ខាងក្រោម៖
+\begin{multicols}{2}
+\begin{enumerate}
+\item $f(x)=e^x+e^{-x}$
+\item $f(x)=e^{3x} +4e^x$
+\item $f(x)=\dfrac{e^x}{1+e^x}$
+\item $f(x)=\dfrac{2e^{2x}}{1+e^{2x}}$
+\item $f(x)=xe^{-x}+x\ln x$
+\item $f(x)=\sqrt{x}e^{-\frac{x}{4}}+x^2e^{x+2}$
+\item $f(x)=x^{-\frac{1}{2}x}+\ln \sqrt{x}$
+\item $f(x)=(\ln x)^2+\ln x+1$
+\item $f(x)=\dfrac{\ln x}{x}+\ln \dfrac{1}{x}$
+\item $f(x)=\ln \left( \sqrt{\dfrac{\sqrt{x}+1}{\sqrt{x}-1}}\right)$
+\end{enumerate}
+\end{multicols}
+\item គណនាដេរីវេនៃអនៃអនុគមន៍ខាងក្រោម៖
+\begin{multicols}{2}
+\begin{enumerate}
+\item $f(x)=\tan (\arctan x)$
+\item $f(x)=\arcsin (\sin x)$
+\item $f(x)=\cot (\arcsin x)$
+\item $f(x)=\sin (\arctan x)$
+\item $f(x)=(\arcsin x)^2$
+\item $f(x)=\dfrac{1}{1+(\arctan x)^2}$
+\item $f(x)= \sqrt{1-(\arcsin x)^2}$
+\end{enumerate}
+\end{multicols}
+\item គណនាដេរីវេនៃអនុគមន៍ខាងក្រោម៖
+\begin{multicols}{2}
+\begin{enumerate}
+\item $y=(x+1)(x-1)$
+\item $y=(x^2+1)(x^2-1)$
+\item $y=\dfrac{1}{x+1}+\dfrac{1}{1+\sin x}$
+\item $y=\dfrac{1}{1+x^2}+\dfrac{1}{1-\sin x}$
+\item $y=(x-1)(x-2)(x-3)$
+\item $y=x^2\cos x+2x\sin x$
+\item $y=x^{\frac{1}{2}}(x+\sin x)$
+\item $y=x^{\frac{1}{2}}\sin^2 x+(\sin x)^{\frac{1}{2}}$
+\item $y=x^4 \cos x+x\cos x$
+\item $y=\dfrac{1}{2}x^2\sin x-x\cos x+\sin x$
+\item $y=\sqrt{x}(\sqrt{x}+1)(\sqrt{x}+2)$
+\item $y=(x-6)^{10}+\sin^{10} x$
+\item $y=(\sin x\cos x)^3+\sin (2x)$
+\item $y=x^{\frac{1}{2}} \sin (2x) +(\sin x)^{\frac{1}{2}}$
+\item $y=\dfrac{\sin x-\cos x}{\sin x+\cos x}$
+\item $y=\dfrac{1}{\tan x}-\dfrac{1}{\cot x}$
+\end{enumerate}
+\end{multicols}
+\end{enumerate}
+\end{document}

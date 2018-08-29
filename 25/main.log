@@ -1,0 +1,504 @@
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/Debian) (preloaded format=xelatex 2018.1.11)  23 MAR 2018 00:36
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**main.tex
+(./main.tex
+LaTeX2e <2016/03/31>
+Babel <3.9r> and hyphenation patterns for 12 language(s) loaded.
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 d
+     ocumentclass[a4paper,12pt]{article}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no [ in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no 4 in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no ] in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 \usepackage[no-math]{
+                         fontspec}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+! Undefined control sequence.
+l.3 \setmainfont
+                {Khmer OS}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no K in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no O in font nullfont!
+Missing character: There is no S in font nullfont!
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4 \usepackage{
+                tcolorbox}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 \usepackage{
+                amsmath}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 \usepackage{
+                amssymb}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 \usepackage{
+                amsthm}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+! LaTeX Error: Command \* already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 \newtheorem*{exc*}{
+                       លំហាត់}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Missing character: There is no ល in font nullfont!
+Missing character: There is no ំ in font nullfont!
+Missing character: There is no ហ in font nullfont!
+Missing character: There is no ា in font nullfont!
+Missing character: There is no ត in font nullfont!
+Missing character: There is no ់ in font nullfont!
+! Undefined control sequence.
+l.9 \tcolorboxenvironment
+                         {exc*}{colback=cyan!5!white,colframe=blue}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no e in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no * in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no ! in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no ! in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+No file main.aux.
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+
+! LaTeX Error: The font size command \normalsize is not defined:
+               there is probably something wrong with the class file.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.10 \begin{document}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Environment exc* undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.11 \begin{exc*}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Missing character: There is no ដ in font nullfont!
+Missing character: There is no ោ in font nullfont!
+Missing character: There is no ះ in font nullfont!
+Missing character: There is no ស in font nullfont!
+Missing character: There is no ្ in font nullfont!
+Missing character: There is no រ in font nullfont!
+Missing character: There is no ា in font nullfont!
+Missing character: There is no យ in font nullfont!
+Missing character: There is no ស in font nullfont!
+Missing character: There is no ម in font nullfont!
+Missing character: There is no ី in font nullfont!
+Missing character: There is no ក in font nullfont!
+Missing character: There is no ា in font nullfont!
+Missing character: There is no រ in font nullfont!
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 12.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 12.
+Missing character: There is no ក in font nullfont!
+Missing character: There is no ្ in font nullfont!
+Missing character: There is no ន in font nullfont!
+Missing character: There is no ុ in font nullfont!
+Missing character: There is no ង in font nullfont!
+Missing character: There is no ស in font nullfont!
+Missing character: There is no ំ in font nullfont!
+Missing character: There is no ណ in font nullfont!
+Missing character: There is no ុ in font nullfont!
+Missing character: There is no ំ in font nullfont!
+Missing character: There is no ច in font nullfont!
+Missing character: There is no ំ in font nullfont!
+Missing character: There is no ន in font nullfont!
+Missing character: There is no ួ in font nullfont!
+Missing character: There is no ន in font nullfont!
+Missing character: There is no ក in font nullfont!
+Missing character: There is no ុ in font nullfont!
+Missing character: There is no ំ in font nullfont!
+Missing character: There is no ផ in font nullfont!
+Missing character: There is no ្ in font nullfont!
+Missing character: There is no ល in font nullfont!
+Missing character: There is no ិ in font nullfont!
+Missing character: There is no ច in font nullfont!
+Missing character: There is no ។ in font nullfont!
+
+! LaTeX Error: \begin{document} ended by \end{exc*}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 \end{exc*}
+               
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Environment proof undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.14 \begin{proof}
+                  [ចម្លើយ]
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Missing character: There is no [ in font nullfont!
+Missing character: There is no ច in font nullfont!
+Missing character: There is no ម in font nullfont!
+Missing character: There is no ្ in font nullfont!
+Missing character: There is no ល in font nullfont!
+Missing character: There is no ើ in font nullfont!
+Missing character: There is no យ in font nullfont!
+Missing character: There is no ] in font nullfont!
+Missing character: There is no យ in font nullfont!
+Missing character: There is no ើ in font nullfont!
+Missing character: There is no ង in font nullfont!
+Missing character: There is no ដ in font nullfont!
+Missing character: There is no ោ in font nullfont!
+Missing character: There is no ះ in font nullfont!
+Missing character: There is no ស in font nullfont!
+Missing character: There is no ្ in font nullfont!
+Missing character: There is no រ in font nullfont!
+Missing character: There is no ា in font nullfont!
+Missing character: There is no យ in font nullfont!
+Missing character: There is no ដ in font nullfont!
+Missing character: There is no ោ in font nullfont!
+Missing character: There is no យ in font nullfont!
+Missing character: There is no ក in font nullfont!
+Missing character: There is no ា in font nullfont!
+Missing character: There is no រ in font nullfont!
+Missing character: There is no ដ in font nullfont!
+Missing character: There is no ា in font nullfont!
+Missing character: There is no ក in font nullfont!
+Missing character: There is no ់ in font nullfont!
+Missing character: There is no ជ in font nullfont!
+Missing character: There is no ា in font nullfont!
+Missing character: There is no ផ in font nullfont!
+Missing character: There is no ល in font nullfont!
+Missing character: There is no គ in font nullfont!
+Missing character: There is no ុ in font nullfont!
+Missing character: There is no ណ in font nullfont!
+Missing character: There is no ក in font nullfont!
+Missing character: There is no ត in font nullfont!
+Missing character: There is no ្ in font nullfont!
+Missing character: There is no ត in font nullfont!
+Missing character: There is no ា in font nullfont!
+
+! LaTeX Error: Environment align* undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 \begin{align*}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Missing character: There is no z in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.17 z^
+       2+4z+8 &=0\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Misplaced alignment tab character &.
+l.17 z^2+4z+8 &
+               =0\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.18 z^2+2\cdot z\cdot 2+2^2 &
+                              =-4\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.19 (z+2)^2 &
+              =(2i)^2\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.20 z+2 &
+          =\pm 2i\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.21 z &
+        =-2\pm 2i
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+! LaTeX Error: \begin{document} ended by \end{align*}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.22 \end{align*}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.22 \end{align*}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no ដ in font nullfont!
+Missing character: There is no ូ in font nullfont!
+Missing character: There is no ច in font nullfont!
+Missing character: There is no ្ in font nullfont!
+Missing character: There is no ន in font nullfont!
+Missing character: There is no េ in font nullfont!
+Missing character: There is no ះ in font nullfont!
+Missing character: There is no ស in font nullfont!
+Missing character: There is no ម in font nullfont!
+Missing character: There is no ី in font nullfont!
+Missing character: There is no ក in font nullfont!
+Missing character: There is no ា in font nullfont!
+Missing character: There is no រ in font nullfont!
+Missing character: There is no ម in font nullfont!
+Missing character: There is no ា in font nullfont!
+Missing character: There is no ន in font nullfont!
+Missing character: There is no ឬ in font nullfont!
+Missing character: There is no ស in font nullfont!
+Missing character: There is no ន in font nullfont!
+Missing character: There is no ិ in font nullfont!
+Missing character: There is no ង in font nullfont!
+Missing character: There is no ។ in font nullfont!
+
+! LaTeX Error: \begin{document} ended by \end{proof}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.24 \end{proof}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: The font size command \normalsize is not defined:
+               there is probably something wrong with the class file.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 \end{document}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[1] (./main.aux) ) 
+Here is how much of TeX's memory you used:
+ 16 strings out of 495234
+ 127 string characters out of 6180523
+ 47735 words of memory out of 5000000
+ 3407 multiletter control sequences out of 15000+600000
+ 3640 words of font info for 14 fonts, out of 8000000 for 9000
+ 264 hyphenation exceptions out of 8191
+ 18i,4n,12p,81b,109s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on main.pdf (1 page).

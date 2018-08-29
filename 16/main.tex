@@ -1,0 +1,134 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[top=0.5cm, left=1cm, bottom=1.5cm, right=1.5cm]{geometry}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{subcaption}
+\usepackage{wrapfig}
+\usepackage{mathpazo}% change math font
+\usepackage{enumitem}% change list environment like enumerate, itemize and description
+\usepackage{multicol}% multi columns
+\usepackage{tikz}% graphic drawing
+\usepackage[no-math]{fontspec}% font specfication
+\setmainfont{Khmer OS Content}% set default font to Khmer OS
+\usepackage{tcolorbox}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{wasysym}
+\usepackage{multicol}
+\usepackage{color}
+
+\usepackage{comment}
+
+\setlength{\columnseprule}{1pt}
+\def\columnseprulecolor{\color{magenta}}
+
+%
+\SetEnumitemKey{I}{%
+	leftmargin=*,
+	label={\protect\tikz[baseline=-0.9ex]\protect\node[draw=gray,thick,circle,minimum height=.65cm,inner sep=1pt,text=black,fill=cyan!20!white]{\Roman*};},%
+	font=\small\sffamily\bfseries,%
+	labelsep=1ex,%
+	topsep=0pt}
+%
+\SetEnumitemKey{a}{%
+	leftmargin=*,%
+	label={\protect\tikz[baseline=-0.9ex]\protect\node[draw=gray,thick,circle,minimum height=.5cm,inner sep=1pt,text=blue,fill=magenta!5!white]{\alph*};},%
+	font=\small\sffamily\bfseries,%
+	labelsep=1ex,%
+	topsep=0pt}
+%
+\SetEnumitemKey{1}{leftmargin=*,%
+	label={\protect\tikz[baseline=-0.9ex]\protect\node[draw=gray,thick,circle,minimum height=.5cm,inner sep=1pt,text=black,fill=blue!20!white]{\arabic*};},%
+	font=\small\sffamily\bfseries,%
+	labelsep=1ex,%
+	topsep=0pt}
+%
+\def\hard{\leavevmode\makebox[0pt][r]{\large\ensuremath{\star}\hspace{2em}}}
+%
+\def\hhard{\leavevmode\makebox[0pt][r]{\large\ensuremath{\star\star}\hspace{2em}}}
+%
+\everymath{\protect\displaystyle\protect\color{black}}
+%
+\pagecolor{cyan!1!white}
+%
+\newcommand{\heart}{\ensuremath\heartsuit}
+\newcommand{\butt}{\rotatebox[origin=c]{180}{\heart}}
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+		\node[shape=circle,draw,inner sep=2pt] (char) {#1};}}
+\setsansfont[Ligatures=TeX,AutoFakeBold=0,AutoFakeSlant=0.25]{Khmer OS Muol Light}% sans serif font
+\begin{document}
+	\begin{center}
+		\sffamily\color{black}
+%		\circled{០១}\\
+		\heart រូបមន្តសង្ខេប រាងកាណូនិចនៃអនុគមន៍សំខាន់ៗទាំង~១០\heart \\
+		រៀបរៀង និងបង្រៀនដោយៈ ស៊ុំ សំអុន\\
+		\phone ទូរស័ព្ទៈ ០៩៦ ៩៤០	៥៨៤០\phone
+	\end{center}
+		\begin{multicols}{2}
+			\begin{enumerate}[1]
+				\item $f(x)=\frac{\alpha x+\beta}{ax+b}$ គេបាន \\$f(x)=A+\frac{B}{ax+b}$
+				\item $f(x)=\frac{\alpha x+\beta}{(ax+b)^2}$ គេបាន \\$f(x)=\frac{A}{ax+b}+\frac{B}{(ax+b)^2}$
+				\item $f(x)=\frac{\alpha x^2+\beta x +\lambda}{ax+b}$ គេបាន \\$f(x)=Ax+B+\frac{C}{ax+b}$
+				\item $f(x)=\frac{\alpha x^2+\beta x +\lambda}{(ax+b)^2}$ គេបាន \\$f(x)=A+\frac{B}{ax+b}+\frac{C}{(ax+b)^2}$ 
+				\item $f(x)=\frac{\alpha x^2+\beta x +\lambda}{(ax+b)(cx+d)}$ គេបាន \\$f(x)=A+\frac{B}{ax+b}+\frac{C}{cx+d}$
+				\item $f(x)=\frac{\alpha x^2+\beta x +\lambda}{x^3-a^3}$ គេបាន \\$f(x)=\frac{A}{x+a}+\frac{Bx+C}{x^2+ax+a^2}$ 
+				\item $f(x)=\frac{\alpha x^2+\beta x +\lambda}{ax^2+bx+c}~;~ b^2-4ac<0$  គេបាន \\$f(x)=A+\frac{Bx+C}{x^2+bx+c}$
+				\item $f(x)=\frac{\alpha x+\beta}{ax^2+bx+c}~;~ b^2-4ac<0$  គេបាន \\$f(x)=\frac{A(2ax+b)+B}{x^2+bx+c}$  
+				\item $f(x)=\frac{\alpha x+\beta}{(ax+b)(cx+d)}$ គេបាន \\$f(x)=\frac{A}{ax+b}+\frac{B}{cx+d}$
+				\item $f(x)=\frac{\alpha}{(ax+b)(cx+d)}$ គេបាន \\$f(x)=\frac{A}{ax+b}+\frac{B}{cx+d}$
+			\end{enumerate}
+		\end{multicols}	
+		\begin{center}
+			\sffamily\color{black}
+			លំហាត់គំរូសម្រាប់អនុវត្តន៍!
+		\end{center}
+		\begin{enumerate}[I]
+			 \item ចូរសរសេរអនុគមន៍សនិទានខាងក្រោមជាទម្រង់កាណូនិច រួចគណនាអាំងតេក្រាលមិនកំណត់នៃអនុគមន៍នីមួយៗ៖
+		\begin{multicols}{3}
+			\begin{enumerate}[1]
+				\item $f(x)=\frac{2x+3}{x-3}$
+				\item $f(x)=\frac{4x+5}{2x+1}$
+				\item $f(x)=\frac{4x-3}{x+2}$
+				\item $f(x)=\frac{x+1}{(x+1)^2}$
+				\item $f(x)=\frac{3x+2}{(x-3)^2}$
+				\item $f(x)=\frac{x}{(2x-1)^2}$
+				\item $f(x)=\frac{2x-5}{(3x-2)^2}$
+				\item $f(x)=\frac{x^2+x+1}{x+2}$
+				\item $f(x)=\frac{2x^2-x+3}{x-3}$
+				\item $f(x)=\frac{x^2+3+5}{2x+1}$
+				\item $f(x)=\frac{x^2-3x+4}{3x+2}$
+				\item $f(x)=\frac{2x^2+x+1}{x+3}^2$
+				\item $f(x)=\frac{x^2+3x-4}{(x+5)^2}$
+				\item $f(x)=\frac{x^2+2}{(2x+1)^2}$
+				\item $f(x)=\frac{x^2}{x^2-1}$
+				\item $f(x)=\frac{x^2-3x+1}{(x-1)(2x+3)}$
+				\item $f(x)=\frac{x^2-5x+4}{(2x-1)(1-x)}$
+				\item $f(x)=\frac{x^2+x+1}{(x+1)(x+2)}$
+				\item $f(x)=\frac{x^2+4}{x^2-9}$
+				\item $f(x)=\frac{x^2}{x^2-4}$
+				\item $f(x)=\frac{2x^2-5x+11}{x^3-8}$
+				\item $f(x)=\frac{4x^2+3x+7}{(x-2)(2-3x)^2}$
+				\item $f(x)=\frac{2x^2-5x+17}{(x-2)^2(x+3)}$
+				\item $f(x)=\frac{2x^2-11x+20}{(x-3)^2(x+2)}$
+				\item $f(x)=\frac{3x^2+x-4}{x^2+2x+4}$
+				\item $f(x)=\frac{x^2-3x+4}{2x^2+3x+3}$
+				\item $f(x)=\frac{5x+11}{x^2+4}$
+				\item $f(x)=\frac{2x}{2x^2+x+2}$
+				\item $f(x)=\frac{x+1}{(x+2)(x+3)}$
+				\item $f(x)=\frac{2x+3}{(1-x)(x-2)}$
+				\item $f(x)=\frac{x}{(x-1)(1-x)}$
+				\item $f(x)=\frac{-4}{x^2-4}$
+				\item $f(x)=\frac{3}{x^2-1}$
+				\item $f(x)=\frac{\sqrt{2}}{x^2-2}$
+				\item $f(x)=\frac{-\sqrt{3}}{x^2-3}$
+				\item $f(x)=\frac{-6}{(x+1)(x-2)}$
+				\item $f(x)=\frac{10}{x^2+3x+2}$
+				\item $f(x)=\frac{8}{2x^2+2x-4}$
+			\end{enumerate}
+		\end{multicols}
+		\end{enumerate}
+	\begin{center}
+		\sffamily\color{black}
+		សូមសំណាងល្អ!
+	\end{center}\newpage
+\end{document}

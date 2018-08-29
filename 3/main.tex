@@ -1,0 +1,26 @@
+\documentclass[10pt]{article}
+\usepackage{pgf,tikz}
+\usetikzlibrary{arrows}
+\usepackage{mathpazo}% change math font
+\pagestyle{empty}
+\begin{document}
+	\definecolor{qqqqcc}{rgb}{0,0,0.8}
+	\definecolor{qqcctt}{rgb}{0,0.8,0.2}
+	\definecolor{ccqqtt}{rgb}{0.8,0,0.2}
+	\definecolor{cqcqcq}{rgb}{0.75,0.75,0.75}
+	\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+	\draw [color=cqcqcq,dash pattern=on 7pt off 7pt, xstep=5.0cm,ystep=5.0cm] (-22.89,-19.18) grid (31.87,13.47);
+	\draw[->,color=black] (-22.89,0) -- (31.87,0);
+	\foreach \x in {-20,-15,-10,-5,5,10,15,20,25,30}
+	\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+	\draw[->,color=black] (0,-19.18) -- (0,13.47);
+	\foreach \y in {-15,-10,-5,5,10}
+	\draw[shift={(0,\y)},color=black] (-2pt,0pt) node[left] {\footnotesize $\y$};
+	\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$};
+	\clip(-22.89,-19.18) rectangle (31.87,13.47);
+	\draw[color=ccqqtt, smooth,samples=100,domain=-22.887300820366228:31.86513739423646] plot(\x,{(-(\x)^2-2*(\x)+3)/((\x)^2+3*(\x)+2)});
+	\draw [color=qqcctt,domain=-22.89:31.87] plot(\x,{(-1-0*\x)/1});
+	\draw [color=qqqqcc] (-1,-19.18) -- (-1,13.47);
+	\draw [color=qqqqcc] (-2,-19.18) -- (-2,13.47);
+	\end{tikzpicture}
+\end{document}

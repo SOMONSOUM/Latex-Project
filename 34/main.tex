@@ -1,0 +1,189 @@
+\documentclass[a4paper, 11pt]{exam}
+\makeatletter
+\usepackage[top=0.5cm, left=1cm, bottom=1.8cm, right=1.5cm]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{tcolorbox}
+\usepackage[export]{adjustbox}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{pgf}
+\usepackage{tikz}% graphic drawing
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\usepackage{wasysym}
+\usepackage{mathpazo}% change math font
+\usepackage{enumitem}% change list environment like enumerate, itemize and description
+\usepackage{multicol}% multi columns
+\usepackage{xcolor}
+\newcommand{\teacher}{ស៊ំុ សំអុន}
+\newcommand{\tell}{០៩៦ ៩៤០ ៥៨៤០}
+\newcommand{\class}{ត្រៀមប្រឡងសញ្ញាបត្រមធ្យមសិក្សាទុតិយភូមិ}
+\newcommand{\dateofexam}{សម័យប្រឡង៖~សីហា ២០ ២០១៨}
+\newcommand{\subject}{វិញ្ញាសា៖~គណិតវិទ្យា~(វិទ្យាសាស្រ្តពិត)}
+\newcommand{\timelimit}{១៥០នាទី}
+\newcommand{\score}{ពិន្ទុសរុប៖~១២៥~ពិន្ទុ}
+\usepackage[no-math]{fontspec}% font specfication
+\setmainfont{Khmer OS Content}% set default font to Khmer OS
+\setsansfont[Ligatures=TeX,AutoFakeBold=0,AutoFakeSlant=0.25]{Khmer OS Muol Light}% sans serif font
+%
+\newcommand{\heart}{\ensuremath\heartsuit}
+\newcommand{\butt}{\rotatebox[origin=c]{180}{\heart}}
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+		\node[shape=circle,draw,inner sep=2pt] (char) {#1};}}
+%
+\makeatletter %line1-8 make Khmer known
+\def\@khmernum#1{\expandafter\@@khmernum\number#1\@nil} 
+\def\@@khmernum#1{%
+	\ifx#1\@nil 
+	\else 
+	\char\numexpr#1+"17E0\relax 
+	\expandafter\@@khmernum\fi 
+} 
+\def\knum#1{\expandafter\@khmernum\csname c@#1\endcsname}
+\def\khmernumeral#1{\@@khmernum#1\@nil}
+\AddEnumerateCounter{\knum}{\@knum}{}
+\makeatother
+\makeatletter
+\newcommand*{\kalph}[1]{%
+	\expandafter\@kalph\csname c@#1\endcsname%
+}
+\newcommand*{\@kalph}[1]{%
+	\ifcase#1\or ក\or ខ\or គ\or ឃ\or ង\or ច\or ឆ\or ជ\or ឈ\or ញ\or ដ\or ឋ\or ឌ\or ឍ\or ណ\or ត\or ថ\or ទ\or ធ\or ន\or ប\or ផ\or ព\or ភ\or ម\or យ\or រ\or ល\or វ\or ស\or ហ\or ឡ\or អ%
+	\else\@ctrerr\fi%
+}
+\AddEnumerateCounter{\kalph}{\@kalph}{}
+\makeatother
+
+\SetEnumitemKey{I}{%
+	leftmargin=*,
+	label={\protect\tikz[baseline=-0.9ex]\protect\node[text=blue,fill=white]{\en\Roman*.};},%
+	font=\small\sffamily\bfseries,%
+	labelsep=1ex,%
+	topsep=0pt}
+%
+\SetEnumitemKey{a}{%
+	leftmargin=*,%
+	label={\protect\tikz[baseline=-0.9ex]\protect\node[text=black,fill=white]{\kalph*.};},%
+	font=\small\kbk\bfseries,%
+	labelsep=1ex,%
+	topsep=0pt}
+%
+\SetEnumitemKey{1}{leftmargin=*,%
+	label={\protect\tikz[baseline=-0.9ex]\protect\node[text=red,fill=white]{\knum*.};},%
+	font=\small\kbk\bfseries,%
+	labelsep=1ex,%
+	topsep=0pt}
+%
+\def\hard{\leavevmode\makebox[0pt][r]{\large\ensuremath{\star}\hspace{2em}}}
+%
+\def\hhard{\leavevmode\makebox[0pt][r]{\large\ensuremath{\star\star}\hspace{2em}}}
+%
+
+\everymath{\protect\displaystyle\protect\color{blue}}
+%
+%\pagecolor{cyan!1!white}
+%
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{wasysym}
+\makeatother
+\makeatother
+\setmainfont{Khmer OS Content}% set default font to Khmer OS
+\newcommand{\ko}{\fontspec[Script=Khmer]{Khmer OS}\selectfont}
+\newcommand{\kml}{\fontspec[Script=Khmer]{Khmer OS Muol Light}\selectfont}
+\newcommand{\kos}{\fontspec[Script=Khmer]{Khmer OS System}\selectfont}
+\newcommand{\kb}{\fontspec[Script=Khmer]{Khmer OS Battambang}\selectfont}
+\newcommand{\kbk}{\fontspec[Script=Khmer]{Khmer OS Bokor}\selectfont}
+\newcommand{\en}{\fontspec{Liberation Serif}\selectfont}
+
+\pagestyle{foot}
+\firstpagefooter{}{ ទំព័រ~\thepage\ នៃ \numpages}{}
+\runningfooter{រៀបរៀងដោយ~\teacher}{ ទំព័រ \thepage\ នៃ \numpages}{ទូរស័ព្ទ~\tell}
+\runningfootrule
+
+\begin{document}
+\noindent
+%\sffamily\color{black}
+\begin{tabular*}{\textwidth \sffamily\color{black}}{l @{\extracolsep{\fill}} r @{\extracolsep{6pt}} l}
+\textbf{\class} & \textbf{មណ្ឌលប្រឡង} & \makebox[2in]{\hrulefill}\\
+\textbf{\dateofexam} & \textbf{លេខបន្ទប់} & \makebox[2in]{\hrulefill}\\
+\textbf{\subject} & \textbf{លេខតុ} & \makebox[2in]{\hrulefill}\\
+\textbf{\score} & \textbf{ឈ្មោះបេក្ខជន} & \makebox[2in]{\hrulefill}\\
+\textbf{រយៈពេលសរុប៖ \timelimit} & \textbf{ហេត្ថលេខា} & \makebox[2in]{\hrulefill}
+\end{tabular*}\\
+\noindent
+\rule[2ex]{\textwidth\color{magenta}}{2pt}
+\begin{center}
+	\sffamily\color{black}
+	ប្រធានលំហាត់ ០២\\
+\end{center}
+\vspace{-0.3cm}
+\begin{enumerate}[I]
+	\item គេមានចំនួនកុំផ្លិច $z_1=\sqrt{2}-i\sqrt{2}$ និង $z_2=\cos\frac{\pi}{6}-i\sin\frac{\pi}{6}$ ។
+	\begin{enumerate}[a]
+		\item សរសេរ $z_1$ ជាទម្រង់ត្រីកោណមាត្រ ។
+		\item សរសេរផលគុណ $z_1\times z_2$ ជាទម្រង់ពីជគណិត និងជាទម្រង់ត្រីកោណមាត្រ ។
+		\item ទាញរកតម្លៃពិតប្រាកដនៃ $\cos\frac{5\pi}{12}$ និង $\sin\frac{5\pi}{12}$ ។
+	\end{enumerate}
+	\item គណនាលីមីតនៃអនុគមន៍ខាងក្រោម៖
+	\begin{multicols}{2}
+		\begin{enumerate}[a]
+			\item $\lim\limits_{x\to1} \frac{1-x^2}{x^3-x^2+2x-2}$
+			\item $\lim\limits_{x\to 0} \frac{1-\cos^3x}{\sin^2x}$
+			\item $\lim\limits_{x\to+\infty} [\ln(4e^{2x}+3)-\ln(2e^{2x}+1)]$
+			\item $\lim\limits_{x\to0} \frac{-5\sin5x}{x}$
+		\end{enumerate}
+	\end{multicols}
+	\item \begin{enumerate}[1]
+		\item គណនាអាំងតេក្រាលនៃអនុគមន៍ខាងក្រោម៖
+		\begin{multicols}{3}
+			\begin{enumerate}[a]
+				\item $\int_{\ln2}^{\ln4}\frac{1+e^x}{e^x}dx$
+				\item $\int_{0}^{\frac{\pi}{2}} (2\cos^2x-1)dx$
+				\item $\int \frac{x+1}{x+2}dx$
+			\end{enumerate}
+		\end{multicols}
+		\item គេមានអនុគមន៍ $f(x)=\frac{2x+3}{x^3+x^2-2}$ ។
+		\begin{enumerate}[a]
+			\item កំណត់ចំនួនពិត $a, ~b$ និង $c$ ដើម្បីឲ្យ $f(x)=\frac{a}{x-1}+\frac{bx+c}{x^2+2x+2}$ ។
+			\item គណនាអាំងតេក្រាល $\int \frac{2x+3}{x^3+x^2-2} dx$ 
+		\end{enumerate}
+	\end{enumerate}
+	\item គេមានសមីការឌីផេរ៉ង់ស្យែល $(E):$ $y''-3y'+2y = 2x+1$ ។
+	\begin{enumerate}[a]
+		\item ដោះស្រាយសមីការ $(E_1): y''-3y'+2y=0$ កំណត់អនុគមន៍ចម្លើយ $f$ នៃ $(E_1)$ បើ $f(0)=3$ និង $f'(0)=4$
+		\item កំណត់ចំនួនពិត $a~$ និង $b$ ដើម្បីឲ្យ $g(x)=ax+b$ ជាចម្លើយនៃសមីការ $(E)$ ។
+	\end{enumerate} 
+	\item គេចង់បង្កើតមានលេខ $4$ ខ្ទង់ ដែលខ្ទង់ទាំងបីមានលេខខុសៗគ្នា ដោយយកចេញពីលេខ $1,2,3,4,5,6,7,8,9$ ។
+	\begin{enumerate}[a]
+		\item រកចំនួនករណីអាចដែលកើតមាន ។
+		\item $A:$ រកប្រូបាបដែលចំនួនលេខទាំង $4$ ខ្ទង់នោះជាពហុគុណនៃ $5$ ។
+		\item $B:$ រកប្រូបាបដែលចំនួនលេខទាំង $4$ ខ្ទង់នោះជាលេខសេស ។
+		\item $C:$ រកប្រូបាបដែលចំនួនលេខទាំង $4$ ខ្ទង់នោះជាពហុគុណនៃ $5$ ផង និង $2$ ផង។ 
+	\end{enumerate}
+	\item គេមានសមីការ $(E): 4x^2+9y^2=36$ ។
+	\begin{enumerate}[a]
+		\item បង្ហាញថាសមីការ $(E)$ ជាសមីការអេលីប ។
+		\item រកកូអរដោនេ ផ្ចិត កំពូល កុំណុំ និងប្រវែងអក្ស័  ធំ  អក្ស័តូច រួចអេលីបនោះ​ ។ 
+	\end{enumerate}
+	\item គេមានបួនចំណុច $A(1,1,1)~,B(2,0,3)~,C(-1,2,0)$ និង $D(2,4,2)$ នៅក្នុងលំហ ។
+	\begin{enumerate}[a]
+		\item រកសមីការទូទៅនៃប្លង់ $(ABC)$ ។ រកសមីការបន្ទាត់ $L$ កាត់តាមចំណុច $D$ ហើយកែង នឹងប្លង់ $(ABC)$ ។
+		\item គណនាផលគុណចម្រុះ $\vec{AD}.(\vec{AB}\times\vec{AC})$ ។ ទាញបង្ហាញថា $ABCD$ ជាតេត្រាអែត រួចគណនាមាឌរបស់វា ។ 
+	\end{enumerate} 
+	\item គេមានអនុគមន៍ $f$ ដោយ $f(x) = x-\frac{e^{2x}}{e^{2x}-1}$ កំណត់ចំពោះគ្រប់ $x\neq0$ ។
+	\begin{enumerate}[a]
+		\item ចំពោះគ្រប់ $x\neq0$ បង្ហាញថា $f(x)=x-1-\frac{1}{e^{2x}-1}$ ។
+		\item គណនា $\lim\limits_{x\to0} f(x)~\lim\limits_{x\to-\infty} f(x)$ និង $\lim\limits_{x\to+\infty} f(x)$ ។
+		\item គណនា $f'(x)$ សិក្សាសញ្ញានៃ $f'(x)$ រួចសង់តារាងអថេរភាពនៃ $f$ រួចទាញរកសមីការអាស៊ីមតូតឈរ នៃក្រាប $C$។
+		\item បង្ហាញថា $L_1:y=x$ និង $L_2: y=x-1$ ជាសមីការអាស៊ីមតូតទ្រេតនៃក្រាប $C$ ខាង $-\infty$ និង $+\infty$ រៀងគ្នា ។
+		\item ស្រាយបញ្ជាក់ថា $f$ ជាអនុគមន៍កើនគ្រប់ $x\neq0$ ។ សង់តារាងអថេរភាព តាងអនុកមន៍ $f$ ។
+		\item គណនា $f(-1)~,f(0.5)$ ។ សង់បន្ទាត់ $L_1~,L_2$ និងក្រាប $C$ ក្នុងតម្រុយតែមួយ ។
+	\end{enumerate}
+\end{enumerate}
+\begin{center}
+	\sffamily\color{black}
+	សូមសំណាងល្អ!
+\end{center}\newpage
+
+\end{document}

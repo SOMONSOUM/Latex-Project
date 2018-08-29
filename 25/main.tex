@@ -1,0 +1,26 @@
+documentclass[a4paper,12pt]{article}
+\usepackage[no-math]{fontspec}
+\setmainfont{Khmer OS}
+\usepackage{tcolorbox}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\newtheorem*{exc*}{លំហាត់}
+\tcolorboxenvironment{exc*}{colback=cyan!5!white,colframe=blue}
+\begin{document}
+\begin{exc*}
+ដោះស្រាយសមីការ $ z^2+4z+8=0 $ ក្នុងសំណុំចំនួនកុំផ្លិច។
+\end{exc*}
+\begin{proof}[ចម្លើយ]
+យើងដោះស្រាយដោយការដាក់ជាផលគុណកត្តា
+\begin{align*}
+z^2+4z+8 &=0\\
+z^2+2\cdot z\cdot 2+2^2 &=-4\\
+(z+2)^2 &=(2i)^2\\
+z+2 &=\pm 2i\\
+z &=-2\pm 2i
+\end{align*}
+ដូច្នេះ សមីការមានឬស $ z_1=2-2i $ និង $ z_2=2+2i $~។
+\end{proof}
+\end{document}
+

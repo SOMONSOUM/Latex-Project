@@ -1,0 +1,67 @@
+\documentclass[a5paper,leqno,fleqn]{book}
+\usepackage{afive}
+\usepackage[8pt]{extsizes}
+\usepackage{fullpage}
+\usepackage{float}
+\usepackage{mathpazo}
+\usepackage{multicol}
+\setlength{\multicolsep}{.5ex}
+\newtcbtheorem[number within=chapter]{theorem}{ទ្រឹស្ដីបទ}{frame}{}
+\newtcbtheorem[use counter from=theorem]{corollary}{ស្វ័យសត្យ}{frame}{}
+\newtcbtheorem[use counter from=theorem]{property}{លក្ខណៈ}{frame}{}
+\newtcbtheorem[use counter from=theorem]{definition}{និយមន័យ}{frame}{}
+\newtcbtheorem[number within=chapter]{example}{ឧទាហរណ៏}{frame}{}
+\newcommand{\prove}{\textcolor{blue}{\bfseries សម្រាយ}}
+\newcommand{\answer}{\textcolor{blue}{\bfseries ចម្លើយ}}
+\begin{document}
+	\chapter{អនុគមន៏ឡូការីត}
+	\section{ឡូការីនេពែ}
+	\subsection{និយមន័យ និងលក្ខណៈ}
+	\begin{definition}{}{}
+		លោការីតនេពែនៃចំនួនវិជ្ជមាន $ k $ គឺជានិទស្សន្ត $ x $ នៃ $ e^x $ ដែល $ e^x=k $~។ គេកំណត់សរសេរឡូការីតនេពែនៃ $ k $ ដោយ $ x=\ln k $~។ មានន័យថា $ e^{\ln k}=k $~។
+	\end{definition}
+	\begin{property}[bottom=1ex,attach title to upper=\quad]{}{}
+		\begin{itemize}
+			\begin{multicols}{2}
+				\item $ e^{\ln k}=k $
+				\item $ \ln e^x=x $
+				\item $ \ln ab=\ln a+\ln b $
+				\item $ \ln\dfrac ab=\ln a-\ln b $
+			\end{multicols}
+		\end{itemize}
+	\end{property}
+	\subsection{លីមីតនៃអនុគមន៏ឡូការីតនេពែ}
+	\begin{property}[bottom=1ex]{}{}
+		\begin{itemize}
+			\begin{multicols}{2}
+				\item $ \lim\limits_{x\to +\infty} \ln x=+\infty $
+				\item $ \lim\limits_{x\to 0^+}\ln x=-\infty $
+				\item $ \lim\limits_{x\to +\infty}\dfrac{\ln x}{x}=0 $
+				\item $ \lim\limits_{x\to +\infty}\dfrac{x}{\ln x}=+\infty $
+			\end{multicols}
+		\end{itemize}
+	\end{property}
+	\begin{theorem}{}{}
+		$ \lim\limits_{x\to 0}\dfrac{\ln(1+x)}{x}=1 $
+	\end{theorem}
+	\begin{proof}[\prove]
+		សរសេរសម្រាយបញ្ញាក់របស់អ្នកនៅទីនេះ \textenglish{and this is English text.}
+	\end{proof}
+	\vspace{1ex}
+	\subsection{ដេរីវេនៃអនុគមន៏ឡូការីតនេពែ}
+	\vspace{1ex}
+	\begin{multicols}{2}
+	\begin{definition}{}{}
+		ដេរីវេនៃអនុគមន៏ $ y=\ln x $ កំណត់ដោយ $ (\ln x)'=\dfrac{1}{x} $~។
+	\end{definition}
+	\begin{example}{}{}
+		សរសេរឧទាហរណ៏របស់អ្នកនៅទីនេះ \textenglish{and this is English text.}
+	\end{example}
+	\end{multicols}
+	\begin{proof}[\answer]
+		សរសេរដំណោះស្រាយរបស់អ្នកនៅទីនេះ \textenglish{and this is English text.}
+		\begin{itemize}
+			\item 
+		\end{itemize}
+	\end{proof}
+\end{document}

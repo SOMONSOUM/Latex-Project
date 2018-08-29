@@ -1,0 +1,1112 @@
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/W32TeX) (preloaded format=xelatex 2016.6.21)  14 SEP 2016 20:43
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./exponential.tex
+(./exponential.tex
+LaTeX2e <2016/03/31>
+Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
+(c:/texlive/2016/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2014/09/29 v1.4h Standard LaTeX document class
+(c:/texlive/2016/texmf-dist/tex/latex/base/bk10.clo
+File: bk10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) (./lib/pinkbook.sty
+
+LaTeX Warning: You have requested package `lib/pinkbook',
+               but the package provides `pinkbook'.
+
+Package: pinkbook 
+(c:/texlive/2016/texmf-dist/tex/latex/extsizes/extsizes.sty
+Package: extsizes 1996/10/08 v1.0 Non Standard LaTeX Package
+
+
+Package ExtSizes Warning: It is better to use one of the extsizes classes,
+ if you can.
+
+(c:/texlive/2016/texmf-dist/tex/latex/extsizes/size8.clo
+File: size8.clo 1999/11/11 v1.4a NON-Standard LaTeX file (size option)
+))
+(c:/texlive/2016/texmf-dist/tex/latex/preprint/fullpage.sty
+Package: fullpage 1999/02/23 1.1 (PWD)
+\FP@margin=\skip43
+)
+(c:/texlive/2016/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2016/03/10 v2.15b AMS math features
+\@mathmargin=\skip44
+
+For additional information on amsmath, use the `?' option.
+(c:/texlive/2016/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(c:/texlive/2016/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks14
+\ex@=\dimen103
+))
+(c:/texlive/2016/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen104
+)
+(c:/texlive/2016/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count88
+LaTeX Info: Redefining \frac on input line 199.
+\uproot@=\count89
+\leftroot@=\count90
+LaTeX Info: Redefining \overline on input line 297.
+\classnum@=\count91
+\DOTSCASE@=\count92
+LaTeX Info: Redefining \ldots on input line 394.
+LaTeX Info: Redefining \dots on input line 397.
+LaTeX Info: Redefining \cdots on input line 518.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen105
+LaTeX Font Info:    Redeclaring font encoding OML on input line 634.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
+\macc@depth=\count93
+\c@MaxMatrixCols=\count94
+\dotsspace@=\muskip10
+\c@parentequation=\count95
+\dspbrk@lvl=\count96
+\tag@help=\toks15
+\row@=\count97
+\column@=\count98
+\maxfields@=\count99
+\andhelp@=\toks16
+\eqnshift@=\dimen106
+\alignsep@=\dimen107
+\tagshift@=\dimen108
+\tagwidth@=\dimen109
+\totwidth@=\dimen110
+\lineht@=\dimen111
+\@envbody=\toks17
+\multlinegap=\skip45
+\multlinetaggap=\skip46
+\mathdisplay@stack=\toks18
+LaTeX Info: Redefining \[ on input line 2739.
+LaTeX Info: Redefining \] on input line 2740.
+)
+(c:/texlive/2016/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(c:/texlive/2016/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(c:/texlive/2016/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2015/03/04 v2.20.2
+\thm@style=\toks19
+\thm@bodyfont=\toks20
+\thm@headfont=\toks21
+\thm@notefont=\toks22
+\thm@headpunct=\toks23
+\thm@preskip=\skip47
+\thm@postskip=\skip48
+\thm@headsep=\skip49
+\dth@everypar=\toks24
+)
+(c:/texlive/2016/texmf-dist/tex/latex/psnfss/mathpazo.sty
+Package: mathpazo 2005/04/12 PSNFSS-v9.2a Palatino w/ Pazo Math (D.Puga, WaS) 
+\symupright=\mathgroup6
+)
+(c:/texlive/2016/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2016/04/07 v1.8p multicolumn formatting (FMi)
+\c@tracingmulticols=\count100
+
+
+Package multicol Warning: May not work with the twocolumn option on input line 
+134.
+
+\mult@box=\box28
+\multicol@leftmargin=\dimen112
+\c@unbalance=\count101
+\c@collectmore=\count102
+\doublecol@number=\count103
+\multicoltolerance=\count104
+\multicolpretolerance=\count105
+\full@width=\dimen113
+\page@free=\dimen114
+\premulticols=\dimen115
+\postmulticols=\dimen116
+\multicolsep=\skip50
+\multicolbaselineskip=\skip51
+\partial@page=\box29
+\last@line=\box30
+\maxbalancingoverflow=\dimen117
+\mult@rightbox=\box31
+\mult@grightbox=\box32
+\mult@gfirstbox=\box33
+\mult@firstbox=\box34
+\@tempa=\box35
+\@tempa=\box36
+\@tempa=\box37
+\@tempa=\box38
+\@tempa=\box39
+\@tempa=\box40
+\@tempa=\box41
+\@tempa=\box42
+\@tempa=\box43
+\@tempa=\box44
+\@tempa=\box45
+\@tempa=\box46
+\@tempa=\box47
+\@tempa=\box48
+\@tempa=\box49
+\@tempa=\box50
+\@tempa=\box51
+\c@columnbadness=\count106
+\c@finalcolumnbadness=\count107
+\last@try=\dimen118
+\multicolovershoot=\dimen119
+\multicolundershoot=\dimen120
+\mult@nat@firstbox=\box52
+\colbreak@box=\box53
+\mc@col@check@num=\count108
+) (c:/texlive/2016/texmf-dist/tex/latex/polyglossia/polyglossia.sty
+Package: polyglossia 2015/03/25 v1.42.4 Alternative to Babel for XeLaTeX and Lu
+aLaTeX
+
+(c:/texlive/2016/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count109
+)
+(c:/texlive/2016/texmf-dist/tex/latex/makecmds/makecmds.sty
+Package: makecmds 2009/09/03 v1.0a extra command making commands
+)
+(c:/texlive/2016/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+(c:/texlive/2016/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(c:/texlive/2016/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks25
+\XKV@tempa@toks=\toks26
+
+(c:/texlive/2016/texmf-dist/tex/generic/xkeyval/keyval.tex))
+\XKV@depth=\count110
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(c:/texlive/2016/texmf-dist/tex/latex/fontspec/fontspec.sty
+(c:/texlive/2016/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2016/05/18 v6512 L3 programming layer (loader) 
+
+(c:/texlive/2016/texmf-dist/tex/latex/l3kernel/expl3-code.tex
+Package: expl3 2016/05/18 v6512 L3 programming layer (code)
+L3 Module: l3bootstrap 2016/02/12 v6412 L3 Bootstrap code
+L3 Module: l3names 2016/03/11 v6433 L3 Namespace for primitives
+L3 Module: l3basics 2015/11/22 v6315 L3 Basic definitions
+L3 Module: l3expan 2015/09/10 v5983 L3 Argument expansion
+L3 Module: l3tl 2016/03/26 v6465 L3 Token lists
+L3 Module: l3str 2016/03/24 v6441 L3 Strings
+L3 Module: l3seq 2015/08/05 v5777 L3 Sequences and stacks
+L3 Module: l3int 2016/03/24 v6441 L3 Integers
+\c_max_int=\count111
+\l_tmpa_int=\count112
+\l_tmpb_int=\count113
+\g_tmpa_int=\count114
+\g_tmpb_int=\count115
+L3 Module: l3quark 2015/08/17 v5855 L3 Quarks
+L3 Module: l3prg 2015/11/01 v6216 L3 Control structures
+\g__prg_map_int=\count116
+L3 Module: l3clist 2015/09/02 v5901 L3 Comma separated lists
+L3 Module: l3token 2016/04/03 v6470 L3 Experimental token manipulation
+L3 Module: l3prop 2016/01/05 v6366 L3 Property lists
+L3 Module: l3msg 2016/03/26 v6464 L3 Messages
+L3 Module: l3file 2016/03/25 v6458 L3 File and I/O operations
+\l_iow_line_count_int=\count117
+\l__iow_target_count_int=\count118
+\l__iow_current_line_int=\count119
+\l__iow_current_word_int=\count120
+\l__iow_current_indentation_int=\count121
+L3 Module: l3skip 2016/01/05 v6366 L3 Dimensions and skips
+\c_zero_dim=\dimen121
+\c_max_dim=\dimen122
+\l_tmpa_dim=\dimen123
+\l_tmpb_dim=\dimen124
+\g_tmpa_dim=\dimen125
+\g_tmpb_dim=\dimen126
+\c_zero_skip=\skip52
+\c_max_skip=\skip53
+\l_tmpa_skip=\skip54
+\l_tmpb_skip=\skip55
+\g_tmpa_skip=\skip56
+\g_tmpb_skip=\skip57
+\c_zero_muskip=\muskip11
+\c_max_muskip=\muskip12
+\l_tmpa_muskip=\muskip13
+\l_tmpb_muskip=\muskip14
+\g_tmpa_muskip=\muskip15
+\g_tmpb_muskip=\muskip16
+L3 Module: l3keys 2015/11/17 v6284 L3 Key-value interfaces
+\g__keyval_level_int=\count122
+\l_keys_choice_int=\count123
+L3 Module: l3fp 2016/03/26 v6465 L3 Floating points
+\c__fp_leading_shift_int=\count124
+\c__fp_middle_shift_int=\count125
+\c__fp_trailing_shift_int=\count126
+\c__fp_big_leading_shift_int=\count127
+\c__fp_big_middle_shift_int=\count128
+\c__fp_big_trailing_shift_int=\count129
+\c__fp_Bigg_leading_shift_int=\count130
+\c__fp_Bigg_middle_shift_int=\count131
+\c__fp_Bigg_trailing_shift_int=\count132
+L3 Module: l3box 2015/08/09 v5822 L3 Experimental boxes
+\c_empty_box=\box54
+\l_tmpa_box=\box55
+\l_tmpb_box=\box56
+\g_tmpa_box=\box57
+\g_tmpb_box=\box58
+L3 Module: l3coffins 2016/05/17 v6508 L3 Coffin code layer
+\l__coffin_internal_box=\box59
+\l__coffin_internal_dim=\dimen127
+\l__coffin_offset_x_dim=\dimen128
+\l__coffin_offset_y_dim=\dimen129
+\l__coffin_x_dim=\dimen130
+\l__coffin_y_dim=\dimen131
+\l__coffin_x_prime_dim=\dimen132
+\l__coffin_y_prime_dim=\dimen133
+\c_empty_coffin=\box60
+\l__coffin_aligned_coffin=\box61
+\l__coffin_aligned_internal_coffin=\box62
+\l_tmpa_coffin=\box63
+\l_tmpb_coffin=\box64
+\l__coffin_display_coffin=\box65
+\l__coffin_display_coord_coffin=\box66
+\l__coffin_display_pole_coffin=\box67
+\l__coffin_display_offset_dim=\dimen134
+\l__coffin_display_x_dim=\dimen135
+\l__coffin_display_y_dim=\dimen136
+L3 Module: l3color 2014/08/23 v5354 L3 Experimental color support
+L3 Module: l3sys 2015/09/25 v6087 L3 Experimental system/runtime functions
+L3 Module: l3candidates 2016/05/13 v6484 L3 Experimental additions to l3kernel
+\l__box_top_dim=\dimen137
+\l__box_bottom_dim=\dimen138
+\l__box_left_dim=\dimen139
+\l__box_right_dim=\dimen140
+\l__box_top_new_dim=\dimen141
+\l__box_bottom_new_dim=\dimen142
+\l__box_left_new_dim=\dimen143
+\l__box_right_new_dim=\dimen144
+\l__box_internal_box=\box68
+\l__coffin_bounding_shift_dim=\dimen145
+\l__coffin_left_corner_dim=\dimen146
+\l__coffin_right_corner_dim=\dimen147
+\l__coffin_bottom_corner_dim=\dimen148
+\l__coffin_top_corner_dim=\dimen149
+\l__coffin_scaled_total_height_dim=\dimen150
+\l__coffin_scaled_width_dim=\dimen151
+L3 Module: l3luatex 2016/03/26 v6465 L3 Experimental LuaTeX-specific functions
+)
+(c:/texlive/2016/texmf-dist/tex/latex/l3kernel/l3xdvipdfmx.def
+File: l3xdvidpfmx.def 2016/03/26 v6465 L3 Experimental driver: xdvipdfmx
+\l__driver_tmp_box=\box69
+))
+(c:/texlive/2016/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2016/05/18 v6512 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count133
+\l__xparse_m_args_int=\count134
+\l__xparse_mandatory_args_int=\count135
+\l__xparse_processor_int=\count136
+\l__xparse_v_nesting_int=\count137
+)
+Package: fontspec 2016/02/01 v2.5a Font selection for XeLaTeX and LuaLaTeX
+
+(c:/texlive/2016/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
+Package: fontspec-xetex 2016/02/01 v2.5a Font selection for XeLaTeX and LuaLaTe
+X
+\l_fontspec_script_int=\count138
+\l_fontspec_language_int=\count139
+\l_fontspec_strnum_int=\count140
+\l__fontspec_tmpa_dim=\dimen152
+\l__fontspec_tmpb_dim=\dimen153
+\l__fontspec_tmpc_dim=\dimen154
+\g__file_internal_ior=\read1
+
+(c:/texlive/2016/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(c:/texlive/2016/texmf-dist/tex/latex/euenc/eu1enc.def
+File: eu1enc.def 2010/05/27 v0.1h Experimental Unicode font encodings
+)
+LaTeX Font Info:    Try loading font information for EU1+lmr on input line 105.
+
+
+(c:/texlive/2016/texmf-dist/tex/latex/euenc/eu1lmr.fd
+File: eu1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+))
+(c:/texlive/2016/texmf-dist/tex/xelatex/xunicode/xunicode.sty
+File: xunicode.sty 2011/09/09 v0.981 provides access to latin accents and many 
+other characters in Unicode lower plane
+
+(c:/texlive/2016/texmf-dist/tex/latex/tipa/t3enc.def
+File: t3enc.def 2001/12/31 T3 encoding
+LaTeX Font Info:    Try loading font information for EU1+lmss on input line 357
+.
+
+(c:/texlive/2016/texmf-dist/tex/latex/euenc/eu1lmss.fd
+File: eu1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
+))
+\tipaTiiicode=\count141
+\tipasavetokens=\toks27
+\tipachecktokens=\toks28
+
+(c:/texlive/2016/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(c:/texlive/2016/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2016/05/09 v1.0r Standard LaTeX Graphics (DPC,SPQR)
+
+(c:/texlive/2016/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(c:/texlive/2016/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/01/02 v1.10 sample graphics configuration
+)
+Package graphics Info: Driver file: xetex.def on input line 96.
+
+(c:/texlive/2016/texmf-dist/tex/xelatex/xetex-def/xetex.def
+File: xetex.def 2016/04/06 v4.08 LaTeX color/graphics driver for XeTeX (TeX Liv
+e/RRM/JK)
+
+(c:/texlive/2016/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(c:/texlive/2016/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)))
+\Gin@req@height=\dimen155
+\Gin@req@width=\dimen156
+))
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \__fontspec_post_arg:w with sig. 'mmO{}' on line 353.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \fontspec with sig. 'om' on line 355.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmainfont with sig. 'om' on line 365.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setsansfont with sig. 'om' on line 375.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmonofont with sig. 'om' on line 385.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmathrm with sig. 'om' on line 399.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setboldmathrm with sig. 'om' on line 407.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmathsf with sig. 'om' on line 415.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmathtt with sig. 'om' on line 423.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontfamily with sig. 'mom' on line 437.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontface with sig. 'mom' on line 453.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \defaultfontfeatures with sig. 't+om' on line 467.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \addfontfeatures with sig. 'm' on line 529.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontfeature with sig. 'mm' on line 540.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newAATfeature with sig. 'mmmm' on line 548.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newopentypefeature with sig. 'mmm' on line 556.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \aliasfontfeature with sig. 'mm' on line 577.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \aliasfontfeatureoption with sig. 'mmm' on line 586.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontscript with sig. 'mm' on line 590.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontlanguage with sig. 'mm' on line 594.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareFontsExtensions with sig. 'm' on line 599.
+.................................................
+\l__fontspec_tmp_int=\count142
+
+(c:/texlive/2016/texmf-dist/tex/latex/fontspec/fontspec.cfg)
+LaTeX Info: Redefining \itshape on input line 2705.
+LaTeX Info: Redefining \slshape on input line 2710.
+LaTeX Info: Redefining \scshape on input line 2715.
+LaTeX Info: Redefining \upshape on input line 2720.
+\l__fontspec_em_int=\count143
+\l__fontspec_emdef_int=\count144
+LaTeX Info: Redefining \em on input line 2736.
+LaTeX Info: Redefining \emph on input line 2742.
+LaTeX Info: Redefining \- on input line 2746.
+.................................................
+. LaTeX info: "xparse/redefine-command"
+. 
+. Redefining command \oldstylenums with sig. 'm' on line 2841.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \liningnums with sig. 'm' on line 2845.
+.................................................
+))
+(c:/texlive/2016/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(c:/texlive/2016/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\xpg@normalclass=\XeTeXcharclass1
+)
+.................................................
+. fontspec info: "no-scripts"
+. 
+. Font Khmer OS does not contain any OpenType `Script' information.
+.................................................
+\g__fontspec_family_KhmerOS_int=\count145
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font Khmer OS Bokor/I (it probably doesn't exist).
+.................................................
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font Khmer OS/BI (it probably doesn't exist).
+.................................................
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font Khmer OS/I (it probably doesn't exist).
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'KhmerOS(0)' created for font 'Khmer OS' with options
+. [BoldFont={Khmer OS Bokor}].
+. 
+. This font family consists of the following NFSS series/shapes:
+. - 'normal' (m/n) with NFSS spec.: <->"Khmer OS/OT:"
+. - 'small caps'  (m/sc) with NFSS spec.: - 'bold' (bx/n) with NFSS spec.:
+. <->"Khmer OS Bokor/OT:"
+. - 'bold small caps'  (bx/sc) with NFSS spec.: 
+.................................................
+
+(c:/texlive/2016/texmf-dist/tex/latex/polyglossia/gloss-khmer.ldf
+File: gloss-khmer.ldf polyglossia: module for Khmer
+
+
+Package polyglossia Warning: No hyphenation patterns were loaded for `Khmer'
+(polyglossia)                I will use \language=\l@nohyphenation instead on i
+nput line 8.
+
+\l@khmer = a dialect from \language\l@nohyphenation 
+)
+Package polyglossia Info: Default language is khmer.
+ (c:/texlive/2016/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
+Package: tcolorbox 2016/04/27 version 3.91 text color boxes
+
+(c:/texlive/2016/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(c:/texlive/2016/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks29
+\pgfutil@tempdima=\dimen157
+\pgfutil@tempdimb=\dimen158
+
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex)
+) (c:/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box70
+
+(c:/texlive/2016/texmf-dist/tex/latex/ms/everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
+))
+Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
+
+(c:/texlive/2016/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(c:/texlive/2016/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
+
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks30
+\pgfkeys@temptoks=\toks31
+
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
+\pgfkeys@tmptoks=\toks32
+))
+\pgf@x=\dimen159
+\pgf@y=\dimen160
+\pgf@xa=\dimen161
+\pgf@ya=\dimen162
+\pgf@xb=\dimen163
+\pgf@yb=\dimen164
+\pgf@xc=\dimen165
+\pgf@yc=\dimen166
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count146
+\c@pgf@countb=\count147
+\c@pgf@countc=\count148
+\c@pgf@countd=\count149
+\t@pgf@toka=\toks33
+\t@pgf@tokb=\toks34
+\t@pgf@tokc=\toks35
+ (c:/texlive/2016/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
+)
+Driver file for pgf: pgfsys-xetex.def
+
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-xetex.def
+File: pgfsys-xetex.def 2014/07/09  (rcs-revision 1.11)
+
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-dvipdfmx.def
+File: pgfsys-dvipdfmx.def 2014/07/09  (rcs-revision 1.14)
+
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
+)
+\pgfsys@objnum=\count150
+)))
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
+\pgfsyssoftpath@smallbuffer@items=\count151
+\pgfsyssoftpath@bigbuffer@items=\count152
+)
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
+)) (c:/texlive/2016/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(c:/texlive/2016/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: xetex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
+
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen167
+\pgfmath@count=\count153
+\pgfmath@box=\box71
+\pgfmath@toks=\toks36
+\pgfmath@stack@operand=\toks37
+\pgfmath@stack@operation=\toks38
+)
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.te
+x)
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric
+.code.tex)
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.t
+ex)
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.co
+de.tex)
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex
+)
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.te
+x)
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex
+)
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithm
+etics.code.tex)))
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count154
+))
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
+\pgf@picminx=\dimen168
+\pgf@picmaxx=\dimen169
+\pgf@picminy=\dimen170
+\pgf@picmaxy=\dimen171
+\pgf@pathminx=\dimen172
+\pgf@pathmaxx=\dimen173
+\pgf@pathminy=\dimen174
+\pgf@pathmaxy=\dimen175
+\pgf@xx=\dimen176
+\pgf@xy=\dimen177
+\pgf@yx=\dimen178
+\pgf@yy=\dimen179
+\pgf@zx=\dimen180
+\pgf@zy=\dimen181
+)
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.cod
+e.tex
+File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
+\pgf@path@lastx=\dimen182
+\pgf@path@lasty=\dimen183
+)
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.te
+x
+File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
+\pgf@shorten@end@additional=\dimen184
+\pgf@shorten@start@additional=\dimen185
+)
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
+\pgfpic=\box72
+\pgf@hbox=\box73
+\pgf@layerbox@main=\box74
+\pgf@picture@serial@count=\count155
+)
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code
+.tex
+File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
+\pgflinewidth=\dimen186
+)
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.c
+ode.tex
+File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
+\pgf@pt@x=\dimen187
+\pgf@pt@y=\dimen188
+\pgf@pt@temp=\dimen189
+)
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
+)
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.co
+de.tex
+File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
+)
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
+\pgfarrowsep=\dimen190
+)
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
+\pgf@max=\dimen191
+\pgf@sys@shading@range@num=\count156
+)
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
+
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
+\pgfexternal@startupbox=\box75
+))
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
+)
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code
+.tex
+File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
+)
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
+)))
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
+\pgfnodeparttextbox=\box76
+)
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
+)
+(c:/texlive/2016/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.st
+y
+Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen192
+\pgf@nodesepend=\dimen193
+)
+(c:/texlive/2016/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.st
+y
+Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
+)) (c:/texlive/2016/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks39
+\verbatim@line=\toks40
+\verbatim@in@stream=\read3
+)
+(c:/texlive/2016/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+(c:/texlive/2016/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+\tcb@titlebox=\box77
+\tcb@upperbox=\box78
+\tcb@lowerbox=\box79
+\tcb@phantombox=\box80
+\c@tcbbreakpart=\count157
+\c@tcblayer=\count158
+\tcolorbox@number=\count159
+\tcb@temp=\box81
+\tcb@temp=\box82
+\tcb@temp=\box83
+\tcb@temp=\box84
+\tcb@out=\write4
+\tcb@record@out=\write5
+)
+(c:/texlive/2016/texmf-dist/tex/latex/tcolorbox/tcbskins.code.tex
+Library (tcolorbox): 'tcbskins.code.tex' version '3.91'
+(c:/texlive/2016/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(c:/texlive/2016/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(c:/texlive/2016/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(c:/texlive/2016/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
+
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen194
+\pgffor@skip=\dimen195
+\pgffor@stack=\toks41
+\pgffor@toks=\toks42
+))
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
+
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.co
+de.tex
+File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
+\pgf@plot@mark@count=\count160
+\pgfplotmarksize=\dimen196
+)
+\tikz@lastx=\dimen197
+\tikz@lasty=\dimen198
+\tikz@lastxsaved=\dimen199
+\tikz@lastysaved=\dimen256
+\tikzleveldistance=\dimen257
+\tikzsiblingdistance=\dimen258
+\tikz@figbox=\box85
+\tikz@figbox@bg=\box86
+\tikz@tempbox=\box87
+\tikz@tempbox@bg=\box88
+\tikztreelevel=\count161
+\tikznumberofchildren=\count162
+\tikznumberofcurrentchild=\count163
+\tikz@fig@count=\count164
+
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
+\pgfmatrixcurrentrow=\count165
+\pgfmatrixcurrentcolumn=\count166
+\pgf@matrix@numberofcolumns=\count167
+)
+\tikz@expandcount=\count168
+
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+brarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
+)))
+\tcb@waterbox=\box89
+
+(c:/texlive/2016/texmf-dist/tex/latex/tcolorbox/tcbskinsjigsaw.code.tex
+Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '3.91'
+)) (c:/texlive/2016/texmf-dist/tex/latex/tcolorbox/tcbbreakable.code.tex
+Library (tcolorbox): 'tcbbreakable.code.tex' version '3.91'
+\tcb@testbox=\box90
+\tcb@totalupperbox=\box91
+\tcb@totallowerbox=\box92
+) (c:/texlive/2016/texmf-dist/tex/latex/tcolorbox/tcbtheorems.code.tex
+Library (tcolorbox): 'tcbtheorems.code.tex' version '3.91'
+)
+\c@tcb@cnt@definition=\count169
+\c@tcb@cnt@theorem=\count170
+\c@tcb@cnt@property=\count171
+ (c:/texlive/2016/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
+\ttl@box=\box93
+\beforetitleunit=\skip58
+\aftertitleunit=\skip59
+\ttl@plus=\dimen259
+\ttl@minus=\dimen260
+\ttl@toksa=\toks43
+\titlewidth=\dimen261
+\titlewidthlast=\dimen262
+\titlewidthfirst=\dimen263
+)
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryshapes.code.tex
+File: tikzlibraryshapes.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1
+)
+
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.g
+eometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2008/06/26 v3.0.1a (rcs-revision 1.1)
+
+))
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryshapes.misc.code.tex
+File: tikzlibraryshapes.misc.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.m
+isc.code.tex
+File: pgflibraryshapes.misc.code.tex 2013/07/18 v3.0.1a (rcs-revision 1.5)
+))
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryshapes.symbols.code.tex
+File: tikzlibraryshapes.symbols.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.s
+ymbols.code.tex
+File: pgflibraryshapes.symbols.code.tex 2013/09/11 v3.0.1a (rcs-revision 1.6)
+))
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryshapes.arrows.code.tex
+File: tikzlibraryshapes.arrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.a
+rrows.code.tex
+File: pgflibraryshapes.arrows.code.tex 2008/06/26 v3.0.1a (rcs-revision 1.1)
+))
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryshapes.callouts.code.tex
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.c
+allouts.code.tex))
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryshapes.multipart.code.tex
+File: tikzlibraryshapes.multipart.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1
+)
+
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.m
+ultipart.code.tex
+File: pgflibraryshapes.multipart.code.tex 2010/01/07 v3.0.1a (rcs-revision 1.2)
+
+\pgfnodepartlowerbox=\box94
+\pgfnodeparttwobox=\box95
+\pgfnodepartthreebox=\box96
+\pgfnodepartfourbox=\box97
+\pgfnodeparttwentybox=\box98
+\pgfnodepartnineteenbox=\box99
+\pgfnodeparteighteenbox=\box100
+\pgfnodepartseventeenbox=\box101
+\pgfnodepartsixteenbox=\box102
+\pgfnodepartfifteenbox=\box103
+\pgfnodepartfourteenbox=\box104
+\pgfnodepartthirteenbox=\box105
+\pgfnodeparttwelvebox=\box106
+\pgfnodepartelevenbox=\box107
+\pgfnodeparttenbox=\box108
+\pgfnodepartninebox=\box109
+\pgfnodeparteightbox=\box110
+\pgfnodepartsevenbox=\box111
+\pgfnodepartsixbox=\box112
+\pgfnodepartfivebox=\box113
+))) (c:/texlive/2016/texmf-dist/tex/latex/titlesec/block.tss
+File: block.tss 2016/03/15
+)
+(c:/texlive/2016/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2011/09/28 v3.5.2 Customized lists
+\enitkv@toks@=\toks44
+\labelindent=\skip60
+\enit@outerparindent=\dimen264
+\enit@toks=\toks45
+\enit@inbox=\box114
+\enitdp@description=\count172
+))
+(./exponential.aux)
+\openout1 = `exponential.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 3.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 3.
+ (c:/texlive/2016/texmf-dist/tex/latex/tipa/t3cmr.fd
+File: t3cmr.fd 2001/12/31 TIPA font definitions
+)
+LaTeX Font Info:    ... okay on input line 3.
+
+ABD: EveryShipout initializing macros
+ជំពូក ១.
+File: img/rightpin.png Graphic file (type QTm)
+<use  "img/rightpin.png" >
+LaTeX Font Info:    Try loading font information for OT1+ppl on input line 9.
+
+(c:/texlive/2016/texmf-dist/tex/latex/psnfss/ot1ppl.fd
+File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
+)
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 9.
+
+(c:/texlive/2016/texmf-dist/tex/latex/psnfss/omlzplm.fd
+File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
+)
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 9.
+
+(c:/texlive/2016/texmf-dist/tex/latex/psnfss/omszplm.fd
+File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
+)
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 9.
+
+(c:/texlive/2016/texmf-dist/tex/latex/psnfss/omxzplm.fd
+File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
+)
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 8.33606pt on input line 9.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 6.25204pt on input line 9.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 5.21004pt on input line 9.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 8.33606pt on input line 9.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 6.25204pt on input line 9.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 5.21004pt on input line 9.
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 9.
+
+(c:/texlive/2016/texmf-dist/tex/latex/psnfss/ot1zplm.fd
+File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
+)
+File: img/rightpin.png Graphic file (type QTm)
+
+<use  "img/rightpin.png" >
+File: img/rightpin.png Graphic file (type QTm)
+ <use  "img/rightpin.png" >
+File: img/rightpin.png Graphic file (type QTm)
+
+<use  "img/rightpin.png" >
+File: img/rightpin.png Graphic file (type QTm)
+ <use  "img/rightpin.png" >
+File: img/rightpin.png Graphic file (type QTm)
+
+<use  "img/rightpin.png" >
+File: img/rightpin.png Graphic file (type QTm)
+ <use  "img/rightpin.png" >
+File: img/rightpin.png Graphic file (type QTm)
+
+<use  "img/rightpin.png" >
+File: img/rightpin.png Graphic file (type QTm)
+ <use  "img/rightpin.png" >
+File: img/rightpin.png Graphic file (type QTm)
+
+<use  "img/rightpin.png" >
+File: img/rightpin.png Graphic file (type QTm)
+ <use  "img/rightpin.png" >
+File: img/rightpin.png Graphic file (type QTm)
+
+<use  "img/rightpin.png" >
+File: img/rightpin.png Graphic file (type QTm)
+ <use  "img/rightpin.png" >
+File: img/rightpin.png Graphic file (type QTm)
+
+<use  "img/rightpin.png" >
+File: img/rightpin.png Graphic file (type QTm)
+ <use  "img/rightpin.png" >
+File: img/rightpin.png Graphic file (type QTm)
+
+<use  "img/rightpin.png" >
+File: img/rightpin.png Graphic file (type QTm)
+ <use  "img/rightpin.png" >
+File: img/rightpin.png Graphic file (type QTm)
+
+<use  "img/rightpin.png" > [1
+
+
+] (./exponential.aux) ) 
+Here is how much of TeX's memory you used:
+ 30899 strings out of 493591
+ 654971 string characters out of 6146794
+ 919921 words of memory out of 5000000
+ 33890 multiletter control sequences out of 15000+600000
+ 10921 words of font info for 47 fonts, out of 8000000 for 9000
+ 1347 hyphenation exceptions out of 8191
+ 61i,7n,87p,10477b,949s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on exponential.pdf (1 page).

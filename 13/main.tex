@@ -1,0 +1,128 @@
+\documentclass[a4paper, 12pt]{exam}
+\makeatletter
+\usepackage[top=0.5cm, left=1cm, bottom=1.8cm, right=1.5cm]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{gensymb}
+\usepackage{textcomp}
+\usepackage{tcolorbox}
+\usepackage[export]{adjustbox}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{pgf}
+\usepackage{tikz}% graphic drawing
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\usepackage{wasysym}
+\usepackage{mathpazo}% change math font
+\usepackage{enumitem}% change list environment like enumerate, itemize and description
+\usepackage{multicol}% multi columns
+\usepackage{xcolor}
+\newcommand{\teacher}{ស៊ំុ សំអុន}
+\newcommand{\tell}{០៩៦ ៩៤០ ៥៨៤០}
+\newcommand{\class}{ត្រៀមប្រឡង~ឆមាសលើកទី~០១}
+\newcommand{\dateofexam}{សម័យប្រឡង៖~~~\dots\dots~~~\dots\dots ~~~២០១៨}
+\newcommand{\subject}{វិញ្ញាសា៖~រូបវិទ្យា~(វិទ្យាសាស្រ្តពិត)}
+\newcommand{\timelimit}{៩០~នាទី}
+\newcommand{\score}{ពិន្ទុសរុប៖~៧៥~ពិន្ទុ}
+\usepackage[no-math]{fontspec}% font specfication
+\setmainfont{Khmer OS Content}% set default font to Khmer OS
+\setsansfont[Ligatures=TeX,AutoFakeBold=0,AutoFakeSlant=0.25]{Khmer OS Muol Light}% sans serif font
+%
+\newcommand{\heart}{\ensuremath\heartsuit}
+\newcommand{\butt}{\rotatebox[origin=c]{180}{\heart}}
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+		\node[shape=circle,draw,inner sep=2pt] (char) {#1};}}
+%
+\SetEnumitemKey{I}{%
+	leftmargin=*,
+	label={\protect\tikz[baseline=-0.9ex]\protect\node[draw=gray,thick,circle,minimum height=.65cm,inner sep=1pt,text=black,fill=white]{\Roman*};},%
+	font=\small\sffamily\bfseries,%
+	labelsep=1ex,%
+	topsep=0pt}
+%
+\SetEnumitemKey{a}{%
+	leftmargin=*,%
+	label={\protect\tikz[baseline=-0.9ex]\protect\node[draw=gray,thick,circle,minimum height=.5cm,inner sep=1pt,text=blue,fill=magenta!5!white]{\alph*};},%
+	font=\small\sffamily\bfseries,%
+	labelsep=1ex,%
+	topsep=0pt}
+%
+\SetEnumitemKey{1}{leftmargin=*,%
+	label={\protect\tikz[baseline=-0.9ex]\protect\node[draw=gray,thick,circle,minimum height=.5cm,inner sep=1pt,text=black,fill=cyan!20!white]{\arabic*};},%
+	font=\small\sffamily\bfseries,%
+	labelsep=1ex,%
+	topsep=0pt}
+%
+\def\hard{\leavevmode\makebox[0pt][r]{\large\ensuremath{\star}\hspace{2em}}}
+%
+\def\hhard{\leavevmode\makebox[0pt][r]{\large\ensuremath{\star\star}\hspace{2em}}}
+%
+\everymath{\protect\displaystyle\protect\color{black}}
+%
+\pagecolor{cyan!1!white}
+%
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{wasysym}
+\makeatother
+
+\pagestyle{foot}
+\firstpagefooter{}{ ទំព័រ~\thepage\ នៃ \numpages}{}
+\runningfooter{រៀបរៀងដោយ~\teacher}{ ទំព័រ \thepage\ នៃ \numpages}{ទូរស័ព្ទ~\tell}
+\runningfootrule
+
+\begin{document}
+\noindent
+%\sffamily\color{black}
+\begin{tabular*}{\textwidth \sffamily\color{black}}{l @{\extracolsep{\fill}} r @{\extracolsep{6pt}} l}
+\textbf{\class} & \textbf{មណ្ឌលប្រឡង} & \makebox[2in]{\hrulefill}\\
+\textbf{\dateofexam} & \textbf{លេខបន្ទប់} & \makebox[2in]{\hrulefill}\\
+\textbf{\subject} & \textbf{លេខតុ} & \makebox[2in]{\hrulefill}\\
+\textbf{\score} & \textbf{ឈ្មោះបេក្ខជន} & \makebox[2in]{\hrulefill}\\
+\textbf{រយៈពេលសរុប៖ \timelimit} & \textbf{ហេត្ថលេខា} & \makebox[2in]{\hrulefill}
+\end{tabular*}
+\noindent
+\rule[2ex]{\textwidth\color{magenta}}{2pt}
+\begin{center}
+	\sffamily\color{black}
+	ប្រធានលំហាត់ទី០១\\
+\end{center}
+\begin{enumerate}[I]
+	\item ($10$ ពិន្ទុ)
+	\begin{enumerate}[1]
+		\item ដូចម្ដេចដែលហៅថាឧស្ម័នបរិសុទ្ធ? ដូចម្តេចដែលហៅថាឧស្ម័នពិត?
+		\item តើរលកមានប៉ុន្មានប្រភេទ? គឺរលកអ្វីខ្លះ?
+	\end{enumerate}
+	\item ($10$ ពិន្ទុ) ប្រអប់មួយផ្ទុកឧស្ម័នបរិសុទ្ធដែលមានមាឌ $V=200~cm^3$ មានសម្ពាធ $P=10~atm$ នៅសីតុណ្ហភាព $27^\circ C$ ។\\
+	គណនាចំនួន ម៉ូលេគុលក្នុងប្រអប់បើថេរសកលនៃឧស្ម័នបរិសុទ្ធ $R=8.31~J/mol\cdot K$ ។
+	\item($15$ ពិន្ទុ) ក្នុងស៊ីឡាំមួយមានឧស្ម័នបរិសុទ្ធម៉ូណូអាតូម $0.5~mol$ នៅសីតុណ្ហភាព $300K$ ដោយរក្សាសីតុណ្ហភាពថេរឧស្ម័ន\\រីកមាឌពី $200~dm^3$ ដល់ $300~dm^3$ ។ គេឲ្យថេរសកលនៃឧស្ម័ន $R=8.31~J/mol\cdot K$ ។
+	\begin{enumerate}[a]
+		\item គណនាកម្មន្តដែលប្រព័ន្ធបញ្ចេញក្នុងរយៈពេលបម្រែបម្រួលមាឌ ។
+		\item គណនាបម្រែបម្រួលថាមពលក្នុងនៃឧស្ម័ន ។
+		\item គណនាបរិមាណកម្ដៅដែលស្រូបដោយប្រព័ន្ធបញ្ចេញក្នុងរយៈពេលបម្រែបម្រួលមាឌ ។\\
+		គេឲ្យ៖~~~ $\ln(1.5)=0.40~;~\ln(2)=0.69~;~\ln(2.5)=0.91$ ។
+	\end{enumerate}
+	\item($15$ ពិន្ទុ) ម៉ាស៊ីនការណូត៍មួយស្រូបកម្តៅ $4000~J$ ក្នុងរយៈពេលមួយវដ្ត និងដំណើការនៅចន្លោះសីតុណ្ហភាព $500~K$ និង $300~K$ ។
+	\begin{enumerate}[a]
+		\item គណនាទិន្នផលកម្តៅនៃម៉ាស៊ីន ។
+		\item គណនាកម្តៅដែលបញ្ចេញដោយម៉ាស៊ីន ។
+		\item គណនាកម្មន្តដែលបានធ្វើក្នុងរយៈពេលមួយវដ្តគិតជាស៊ូល ។
+	\end{enumerate}
+	\item ($10$ ពិន្តុ) គេមានសមីការរកល $y=(5cm)\sin(\pi t-\frac{\pi}{3})$ ដែល $t$ គិតជា $s$ ។
+	\begin{enumerate}[a]
+		\item គណនាអំព្លីទុត មុំប្រេកង់ ខួប ប្រេកង់ និងផាសដើមនៃលំយោល ។
+		\item គណនា $y$ នៅខណៈ $t=2~s$ ។
+	\end{enumerate}
+	\item($15$ ពិន្ទុ) សូលេណូអ៊ីតមួយមានអង្កត់ផ្ចិត $10~cm$ មានប្រវែង $50~cm$ រុំពីខ្សែដែលមានអង្កត់ផ្ចិត $1~mm$ មានកម្រាស់អ៊ីសូឡង់\\យ៉ាងស្តើងអាចចោលបាន និងរុំជាស្ពៀជាប់ៗគ្នា ។ សូលេណូអ៊ីតបង្កើតដែនម៉ាញេទិច $3.14~mT$ \\ត្រង់ផ្ចិតសូលេណូអ៊ីត ។
+	\begin{enumerate}[a]
+		\item គណនាចរន្តដែលឆ្លងកាត់សូលេណូអ៊ីត ។
+		\item គណនាប្រវែងខ្សែចម្លងដែលប្រើដើម្បីរុំជាសូលេណូអ៊ីត ។
+		\item គណនារេស៊ីស្តង់ខ្សែចម្លង បើរេស៊ីស្ទីវីតេ $2.5\times10^{-8}~\Omega\cdot m$ ។
+	\end{enumerate}
+\end{enumerate}
+\begin{center}
+	\sffamily\color{black}
+	សូមសំណាងល្អ!
+\end{center}\newpage
+
+\end{document}

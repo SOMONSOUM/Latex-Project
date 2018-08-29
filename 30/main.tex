@@ -1,0 +1,153 @@
+\documentclass[a4paper,11pt]{article}
+\makeatletter
+\usepackage[top=2cm, left=1.5cm, bottom=1.5cm, right=1.5cm]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{tcolorbox}
+\usepackage[export]{adjustbox}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{pgf}
+\usepackage{tikz}% graphic drawing
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\usepackage{wasysym}
+\usepackage{mathpazo}% change math font
+\usepackage{enumitem}% change list environment like enumerate, itemize and description
+\usepackage{multicol}% multi columns
+\usepackage{mathpazo}% change math font
+\usepackage{xcolor}
+\usepackage[no-math]{fontspec}% font specfication
+\newcommand{\heart}{\ensuremath\heartsuit}
+\newcommand{\butt}{\rotatebox[origin=c]{180}{\heart}}
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+\node[shape=circle,draw,inner sep=2pt] (char) {#1};}}
+%
+\makeatletter %line1-8 make Khmer known
+\def\@khmernum#1{\expandafter\@@khmernum\number#1\@nil} 
+\def\@@khmernum#1{%
+\ifx#1\@nil 
+\else 
+\char\numexpr#1+"17E0\relax 
+\expandafter\@@khmernum\fi 
+} 
+\def\knum#1{\expandafter\@khmernum\csname c@#1\endcsname}
+\def\khmernumeral#1{\@@khmernum#1\@nil}
+\AddEnumerateCounter{\knum}{\@knum}{}
+\makeatother
+\makeatletter
+\newcommand*{\kalph}[1]{%
+\expandafter\@kalph\csname c@#1\endcsname%
+}
+\newcommand*{\@kalph}[1]{%
+\ifcase#1\or ក\or ខ\or គ\or ឃ\or ង\or ច\or ឆ\or ជ\or ឈ\or ញ\or ដ\or ឋ\or ឌ\or ឍ\or ណ\or ត\or ថ\or ទ\or ធ\or ន\or ប\or ផ\or ព\or ភ\or ម\or យ\or រ\or ល\or វ\or ស\or ហ\or ឡ\or អ%
+\else\@ctrerr\fi%
+}
+\AddEnumerateCounter{\kalph}{\@kalph}{}
+\makeatother
+
+\SetEnumitemKey{I}{%
+leftmargin=*,
+label={\protect\tikz[baseline=-0.9ex]\protect\node[text=blue,fill=blue!10!white]{\en\Roman*.};},%
+font=\small\sffamily\bfseries,%
+labelsep=1ex,%
+topsep=0pt}
+%
+\SetEnumitemKey{a}{%
+leftmargin=*,%
+label={\protect\tikz[baseline=-0.9ex]\protect\node[text=blue,fill=magenta!10!white]{\kalph*.};},%
+font=\small\kbk\bfseries,%
+labelsep=1ex,%
+topsep=0pt}
+%
+\SetEnumitemKey{1}{leftmargin=*,%
+label={\protect\tikz[baseline=-0.9ex]\protect\node[text=red,fill=cyan!20!white]{\knum*.};},%
+font=\small\kbk\bfseries,%
+labelsep=1ex,%
+topsep=0pt}
+%
+\def\hard{\leavevmode\makebox[0pt][r]{\large\ensuremath{\star}\hspace{2em}}}
+%
+\def\hhard{\leavevmode\makebox[0pt][r]{\large\ensuremath{\star\star}\hspace{2em}}}
+%
+\everymath{\protect\displaystyle\protect\color{black}}
+%
+\pagecolor{cyan!1!white}
+%
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{wasysym}
+\makeatother
+\setmainfont{Khmer OS Content}% set default font to Khmer OS
+\newcommand{\ko}{\fontspec[Script=Khmer]{Khmer OS}\selectfont}
+\newcommand{\kml}{\fontspec[Script=Khmer]{Khmer OS Muol Light}\selectfont}
+\newcommand{\kos}{\fontspec[Script=Khmer]{Khmer OS System}\selectfont}
+\newcommand{\kb}{\fontspec[Script=Khmer]{Khmer OS Battambang}\selectfont}
+\newcommand{\kbk}{\fontspec[Script=Khmer]{Khmer OS Bokor}\selectfont}
+\newcommand{\en}{\fontspec{Liberation Serif}\selectfont}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\kbk វិទ្យាល័យមេតូឌីស្តកម្ពុជា}
+\chead{\kbk គណិតវិទ្យាទី១២(វិទ្យាសាស្ត្រ)}
+\rhead{\kbk វិញ្ញាសាត្រៀមប្រឡង}
+\lfoot{\kbk ដោយ៖ ស៊ំុ សំអុន}
+\cfoot{\en\thepage}
+\rfoot{\en Tel: 096 94 05 840}
+\renewcommand{\headrulewidth}{0.7pt}
+\renewcommand{\footrulewidth}{0.7pt}
+\headheight = 25pt
+\headsep = 5pt
+\footskip = 25pt
+
+\begin{document}
+\begin{center}
+
+{\kml វិញ្ញាសាទី១}
+\end{center}
+\vspace{-0.3cm}
+\begin{enumerate}[I]
+\item \begin{enumerate}[1]
+\item ដោះស្រាយសមីការ $Z^2-2\sqrt{2} Z+4=0 \quad(1)$ ក្នុងសំណុំចំនួនកុំផ្លិច។ រកម៉ូឌុល និងអាគុយម៉ង់នៃឬសនីមួយៗ របស់សមីការ $(1)$ ។
+\item សរសេរ $W=\left(\frac{\sqrt{2}+i\sqrt{2}}{\sqrt{2}-i\sqrt{2}}\right)^2$ ជាទម្រង់ត្រីកោណមាត្រ។
+\end{enumerate}
+\item ចូរគណនាលីមីតខាងក្រោម៖
+\begin{multicols}{3}
+\begin{enumerate}[a]
+\item $A=\lim_{x\to 0}{\frac{\sin x+\sin 2x}{\sin 3x+\sin 4x}}$
+\item $B=\lim_{x\to 0}{\frac{e^x-\sin x-1}{1-\sqrt{x+1}}}$
+\item $C=\lim_{x\to0}{\frac{(2e^x-2)(1-\cos 2x)}{x^3}}$
+\end{enumerate}
+\end{multicols}
+\item \begin{enumerate}[1]
+\item ចតុកោណកែងមួយមានបរិមាត្រ $400 ~ m^2$ ។ រកប្រវែងជ្រុងដើម្បីឱ្យចតុកោណនេះមានផ្ទៃក្រឡាធំបំផុត។
+\item ចតុកោណកែងមួយមានផ្ទៃក្រឡា $1600 ~ m^2$ ។ រកប្រវែងជ្រុងដើម្បីឱ្យចតុកោណកែងនេះមានបរិមាត្រតូចបំផុត។
+\end{enumerate}
+\item ក្នុងតម្រុយអរតូណម៉ាល់មានទិសដៅវិជ្ជមាន $(o,\vec{i}, \vec{j} ,\vec{k})$ មួយគេឱ្យចំណុច $A(1,-2,0) ~;~ B(1,0,4)$ និង $C(0,3,3)$ ។
+\begin{enumerate}[1]
+\item ចូរសង់ត្រីកោណ $ABC$ ក្នុងតម្រុយ $(o,\vec{i}, \vec{j} ,\vec{k})$ ។
+\item រកកូអរដោនេនៃវ៉ិចទ័រ $\overrightarrow{AB}$ រួចរកសមីការប្លង់ $(P)$ ជាប្លង់មេដ្យាទ័រនៃ $[AB]$ ។
+\item រកសមីការស្វ៊ែ $(S)$ ដែលមានអង្កត់ផ្ចិត $[AB]$ ។
+\item គណនា $\vec{n}=\overrightarrow{AB}\times \overrightarrow{AC}$ ។ ទាញរកផ្ទៃក្រឡានៃត្រីកោណ $ABC$ ។
+\item គណនា $t=(\overrightarrow{AB}\times \overrightarrow{AC}).\overrightarrow{AO}$ ។ ទាញរកមាឌនៃតេត្រាអ៊ែត $OABC$ ។ ទាញរកចម្ងាយពី $O$ ទៅប្លង់ $ABC$ ។
+\end{enumerate}
+\item អនុគមន៍ $f$ កំណត់ដោយ $y=f(x)=\frac{x^2-x+1}{x-1}$ និងមានក្រាប $(C)$ ។
+\begin{enumerate}[1]
+\item រកដែនកំណត់នៃអនុគមន៍ $f$ ហើយគណនា$\lim_{x\to\pm \infty }f(x)$ និង $\lim_{x\to 1}f(x)$ ។ 
+\item កំណត់តម្លៃ $a,b$ និង $c$ ដើម្បីឱ្យ $f(x)=ax+b+\frac{c}{x-1}$ ។
+\item បង្ហាញថា $f$ មានអតិបរមាមួយ និងអប្បបរមាមួយ។ គណនាតម្លៃនៃបរមាទាំងពីរ។ សង់តារាងអថេរភាពនៃ $f$ ។
+\item រកសមីការអាស៊ីមតូតទាំងពីរនៃក្រាប $(C)$ ។ សិក្សាទីតាំងរវាងក្រាប $(C)$ ធៀបនឹងអាស៊ីមតូតទ្រេត។
+\item សង់ក្រាប $(C)$ ក្នុងតម្រុយអរតូណម៉ាល់ $(o,\vec{i},\vec{j})$ ។
+\item ដោយប្រើក្រាភិច ចូរពិភាក្សាទៅតាមតម្លៃនៃប៉ារ៉ាម៉ែត្រ $m$ នូវអត្ថិភាព និងសញ្ញាឬសនៃសមីការ $x^2-(m+1)x+m+1=0$
+\end{enumerate}
+
+\item $f$ ជាអនុគមន៍កំណត់ដោយ $f(x)=x-1-2\ln\left(1-\frac{1}{x}\right)$ និង $(C)$ ជាក្រាបនៃ $f$ ។
+\begin{enumerate}[1]
+\item ចូរសិក្សាទិសដៅអថេរភាពនៃ $f$ ។
+\item គណនា $\lim_{x\to 1^+}{f(x)}$ និង $\lim_{x\to +\infty}{f(x)}$ រួចរកអាស៊ីមតូតនៃក្រាប $(C)$។
+\item គូសតារាងអថេរភាពនៃ $f$ ។ រួចសង់ក្រាប $(C)$ ក្នុងតម្រុយ $(o,\vec{i},\vec{j})$ ។
+\item បង្ហាញថាសមីការ $f(x)=3$ មានឬសតែមួយគត់លើចន្លោះ $[2,+\infty)$ ។
+\item គណនាក្រឡាផ្ទៃ $A$ ដែលនៅចន្លោះខ្សែកោង $(C)$ និងបន្ទាត់ $L: y=x-1$ ត្រូវនឹងចន្លោះ $2\leq x \leq 4$ ។ គេឱ្យ $\ln 2=0.7$ និង $\ln 3=1.1$ ។
+\end{enumerate}
+\end{enumerate}
+\end{document}

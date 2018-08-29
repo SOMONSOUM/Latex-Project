@@ -1,0 +1,133 @@
+\documentclass[a4paper, 12pt]{exam}
+\makeatletter
+\usepackage[top=0.5cm, left=1cm, bottom=1.8cm, right=1.5cm]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{tcolorbox}
+\usepackage[export]{adjustbox}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{pgf}
+\usepackage{tikz}% graphic drawing
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\usepackage{wasysym}
+\usepackage{mathpazo}% change math font
+\usepackage{enumitem}% change list environment like enumerate, itemize and description
+\usepackage{multicol}% multi columns
+\usepackage{xcolor}
+\newcommand{\teacher}{ស៊ំុ សំអុន}
+\newcommand{\tell}{០៩៦ ៩៤០ ៥៨៤០}
+\newcommand{\class}{ប្រឡង~ឆមាសលើកទី~០១}
+\newcommand{\dateofexam}{សម័យប្រឡង៖~កុម្ភៈ ០៧ ២០១៨}
+\newcommand{\subject}{វិញ្ញាសា៖~គណិតវិទ្យា~(វិទ្យាសាស្រ្តពិត)}
+\newcommand{\timelimit}{១២០~នាទី}
+\newcommand{\score}{ពិន្ទុសរុប៖~១២៥~ពិន្ទុ}
+\usepackage[no-math]{fontspec}% font specfication
+\setmainfont{Khmer OS Content}% set default font to Khmer OS
+\setsansfont[Ligatures=TeX,AutoFakeBold=0,AutoFakeSlant=0.25]{Khmer OS Muol Light}% sans serif font
+%
+\newcommand{\heart}{\ensuremath\heartsuit}
+\newcommand{\butt}{\rotatebox[origin=c]{180}{\heart}}
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+		\node[shape=circle,draw,inner sep=2pt] (char) {#1};}}
+%
+\SetEnumitemKey{I}{%
+	leftmargin=*,
+	label={\protect\tikz[baseline=-0.9ex]\protect\node[draw=gray,thick,circle,minimum height=.65cm,inner sep=1pt,text=black,fill=white]{\Roman*};},%
+	font=\small\sffamily\bfseries,%
+	labelsep=1ex,%
+	topsep=0pt}
+%
+\SetEnumitemKey{a}{%
+	leftmargin=*,%
+	label={\protect\tikz[baseline=-0.9ex]\protect\node[draw=gray,thick,circle,minimum height=.5cm,inner sep=1pt,text=blue,fill=magenta!5!white]{\alph*};},%
+	font=\small\sffamily\bfseries,%
+	labelsep=1ex,%
+	topsep=0pt}
+%
+\SetEnumitemKey{1}{leftmargin=*,%
+	label={\protect\tikz[baseline=-0.9ex]\protect\node[draw=gray,thick,circle,minimum height=.5cm,inner sep=1pt,text=black,fill=cyan!20!white]{\arabic*};},%
+	font=\small\sffamily\bfseries,%
+	labelsep=1ex,%
+	topsep=0pt}
+%
+\def\hard{\leavevmode\makebox[0pt][r]{\large\ensuremath{\star}\hspace{2em}}}
+%
+\def\hhard{\leavevmode\makebox[0pt][r]{\large\ensuremath{\star\star}\hspace{2em}}}
+%
+\everymath{\protect\displaystyle\protect\color{black}}
+%
+\pagecolor{cyan!1!white}
+%
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{wasysym}
+\makeatother
+
+\pagestyle{foot}
+\firstpagefooter{}{ ទំព័រ~\thepage\ នៃ \numpages}{}
+\runningfooter{រៀបរៀងដោយ~\teacher}{ ទំព័រ \thepage\ នៃ \numpages}{ទូរស័ព្ទ~\tell}
+\runningfootrule
+
+\begin{document}
+\noindent
+%\sffamily\color{black}
+\begin{tabular*}{\textwidth \sffamily\color{black}}{l @{\extracolsep{\fill}} r @{\extracolsep{6pt}} l}
+\textbf{\class} & \textbf{មណ្ឌលប្រឡង} & \makebox[2in]{\hrulefill}\\
+\textbf{\dateofexam} & \textbf{លេខបន្ទប់} & \makebox[2in]{\hrulefill}\\
+\textbf{\subject} & \textbf{លេខតុ} & \makebox[2in]{\hrulefill}\\
+\textbf{\score} & \textbf{ឈ្មោះបេក្ខជន} & \makebox[2in]{\hrulefill}\\
+\textbf{រយៈពេលសរុប៖ \timelimit} & \textbf{ហេត្ថលេខា} & \makebox[2in]{\hrulefill}
+\end{tabular*}\\
+\rule[2ex]{\textwidth\color{magenta}}{2pt}
+\begin{center}
+	\heart វិញ្ញាសាគណិតវិទ្យា នេះមាន \numpages\ ទំព័រ (រួមបញ្ចូលទាំងទំព័រនេះផងដែរ) និង 6 សំណួរ ។\heart
+\end{center}
+\begin{center}
+	\sffamily\color{black}
+	បទបញ្ជានៃការប្រឡង
+\end{center}
+\begin{multicols}{2}
+	\begin{enumerate}[1]
+		\item ហាមមើលគ្នាក្នុងពេលកំពុងប្រឡង
+		\item ហាមប្តូរកិច្ចការរបស់ខ្លួនជាមួយមិត្តភក្តិ 
+		\item ហាមខ្ចីរបស់គ្នាប្រើក្នុងពេលកំពុងប្រឡង 
+		\item ហាមនិយាយឡូឡាក្នុងពេលកំពុងប្រឡង
+		\item ហាមនាំអាវុធ ឬគ្រឿងផ្ទុះចូរបន្ទប់ប្រឡង 
+		\item ហាមធ្វើសញ្ញាសម្គាល់អ្វីមួយនៅលើក្រដាស់កិច្ចការ~។ 
+	\end{enumerate}
+\end{multicols}
+\noindent
+\rule[2ex]{\textwidth\color{magenta}}{2pt}
+\begin{center}
+	\sffamily\color{black}
+	ប្រធានលំហាត់\\
+\end{center}
+	\begin{enumerate}[I]
+		\item ចូរគណនាលីមីតនៃអនុគមន៍ខាងក្រោម៖
+		\begin{multicols}{3}
+			\begin{enumerate}[a]
+				\item $\lim\limits_{x\to 0}\frac{e^{2019x}-e^x}{x}$
+				\item $\lim\limits_{x\to 0}\frac{xe^{2014x}-x+\sin^22x}{x^2}$
+				\item $\lim\limits_{x\to\infty}\bigg(\frac{x+1009}{x}\bigg)^\frac{x}{2}$
+			\end{enumerate}
+		\end{multicols}
+		\item គេឲ្យចំនួនកុំផ្លិច $z=\frac{\cos\frac{\pi}{4}+i\sin\frac{\pi}{4}}{\sqrt{3}+i}$ ។
+		\begin{enumerate}[1]
+			\item សរសេរ $z$ ជាទម្រង់ពីជគណិត និងជាទម្រង់ត្រីកោណមាត្រ។ រួចទាញរកតម្លៃប្រាកដនៃ $\cos\frac{\pi}{12}$ និង $\sin\frac{\pi}{12}$
+			\item សរសេរ $\bigg(z+\frac{1}{2}\bigg)^3$~ជាទម្រង់ត្រីកោណមាត្រ ។
+		\end{enumerate}
+		\item គេមានអនុគមន៍ $f(x)=\frac{-\cos x+7\sin x}{3\cos x+4\sin x}$ ។
+		\begin{enumerate}[1]
+			\item ចូរកំណត់រកចំនួនពិត $a$ និង $b$ ដែល $f(x)=a+b\bigg(\frac{-3\cos x+4\sin x}{3\cos x+4\sin x}\bigg)$ ។
+			\item គណនាអាំងតេក្រាល $I=\int f(x) dx$ ។
+		\end{enumerate}
+		\item ផលបូកការេមួយ និងរង្វង់មួយមានប្រវែងស្មើនឹង $a$ ។ គណនាផលធៀបរវាងរង្វាស់កាំនៃរង្វង់ និងជ្រុងការេ\\ ដើម្បីឲ្យផ្ទៃក្រឡាសរុបមានតម្លៃតូចបំផុត ។
+		\item 
+	\end{enumerate}
+\begin{center}
+	\sffamily\color{black}
+	សូមសំណាងល្អ!
+\end{center}\newpage
+
+\end{document}

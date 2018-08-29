@@ -1,0 +1,253 @@
+\documentclass[12pt ,a4paper]{book}
+
+\usepackage[ top=1cm ,bottom =1cm ,right=0.8cm ,left=0.8cm]{geometry}
+
+\usepackage[T1]{fontenc}
+
+\usepackage[utf8]{inputenc}
+
+\usepackage{ucs}
+
+\usepackage{amssymb}
+
+
+\usepackage{xltxtra}
+
+\everymath{\displaystyle}
+
+\usepackage{mathptmx}  
+
+\usepackage{xcolor}
+
+\usepackage{graphicx}
+
+\usepackage{tikz}
+
+\usepackage{enumerate}
+
+\usepackage{enumitem}
+
+\usepackage{tocloft}
+
+\usepackage{multicol}
+
+\setlength{\columnsep}{1.5cm}
+
+\usepackage{caption}
+
+%\captionsetup[figure]{name= រូបទី}
+
+\usepackage{wrapfig}
+
+
+
+
+\usepackage[sumlimits]{amsmath}
+
+\usepackage{enumitem}
+
+\usepackage{tocloft}
+
+\usepackage{sectsty}
+
+\makeatletter
+
+\def\@khmernum#1{\expandafter\@@khmernum\number#1\@nil}
+
+\def\@@khmernum#1{%
+
+\ifx#1\@nil
+
+\else
+
+\char\numexpr#1+”17E0\relax
+
+\expandafter\@@khmernum\fi
+
+}
+
+\def\knum#1{\expandafter\@khmernum\csname c@#1\endcsname}
+
+\def\khmernumeral#1{\@@khmernum#1\@nil}
+
+\AddEnumerateCounter{\knum}{\@knum}{}
+
+\makeatother
+
+\makeatletter
+
+\newcommand*{\kalph}[1]{%
+
+\expandafter\@kalph\csname c@#1\endcsname%
+
+}
+
+\newcommand*{\@kalph}[1]{%
+
+\ifcase#1\or ក\or ខ\or គ\or ឃ\or ង\or ច\or ឆ\or ជ\or ឈ\or ញ\or ដ\or ឋ\or ឌ%
+
+\or ឍ\or ណ\or ត\or ថ\or ទ\or ធ\or ន\or ប\or ផ\or ព\or ភ\or ម\or យ\or រ\or ល%
+
+\or វ\or ស\or ហ\or ឡ\or អ%
+
+\else\@ctrerr\fi%
+
+}
+
+\AddEnumerateCounter{\kalph}{\@kalph}{}
+
+\makeatother
+
+
+
+
+
+\defaultfontfeatures{Mapping=tex-text}
+
+\XeTeXlinebreaklocale"khm"
+
+\XeTeXlinebreakskip=0pt plus 1pt minus 1pt
+
+\setmainfont[ Scale=0.9 , Script=Khmer, AutoFakeBold=3.5,AutoFakeSlant=0.4]{Kh Preyveng}\setmathrm{Ubuntu}
+
+\setmathrm{Ubuntu}
+
+\newcommand{\en}{\fontspec{Ubuntu}\selectfont}
+
+\newcommand{\kos}{\fontspec[Scale=0.9, Script=Khmer]{Khmer OS Content}\selectfont}
+
+\newcommand{\kml}{\fontspec[Scale=1, Script=Khmer]{Khmer OS Muol Light}\selectfont}
+
+\newcommand{\kl}{\fontspec[Scale=1.3, Script=Khmer]{Koulen}\selectfont}
+
+
+
+
+\newcommand{\f}{\frac}
+
+\newcommand{\df}{\dfrac}
+
+\newcommand{\s}{\sqrt}
+
+\newcommand{\C}{\mathbb{C}}
+
+\newcommand{\N}{\mathbb{N}}
+
+\newcommand{\Z}{\mathbb{Z}}
+
+\newcommand{\R}{\mathbb{R}}
+
+\renewcommand{\(}{\left(}
+
+\renewcommand{\)}{\right)}
+
+\newcommand{\lb}{\left|}
+
+%\newcommand{\rb}{\right|}
+
+\renewcommand{\[}{\left[}
+
+\renewcommand{\]}{\right]}
+
+\newcommand{\rb}{\right|}
+
+
+\renewcommand{\labelenumi}{\textcolor{blue}{\Roman*.}}
+
+\renewcommand{\labelenumii}{\textcolor{blue}{\kalph*.}}
+
+\renewcommand{\labelenumiii}{\textcolor{blue}{\alph*.}}
+
+\renewcommand{\chaptername}{ មេរៀន }
+
+
+%\usepackage{fancyhdr}
+
+%\pagestyle{fancy}
+
+%\fancyhf{}
+
+%\lhead{ រៀបរៀងដោយ xxxxxxxxxx }
+
+%\chead{ Tel : xxxxxxxx}
+
+%\rhead{ សម្រាប់ថ្នាក់ទី  xxxxxxx}
+
+
+\begin{document}
+
+\begin{center}
+
+{\kl វិញ្ញសារ ទី​ ០៤}\\  {\kl សម្រាប់ត្រៀមប្រលងឆមាសលើកទី​១}\\ { \kl រៀបរៀង  និង បង្រៀនដោយ \; យឹម  ភារុន}\\
+
+\end{center} 
+
+\begin{enumerate}
+
+\item  គណនាលីមីត $M=\lim_{x\to -\infty}\ln\[ \df {(e^{3x}-e)(1-ex)  }{(e^x+1)(x+1)}\]$ ~និង ~$N=\lim_{x\to 0}\df{e^{2x^2}-\cos4x}{5x^2}$ ។
+
+\item  គេមានអនុគមន៍ $f(x)=\df{1-\sin x}{1+\sin x}$  ។\\
+
+ចូរគណនា $f'(x)$ ~រួចគណនាតម្លៃនៃ $f'\( 2014\pi\) , f'\( 2015\pi\)$ និង $f'\( \df{2015\pi}{2}\)$~។ 
+
+\item  
+
+\begin{enumerate}
+
+\item  ដោយដឹងថា $i^2=-1$  ចូរគណនា $i^{2014}$ និង $i^{2015}$  រួចសរសេរចំនួនកុំផ្លិច $z=i^{2014}-i^{2015}$  ជាទម្រង់ត្រីកោណមាត្រ។
+
+\item  កំណត់តម្លៃ $a$  និង  $b$  ដោយដឹងថា $az+b\bar{z}=|z|^2$ ។
+
+\item  បង្ហាញថា $A=\df{i^{2014}-i^{2015}}{i^{2014}+i^{2015}}$  ជាចំនួននិមិត្តសុទ្ធ ។
+
+\end{enumerate}
+
+\item  គេឲ្យអនុគមន៍មួយកំណត់ដោយ $g(x)=\df{x^2-x-1}{x+1}~, x\ne -1$ ។
+
+\begin{enumerate}
+
+\item  រកចំនួនពិត $a,b$ និង $c$ ដើម្បីឲ្យ $g(x)=ax+b+\df{c}{x+1}$  ចំពោះគ្រប់ $x\ne -1$ ។\\ រួចរកសមីការអាស៊ីមតូតទ្រេតនៃក្រាបតាងអនុគមន៍ $g$  ។
+
+\item  គណនាដេរីវេ $g'(x), g''(x)$ និង$g'''(x)$ ។
+
+\item  បង្ហាញថាចំណុច $I(-1,-3)$  ជាផ្ចិតឆ្លុះនៃក្រាបតាងអនុគមន៍នេះ ។
+
+\end{enumerate}
+
+\item  ក្នុងតម្រុយអតូណរម៉ាល់ $\(O, \vec i,\vec j , \vec k\)$  គេមានចំណុច $A(0,1,0),B(3,0,0)$ និង $C(0,0,2)$  ។
+
+\begin{enumerate}
+
+\item    គណនា $\vec n=\overrightarrow{AB}\times \overrightarrow{AC}$   រួចទាញថាបីចំណុច $A,B$ និង $C$ មិនស្ថិតនៅលើបន្ទាត់តែមួយ ។
+
+\item  បង្ហាញថា ប្លង់ $(ABC)$  កំណត់ដោយសមីការ ~$\df x3+\df y1+\df 2z=1$ ។
+
+\item  សរសេរសមីការប៉ារ៉ាម៉ែត្រនៃបន្ទាត់  $(BC)$~។ រួចគណនាចម្ងាយពីចំណុច 	$A$ ទៅបន្្ទាត់ $(BC)$  ។
+
+\item  គណនាផ្ទៃក្រឡាត្រីកោណ $ABC$  និង មាឌចតុមុខ $OABC$  ។ រួចទាញរកចម្ងាយពីគល់  $O$  ទៅប្លង់ $(ABC)$ ។
+
+\end{enumerate}
+
+\item  អនុគមន៍មួយកំណត់ចំពោះគ្រប់ចំនួនពិត $x$ ដោយ $y=f(x)=\df{(x+1)^2}{x^2+1}$ និង មានក្រាប $C$ ។
+
+\begin{enumerate}
+
+\item   គណនា $\lim_{x\to \pm \infty}f(x)$~រួចទាញរកសមីការអាស៊ីមតូតដេកនៃក្រាប $C$ ។
+
+\item    គណនា និង សិក្សាសញ្ញាដេរីវេនៃ $f'(x)$ ។
+
+\item   បង្ហាញថាអនុគមន៍ $f$  មានតម្លៃបរមាពីរផ្សេងគ្នា ។  គណនាតម្លៃបរមាទាំងនោះ ។ គូសតារាងអថេរភាពនៃ $f$ ។
+
+\item   រកកូអរដោនេចំណុចប្រសព្វរវាងខ្សែកោង $C$  និង អ័ក្សទាំងពីរនៃតម្រុយ  ។ សង់ខ្សែកោង $C$ ។
+
+\item   ដោយប្រើក្រាប $C$  ចូរពិភាក្សាតម្លៃ $m$ នូវអត្ថិភាព  និង សញ្ញាឫសរបស់សមីការ  $(m-1)x^2-2x+m-1=0$  ។
+
+\end{enumerate}
+
+\end{enumerate}
+
+
+\end{document}
+
+
+

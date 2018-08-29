@@ -1,0 +1,266 @@
+%% TEMPLATE WRITER: SAY OL  %%
+%% EMAIL: say_ol@yahoo.com  %%
+%% WEBSITE: khtug.blogspot.com  %%
+%% PERSONAL BLOG: bunnybookshelf.blogspot.com  %%
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{hightest}[2018/01/07]
+% geometry
+\RequirePackage{geometry}
+\geometry{%
+	left=0.7cm,%
+	right=0.7cm,%
+	top=1.5cm,%
+	bottom=2.1cm}
+% math font
+\RequirePackage{amsmath}
+\RequirePackage{amssymb}
+\RequirePackage{amsthm}
+\usepackage{mathpazo}% change math font
+%\RequirePackage{newpxmath}
+% language
+\usepackage[no-math]{fontspec}% font specfication% no math font
+\setmainfont[Ligatures=TeX,AutoFakeBold=0.25,AutoFakeSlant=0.25]{Khmer OS Content}% roman font
+\setsansfont[Ligatures=TeX,AutoFakeBold=0,AutoFakeSlant=0.25]{Khmer OS Muol Light}% sans serif font
+\setmonofont[Ligatures=TeX,AutoFakeBold=0.25,AutoFakeSlant=0.25]{Khmer Kep}% typewriter font
+\XeTeXlinebreaklocale "kh"% line break rule
+\XeTeXlinebreakskip = 0pt plus 1pt minus 1pt% line break skip
+% khmer number
+\def\khmer#1{\expandafter\@khmer\csname c@#1\endcsname}
+\def\@khmer#1{\expandafter\@@khmer\number#1\@nil}
+\def\@@khmer#1{%
+	\ifx#1\@nil% terminate when encounter @nil
+	\else%
+	  \ifcase#1 ០\or ១\or ២\or ៣\or ៤\or ៥\or ៦\or ៧\or ៨\or ៩\fi%
+	  \expandafter\@@khmer% recursively map the following characters
+	\fi}
+\def\khmernumeral#1{\@@khmer#1\@nil}
+% khmer alphabet
+\def\alpkh#1{\expandafter\@alpkh\csname c@#1\endcsname}
+\def\@alpkh#1{%
+	\ifcase#1% zero -> none
+	  \or ក\or ខ\or គ\or ឃ\or ង%
+	  \or ច\or ឆ\or ជ\or ឈ\or ញ%
+	  \or ដ\or ឋ\or ឌ\or ឍ\or ណ%
+	  \or ត\or ថ\or ទ\or ធ\or ន%
+	  \or ប\or ផ\or ព\or ភ\or ម%
+	  \or យ\or រ\or ល\or វ\or ស%
+	  \or ហ\or ឡ\or អ%
+	\else%
+	  \@ctrerr% otherwise, counter error!
+	\fi}
+%
+\def\khmershortdate{%
+	\ifnum\day<10\@khmer{0\day}\else\@khmer\day\fi%
+	/\@khmer\month%
+	/\@khmer\year}
+\def\khmerdate{%
+	\ifnum\day<10\@khmer{0\day}\else\@khmer\day\fi~%
+	\ifcase\month\or%
+	មករា\or កុម្ភៈ\or មិនា\or មេសា\or%
+	ឧសភា\or មិថុនា\or កក្កដា\or សីហា\or%
+	កញ្ញា\or តុលា\or វិច្ឆិកា\or ធ្នូ\fi~%
+	\@khmer\year}
+% color
+\RequirePackage[table]{xcolor}
+% floating object
+\RequirePackage{float}
+% graphicx
+\RequirePackage{graphicx}
+% picture
+\RequirePackage{tikz}
+\usetikzlibrary{shapes}
+\usetikzlibrary{calc}
+\usetikzlibrary{angles}
+\usetikzlibrary{quotes}
+\usetikzlibrary{arrows.meta}
+\tikzset{%
+	every picture/.style={%
+		line width=0.7pt,%
+		draw=magenta,%
+		text=blue,%
+	},%
+	>={Stealth[]}%
+}
+% enumerate
+\RequirePackage{enumitem}
+\RequirePackage{multicol}
+\RequirePackage{pifont}
+% set enumerate and itemize key for number of columns
+% \RequirePackage{multicol}
+\SetEnumitemKey{2}{before=\raggedcolumns\setlength{\multicolsep}{\topsep}\begin{multicols}{2},after=\end{multicols}}
+\SetEnumitemKey{3}{before=\raggedcolumns\setlength{\multicolsep}{\topsep}\begin{multicols}{3},after=\end{multicols}}
+\SetEnumitemKey{4}{before=\raggedcolumns\setlength{\multicolsep}{\topsep}\begin{multicols}{4},after=\end{multicols}}
+\SetEnumitemKey{5}{before=\raggedcolumns\setlength{\multicolsep}{\topsep}\begin{multicols}{5},after=\end{multicols}}
+\SetEnumitemKey{6}{before=\raggedcolumns\setlength{\multicolsep}{\topsep}\begin{multicols}{6},after=\end{multicols}}
+% set enumerate and itemize key for numerals
+\AddEnumerateCounter{\alpkh}{\@alpkh}{ឈ}
+\AddEnumerateCounter{\khmer}{\@khmer}{៣}
+\newfontfamily{\tmfamily}{Ubuntu}
+% enumerate keys
+\SetEnumitemKey{1}{label=\protect\color{blue}\arabic*.,font=\tmfamily\bfseries}
+\SetEnumitemKey{a}{label=\protect\color{blue}\alph*.,font=\tmfamily\bfseries}
+\SetEnumitemKey{A}{label=\protect\color{blue}\Alph*.,font=\tmfamily\bfseries}
+\SetEnumitemKey{i}{label=\protect\color{blue}\roman*.,font=\tmfamily\bfseries}
+\SetEnumitemKey{I}{label=\protect\color{blue}\Roman*.,font=\tmfamily\bfseries}
+\SetEnumitemKey{k}{label=\protect\color{blue}\alpkh*.,font=\rmfamily\bfseries}
+\SetEnumitemKey{m}{label=\protect\color{blue}\khmer*.,font=\ttfamily\bfseries}
+% itemize keys
+\SetEnumitemKey{b}{label=\protect\color{blue}\protect\ensuremath{\bullet}}
+\SetEnumitemKey{c}{label=\protect\color{blue}\protect\ensuremath{\circ}}
+\SetEnumitemKey{d}{label=\protect\color{blue}\protect\ensuremath{\diamond}}
+\SetEnumitemKey{t}{label=\protect\color{blue}\protect\ensuremath{\triangleright}}
+\SetEnumitemKey{p}{label=\protect\color{blue}\protect\ding{43}}
+\SetEnumitemKey{w}{label=\protect\color{blue}\protect\ding{45}}
+% styling enumerate
+\setlist[enumerate]{%
+	parsep=0pt,%
+	topsep=1ex,%
+	partopsep=0pt,%
+	leftmargin=*,%
+	itemsep=1ex,%
+	labelsep=.5ex}
+\setlist[enumerate,1]{I}
+\setlist[enumerate,2]{1}
+\setlist[enumerate,3]{k}
+\setlist[enumerate,4]{a}
+% styling itemize
+\setlist[itemize]{%
+	parsep=0pt,%
+	topsep=1ex,%
+	partopsep=0pt,%
+	leftmargin=*,%
+	itemsep=1ex,%
+	labelsep=.7ex}
+\setlist[itemize,1]{b}
+\setlist[itemize,2]{c}
+\setlist[itemize,3]{d}
+\setlist[itemize,4]{t}
+% sub enumerate
+\RequirePackage{tasks}
+\NewPatternFormat{k}{\@alpkh}% cntformats package
+\NewPatternFormat{m}{\@khmer}% counter-format=tsk[l]
+\settasks{%
+	counter-format=tsk[k].,%
+	label-format=\color{black},%
+	label-offset=0.5ex,%
+	label-align=right,%
+	label-width=3.5ex,%
+	item-indent=4ex,%
+	column-sep=2ex,%
+	before-skip=0ex,%
+	after-skip=0ex,%
+	after-item-skip=0ex%
+}
+\NewTasks[%
+	style=enumerate,%
+	counter-format=tsk[a].,%
+	label-format=\color{black},%
+	label-offset=0.5ex,%
+	label-align=right,%
+	label-width=3.5ex,%
+	item-indent=4ex,%
+	column-sep=1ex,%
+	before-skip=0ex,%
+	after-skip=0ex,%
+	after-item-skip=0ex]{Enumerate}[\item]
+\NewTasks[%
+	style=itemize,
+	label=\ensuremath{\bullet},
+	label-format=\color{black},%
+	label-offset=0.7ex,%
+	label-align=right,%
+	label-width=1ex,%
+	item-indent=1.7ex,%
+	column-sep=1ex,%
+	after-item-skip=0ex]{Itemize}[\item]
+% caption
+\RequirePackage{caption}
+\RequirePackage{subcaption}
+\DeclareCaptionFont{black}{\color{black}}
+\captionsetup{%
+	font=small,%
+	skip=0pt,%
+	labelfont={black,sf},%
+	textfont={black,sf},%
+	labelsep=period}
+\captionsetup[sub]{%
+	font=small,%
+	skip=0.5ex,%
+	labelfont={black,sf},%
+	textfont={black,sf},%
+	labelsep=period}
+%% change every inline maths to display maths %%
+\everymath{\displaystyle}
+%% increase base line skip in display formula
+\addtolength{\jot}{1pt}
+%% prevent book contents from vertical stretching %%
+\raggedbottom
+%% increase line spread by 25 percents
+\def\arraystretch{1.25}
+%% change set minus sign style
+\def\setminus{\ensuremath{{}-{}}}
+%% header and footer set up
+\usepackage{fancyhdr}
+\fancyhf{}
+\def\headrule{{\vskip 3pt\if@fancyplain\let\headrulewidth\plainheadrulewidth\fi
+		\color{magenta}\hrule\@height\headrulewidth\@width\headwidth \vskip-\headrulewidth}}
+\def\footrule{{\if@fancyplain\let\footrulewidth\plainfootrulewidth\fi
+		\vskip-\footruleskip\vskip-\footrulewidth
+		\color{magenta}\hrule\@width\headwidth\@height\footrulewidth\vskip\footruleskip}}
+\renewcommand{\headrulewidth}{1.5pt}
+\renewcommand{\footrulewidth}{1.5pt}
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+		\node[shape=circle,draw,inner sep=2pt] (char) {#1};}}
+\def\header#1#2#3{\fancyhead{\color{black} #1\hfill #2\hfill #3}}
+\def\footer#1#2#3{\fancyfoot{\color{black} #1\hfill #2\hfill #3}}
+\pagestyle{fancy}
+%%
+% boxes
+\RequirePackage{tcolorbox}
+\tcbuselibrary{skins,xparse}
+\def\baselinestretch{1.25}
+\tcbset{
+	boxrule=1pt,
+	sharp corners,
+	enhanced,
+	sidebyside,
+	righthand width=4cm,
+	colframe=magenta,
+	colback=white,
+	top=1em,bottom=2em,
+	segmentation code={%
+		\draw[line width=1pt]([yshift=-1pt]segmentation.south)--([yshift=1pt]segmentation.north);
+}}
+%% title
+\def\maketitle{%
+%%\centerline{
+%%	\begin{tcolorbox}[width=0.9\linewidth]
+%%		\begin{multicols}{2}
+%%			\begin{itemize}[w,itemsep=1.25em]
+%%				\item ឈ្មោះ\dotfill
+%%				\item លេខបន្ទប់\dotfill
+%%				\item មណ្ឌលប្រឡង\dotfill
+%%				\item ភេទ\dotfill
+%%				\item លេខតុ\dotfill
+%%				\item ហត្ថលេខា\dotfill
+%%			\end{itemize}
+%%		\end{multicols}
+%%		\tcblower
+%%		ពិន្ទុ
+%%		\begin{tikzpicture}[baseline]
+%%		\node[ellipse split,draw,double,inner sep=1.5ex]
+%%		{
+%%			\hphantom{---------------}
+%%			\nodepart{lower}
+%%			\large\tmfamily\color{blue} 125
+%%		};
+%%		\end{tikzpicture}
+%%\end{tcolorbox}}
+\vspace{-1em}
+\begin{center}
+	\sffamily\color{black}
+	\circled{០១}\\
+	មេរៀនទី​ ១ ដែន និងកម្លាំងម៉ាញេទិច(លំហាត់សុទ្ធ)
+\end{center}
+}
+\endinput

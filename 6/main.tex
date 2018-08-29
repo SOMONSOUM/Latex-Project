@@ -1,0 +1,319 @@
+\documentclass[a4paper]{report}
+
+%\usepackage[landscape,margin=1in]{geometry}
+\usepackage[ top=0.5cm, left=1cm, bottom=1.5cm, right=1.5cm]{geometry}
+\usepackage{mathtools}
+\usepackage{mathpazo}% change math font
+\usepackage{enumitem}% change list environment like enumerate, itemize and description
+\usepackage{multicol}% multi columns
+\usepackage{tikz}% graphic drawing
+\usepackage[no-math]{fontspec}% font specfication
+\setmainfont{Khmer OS Content}% set default font to Khmer OS
+\usepackage{tcolorbox}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{wasysym}
+
+%
+\SetEnumitemKey{I}{%
+	leftmargin=*,
+	label={\protect\tikz[baseline=-0.9ex]\protect\node[draw=gray,thick,circle,minimum height=.65cm,inner sep=1pt,text=black,fill=cyan!20!white]{\Roman*};},%
+	font=\small\sffamily\bfseries,%
+	labelsep=1ex,%
+	topsep=0pt}
+%
+\SetEnumitemKey{a}{%
+	leftmargin=*,%
+	label={\protect\tikz[baseline=-0.9ex]\protect\node[draw=gray,thick,circle,minimum height=.5cm,inner sep=1pt,text=blue,fill=magenta!5!white]{\alph*};},%
+	font=\small\sffamily\bfseries,%
+	labelsep=1ex,%
+	topsep=0pt}
+%
+\SetEnumitemKey{1}{leftmargin=*,%
+	label={\protect\tikz[baseline=-0.9ex]\protect\node[draw=gray,thick,circle,minimum height=.5cm,inner sep=1pt,text=black,fill=blue!20!white]{\arabic*};},%
+	font=\small\sffamily\bfseries,%
+	labelsep=1ex,%
+	topsep=0pt}
+%
+\def\hard{\leavevmode\makebox[0pt][r]{\large\ensuremath{\star}\hspace{2em}}}
+%
+\def\hhard{\leavevmode\makebox[0pt][r]{\large\ensuremath{\star\star}\hspace{2em}}}
+%
+\everymath{\protect\displaystyle\protect\color{black}}
+%
+\pagecolor{cyan!1!white}
+%
+\newcommand{\heart}{\ensuremath\heartsuit}
+\newcommand{\butt}{\rotatebox[origin=c]{180}{\heart}}
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+		\node[shape=circle,draw,inner sep=2pt] (char) {#1};}}
+\setsansfont[Ligatures=TeX,AutoFakeBold=0,AutoFakeSlant=0.25]{Khmer OS Muol Light}% sans serif font
+\begin{document}
+	\begin{center}
+		\sffamily\color{black}
+		\circled{០១}\\
+		\heart ទ្រឹស្តីអាស៊ីត-បាស និង ប្រតិម្មអាស៊ីត-បាស\heart \\
+		រៀបរៀង និងបង្រៀនដោយៈ ស៊ុំ សំអុន\\
+		\phone ទូរស័ព្ទៈ ០៩៦ ៩៤០	៥៨៤០\phone
+	\end{center}
+	\begin{enumerate}[1]
+		\item ចូរជ្រើសរើសអាស៊ីតខាងក្រោមនេះដោយដាក់តាមប្រភេទ ម៉ូណូប្រូទិច ឌីប្រូទិច និងទ្រីប្រូូទិច~។
+		\begin{multicols}{4}
+			\begin{enumerate}[a]
+				\item $HCl$
+				\item $HClO_4$
+				\item $H_2SO_3$
+				\item $H_2SO_4$
+				\item $CH_3COOH$
+				\item $HNO_3$
+				\item $H_3PO_2$
+				\item $H_3PO_4$
+			\end{enumerate}
+		\end{multicols}
+		\item ចូរចង្អុលបង្ហាញសារធាតុខាងក្រោមនេះ ណាខ្លះជាអាស៊ីត បាស និងមិនមែន៖
+		\begin{multicols}{5}
+			\begin{enumerate}[a]
+				\item $Na_2SO_3$
+				\item $HCl$
+				\item $NaCl$
+				\item $Ca(OH)_2$
+				\item $H_2CO_3$
+				\item $CH_4$
+				\item $CaCO_3$
+				\item $NH_4Cl$
+				\item $NaOH$
+				\item $CH_3COOH$
+			\end{enumerate}
+		\end{multicols}
+		\item ចូរបំពេញ និងថ្លឹងសមីការអាស៊ីត-បាសខាងក្រោម៖
+		\begin{enumerate}[a]
+			\item $H_2CO_3~+~Sr(OH)_2 \rightarrow~\cdots~+~\cdots$
+			\item $HBr~+~Ba(OH)_2~\rightarrow~\cdots~+~\cdots$
+			\item $NaBr~+~H_2SO_4~\rightarrow~\cdots~+~\cdots$
+		\end{enumerate}
+		\item ចូរសរសេរសមីការអ៊ីយ៉ុងកម្មនៃអាស៊ីតនៅក្នុងទឹក៖
+		\begin{multicols}{3}
+			\begin{enumerate}[a]
+				\item $HNO_3$
+				\item $HClO_4$
+				\item $H_2SO_4$
+				\item $HF$
+				\item $HCN$
+				\item $HCOOH$
+			\end{enumerate}
+		\end{multicols}
+		\item តើអ្វីទៅដែលហៅថាអាស៊ីតខ្លាំង? អាស៊ីតខ្សោយ?
+		\item ចូរសរសេរសមីការអ៊ីយ៉ុងកម្មនៃបាសនៅក្នុងទឹក៖
+		\begin{multicols}{3}
+			\begin{enumerate}[a]
+				\item $NaOH$
+				\item $Ca(OH)_2$
+				\item $Sr(OH)_2$
+				\item $NH_3$
+				\item $C_6H_5NH_2$
+				\item $CH_3COO^-$
+			\end{enumerate}
+		\end{multicols}
+		\item តើអ្វីទៅដែលហៅថាបាសខ្លាំង? បាសខ្សោយ?
+		\item ចូរសរសេររូបមន្តបាសឆ្លាស់របស់អាស៊ីតដូចខាងក្រោម៖
+		\begin{multicols}{5}
+			\begin{enumerate}[a]
+				\item $HCl$
+				\item $HCO_3^{-}$
+				\item $H_2SO_4$
+				\item $N_2H_5^{+}$
+				\item $CH_3NH_3^{+}$
+			\end{enumerate}
+		\end{multicols}
+		\item ចូរសរសេររូបមន្តអាស៊ីតឆ្លាស់របស់បាសដូចខាងក្រោម៖
+		\begin{multicols}{5}
+			\begin{enumerate}[a]
+				\item $NO_3^{-}$
+				\item $OH^{-}$
+				\item $C_2H_5NH_2$
+				\item $CH_3COOH$
+				\item $H_3O^{+}$
+			\end{enumerate}
+		\end{multicols}
+		\item ចូរកំណត់គូអាស៊ីតបាសឆ្លាស់នៅក្នុងសមីការខាងក្រោម៖
+		\begin{enumerate}[a]
+			\item $HS_{(aq)}^{-}~+~H_2O_{(l)}~\xrightleftharpoons~H_2S_{(aq)}~+~H_3O_{(aq)}^{+}$
+			\item $O_{(aq)}^{2-}~+~H_2O_{(l)}~\xrightleftharpoons~2OH_{(aq)}^{-}$
+			\item $H_2S_{(aq)}~+~NH_{3(aq)}~\xrightleftharpoons~NH_{4(aq)}^+~+~HS_{(aq)}^-$
+			\item $H_2SO_{4(aq)}~+~H_2O_{(l)}~\rightarrow~H_3O_{(aq)}^+~+~HSO_{4(aq)}^-$
+		\end{enumerate}
+		\newpage
+		\item គេដាក់ស័ង្កសី $(Zn)$ ឲ្យមានប្រតិកម្មជាមួយនឹងសូលុយស្យុង $H_2SO_4$ ចំនួន $100ml$ កំហាប់ $0.5M$ ។ ចូរគណនា៖
+		\begin{enumerate}[a]
+			\item ម៉ាសស័ង្កសីស៊ុលផាតដែលទទួលបាន ។
+			\item មាឌអ៊ីដ្រូសែនដែលភាយចេញនៅ $STP$ ។ (ឧស្ម័ន $1mol$ នៅ $STP$ មានមាឌ $22.4L$) 
+		\end{enumerate}
+		\item សំបកខ្យងមួយផ្សំពី $CaCO_3$ មានប្រតិកម្មជាមួយនឹងសូលុយស្យុង $HCl$ គេទទួលបាន $1.50L$ ឧស្ម័ន $CO_2$ នៅសីតុណ្ហភាព $STP$ ។ ចូរគណនា៖ 
+		\begin{enumerate}[a]
+			\item បរិមាណ $CaCO_3$ ដែលចូររួមប្រតិកម្ម ។
+			\item មាឌសូលុយស្យុុង $HCl$ នៅ $0.25M$ ដែលប្រើក្នុងប្រតិកម្មនេះ ។\\
+			($Ca:40~;~O:16~;~C:12~;~H:1$) 
+		\end{enumerate}
+		\item ដូចម្តេចដែលហៅថាសមាសធាតុអំផូទែ?
+		\item គេយកសូលុយស្យុងអាស៊ីតក្លរីឌ្រិច $20.0mL$ ទៅធ្វើប្រតិកម្មបន្សាបជាមួយនឹង $18.5mL$ នៃសូលុយស្យុង $Ba(OH)_2$ កំហាប់ $0.04M$ ។
+		\begin{enumerate}[a]
+			\item ចូរសរសេរសមីការតាងប្រតិកម្មបន្សាបនេះ ។
+			\item រកកំហាប់ម៉ូឡារីតេនៃសូលុយស្យុង $HCl$ ដែលត្រូវប្រើ ។
+			\item គណនាម៉ាសអំបិលដែលបានបង្កើតឡើង ។ ($Cl:35.5~;~ Ba:137$)
+		\end{enumerate}
+		\item ចូរប្រៀបធៀបពីលក្ខណៈរបស់អាស៊ីតទៅ នឹងលក្ខណៈរបស់បាស។
+		\item ឲ្យនិយមន័យបាសតាម អារ៉េញ៉ុស និងតាមប្រុងស្ទែត-ឡូរី ។
+		\item ឲ្យនិយមន័យអាស៊ីតតាម អារ៉េញ៉ុស និងតាមប្រុងស្ទែត-ឡូរី និងតាមឡឺវីស ។
+		\item ចូររាប់ និងប្រាប់ឈ្មោះ អាស៊ីតខ្លាំង និងបាសខ្លាំងមួយប្រភេទៗឲ្យបានប្រាំ?
+		\item ចូរញែកលក្ខណៈសម្គាល់រវាងម៉ូណូប្រូទិចអាស៊ីត និងប៉ូលីប្រូទិចអាស៊ីត ។
+		\item ឲ្យឧទាហរណ៍ ម៉ូណូប្រូទិចអាស៊ីត ឌីប្រូទិចអាស៊ីត និងប៉ូលីប្រូទិចអាស៊ីតមួយប្រភេទៗឲ្យបាន $2$ ។
+			\begin{center}
+				\sffamily\color{black}
+				សូមសំណាងល្អ!
+			\end{center}\newpage
+		\begin{center}
+			\sffamily\color{black}
+			\circled{០២}\\
+			\heart ទ្រឹស្តីអាស៊ីត-បាស និង ប្រតិម្មអាស៊ីត-បាស\heart \\
+			រៀបរៀង និងបង្រៀនដោយៈ ស៊ុំ សំអុន\\
+			\phone ទូរស័ព្ទៈ ០៩៦ ៩៤០	៥៨៤០\phone
+		\end{center}
+		\item ក្លរអាចត្រូវបានទង្វើ ដោយប្រតិកម្ម $HCl$ ជាមួយនឹង $MnO_2$ ។ ប្រតិកម្មត្រូវបានបង្ហាញដោយសមីការតុល្យការៈ $MnO_{2(g)}~+~4HCl_{(aq)}~\rightarrow~Cl_{2(g)}~+~MgCl_{2(g)}~+~2H_2O_{2(l)}$~ សន្មតថា ប្រតិកម្មប្រព្រឹត្តិទៅសព្វ ។
+		\begin{enumerate}[a]
+			\item តើម៉ាសនៃសូលុយស្យុង $HCl$ ខាប់($36.0\%~ HCl$ ជាម៉ាស) ស្មើប៉ុន្មានដែលត្រូវការចាំបាច់ដើម្បីផលិត $2.50g$ នៃ $Cl_2$ ?
+			\item គណនាមាឌសូលុយស្យុង $HCl$ នៅ $0.5M$ ដែលប្រើក្នុងប្រតិកម្មនេះ ។
+			($H=1~;~Cl=35.5$)
+		\end{enumerate}
+		\item សូលុយស្យុងមួយមាន $5.0\%$ នៃអាស៊ីតអេតាណូអ៊ិច ($HC_2H_2O_2$) ជាម៉ាស និងដង់ស៊ីតេរបស់វាស្មើនឹង $0.96g/moL$ ។
+		\begin{enumerate}[a]
+			\item សរសេរសមីការអ៊ីយ៉ុងកម្មនៃអាស៊ីតនេះក្នុងទឹក ។
+			\item តើកំហាប់ជាម៉ូលនៃអាស៊ីតអេតាណូអ៊ិចនៅក្នុងសូលុយស្យុងស្មើប៉ុន្មាន?
+		\end{enumerate}
+		\item ភាគសំណាក $0.35g$ នៃអាស៊ីត $HX$ មួយត្រូវការ $25.4mL$ នៃ $NaOH_{(aq)}$ កំហាប់ $0.14molL^{-1}$ សម្រាប់ធ្វើប្រតិកម្មសព្វ។ ចូរគណនាម៉ាសម៉ូលនៃអាស៊ីត $HX$ នេះ ។
+		\item នៅពេលភាគសំណាក $1.25g$ នៃថ្មកំបោរត្រូវរំលាយទៅក្នុងអាស៊ីត $0.44g$ នៃ $CO_2$ ត្រូវបានបង្កើតឡើង ។ ប្រសិនបើ ដុំថ្មបានផ្ទុកគ្មានកាបូណាតផ្សេងទៀតក្រៅពី $CaCO_3$ ។\\
+		តើភាគរយជាម៉ាសនៃ $CaCO_3$ នៅក្នុងថ្មកំបោរស្មើប៉ុន្មាន?
+		\item បរិមាណ $500cm^3$ នៃសូលុយស្យុងមួយមាន $H_2SO_4$ រលាយចូរ $0.20mol$ ។\\
+		គណនាកំហាប់ជាម៉ូលនៃសូលុយស្យុង $H_2SO_4$ គិតជា $mol/dm^3$ ។
+		\item សិស្សម្នាក់បានយកសូលុស្យុងអាស៊ីតក្លរីឌ្រិច $100mL$ នៅកំហាប់ $2.0mol\cdot L^{-1}$ ទៅធ្វើប្រតិកម្មជាមួយនឹង\\ សូដ្យូមប៊ីកាបូណាត ($NaHCO_3$) នៅក្នុងបន្ទប់ពិសោធន៍ ។
+		\begin{enumerate}[a]
+			\item ចូរសរសេរសមីការតុល្យការតាងប្រតិកម្ម ។
+			\item គណនាម៉ាស $NaHCO_3$ ដែលបានប្រើ ។\\
+			គេឲ្យៈ ($H=1~;~C=12~;~O=16~;~Na=23$)
+		\end{enumerate}
+		\item នៅក្នុងបន្ទប់ពិសោធន៍គេយកបន្ទះទង់ដែង $12.8g$ ទៅរំលាយក្នុងសូលុយស្យុងអាស៊ីតនីទ្រិច ($HNO_3$)\\ ខាប់ដែលមានបរិមាណលើស ។
+		សមីការប្រតិកម្មៈ $Cu{(s)}~+~4HNO_{3(aq)}~\rightarrow~Cu(NO_3)_{(aq)}~+~2NO_{2(g)}~+~2H_2O_{(l)}$
+		\begin{enumerate}[a]
+			\item គណនាមាឌឧស្ម័នដែលភាួចេញនៅ $STP$ ។
+			\item រកម៉ាសទង់ដែង $II$ នីត្រាតដែលទទួលបាន ។
+			\item ម៉ាសទង់ដែង $II$ នីត្រាតដែលទទួលបានតាមពិសោធន៍ស្មើនឹង $22.8g$ ។ គណនាទិន្នផលនៃប្រតិកម្មនេះ ។ ($Vm=22.4L/mol$)
+		\end{enumerate}
+		\item គេដាក់ស័ង្កសីឲ្យមានប្រតិកម្មជាមួយសូលុយស្យុង $H_2SO_4$ ចំនួន $100mL$ នៅកំហាប់ $6.00M$ ។ គណនា
+		\begin{enumerate}[a]
+			\item ម៉ាសស័ង្កសីស៊ុលផាតដែលទទួលបាន ។
+			\item មាឌអ៊ីដ្រូសែនដែលភាយចេញនៅ $STP$ ។ (ឧស្ម័ន $1mol$ នៅ $STP$ មានមាឌ $22.4L$) 
+		\end{enumerate}
+		\item ប្រភេទខាងក្រោមនេះអាចចាត់ទុកជាអាស៊ីតផង និងបាសផងក្នុងគូពីរផ្សេងគ្នាៈ $HSO^-_4~;~HS^-~;~HCO^-_3~;~H_2O~;~HSO^-_3$ និង $NH_3$ ។
+		\begin{enumerate}[a]
+			\item តើគេអាចទុកប្រភេទទាំងពីនេះយ៉ាងដូចម្តេច?
+			\item ចូរសរសេរគួទាំងពីររបស់ប្រភេទនីមួយៗ ។
+			\item ចូរបញ្ជាក់ គួណាខ្លះជាអាស៊ីតខ្លាំង និងណាខ្លះជាបាសខ្លាំង ។
+		\end{enumerate}
+		\item ដូចម្តេចដែលហៅថាប្រតិកម្មបន្សាប?
+		\item តើគូអាស៊ីត បាសឆ្លាស់របស់ទឹកមានប៉ុន្មាន?
+		\begin{enumerate}[a]
+			\item តើគូណាមួយដែលទឹកមាននាទីជាអាស៊ីត?
+			\item តើគូមួយណាដែលទឹកមាននាទីជាបាស?
+		\end{enumerate}
+		\item ចូរចាត់ថ្នាក់ប្រភេទគីមីដូចខាងក្រោមនេះថាជាអាស៊ីត បាស ប្រុងស្ទែត ដើរទួនាទីទាំងពីរ៖
+		\begin{multicols}{2}
+			\begin{enumerate}[a]
+				\item $H_2O$
+				\item $OH^-$
+				\item $H_3O^+$
+				\item $NH_3$
+				\item $NH_4^+$
+				\item $NH^-_2$
+				\item $NO^-_3$
+				\item $CO^{2-}_3$
+				\item $HBr$
+				\item $HCN$ ។
+			\end{enumerate}
+		\end{multicols}
+			\begin{center}
+				\sffamily\color{black}
+				សូមសំណាងល្អ!
+			\end{center}\newpage
+			\begin{center}
+				\sffamily\color{black}
+				\circled{០៣}\\
+				\heart ជំរើសលំហាត់ សម្រាប់ត្រៀមប្រឡងឆមាសលើកទី ១\heart \\
+				រៀបរៀង និងបង្រៀនដោយៈ ស៊ុំ សំអុន\\
+				\phone ទូរស័ព្ទៈ ០៩៦ ៩៤០	៥៨៤០\phone
+			\end{center}
+		\item ដូចម្តេចដែលហៅថាសមាសធាតុអំផូលីត? ចូរឧទាហរណ៍បញ្ជាក់។
+		\item 
+		\begin{enumerate}[a]
+			\item តើមាឌសូលុស្យុងរាវនៃប្រាក់នីត្រាត ដែលមានកំហាប់ $0.1M$ ត្រូវមានប៉ុន្មាន $cm^3$ បើគេចាក់វាទៅក្នុង $20cm^3$ នៃសូលុយស្យុងរាវ សូដ្យូមក្លរួដែលមានកំហាប់ $23.4g.L^{-1}$ ?ដើម្បីធ្វើឲ្យបាត់អ៊ីយ៉ុងក្លុរួ ($Cl^{-}$) អស់ ។
+			\item គណនាម៉ាសកករដែលកើតឡើង ?\\
+			គេឲ្យ៖ $Ag=108~;~Na=23~;~Cl=35.5$
+		\end{enumerate}
+		\item គេបន្តក់សូលុយស្យុងអាស៊ីតក្លរីឌ្រិច ទៅលើថ្មកំបោរ($CaCO_3$)គេទទួលបានឧស្ម័ន $44.8mL$ នៅលក្ខខណ្ឌធម្មតា ($S.T.P$) ។
+		\begin{enumerate}[a]
+			\item ចូរកំណត់ឈោះ និងរូបមន្តនៃឧស្ម័នដែលទទួលបាន ?
+			\item ចូសរសេរសមីការគីមី អ៊ីយ៉ុងសព្វ និងអ៊ីយ៉ុងសម្រួល សម្រាប់ប្រតិកម្មខាងលើនេះ ?
+			\item គណនាម៉ាសថ្មកំបោរចូរប្រតិកម្ម?\\
+			គេឲ្យ៖ $C=12~;~O=16~;~Ca=40$
+		\end{enumerate}
+		\item គេចាក់បារ្យ៉ុមក្លរួ នៅកំហាប់ $0.2M~;~20mL$ ទៅក្នុងសូលុយស្យុងសូដ្យូមកាបូណាត នៅកំហាប់ $C_M$ មិនស្គាល់ និងមាឌ $40mL$ ។
+		\begin{enumerate}[a]
+			\item សរសេរសមីការ គីមី អ៊ីយ៉ុងសព្វ និងអ៊ីយ៉ុងសម្រួួលនៃប្រតិកម្មខាងលើ ។\\ តើអ៊ីយ៉ុងណាខ្លះដែលគ្មានការប្រែប្រួលក្នុងពេលប្រតិកម្ម ?
+			\item គណនា $C_M$ កំហាប់ម៉ូលែនៃ $Na_2CO_3$ ?
+			\item គណនាកំហាប់ជាម៉ូលនៃអ៊ីយ៉ុង $Na^+$ និង $Cl^-$ ដែលមានក្នុងសូលុយស្យុងក្រោយប្រតិកម្មចប់?
+		\end{enumerate}
+		\item គេបង់កំទេចដែក $16.8g$ ទៅក្នុងសូលុយស្យុង $AgNO_3$ នៅកំហាប់ $1M$ គេទទួលបានសូលុយស្យុង $A$ និងអង្គធាត់រឹង $B$ ។
+		\begin{enumerate}[a]
+			\item ឲ្យសមីការតាងប្រតិកម្មដែលកើតមាន ។
+			\item កំណត់មាឌនៃសូលុយស្យុង $AgNO_3$ ដែលយកមកប្រើ ?
+			\item គណនាម៉ាសអង្គធាតុរឹង $B$ ?
+			គេឲ្យ៖ $Fe=56~;~Ag=108$
+		\end{enumerate}
+		\item គេលាយ $50cm^3$ នៃសូលុយស្យុង $NaOH$ កំហាប់ $C_B=1.4mol.L^{-1}$ និង $50cm^3$ នៃសូលុយស្យុងអាស៊ីត $HCl$ កំហាប់ $C_A=1mol.L^{-1}$ ។
+		\begin{enumerate}[a]
+			\item តើប្រតិកម្មអ្វីកើតឡើង? ចូរឲ្យសមីការតុល្យការ។
+			\item តើសូលុយស្យុងដែលទទួលបានក្រោយប្រតិកម្មស្ថិតឈដ្ខក្នុងមជ្ានអ្វី?\\
+			គណនា $pH$ សូលុយស្យុងដែលទទួលបាននេះ?
+		\end{enumerate}
+			\item \hard -ក្នុងកែវបេស៊ែរមួយមានសូលុយស្យុងអាស៊ីតក្លរីឌ្រិច($H_3O^+, Cl^-$) នៅកំហាប់ $C_A=1\times10^{-2}M$ និងមាឌ $V_A=20mL$ ។\\
+			\hhard -ក្នុងប៊ុយរ៉ែតក្រិតមួយមានសូលុយស្យុង $NaOH$ កំហាប់ $C_B=1\times10^{-2}M$ និងមាឌ $V_B$ ។\\
+			គេបានធ្វើការសំរក់សូលុយស្យុង $NaOH$ ខាងលើនេះទៅក្នុងកែវបេស៊ែរនោះ ។
+			\begin{enumerate}[a]
+				\item សរសេរសមីការតុល្យការតាងប្រតិកម្មដែលកើតមាន?
+				\item គណនា $pH$ សូលុយស្យុងអាស៊ីត $HCl$ មុនពេលសំរក់សូលុយស្យុង $NaOH$ ចូរ?
+				\item គណនា $pH$ នៃសូលុយស្យុងដែលទទួលបានក្រោយពេលសំរក់សូលុយស្យុង $NaOH~~10mL$ ។ 
+			\end{enumerate}
+			\item គេរំលាយឧស្ម័នអ៊ីដ្រូសែនក្លរួ ($HCl$) $1.12L$ ក្នុងទឹកសុទ្ធ$1L$ ។
+			\begin{enumerate}[a]
+				\item សរសេរសមីការអ៊ីយ៉ុងកម្មនៃ $HCl$ ក្នុងទឹក ។
+				\item គណនា $C_A$ កំហាប់ជាម៉ូលនៃសូលុយស្យុងអាស៊ីត $HCl$ ដែលទទួលបាន ?
+				\item គេយកសូលុយស្យុងអាស៊ីត $HCl$ នេះ $10mL$ ចាក់ទៅក្នុងសូលុយស្យុង $KOH$ កំហាប់ $C_B=2\times10^{-2}M~;\\~V_B=25mL$ ។
+				\begin{enumerate}[1]
+					\item ឲ្យសមីការតុល្យការតាងប្រតិកម្មដែលកើតមានឡើង។
+					\item តើសូលុយស្យុងដែលទទួលបានជា អាស៊ីត, បាស ឬណឺត?\\
+					កំណតតម្លៃ $pH$ សូលុយស្យុងដែលទទួលបាន
+				\end{enumerate}
+			\end{enumerate}
+			\item គេមានសូលុយស្យុង$HNO_3$ មួយនៅកំហាប់ $C_A=5\times10^{-2}M$ មាឌ $V_A=25cm^3$ ។\\
+			តើគេត្រូវប្រើសូលុយស្យុង $KOH$ នៅកំហាប់ $C_B=2\times10^{-2}M$ ប៉ុន្មាន $cm^3$ ដើម្បីបន្សាបអាស៊ីត $HNO_3$ ខាងលើនេះ\\ឲ្យសាប់អស់? 
+			\item សូ.អាស៊ីតក្លរីឌ្រិច ($HCl$) មួយមានកំហាប់ $C_A=5\times10^{-3}M$ ។\\
+			គណនា $pH$ នៃសូ.នេះ? គេឲ្យ៖ $log5=0.7$\\
+			\heart ចម្លើយ៖ $pH=2.3$
+			\item 
+	\end{enumerate}
+	\begin{center}
+		To be continued
+	\end{center}
+	\begin{center}
+		\sffamily\color{black}
+		សូមសំណាងល្អ!
+	\end{center}\newpage
+\end{document}

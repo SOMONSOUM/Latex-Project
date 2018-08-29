@@ -1,0 +1,139 @@
+\documentclass[a4paper, 12pt]{exam}
+\makeatletter
+\usepackage[top=0.5cm, left=1cm, bottom=1.8cm, right=1.5cm]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{tcolorbox}
+\usepackage[export]{adjustbox}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{pgf}
+\usepackage{tikz}% graphic drawing
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\usepackage{wasysym}
+\usepackage{mathpazo}% change math font
+\usepackage{enumitem}% change list environment like enumerate, itemize and description
+\usepackage{multicol}% multi columns
+\usepackage{xcolor}
+\newcommand{\teacher}{ស៊ំុ សំអុន}
+\newcommand{\tell}{០៩៦ ៩៤០ ៥៨៤០}
+\newcommand{\class}{ត្រៀមប្រឡង~ឆមាសលើកទី~០១}
+\newcommand{\dateofexam}{សម័យប្រឡង៖~មករា ២០ ២០១៨}
+\newcommand{\subject}{វិញ្ញាសា៖~គណិតវិទ្យា~(វិទ្យាសាស្រ្តពិត)}
+\newcommand{\timelimit}{១២០~នាទី}
+\newcommand{\score}{ពិន្ទុសរុប៖~១២៥~ពិន្ទុ}
+\usepackage[no-math]{fontspec}% font specfication
+\setmainfont{Khmer OS Content}% set default font to Khmer OS
+\setsansfont[Ligatures=TeX,AutoFakeBold=0,AutoFakeSlant=0.25]{Khmer OS Muol Light}% sans serif font
+%
+\newcommand{\heart}{\ensuremath\heartsuit}
+\newcommand{\butt}{\rotatebox[origin=c]{180}{\heart}}
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+		\node[shape=circle,draw,inner sep=2pt] (char) {#1};}}
+%
+\SetEnumitemKey{I}{%
+	leftmargin=*,
+	label={\protect\tikz[baseline=-0.9ex]\protect\node[draw=gray,thick,circle,minimum height=.65cm,inner sep=1pt,text=black,fill=white]{\Roman*};},%
+	font=\small\sffamily\bfseries,%
+	labelsep=1ex,%
+	topsep=0pt}
+%
+\SetEnumitemKey{a}{%
+	leftmargin=*,%
+	label={\protect\tikz[baseline=-0.9ex]\protect\node[draw=gray,thick,circle,minimum height=.5cm,inner sep=1pt,text=blue,fill=magenta!5!white]{\alph*};},%
+	font=\small\sffamily\bfseries,%
+	labelsep=1ex,%
+	topsep=0pt}
+%
+\SetEnumitemKey{1}{leftmargin=*,%
+	label={\protect\tikz[baseline=-0.9ex]\protect\node[draw=gray,thick,circle,minimum height=.5cm,inner sep=1pt,text=black,fill=cyan!20!white]{\arabic*};},%
+	font=\small\sffamily\bfseries,%
+	labelsep=1ex,%
+	topsep=0pt}
+%
+\def\hard{\leavevmode\makebox[0pt][r]{\large\ensuremath{\star}\hspace{2em}}}
+%
+\def\hhard{\leavevmode\makebox[0pt][r]{\large\ensuremath{\star\star}\hspace{2em}}}
+%
+\everymath{\protect\displaystyle\protect\color{black}}
+%
+\pagecolor{cyan!1!white}
+%
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{wasysym}
+\makeatother
+
+\pagestyle{foot}
+\firstpagefooter{}{ ទំព័រ~\thepage\ នៃ \numpages}{}
+\runningfooter{រៀបរៀងដោយ~\teacher}{ ទំព័រ \thepage\ នៃ \numpages}{ទូរស័ព្ទ~\tell}
+\runningfootrule
+
+\begin{document}
+\noindent
+%\sffamily\color{black}
+\begin{tabular*}{\textwidth \sffamily\color{black}}{l @{\extracolsep{\fill}} r @{\extracolsep{6pt}} l}
+\textbf{\class} & \textbf{មណ្ឌលប្រឡង} & \makebox[2in]{\hrulefill}\\
+\textbf{\dateofexam} & \textbf{លេខបន្ទប់} & \makebox[2in]{\hrulefill}\\
+\textbf{\subject} & \textbf{លេខតុ} & \makebox[2in]{\hrulefill}\\
+\textbf{\score} & \textbf{ឈ្មោះបេក្ខជន} & \makebox[2in]{\hrulefill}\\
+\textbf{រយៈពេលសរុប៖ \timelimit} & \textbf{ហេត្ថលេខា} & \makebox[2in]{\hrulefill}
+\end{tabular*}\\
+\rule[2ex]{\textwidth\color{magenta}}{2pt}
+\begin{center}
+%	\heart វិញ្ញាសាទី\textbf{០១} នេះមាន \numpages\ ទំព័រ (រួមបញ្ចូលទាំងទំព័រនេះផងដែរ) និង 6 សំណួរ ។\heart
+%	\sffamily\color{black}
+%	\circled{០១}
+\end{center}
+\begin{center}
+	\sffamily\color{black}
+	បទបញ្ជានៃការប្រឡង
+\end{center}
+\begin{multicols}{2}
+	\begin{enumerate}[1]
+		\item ហាមមើលគ្នាក្នុងពេលកំពុងប្រឡង.
+		\item មិនត្រូវប្តូរកិច្ចការរបស់ខ្លួនជាមួយមិត្តភក្ភិឡើយ 
+		\item ហាមខ្ចីរបស់គ្នាប្រើក្នុងពេលកំពុងប្រឡង 
+		\item ហាមនិយាយឡូឡាក្នុងពេលកំពុងប្រឡង
+		\item មិនត្រូវនាំអាវុធ ឬគ្រឿងផ្ទុះចូរបន្ទប់ប្រឡង 
+		\item មិនត្រូវធ្វើសញ្ញាសម្គាល់អ្វីមួយនៅលើក្រដាស់កិច្ចការឡើយ~។ 
+	\end{enumerate}
+\end{multicols}
+\noindent
+\rule[2ex]{\textwidth\color{magenta}}{2pt}
+\begin{center}
+	\sffamily\color{black}
+	សិក្សាអថេរភាព និងសង់ក្រាបនៃអនុគមន៍\\
+\end{center}
+	\begin{enumerate}[1]
+		\item រកដែនកំណត់នៃអនុគមន៍(បើគេមិនឲ្យដែនកំណត់)
+		\item សរសេរជារាងកាណូនិច
+		\item សិក្សាអថេរភាពនៃអនុគមន៍
+		\begin{enumerate}[a]
+			\item ដេរីវេនៃអនុគមន៍ $f(x)$
+			\item សិក្សាសញ្ញានៃ $f'(x)$ (យើងត្រូវឲ្យ $f'(x)=0$)
+			\item បរមាធៀបនៃអនុគមន៍
+			\begin{itemize}
+				\item អតិបរមាធៀប
+				\item អប្បរមាធៀប
+			\end{itemize}
+			\item លីមីតនៃអនុគមន៍
+			\item អាស៊ីមតូតនៃក្រាប
+			\begin{itemize}
+				\item អាស៊ីមតូតដេក
+				\item អាស៊ីមតូតឈរ
+				\item អាស៊ីមតូតទ្រេត
+			\end{itemize}
+			\item តារាងអថេរភាពនៃអនុគមន៍
+		\end{enumerate}
+		\item ចំណុចប្រសព្វក្រាប និងអ័ក្ស ($x'ox$) ពេល $y=0$
+		\item ចំណុចប្រសព្វក្រាប និងអ័ក្ស ($y'oy$) ពេល $x=0$
+		\item ផ្ចិតឆ្លុះ
+		\item សង់ក្រាប អាស៊ីមតូត និងបន្ទាត់ប៉ះ(បើមាន) ។
+	\end{enumerate}
+\begin{center}
+	\sffamily\color{black}
+	សូមសំណាងល្អ!
+\end{center}\newpage
+
+\end{document}

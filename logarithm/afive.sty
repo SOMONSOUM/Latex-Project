@@ -1,0 +1,114 @@
+\ProvidesPackage{afive}[16/09/2016]
+\RequirePackage{polyglossia}
+\newfontfamily{\khmerfont}[%
+Script=Khmer,%
+Ligatures=TeX,%
+BoldFont={Khmer OS Bokor},%
+ItalicFont=*,%
+ItalicFeatures={FakeSlant=.25},%
+BoldItalicFont={Khmer OS Bokor},%
+BoldItalicFeatures={FakeSlant=.25},%
+SlantedFont=*,
+SlantedFeatures={FakeSlant=.15}]{Khmer OS}
+\setsansfont[%
+Script=Khmer,%
+Ligatures=TeX,%
+BoldFont=*,%
+ItalicFont=*,%
+BoldItalicFont=*,%
+BoldItalicFeatures={FakeSlant=.25},%
+SlantedFont=*]{Khmer OS Muol}
+\setmonofont[%
+Script=Khmer,%
+Ligatures=TeX,%
+BoldFont=*,%
+BoldFeatures={FakeBold=2},%
+ItalicFont=*,%
+ItalicFeatures={FakeSlant=.25},%
+BoldItalicFont=*,%
+BoldItalicFeatures={FakeBold=2,FakeSlant=.25},%
+SlantedFont=*,%
+SlantedFeatures={FakeSlant=.15}]{Khmer OS Freehand}
+\setmainlanguage[numerals=khmer]{khmer}
+\newfontfamily{\englishfont}{TeX Gyre Pagella}
+\setotherlanguage{english}
+\RequirePackage{tcolorbox}
+\tcbuselibrary{skins}
+\tcbuselibrary{theorems}
+\tcbuselibrary{breakable}
+\tcbset{frame/.style={%
+enhanced,%
+breakable,%
+boxrule=.7pt,%
+titlerule=0pt,%
+%arc=0mm,%
+colback=white,%
+colframe=magenta,%
+colbacktitle=white,%
+fonttitle=\color{blue}\bfseries,%
+left=.25ex,%
+right=.25ex,%
+%toptitle=5mm,%
+bottomtitle=-.4ex,%
+top=.25ex,%
+bottom=.25ex,%
+attach title to upper=\enspace,%
+drop small lifted shadow,%
+overlay={%
+	\node at ([xshift=-1ex,yshift=-.25ex]frame.north east){\includegraphics[width=2ex]{img/rightpin.png}};%
+	\node at ([xshift=1ex,yshift=-.25ex]frame.north west){\includegraphics[width=2ex]{img/leftpin.png}};
+	}%
+}}
+\RequirePackage[explicit]{titlesec}
+\usetikzlibrary{shapes}
+\renewcommand{\@makechapterhead}[1]{%
+	{\parindent\z@\raggedright%
+		\ifnum\c@secnumdepth>\m@ne%
+		\begin{tikzpicture}[overlay]
+		\node [left,draw=magenta,line width=.7pt,rounded rectangle,minimum height=10ex,inner sep=2pt] (chapbox) at (\textwidth,0) {\color{magenta}\huge\bfseries\bfseries\thechapter\space\color{blue}#1};
+		\path [draw=magenta,line width=.7pt] (0,0) node[xshift=1.7ex,yshift=2ex]{\includegraphics[width=4ex]{img/leftpin.png}} -- (chapbox.west);
+		\end{tikzpicture}}%
+	\fi\par\nobreak\vspace*{5ex}}
+\titleformat{\section}[block]%
+{\gdef\seclabel{}}%
+{\gdef\seclabel{\thesection\space}}{\z@}{%
+	\begin{tikzpicture}[overlay]
+	\node [right,rounded rectangle,minimum height=4ex,draw=magenta,line width=.7pt] (secbox) at (0,0) {\color{magenta}\bfseries\seclabel\color{blue}#1};
+	\draw [draw=magenta,line width=.7pt] (secbox.east) -- (\textwidth,0) node[xshift=-1ex,yshift=1ex]{\includegraphics[width=2ex]{img/rightpin.png}};
+	\end{tikzpicture}}
+\titlespacing*{\section}{\z@}{.7ex\@plus.1ex\@minus.1ex}{2.3ex\@plus.1ex\@minus.1ex}
+\titleformat{\subsection}[block]%
+{\gdef\subseclabel{}}%
+{\gdef\subseclabel{\thesubsection\space}}{\z@}{%
+	\begin{tikzpicture}[overlay]
+	\node [left,rounded rectangle,minimum height=4ex,draw=magenta,line width=.7pt] (subsecbox) at (\textwidth,0) {\color{magenta}\bfseries\subseclabel\color{blue}#1};
+	\draw [draw=magenta,line width=.7pt] (0,0) node[xshift=1ex,yshift=1ex]{\includegraphics[width=2ex]{img/leftpin.png}} -- (subsecbox.west);
+	\end{tikzpicture}}
+\titlespacing*{\subsection}{\z@}{.7ex\@plus.1ex\@minus.1ex}{2.3ex\@plus.1ex\@minus.1ex}
+\RequirePackage{amsmath}
+\RequirePackage{amssymb}
+\RequirePackage{amsthm}
+\renewenvironment{proof}[1][\proofname]{\par
+	\pushQED{\qed}%
+	\normalfont \partopsep=\z@skip \topsep=\z@skip
+	\trivlist
+	\item[\hskip\labelsep
+	\itshape
+	#1\@addpunct{.}]\ignorespaces
+}{%
+	\popQED\endtrivlist\@endpefalse
+}
+\RequirePackage{enumitem}
+\setlist[itemize]{leftmargin=*,noitemsep,labelsep=2\p@}
+\setlist[itemize,1]{label=\protect\color{magenta}\protect\ensuremath{\protect\bullet},noitemsep}
+\setlist[itemize,2]{label=\protect\color{magenta}\protect\ensuremath{\protect\circ},noitemsep}
+\setlist[itemize,3]{label=\protect\color{magenta}\protect\ensuremath{\protect\ast},noitemsep}
+\setlist[enumerate]{leftmargin=*,noitemsep,labelsep=2\p@}
+\setlist[enumerate,1]{label=\protect\color{magenta}\bfseries\arabic*}
+\setlist[enumerate,2]{itemsep=\p@,label=\protect\color{magenta}\bfseries\alph*}
+\setlist[enumerate,3]{itemsep=\p@,label=\protect\color{magenta}\roman*}
+\renewcommand{\theequation}{\bgroup\bfseries\textcolor{magenta}{\arabic{chapter}.\arabic{equation}}\egroup}
+\renewenvironment{center}{\bgroup\centering}{\egroup}
+\endinput
+\newenvironment{lalign}{\bgroup\flushleft}{\egroup}
+\newenvironment{ralign}{\bgroup\flushright}{\egroup}

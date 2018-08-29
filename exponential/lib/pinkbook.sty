@@ -1,0 +1,51 @@
+\ProvidesPackage{pinkbook}
+\RequirePackage{extsizes}
+\RequirePackage[cm]{fullpage}
+\RequirePackage{amsmath}
+\RequirePackage{amssymb}
+\RequirePackage{amsthm}
+\RequirePackage{mathpazo}
+\RequirePackage{multicol}
+\RequirePackage{polyglossia}
+\newfontfamily{\khmerfont}[BoldFont={Khmer OS Bokor}]{Khmer OS}
+\setmainlanguage[numerals=khmer]{khmer}
+\RequirePackage{tcolorbox}
+\tcbuselibrary{skins}
+\tcbuselibrary{breakable}
+\tcbuselibrary{theorems}
+\tcbset{ibox/.style={enhanced,breakable,boxrule=.7pt,titlerule=0pt,	arc=0mm,colback=yellow!23!white,colframe=magenta,colbacktitle=yellow!23!white,fonttitle=\color{blue}\bfseries,left=2pt,right=2pt,toptitle=0pt,bottomtitle=0pt,top=0pt,bottom=2pt,drop lifted shadow,		overlay={\node at ([xshift=-1em,yshift=-1ex]frame.north east){\includegraphics[width=3ex]{img/rightpin.png}};}}}
+\setlength{\columnsep}{0.7cm}
+\newtcbtheorem[number within=chapter]{definition}{និយមន័យ}{ibox}{}
+\newtcbtheorem[number within=chapter]{theorem}{ទ្រឹស្ដីបទ}{ibox}{}
+\newtcbtheorem[number within=chapter]{property}{លក្ខណៈ}{ibox}{}
+\RequirePackage[explicit]{titlesec}
+%\RequirePackage{tikz}
+\usetikzlibrary{shapes}
+\renewcommand{\@makechapterhead}[1]{%
+	{\parindent\z@\raggedright%
+		\ifnum\c@secnumdepth>\m@ne%
+		\begin{tikzpicture}[overlay]
+		\node [left,fill=yellow!23!white,draw=magenta,line width=.7pt,rounded rectangle,minimum height=1cm,inner sep=2pt] (chapbox) at (\textwidth,0) {\color{magenta}\Huge\bfseries\bfseries\thechapter\space\color{blue}#1};
+		\path [draw=magenta,line width=.7pt] (0,0) -- (chapbox.west);
+		\end{tikzpicture}}%
+	\fi\par\nobreak\vspace*{37\p@}}
+\titleformat{\section}[block]%
+{\gdef\seclabel{}}%
+{\gdef\seclabel{\thesection\space}}{\z@}{%
+	\begin{tikzpicture}[overlay]
+	\node [right,rounded rectangle,minimum height=.6cm,draw=magenta,fill=yellow!23!white,line width=.7pt,inner sep=1pt] (secbox) at (0,0) {\color{magenta}\bfseries\seclabel\color{blue}#1};
+	\draw [draw=magenta,line width=.7pt] (secbox.east) -- (\columnwidth,0);
+	\end{tikzpicture}}
+\titlespacing*{\section}{\z@}{.7ex\@plus.1ex\@minus.1ex}{2.3ex\@plus.1ex\@minus.1ex}
+\RequirePackage{enumitem}
+\setlist[itemize]{leftmargin=*,noitemsep,labelsep=2\p@}
+\setlist[itemize,1]{label=\protect\color{magenta}\protect\ensuremath{\protect\bullet},noitemsep}
+\setlist[itemize,2]{label=\protect\color{magenta}\protect\ensuremath{\protect\circ},noitemsep}
+\setlist[itemize,3]{label=\protect\color{magenta}\protect\ensuremath{\protect\ast},noitemsep}
+\setlist[enumerate]{leftmargin=*,noitemsep,labelsep=2\p@}
+\setlist[enumerate,1]{label=\protect\color{magenta}\bfseries\arabic*}
+\setlist[enumerate,2]{itemsep=\p@,label=\protect\color{magenta}\alph*}
+\setlist[enumerate,3]{itemsep=\p@,label=\protect\color{magenta}\roman*}
+\renewcommand{\theequation}{\bgroup\color{magenta}\bfseries\arabic{chapter}.\arabic{equation}\egroup}
+\pagecolor{magenta!7!white}
+\endinput

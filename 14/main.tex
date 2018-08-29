@@ -1,0 +1,116 @@
+\documentclass[a4paper, 12pt]{exam}
+\makeatletter
+\usepackage[top=0.5cm, left=1cm, bottom=1.8cm, right=1.5cm]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{gensymb}
+\usepackage{textcomp}
+\usepackage{tcolorbox}
+\usepackage[export]{adjustbox}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{pgf}
+\usepackage{tikz}% graphic drawing
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\usepackage{wasysym}
+\usepackage{mathpazo}% change math font
+\usepackage{enumitem}% change list environment like enumerate, itemize and description
+\usepackage{multicol}% multi columns
+\usepackage{xcolor}
+\newcommand{\teacher}{ស៊ំុ សំអុន}
+\newcommand{\tell}{០៩៦ ៩៤០ ៥៨៤០}
+\newcommand{\class}{ត្រៀមប្រឡង~ឆមាសលើកទី~០១}
+\newcommand{\dateofexam}{សម័យប្រឡង៖~~~\dots\dots~~~\dots\dots ~~~២០១៨}
+\newcommand{\subject}{វិញ្ញាសា៖~រូបវិទ្យា~(វិទ្យាសាស្រ្តពិត)}
+\newcommand{\timelimit}{៩០~នាទី}
+\newcommand{\score}{ពិន្ទុសរុប៖~៧៥~ពិន្ទុ}
+\usepackage[no-math]{fontspec}% font specfication
+\setmainfont{Khmer OS Content}% set default font to Khmer OS
+\setsansfont[Ligatures=TeX,AutoFakeBold=0,AutoFakeSlant=0.25]{Khmer OS Muol Light}% sans serif font
+%
+\newcommand{\heart}{\ensuremath\heartsuit}
+\newcommand{\butt}{\rotatebox[origin=c]{180}{\heart}}
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+		\node[shape=circle,draw,inner sep=2pt] (char) {#1};}}
+%
+\SetEnumitemKey{I}{%
+	leftmargin=*,
+	label={\protect\tikz[baseline=-0.9ex]\protect\node[draw=gray,thick,circle,minimum height=.65cm,inner sep=1pt,text=black,fill=white]{\Roman*};},%
+	font=\small\sffamily\bfseries,%
+	labelsep=1ex,%
+	topsep=0pt}
+%
+\SetEnumitemKey{a}{%
+	leftmargin=*,%
+	label={\protect\tikz[baseline=-0.9ex]\protect\node[draw=gray,thick,circle,minimum height=.5cm,inner sep=1pt,text=blue,fill=magenta!5!white]{\alph*};},%
+	font=\small\sffamily\bfseries,%
+	labelsep=1ex,%
+	topsep=0pt}
+%
+\SetEnumitemKey{1}{leftmargin=*,%
+	label={\protect\tikz[baseline=-0.9ex]\protect\node[draw=gray,thick,circle,minimum height=.5cm,inner sep=1pt,text=black,fill=cyan!20!white]{\arabic*};},%
+	font=\small\sffamily\bfseries,%
+	labelsep=1ex,%
+	topsep=0pt}
+%
+\def\hard{\leavevmode\makebox[0pt][r]{\large\ensuremath{\star}\hspace{2em}}}
+%
+\def\hhard{\leavevmode\makebox[0pt][r]{\large\ensuremath{\star\star}\hspace{2em}}}
+%
+\everymath{\protect\displaystyle\protect\color{black}}
+%
+\pagecolor{cyan!1!white}
+%
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{wasysym}
+\makeatother
+
+\pagestyle{foot}
+\firstpagefooter{}{ ទំព័រ~\thepage\ នៃ \numpages}{}
+\runningfooter{រៀបរៀងដោយ~\teacher}{ ទំព័រ \thepage\ នៃ \numpages}{ទូរស័ព្ទ~\tell}
+\runningfootrule
+
+\begin{document}
+\noindent
+%\sffamily\color{black}
+\begin{tabular*}{\textwidth \sffamily\color{black}}{l @{\extracolsep{\fill}} r @{\extracolsep{6pt}} l}
+\textbf{\class} & \textbf{មណ្ឌលប្រឡង} & \makebox[2in]{\hrulefill}\\
+\textbf{\dateofexam} & \textbf{លេខបន្ទប់} & \makebox[2in]{\hrulefill}\\
+\textbf{\subject} & \textbf{លេខតុ} & \makebox[2in]{\hrulefill}\\
+\textbf{\score} & \textbf{ឈ្មោះបេក្ខជន} & \makebox[2in]{\hrulefill}\\
+\textbf{រយៈពេលសរុប៖ \timelimit} & \textbf{ហេត្ថលេខា} & \makebox[2in]{\hrulefill}
+\end{tabular*}
+\noindent
+\rule[2ex]{\textwidth\color{magenta}}{2pt}
+\begin{center}
+	\sffamily\color{black}
+	ប្រធានលំហាត់ទី០២\\
+\end{center}
+\begin{enumerate}[I]
+	\item ($15$ ពិន្ទុ)
+	\begin{enumerate}[1]
+		\item គណនាម៉ាសម៉ូលេគុលអ៊ីដ្រូសែននីមូួយៗ បើអ៊ីដ្រូសែនមានម៉ាសម៉ូល $M=2\times10^{-3}Kg/mol$~។
+		\item គណនាល្បឿនប្ញសការេនៃការេល្បឿនមធ្យមម៉ូលេគុលឧស្ម័នអ៊ីដ្រូសែននៅសីតុណ្ហភាព $27^\circ C$ ។
+		\item គណនាថាមពលស៊ីនេទិចមធ្យមនៃឧស្ម័នអ៊ីដ្រូសែននីមួយៗនៅសីតុណ្ហភាព $127^\circ C$~។
+	\end{enumerate}
+	\item($10$ ពិន្ទុ) ស៊ីឡាំងមួយចែកចេញជាពីផ្នែកដែលខណ្ឌដោយរបាំងពិស្តុងមានកម្រាស់ស្តើងអាចចោលបាន ។ \\ផ្នែកទីមួយដាក់ឧស្ម័នបរិសុទ្ធមួយប្រភេទដែលមានចំនួនម៉ូល $n_1$ ឯផ្នែកទីពីរដាក់ឧស្ម័នបរិសុទ្ធមួយប្រភេទទៀត\\ដែលមានចំនួនម៉ូល $n_2$ ។ គេដឹងថាក្នុងស៊ីឡាំងឧស្ម័នទាំងពីរប្រភេទមានចំនួនម៉ូលសរុប $n=21mol$ មានសីតុណ្ហភាព និងសម្ពាធដូចគ្នា ។\\	គណនា $n_1$ និង $n_2$ បើប្រវែង $l_1=60cm$ និង $l_2=10cm$ ។
+	\item($10$ ពិន្ទុ) ប្រព័ន្ធឧស្ម័នមួយស្រូបកម្ដៅ $5000J$ ប្រព័ន្ធថយចុះថាមពលក្នុងអស់ $1500J$ ។ 
+	\begin{enumerate}[a]
+		\item គណនាកម្មន្តដែលប្រព័ន្ធបញ្ចេញ ។
+		\item គណនាបម្រែបម្រួលមាឌឧស្ម័ន បើប្រព័ន្ធមានសម្ពាធថេរ $6.5atm$ ។ 
+	\end{enumerate}
+	\item($15$ ពិន្ទុ) ម៉ាស៊ីនកាណូត៍មួយស្រូបកម្ដៅ $2000J$ ក្នុងរយៈពេលមួយវដ្តពីធុងក្តៅ និងបញ្ជួនថាមពលកម្តៅ $1200J$ ទៅកាន់ធុងត្រជាក់ ។
+	\begin{enumerate}[a]
+		\item គណនាប្រសិទ្ធភាពកម្តៅនៃម៉ាស៊ីន ។
+		\item គណនាកម្មន្តដែលម៉ាស៊ីនធ្វើក្នុងមួយវដ្ត ។
+		\item គណនាអនុភាពរបស់ម៉ាស៊ីន បើម៉ាស៊ីនដំណើរការបាន $4$ វដ្តក្នុងរយៈពេល $2s$ ។
+	\end{enumerate}
+	\item 
+\end{enumerate}
+\begin{center}
+	\sffamily\color{black}
+	សូមសំណាងល្អ!
+\end{center}\newpage
+
+\end{document}
