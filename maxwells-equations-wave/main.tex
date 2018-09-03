@@ -1,0 +1,95 @@
+
+\documentclass{beamer}
+
+\mode<presentation>
+{
+  \usetheme{Madrid}       
+  \usecolortheme{default} 
+  \usefonttheme{serif}    
+  \setbeamertemplate{navigation symbols}{}
+  \setbeamertemplate{caption}[numbered]
+} 
+
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{chemfig}
+\usepackage[version=3]{mhchem}
+
+
+\usepackage{pgfpages}
+\pgfpagesuselayout{resize to}[%
+  physical paper width=8in, physical paper height=6in]
+
+\title[Maxwell's Equations and the Wave Equation]{A Derivation of the Wave Equation from Maxwell's Equations}
+\author{Curtis Peterson}
+\institute{Arizona State University}
+\date{\today}
+
+\begin{document}
+%%%%%
+\begin{frame}
+  \titlepage
+\end{frame}
+%%%%%
+\begin{frame}{What the Heck Is the Wave Equation}
+The Wave Equation Satisfies the Following PDE
+\begin{equation}
+\frac{1}{c^2}\frac{\partial^2\psi}{\partial t^2}=\frac{\partial^2\psi}{\partial x^2}
+\end{equation}
+where psi is given by the general solution obtained via separation of variables. 
+
+
+
+
+Take note that this is the one dimensional form of the wave equation (one, unspecified component of a column matrix). The multidimentional wave equation satisfies the following PDE.
+\begin{equation}
+\frac{1}{c^2}\frac{\partial^2\mathbf{\psi}}{\partial t^2} = \nabla^2 \circ \mathbf{\psi}
+\end{equation}
+\end{frame}
+%%%%%
+\begin{frame}{The Derivation Itself}
+By Faraday's Law
+\begin{equation}
+\nabla \times \textbf{E}=- \frac{\partial \textbf{B}}{\partial t}
+\end{equation}
+Arbitrarily take the curl of both sides of (3)
+\begin{equation}
+\nabla \times \nabla \times \textbf{E} =- \nabla \times \frac{\partial \textbf{B}}{\partial t}
+\end{equation}
+Note the following vector identity
+$$\nabla \times \nabla \times \textbf{A} = \nabla \big( \nabla \circ \textbf{A} \big) - \nabla^2 \textbf{A}$$
+Pay attention to the left side of (4) and apply this identity
+$$\nabla \big( \nabla \circ \textbf{E} \big) - \nabla^2 \textbf{E} =- \nabla \times \frac{\partial \textbf{B}}{\partial t}$$
+Now take a look at the right side an note that the derivative operator commutes
+\begin{equation}
+\nabla \big( \nabla \circ \textbf{E} \big) - \nabla^2 \textbf{E} =- \frac{\partial}{\partial t} \big( \nabla \times \textbf{B} \big)
+\end{equation}
+\end{frame}
+%%%%%
+\begin{frame}{The Derivation Itself Part II}
+Cool, now take note of the Ampere-Maxwell equation below
+\begin{equation}
+\nabla \times \textbf{B} = \epsilon \big( \ \textbf{J} + \mu \frac{\partial \textbf{E}}{\partial t} \big)
+\end{equation}
+Now apply this to (5)
+\begin{equation}
+\nabla \big( \nabla \circ \textbf{E} \big) - \nabla^2 \textbf{E} = \frac{\partial}{\partial t} \big( \ \textbf{J} + \mu \frac{\partial \textbf{E}}{\partial t} \big) 
+\end{equation}
+Assume that the current density, J, is equal to zero and apply this to (7)
+$$\nabla \big( \nabla \circ \textbf{E} \big) - \nabla^2 \textbf{E} =- \mu \epsilon \frac{\partial^2 \textbf{E}}{\partial t^2}$$
+Assume, also, that 
+$$\nabla \circ \textbf{E} = 0$$
+meaning that the divergence of the electric field has to necessarily be zero. Apply this assumption to (7) as well.
+\end{frame}
+%%%%%
+\begin{frame}{The Derivation Itself Part III}
+Well look at that! We have the wave equation!
+$$\nabla^2 \textbf{E} = \mu \epsilon \frac{\partial^2 \textbf{E}}{\partial t^2}$$
+What is c?
+$$\frac{1}{c^2}=\mu \epsilon$$
+so
+$$c=\sqrt{\frac{1}{\mu \epsilon}}$$
+which is the propagation speed of light waves, confirmed by experiment.
+\end{frame}
+\end{document}
+

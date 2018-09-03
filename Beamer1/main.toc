@@ -1,0 +1,2 @@
+\beamer@sectionintoc {1}{ចំណងជើងផ្នែក១}{3}{0}{1}
+\beamer@sectionintoc {2}{ចំណងជើងផ្នែក២}{6}{0}{2}

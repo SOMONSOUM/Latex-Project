@@ -1,0 +1,824 @@
+\documentclass[12pt]{beamer}
+\usetheme{AUTheme}
+\usefonttheme[onlymath]{serif}
+\setbeamertemplate{footline}[frame number]
+
+\usefonttheme[]{serif}
+\usepackage{amsmath, latexsym, color, graphicx, amssymb, bm, here}
+\usepackage{epsf, epsfig, pifont,tikz,subfigure}
+\usepackage{graphics, calrsfs}
+\usepackage{times}
+\usepackage{fancybox,calc}
+\usepackage{palatino,mathpazo}
+\usepackage{amsfonts}
+\usepackage{sidecap}
+\usepackage{stackrel}
+
+
+\title{Introduction to AMSMATH Equation}
+\author{Guangjie Huang}
+\institute{Electrical and Computer Engineering \\ Auburn University}
+\date{\scriptsize{\today}}
+
+\AtBeginSection[]
+{
+  \begin{frame}{Contents}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%Frame 1 : Title page%%%%%%%%%%%%%%%%%%
+\maketitle
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%Frame 2 : Contents%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Contents}
+\tableofcontents
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+  \section{Introduction to AMS equations}
+  \subsection{Basic introduction}
+  %%%%%%%%%%%%%%%%%%%% Frame 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \begin{frame}
+    \frametitle{Introduction}
+    The \emph{amsmath} package is a \LaTeX{} package that provides miscellaneous enhancements for improving the information structure and printed output of documents that contain mathematical formulas.
+  \end{frame}
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \subsection{New features}
+  %%%%%%%%%%%%%%%%%%%% Frame 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \begin{frame}
+    \frametitle{New features of amsmath equation}
+    \begin{itemize}
+      \item A convenient way to define new `operator name` commands analogous to $\backslash$\textbf{sin} and $\backslash$\textbf{lim}, including proper side spacing and automatic selection of the correct font style and size (even when used in sub- or superscripts).
+      \item Multiple substitutes for the \textbf{eqnarray} environment to make various kinds of equation arrangements easier to write.
+      \item Equation numbers automatically adjust up or down to aviod overprinting on the equation contents (unlike \textbf{eqnarray}).
+      \item Spacing around equals signs matches the normal spacing in the \textbf{equation} environment (unlike \textbf{eqnarray}).
+    \end{itemize}
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{New features of amsmath equation II }
+    \begin{itemize}
+      \item A way to produce multiline subscripts as are often used with summation or product symbols.
+      \item An easy way to substitute a variant equation number for a given equation instead of the automatically supplied number.
+      \item An easy way to produce subordinate equation numbers of the form $(1.3a) (1.3b) (1.3c)$ for selected groups for equations.
+    \end{itemize}
+  \end{frame}
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \subsection{Options}
+  %%%%%%%%%%%%%%%%%%%% Frame 3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \begin{frame}
+    \frametitle{ default Options for the \emph{amsmath} package}
+    \begin{description}
+      \item[\emph{centertags}] For a split equation, place equation numbers vertically centered on the total height of the equation.
+      \item[\emph{tbtags}] `Top-or-bottom tags`: For a split equation, place equation numbers level with the last (resp. first) line, if numbers are on the right.
+      \item [\emph{sumlimits}] Place the subscripts and super scripts of summation symbols above and below, in displayed equations. This option also affects other symbols of the same type -- $\prod \coprod \bigotimes \bigoplus$, and so forth -- but excluding integrals (see below).
+     \end{description}
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{ Options for the \emph{amsmath} package II}
+    \begin{description}
+      \item[\emph{nosumlimits}] Always place the subscripts nd superscripts of summation-type symbols to the side, even in displayed equations.
+      \item[\emph{intlimits}] Like \emph{sumlimits}, but for integral symbols
+      \item[\emph{nointlimits}] (default) Opposite of \emph{intlimits}
+      \item[\emph{namelimits}] (default) Like \emph{sumlimits}, but for certain `operator names` such as det, inf, lim, max, min, that traditionally have subscripts placed underneath when they occur in a displayed equation.
+      \item[\emph{nonamelimits}] Opposite of \emph{namelimits}
+    \end{description}
+    To use one of these package options, put the option name in the optional argument of the $\backslash$\textbf{usepackage} command --- e.g., $\backslash usepackage [ intlimits ] \{ amsmath \}$.
+  \end{frame}
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %%%%%%%%%%%%%%%%%%%% Frame 4 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \begin{frame}
+    \frametitle{Other available options for \emph{amsmath}}
+    The \emph{amsmath} package also recognize the following options which are normally selected (implicitly or explicitly) through $\backslash$\textbf{documentclass} command.
+    \begin{description}
+      \item[\emph{leqno}] Place equation numbers on the left
+      \item[\emph{reqno}] Place equation numbers on the right
+      \item[\emph{fleqn}] Position equations at a fixed indent from the left margin rather than centered in the text column.
+    \end{description}
+  \end{frame}
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+  \section{Displayed equations}
+
+  %%%%%%%%%%%%%%%%%%%% Frame 5 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \begin{frame}
+    \frametitle{Introduction}
+    \framesubtitle{Displayed Equation Structures}
+    \begin{tabular}{l l l l}
+      equation & equation$\ast$ & align & align$\ast$\\
+      gather &   gather$\ast$   &   flalign  &   flalign$\ast$\\
+      multitaper    &   multitaper$\ast$    &   alignat &   alignat$\ast$\\
+      split
+    \end{tabular}
+  \end{frame}
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Single Equation}
+  %%%%%%%%%%%%%%%%%%%% Frame 6 Single Equations %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]
+\frametitle{Single equations}
+    \begin{columns}
+      \column{0.5\textwidth}
+        \begin{block}{}
+        \begin{verbatim}
+\begin{equation}
+    a = b + c
+\end{equation}
+        \end{verbatim}
+        \end{block}
+      \column{0.5\textwidth}
+        \begin{block}{}
+        \begin{equation}
+          a = b + c
+        \end{equation}
+        \end{block}
+    \end{columns}
+
+        \begin{columns}
+      \column{0.5\textwidth}
+        \begin{block}{}
+        \begin{verbatim}
+\begin{equation*}
+    a = b + c
+\end{equation*}
+        \end{verbatim}
+        \end{block}
+      \column{0.5\textwidth}
+        \begin{block}{}
+        \begin{equation*}
+          a = b + c
+        \end{equation*}
+        \end{block}
+    \end{columns}
+\end{frame}
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+  %%%%%%%%%%%%%%%%%%%% Frame 7 multiline %%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]
+\frametitle{Split equations without alignment}
+The \emph{multiline} environment is a variant of the \emph{equation} environment used for equations that don`t fit on a single line, which has only a single equation number. The first line is at the left margin and the last line at the right margin. It is possible to force one of the middle lines to the left or right with commands $\backslash$\textbf{shoveleft}, $\backslash$\textbf{shoveright}. These commands take the entire line as an argument, up to but not including the final $\backslash\backslash$.
+\end{frame}
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %%%%%%%%%%%%%%%%%%%% Frame 8 multiline example %%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]
+\frametitle{Split equations without alignment}
+    \begin{columns}
+      \column{0.5\textwidth}
+        \begin{block}{}
+        \begin{verbatim}
+\begin{multline}
+    a=b+c\\
+    =d+e\\
+    =m+n
+\end{multline}
+        \end{verbatim}
+        \end{block}
+      \column{0.5\textwidth}
+        \begin{block}{}
+        \begin{multline}
+            a=b+c\\
+            =d+e\\
+            =m+n
+        \end{multline}
+        \end{block}
+    \end{columns}
+
+    \begin{columns}
+      \column{0.5\textwidth}
+        \begin{block}{}
+        \begin{verbatim}
+\begin{multline}
+a=b+c\\
+\shoveright{=d+e}\\
+=m+n
+\end{multline}
+        \end{verbatim}
+        \end{block}
+      \column{0.5\textwidth}
+        \begin{block}{}
+        \begin{multline}
+        a=b+c\\
+        \shoveright{=d+e}\\
+        =m+n
+        \end{multline}
+        \end{block}
+    \end{columns}
+\end{frame}
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %%%%%%%%%%%%%%%%%%%% Frame 9 multiline %%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]
+\frametitle{Split equations with alignment}
+Unlike \emph{multiline}, the \emph{split} environment is for \emph{single} equations that don`t fit on one line. The \emph{split} environment provides no numbering, because it is intended to be used \emph{only inside some other displayed equation structure}, usually an \emph{equation, align, or gather} environment,which provides the numbering. For example:\\
+\end{frame}
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %%%%%%%%%%%%%%%%%%%% Frame 10 multiline example %%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]
+\frametitle{Split equations with alignment example}
+    \begin{columns}
+      \column{0.5\textwidth}
+        \begin{block}{}
+        \begin{verbatim}
+\begin{equation} \label{abc}
+    \begin{split}
+    a& =b+c-d\\
+    & \quad +e-f\\
+    & =g+h\\
+    & =i
+    \end{split}
+\end{equation}
+        \end{verbatim}
+        \end{block}
+      \column{0.5\textwidth}
+        \begin{block}{}
+        \begin{equation}\label{abc}
+          \begin{split}
+            a& =b+c-d\\
+             & \quad +e-f\\
+             & =g+h\\
+             & =i
+          \end{split}
+        \end{equation}
+        \end{block}
+    \end{columns}
+
+\end{frame}
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \subsection{Equation group}
+  %%%%%%%%%%%%%%%%%%% Frame 11 Equation groups without alignment  %%%%%%%
+  \begin{frame}
+    \frametitle{Equations groups without alignment: \emph{gather}}
+    The \emph{gather} environment is used for a group of consecutive equations when there is no alignment desired among them; each one is centered separately within the text width. Equations inside \emph{gather} are separated by a $\backslash$\textbf{bslash} command. Any equation in a gather may consist of a \emph{$\backslash$begin$\{split\}$} \ldots \emph{$\backslash$end$\{split\}$}
+  \end{frame}
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+  %%%%%%%%%%%%%%%%%%% Frame 12 Equation groups without alignment example %%%%%%%
+\begin{frame}[fragile]
+\frametitle{Split equations with alignment example}
+    \begin{columns}
+      \column{0.5\textwidth}
+        \begin{block}{}
+        \begin{verbatim}
+\begin{gather}
+a_1=b_1+c_1\\
+\begin{split}
+  a& =b\\
+  & =c\\
+  & =d
+\end{split}\\
+a_2=b_2+c_2-d_2+e_2
+\end{gather}
+        \end{verbatim}
+        \end{block}
+      \column{0.5\textwidth}
+        \begin{block}{}
+        \begin{gather}
+        a_1=b_1+c_1\\
+        \begin{split}
+          a& =b\\
+           & =c\\
+           & =d
+        \end{split}\\
+        a_2=b_2+c_2-d_2+e_2
+        \end{gather}
+        \end{block}
+    \end{columns}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%% Frame 13 Equation groups with alignment  %%%%%%%
+\begin{frame}[fragile]
+  \frametitle{Equations groups with mutual alignment}
+  The \emph{align} environment is used for two or more equations when vertical alignment is desired; usually binary relations such as equal signs are aligned.\\
+  \begin{align}
+x&=y & X&=Y & a&=b+c\\
+x¡¯&=y¡¯ & X¡¯&=Y¡¯ & a¡¯&=b\\
+x+x¡¯&=y+y¡¯ & X+X¡¯&=Y+Y¡¯ & a¡¯b&=c¡¯b
+\end{align}
+
+\begin{verbatim}
+\begin{align}
+x&=y & X&=Y & a&=b+c\\
+x¡¯&=y¡¯ & X¡¯&=Y¡¯ & a¡¯&=b\\
+x+x¡¯&=y+y¡¯ & X+X¡¯&=Y+Y¡¯ & a¡¯b&=c¡¯b
+\end{align}
+\end{verbatim}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%% Frame 14 Equation groups with alignment part II %%%%%%%
+\begin{frame}[fragile]
+  \frametitle{\emph{align} with line-by-line annotations}
+  Line-by-line annotations on an equation can be done by judicious application of $\backslash$\emph{text} inside an \emph{align} environment.\\
+  \begin{align}
+    x& = y_1-y_2+y_3-y_5+y_8-\dots
+    && \text{by (3.21)}\\
+    & = y¡¯\circ y^* && \text{by Theorem 1.}\\
+    & = y(0) y¡¯ && \text {by Axiom 1.}
+  \end{align}
+  \begin{verbatim}
+\begin{align}
+x& = y_1-y_2+y_3-y_5+y_8-\dots
+&& \text{by (3.21)}\\
+& = y¡¯\circ y^* && \text{by Theorem 1}\\
+& = y(0) y¡¯ && \text {by Axiom 1.}
+\end{align}
+  \end{verbatim}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %%%%%%%%%%%%%%%%%%% Frame 15 Equation groups with alignment part III %%%%%%%
+\begin{frame}[fragile]
+  \frametitle{\emph{alignat}}
+  A variant environment \emph{alignat} allows the horizontal space between equations to be explicitly specified. This environment takes one argument, the number of ``equation columns": count the maximum number of $\&s$ in any row, add 1 and divide by 2.
+  \small{\begin{alignat}{2}
+    x& = y_1-y_2+y_3-y_5+y_8-\dots
+    &\quad& \text{by (3.21)}\\
+    & = y¡¯\circ y^* && \text{by Theorem 1}\\
+    & = y(0) y¡¯ && \text {by Axiom 1.}
+  \end{alignat}}
+  \small{\begin{verbatim}
+\begin{alignat}{2}
+x& = y_1-y_2+y_3-y_5+y_8-\dots
+&\quad& \text{by (3.21)}\\
+& = y¡¯\circ y^* && \text{by Theorem 1}\\
+& = y(0) y¡¯ && \text {by Axiom 1.}
+\end{alignat}
+  \end{verbatim}}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%% Frame 16 Alignment building blocks %%%%%%%
+\begin{frame}
+  \frametitle{Alignment building blocks}
+  Like \emph{equation}, the multi-equation environments \emph{gather, align}, and \emph{alignat} are designed to produce a structure whose width is the full line width. This means, for example, that one cannot readily add parentheses around the entire structure. But variants \emph{gathered, aligned}, and \emph{alignedat} are provided whose total width is the actual width of the contents; thus they can be used as a component in a containing expression. Like the \emph{array} environment, these \emph{-ed} variants also take an optional \emph{[t]} or \emph{[b]} argument to specify vertical positioning.\\
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%% Frame 17 Alignment building blocks examples %%%%%%%
+\begin{frame}[fragile]
+  \frametitle{Alignment building blocks example}
+  \small{\begin{equation*}
+    \left.\begin{aligned}
+    B¡¯&=-\partial\times E,\\
+    E¡¯&=\partial\times B - 4\pi j,
+    \end{aligned}
+    \right\}
+\qquad \text{Maxwell¡¯s equations}
+\end{equation*}
+  }
+  \small{\begin{verbatim}
+\begin{equation*}
+\left.\begin{aligned}
+B¡¯&=-\partial\times E,\\
+E¡¯&=\partial\times B - 4\pi j,
+\end{aligned}
+\right\}
+\qquad \text{Maxwell¡¯s equations}
+\end{equation*}
+  \end{verbatim}
+  }
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%% Frame 18 Cases constructions %%%%%%%
+\begin{frame}[fragile]
+  \frametitle{``Case" constructions}
+  ``Case" constructions like the following are common in mathematics:\\
+  \begin{equation*}
+    P_{r-j}=\begin{cases}
+        0& \text{if $r-j$ is odd},\\
+        r!\,(-1)^{(r-j)/2}& \text{if $r-j$ is even}.
+    \end{cases}
+  \end{equation*}
+  \begin{verbatim}
+\begin{equation}
+P_{r-j}=\begin{cases}
+0& \text{if $r-j$ is odd},\\
+r!\,(-1)^{(r-j)/2}& \text{if $r-j$ is even}.
+\end{cases}
+\end{equation}
+  \end{verbatim}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Other issues about equations }
+%%%%%%%%%%%%%%%%%%% Frame 19 Adjusting tag placement %%%%%%%
+\begin{frame}
+  \frametitle{Adjusting tag placement}
+  There is a $\backslash$\emph{raisetag} command provided to adjust the vertical position of the current equation number, if it has been shifted away from its normal position. For example, $\backslash$\emph{raisetag $\{6pt\}$} is to move a particular number up by six points. It is best to use it when the document is nearly finalized.
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%% Frame 20 Vertical spacing and page breaks %%%%%%%
+\begin{frame}
+  \frametitle{Vertical spacing and page breaks}
+  $\backslash\backslash[<dimension>]$ command is used to get extra vertical space between lines in all the \emph{amsmath} displayed equation environments. \\
+  To get an individual page break inside a particular displayed equation, $\backslash displaybreak$ command is provided. It is is best placed immediately before the $\backslash\backslash$ where it is to take effect. It takes an optional argument between 0 and 4 denoting the desirability of the page break. 0 means ``¡°it is permissible to break here" without encouraging a break. with no optional argument is the same as 4, which forces a break. This command does not work in \emph{split, aligned, gathered, and alignedat}.
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%% Frame 21  Interrupting a display %%%%%%%
+\begin{frame}
+  \frametitle{Interruptinig a display}
+  The command $\backslash$\emph{intertext} is used for a short interjection of one or two lines of text in the middle of a multiple-line display structure. It may only appear right after a $\backslash\backslash$ or $\backslash\backslash\ast$ command.
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%% Frame 22  Interrupting a display example %%%%%%%
+\begin{frame}[fragile]
+  \frametitle{Interruptinig a display example}
+  \small{\begin{align}
+            A_1&=N_0(\lambda;\Omega¡¯)-\phi(\lambda;\Omega¡¯),\\
+            A_2&=\phi(\lambda;\Omega¡¯)-\phi(\lambda;\Omega),\\
+            \intertext{and}
+            A_3&=\mathcal{N}(\lambda;\omega).
+        \end{align}
+  }
+  \begin{verbatim}
+\small{
+\begin{align}
+A_1&=N_0(\lambda;\Omega¡¯)-\phi(\lambda;\Omega¡¯),\\
+A_2&=\phi(\lambda;\Omega¡¯)-\phi(\lambda;\Omega),\\
+\intertext{and}
+A_3&=\mathcal{N}(\lambda;\omega).
+\end{align}
+}
+  \end{verbatim}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%% Frame 23  Numbering hierarchy %%%%%%%
+\begin{frame}[fragile]
+  \frametitle{Numbering hierarchy}
+  Redefine the command $\backslash$\emph{theequation} can number equations within sections. $\backslash$\emph{setcounter} can reset the equation counter to be zero at the beginning of a new section or chapter. The redefine command is:\\
+  \tiny{\begin{verbatim}
+\renewcommand{\theequation}{\thesection.\arabic{equation}}
+  \end{verbatim}
+  }
+  \small{}
+  A more convenient way is command $\backslash$\emph{$numberwithiin$}, which tie the equation number to section numbering, with automatic reset of the equation counter.\\
+  \begin{verbatim}
+\numberwithin{equation}{section}
+  \end{verbatim}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%% Frame 24  Cross references to equation numbers
+\begin{frame}
+\frametitle{$\backslash$\emph{eqref}}
+  If $\backslash$\emph{ref$\{abc\}$} produces $\ref{abc}$, then $\backslash$\emph{eqref} produces $\eqref{abc}$.
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%% Frame 25  Subordinate numbering sequences %%%%
+\begin{frame}[fragile]
+  \frametitle{Subordinate numbering sequences}
+  The \emph{subequations} environment can number equations in a particular group with a subordinate numbering.\\
+  \begin{verbatim}
+\begin{subequations}
+...
+\end{subequations}
+  \end{verbatim}
+  causes all numbered equations within that part of the document to be numbered (4.9a) (4.9b) (4.9c) \ldots , if the preceding numbered equation was (4.8).
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Miscellaneous mathematical features}
+
+%%%%%%%%%%%%%%%%%%% Frame 26  Matrices %%%%
+\begin{frame}[fragile]
+\frametitle{Matrices}
+The matrics environment in \emph{amsmath} is more convenient than \emph{array}. These commands include \textbf{pmatrix, bmatrix, Bmatrix, vmatrix} that have (respecitively) (), [], \{\},$||$, and $\|\|$ delimiters built in.
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%% Frame 27  Matrices example%%%%
+\begin{frame}[fragile]
+\frametitle{matrices example}
+    \begin{verbatim}
+\bigl( \begin{smallmatrix}
+a&b\\ c&d
+\end{smallmatrix} \bigr)
+    \end{verbatim}
+    $\bigl( \begin{smallmatrix}
+a&b\\ c&d
+\end{smallmatrix} \bigr)$
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+
+%%%%%%%%%%%%%%%%%%% Frame 27  Matrices example%%%%
+\begin{frame}[fragile]
+\frametitle{matrices example $\backslash$hdotsfor}
+    The command $\backslash$hdotsfor[multiplier]\{column number\} produces a row of dots in a matrix spanning the given number of columns. The number in square brackets will be used as a multiplier. \\
+    {\tiny{\begin{verbatim}
+\begin{pmatrix} D_1t&-a_{12}t_2&\dots&-a_{1n}t_n\\
+-a_{21}t_1&D_2t&\dots&-a_{2n}t_n\\
+\hdotsfor[2]{4}\\
+-a_{n1}t_1&-a_{n2}t_2&\dots&D_nt\end{pmatrix}
+    \end{verbatim}}}
+    $\begin{pmatrix} D_1t&-a_{12}t_2&\dots&-a_{1n}t_n\\
+        -a_{21}t_1&D_2t&\dots&-a_{2n}t_n\\
+        \hdotsfor[2]{4}\\
+        -a_{n1}t_1&-a_{n2}t_2&\dots&D_nt
+    \end{pmatrix}$
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+
+%%%%%%%%%%%%%%%%%%% Frame 28  Dots%%%%
+\begin{frame}[fragile]
+\frametitle{Dots}
+    \begin{itemize}
+      \item \textbf{$\backslash$dotsc} for ``dots with commas"
+      \item \textbf{$\backslash$dotsb} for ``dots with binary operators $\backslash$ relations"
+      \item \textbf{$\backslash$dotsm} for ``multiplication dots"
+      \item \textbf{$\backslash$dotsi} for ``dots with integrals"
+      \item \textbf{$\backslash$dotso} for ``other dots"
+    \end{itemize}
+    Use the above commands instead of $\backslash$\textbf{ldots} and $\backslash$\textbf{cdots}, the document can adapt to different conventions on the fly.
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+
+%%%%%%%%%%%%%%%%%%% Frame 28  Accents in math%%%%
+\begin{frame}[fragile]
+\frametitle{Accents in math}
+   \emph{amsmath} improves the accents in math. $\hat{\hat{A}}$ ($\backslash$hat\{$\backslash$ hat\{A\}\}). $\backslash$\textbf{dddot} and $\backslash$\textbf{ddddot} are available to produce triple and quadruple dot accents in addition to the $\backslash$\textbf{dot} and $\backslash$\textbf{ddot} accents.\\
+   The package \emph{amsxtra} provides commands $\backslash$\textbf{sphat} or $\backslash$\textbf{sphat} to get a superscripted hat or tilde character.
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+
+%%%%%%%%%%%%%%%%%%% Frame 29  Roots %%%%
+\begin{frame}[fragile]
+\frametitle{Roots}
+        \begin{columns}
+      \column{0.5\textwidth}
+        \begin{block}{}
+        \begin{verbatim}
+$\sqrt[\beta]{k}$
+        \end{verbatim}
+        \end{block}
+      \column{0.5\textwidth}
+        \begin{block}{}
+        $\sqrt[\beta]{k}$
+        \end{block}
+    \end{columns}
+ In the \textbf{amsmath} package $\backslash$\textbf{leftroot} and $\backslash$\textbf{uproot} can adjust the position of the root.
+         \begin{columns}
+      \column{0.5\textwidth}
+        \begin{block}{}
+        \begin{verbatim}
+$\sqrt[\leftroot{-2}
+\uproot{2}\beta]{k}$
+        \end{verbatim}
+        \end{block}
+      \column{0.5\textwidth}
+        \begin{block}{}
+        $\sqrt[\leftroot{-2}\uproot{2}\beta]{k}$
+        \end{block}
+    \end{columns}
+    The root is moved to the right
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%% Frame 30  Boxed formulas %%%%
+\begin{frame}[fragile]
+\frametitle{Boxed formulas}
+The command $\backslash$\textbf{boxed} puts a box around its argument.\\
+\begin{verbatim}
+\boxed{\eta \leq C(\delta(\eta)
++\Lambda_M(0,\delta))}
+\end{verbatim}
+$\boxed{\eta \leq C(\delta(\eta) +\Lambda_M(0,\delta))}$
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%% Frame 31  Over, under and extensile arrows %%%%
+\begin{frame}[fragile]
+\frametitle{Over, under and extensile arrows}
+\emph{amsmath} provides additional over, under and extensile arrow commands.
+\begin{verbatim}
+\overleftarrow \underleftarrow
+\overrightarrow \underrightarrow
+\overleftrightarrow \underleftrightarrow
+\end{verbatim}
+$\backslash$\textbf{xleftarrow}and $\backslash$\textbf{xleftarrow}$\backslash$\textbf{xrightarrow} produce arrows that extend automatically to accommodate unusually wide subscripts or superscripts.
+\tiny{\begin{verbatim}
+$A \xleftarrow{n+\mu-1}\quad B \xrightarrow[T]{n\pm i-1}C$
+\end{verbatim}}
+
+\small{$A \xleftarrow{n+\mu-1}\quad B \xrightarrow[T]{n\pm i-1}C$}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%% Frame 32  Affixing symbols to other symbols
+\begin{frame}[fragile]
+\frametitle{Affixing symbols to other symbols}
+LATEX provides $\backslash$\textbf{stackrel}, \emph{amsmath} provides more convenient commands $\backslash$\textbf{overset}, $\backslash$\textbf{underset}, and $\backslash$\textbf{sideset}
+\begin{verbatim}
+$\overset{*}{X}$
+$\underset{*}{X}$
+$\sideset{_*^*}{_*^*}\prod$
+\end{verbatim}
+$\overset{*}{X}$ \quad
+$\underset{*}{X}$ \quad
+$\sideset{_*^*}{_*^*}\prod$
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%% Frame 33  Multiline subscripts and superscripts
+\begin{frame}[fragile]
+\frametitle{Multiline subscripts and superscripts}
+The $\backslash$\textbf{substack} command can be used to produce a multiline subscript or superscript.
+    \begin{columns}
+      \column{0.5\textwidth}
+        \begin{block}{}
+        \begin{verbatim}
+\sum_{\substack{
+0\le i\le m\\
+0<j<n}}
+P(i,j)
+        \end{verbatim}
+        \end{block}
+      \column{0.5\textwidth}
+        \begin{block}{}
+        $\sum_{\substack{
+        0\le i\le m\\
+        0<j<n}}
+        P(i,j)$
+        \end{block}
+    \end{columns}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%% Frame 34  Multiline subscripts and superscriptsII
+\begin{frame}[fragile]
+\frametitle{Multiline subscripts and superscripts II}
+The \textbf{subarray} environment which allows you to specify that each line should be left-aligned instead of centered
+    \begin{columns}
+      \column{0.5\textwidth}
+        \begin{block}{}
+        \begin{verbatim}
+\sum_{\begin{subarray}{l}
+i\in\Lambda\\ 0<j<n
+\end{subarray}}
+P(i,j)
+        \end{verbatim}
+        \end{block}
+      \column{0.5\textwidth}
+        \begin{block}{}
+        $\sum_{\begin{subarray}{l}
+        i\in\Lambda\\ 0<j<n
+        \end{subarray}}
+        P(i,j)$
+        \end{block}
+    \end{columns}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%% Frame 35  both subscripts and superscripts
+\begin{frame}[fragile]
+\frametitle{both subscripts and superscripts}
+The package \textbf{stackrel} allows you to get subscripts and superscripts simultaneously.
+    \begin{columns}
+      \column{0.5\textwidth}
+        \begin{block}{}
+        \begin{verbatim}
+\begin{equation}
+L_{SC}
+\stackrel[H_{0}]{H_{1}}{\gtrless}
+\tau
+\end{equation})
+        \end{verbatim}
+        \end{block}
+      \column{0.5\textwidth}
+        \begin{block}{}
+        \begin{equation}
+            L_{SC}
+            \stackrel[H_{0}]{H_{1}}{\gtrless}
+            \tau
+        \end{equation}
+        \end{block}
+    \end{columns}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%% Frame 36  The \frac, \dfrac, and \tfrac commands
+\begin{frame}[fragile]
+\frametitle{The $\backslash$frac, $\backslash$dfrac,$\backslash$tfrac commands}
+$\backslash$frac : basic; $\backslash$dfrac: displayed style; $\backslash$tfrac: text style
+\begin{verbatim}
+\begin{equation}
+\frac{1}{k}\log_2 c(f)\;
+\tfrac{1}{k}\log_2 c(f)\;
+\sqrt{\frac{1}{k}\log_2 c(f)}\;
+\sqrt{\dfrac{1}{k}\log_2 c(f)}
+\end{equation}
+\end{verbatim}
+
+\begin{equation}
+\frac{1}{k}\log_2 c(f)\;\tfrac{1}{k}\log_2 c(f)\;
+\sqrt{\frac{1}{k}\log_2 c(f)}\;\sqrt{\dfrac{1}{k}\log_2 c(f)}
+\end{equation}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%% Frame 37  The \binom, \dbinom, and \tbinom commands
+\begin{frame}[fragile]
+\frametitle{The $\backslash$binom, $\backslash$dbinom,$\backslash$tbinom commands}
+$\backslash$binom : basic; $\backslash$dbinom: displayed style; $\backslash$tbinom: text style
+\begin{verbatim}
+2^k-\binom{k}{1}2^{k-1}
++\binom{k}{2}2^{k-2}
+\end{verbatim}
+
+$2^k-\binom{k}{1}2^{k-1}+\binom{k}{2}2^{k-2}$
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%% Frame 38  The \genfrac command
+\begin{frame}[fragile]
+\frametitle{The $\backslash$genfrac command}
+The capabilities of $\backslash$frac, $\backslash$binom, and their variants are subsumed by a generalized
+fraction command $\backslash$genfrac with six arguments.
+\begin{verbatim}
+\genfrac{left-delim}{right-delim}
+{thickness}{mathstyle}
+{numerator}{denominator}
+\end{verbatim}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%% Frame 39  Continued fractions
+\begin{frame}[fragile]
+\frametitle{Continued fractions}
+\begin{verbatim}
+\begin{equation*}
+\cfrac{1}{\sqrt{2}+
+\cfrac{1}{\sqrt{2}+
+\cfrac{1}{\sqrt{2}+\dotsb
+}}}
+\end{equation*}
+\end{verbatim}
+\begin{equation*}
+\cfrac{1}{\sqrt{2}+
+\cfrac{1}{\sqrt{2}+
+\cfrac{1}{\sqrt{2}+\dotsb
+}}}
+\end{equation*}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%% Frame 40  Smash options
+\begin{frame}[fragile]
+\frametitle{Smash options}
+The command $\backslash$smash adjusts the subformula¡¯s
+position with respect to adjacent symbols.
+    \begin{columns}
+      \column{0.5\textwidth}
+        \begin{block}{}
+        \begin{verbatim}
+$\sqrt{x}
++ \sqrt{\smash[b]
+{y}} + \sqrt{z}$
+
+$\sqrt{x}
++ \sqrt{{y}} +
+\sqrt{z}$
+        \end{verbatim}
+        \end{block}
+      \column{0.5\textwidth}
+        \begin{block}{}
+        $\sqrt{x}
+        + \sqrt{\smash[b]{y}} + \sqrt{z}$
+        $\sqrt{x}
+        + \sqrt{{y}} + \sqrt{z}$
+        \end{block}
+    \end{columns}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Further study}
+\begin{frame}
+\frametitle{Further study}
+\begin{itemize}
+  \item Delimiters
+  \item Operator names
+  \item Using math fonts
+  \item Math spacing commands
+\end{itemize}
+\end{frame}
+
+%%%%%%%%%%%%%%% Resources %%%%%%%%%%%%%%%%
+\section{Resource}
+\begin{frame}
+\frametitle{Resource}
+\begin{itemize}
+  \item \footnotesize{http://www.ams.org/publications/authors/tex/amslatex}
+  \item \footnotesize{The Not So Short Introduction to \LaTeX{}}
+\end{itemize}
+\end{frame}
+\end{document} 

@@ -1,0 +1,209 @@
+\ProvidesPackage{bookline}
+\newif\ifkhmer\khmerfalse
+\DeclareOption{arabic}{\khmerfalse}
+\DeclareOption{khmer}{\khmertrue}
+\ExecuteOptions{arabic}
+\ProcessOptions\relax
+\RequirePackage{geometry}
+\RequirePackage{amsmath}
+\RequirePackage{amssymb}
+\RequirePackage{amsthm}
+\RequirePackage{mathtools}
+\RequirePackage{mathpazo}
+\RequirePackage{float}
+\RequirePackage{xcolor}
+\RequirePackage{tikz}
+\RequirePackage{tcolorbox}
+\RequirePackage{tkz-tab}
+\RequirePackage{graphicx}
+\RequirePackage{wrapfig}
+\RequirePackage{enumitem}
+\RequirePackage{multicol}
+\RequirePackage{tasks}
+\RequirePackage{fancyhdr}
+\RequirePackage{pifont}
+\RequirePackage{hyperref}
+\RequirePackage[explicit]{titlesec}
+\RequirePackage[no-math]{fontspec}
+\XeTeXlinebreaklocale "kh"
+\XeTeXlinebreakskip = 0pt plus 1pt minus 0.5pt
+\setmainfont[% \textrm{text}
+Ligatures=TeX,%
+AutoFakeBold=1,%
+AutoFakeSlant=0.25]{Khmer OS}
+\setsansfont[% \textsf{text}
+Ligatures=TeX,%
+AutoFakeBold=1,%
+AutoFakeSlant=0.25]{Khmer OS Bokor}
+\setmonofont[% \texttt{text}
+Ligatures=TeX,%
+AutoFakeBold=1,%
+AutoFakeSlant=0.25]{Khmer OS Siemreap}
+\def\linefill{%
+	\leaders\hbox{\rule[0.6ex]{1pt}{0.2ex}}\hfill\kern\z@}
+\titleformat{\chapter}[hang]{%
+	\color{blue}\huge\sffamily%
+}{\chaptertitlename~\thechapter}{1ex}{#1\linefill}[]
+\titleformat{\section}[hang]{%
+	\color{blue}\LARGE\sffamily%
+}{\thesection}{1ex}{#1\linefill}[]
+\titleformat{\subsection}[hang]{%
+	\color{blue}\large\sffamily%
+}{\thesubsection}{1ex}{#1\linefill}[]
+\titlespacing{\chapter}{0pt}{\topskip}{\topskip}
+\titlespacing{\section}{0pt}{\topskip}{\topskip}
+\titlespacing{\subsection}{0pt}{\topskip}{\topskip}
+\geometry{margin=2cm,bindingoffset=1cm}
+\pagestyle{fancy}
+\lfoot{រៀបរៀងដោយ:~ឈ្មោះ}
+\rfoot{រក្សាសិទ្ធ\copyright ២០១៧}
+\renewcommand{\headrulewidth}{2pt}
+\renewcommand{\footrulewidth}{2pt}
+\def\chaptername{ជំពូក}
+\def\appendixname{សេចក្ដីបន្ថែម}
+\def\bibname{ឯកសារយោង}
+\def\contentsname{មាតិការ}
+\def\listfigurename{បញ្ជីរូបភាព}
+\def\listtablename{បញ្ជីតារាង}
+\def\figurename{រូប}
+\def\tablename{តារាង}
+\def\partname{ផ្នែក}
+\def\theoremname{ទ្រឹស្ដីបទ}
+\def\corollaryname{អនុសាធ្យ}
+\def\remarkname{សម្គាល់}
+\def\definitionname{និយមន័យ}
+\def\examplename{ឧទាហរណ៍}
+\def\exercisename{លំហាត់}
+\def\proofname{សម្រាយ}
+\theoremstyle{definition}
+\newtheorem{thm}{\theoremname}
+\newtheorem{crl}{\corollaryname}
+\newtheorem{rmk}{\remarkname}
+\newtheorem{dfn}{\definitionname}
+\newtheorem{exm}{\examplename}
+\newtheorem{exc}{\exercisename}
+\newtheorem*{thm*}{\theoremname}
+\newtheorem*{crl*}{\corollaryname}
+\newtheorem*{rmk*}{\remarkname}
+\newtheorem*{dfn*}{\definitionname}
+\newtheorem*{exm*}{\examplename}
+\newtheorem*{exc*}{\exercisename}
+\tcbset{%
+colback=blue!9,%
+colframe=blue,%
+leftrule=0pt,%
+rightrule=0pt,%
+arc=0pt}
+\tcolorboxenvironment{thm}{}
+\tcolorboxenvironment{crl}{}
+\tcolorboxenvironment{rmk}{}
+\tcolorboxenvironment{dfn}{}
+\tcolorboxenvironment{thm*}{}
+\tcolorboxenvironment{crl*}{}
+\tcolorboxenvironment{rmk*}{}
+\tcolorboxenvironment{dfn*}{}
+% khmer number
+\def\khmer#1{\expandafter\@khmer\csname c@#1\endcsname}
+\def\@khmer#1{\expandafter\@@khmer\number#1\@nil}
+\def\@@khmer#1{%
+	\ifx#1\@nil% terminate when encounter @nil
+	\else%
+	\char\numexpr#1+"17E0\relax% address of 0 in khmer font is 17E0
+	\expandafter\@@khmer% recursively map the following characters
+	\fi}
+\def\khmernumeral#1{\@@khmer#1\@nil}
+% khmer alphabet
+\def\alpkh#1{\expandafter\@alpkh\csname c@#1\endcsname}
+\def\@alpkh#1{%
+	\ifcase#1\or% zero -> none
+	\char"1780\or% one -> kor
+	\char"1781\or% two -> khor
+	\char"1782\or% three -> kuor
+	\char"1783\or% four -> khuor
+	\char"1784\or% five -> gnuor
+	\char"1785\or%
+	\char"1786\or%
+	\char"1787\or%
+	\char"1788\or%
+	\char"1789\or%
+	\char"178A\or%
+	\char"178B\or%
+	\char"178C\or%
+	\char"178D\or%
+	\char"178E\or%
+	\char"178F\or%
+	\char"1790\or%
+	\char"1791\or%
+	\char"1792\or%
+	\char"1793\or%
+	\char"1794\or%
+	\char"1795\or%
+	\char"1796\or%
+	\char"1797\or%
+	\char"1798\or%
+	\char"1799\or%
+	\char"179A\or%
+	\char"179B\or%
+	\char"179C\or%
+	%\char"179D\or% not in ordinary use
+	%\char"179E\or% not in ordinary use
+	\char"179F\or%
+	\char"17A0\or%
+	\char"17A1\or%
+	\char"17A2\else%
+	\@ctrerr\fi}% otherwise, counter error!
+\let\o@arabic\@arabic
+\let\o@alph\@alph
+\let\o@Alph\@Alph
+\ifkhmer
+\let\@arabic\@khmer%
+\let\@alph\@alpkh%
+\else
+\let\@arabic\o@arabic%
+\let\@alph\o@alph%
+\fi
+\AddEnumerateCounter{\alpkh}{\@alpkh}{\char"1788}
+\AddEnumerateCounter{\khmer}{\@khmer}{\char"17e3}
+\SetEnumitemKey{1}{label=\color{blue}\arabic*.}
+\SetEnumitemKey{a}{label=\color{blue}\alph*.}
+\SetEnumitemKey{A}{label=\color{blue}\Alph*.}
+\SetEnumitemKey{i}{label=\color{blue}\roman*.}
+\SetEnumitemKey{I}{label=\color{blue}\Roman*.}
+\SetEnumitemKey{k}{label=\color{blue}\alpkh*.}
+\SetEnumitemKey{m}{label=\color{blue}\khmer*.}
+\SetEnumitemKey{b}{label=\color{blue}\ensuremath{\bullet}}
+\SetEnumitemKey{c}{label=\color{blue}\ensuremath{\circ}}
+\SetEnumitemKey{d}{label=\color{blue}\ensuremath{\diamond}}
+\SetEnumitemKey{t}{label=\color{blue}\ensuremath{\triangleright}}
+\setlist[enumerate]{leftmargin=*,labelsep=1ex,itemsep=1ex}
+\setlist[itemize]{leftmargin=*,labelsep=1ex,itemsep=1ex}
+\setlist[enumerate,1]{1}
+\setlist[enumerate,2]{a}
+\setlist[enumerate,3]{i}
+\setlist[enumerate,4]{A}
+\setlist[itemize,1]{b}
+\setlist[itemize,2]{c}
+\setlist[itemize,3]{d}
+\setlist[itemize,4]{t}
+\NewPatternFormat{k}{\@alpkh}% cntformats package
+\NewPatternFormat{m}{\@khmer}% counter-format=tsk[l]
+\settasks{%
+	counter-format=tsk[a].,%
+	label-format=\color{blue},%
+	label-offset=0.5ex,%
+	label-align=right,%
+	label-width=3.5ex,%
+	item-indent=4ex,%
+	column-sep=2ex,%
+	before-skip=0ex,%
+	after-skip=0ex,%
+	after-item-skip=0.5ex%
+}
+\hypersetup{%
+	linktoc=all,%
+	bookmarksnumbered,%
+	bookmarksopen,%
+	hidelinks}
+\raggedbottom
+\def\qedsymbol{\textcolor{blue}{\ensuremath{\blacksquare}}}
+\endinput

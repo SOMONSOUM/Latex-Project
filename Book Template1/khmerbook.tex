@@ -1,0 +1,193 @@
+\documentclass[12pt]{book}
+%% ការកំណត់ផ្សេងៗត្រូវបានដាក់ចូលក្នុងឯកសារមួយដាច់ដោយឡែក
+\usepackage{lib/setting}
+\usepackage{xltxtra}
+%% ពត៌មានអំពីសៀវភៅ
+\title{\huge\bfseries លីមីតនៃអនុគមន៍}
+\author{\bfseries អ្នកនិពន្ធ~៖~ស៊ុំ សំអុន}
+\date{ ០៣~កក្កដា~២០១៨}
+\begin{document}
+%% ផ្នែកខាងមុខនៃសៀវភៅ
+	\frontmatter
+	\pagenumbering{alph}
+	\maketitle
+	\chapter{\prefacename}
+	សសេរអារម្ភកថាទីនេះ!
+	\tableofcontents
+	\addcontentsline{toc}{chapter}{\contentsname}
+	\listoftables
+	\listoffigures
+%% ផ្នែកខ្លមសារមេរៀន
+	\mainmatter
+	\chapter{ត្រីកោណ}
+	យើងលើកយកតែនិយមន័យ និងទ្រឹស្ដីបទដែលប្រើប្រាស់ញឹកញាប់តែប៉ុណ្ណោះ។
+	\section{និយមន័យ}
+	\begin{definition}
+		\emph{ត្រីកោណ} គឺជារូបធរណីមាត្រក្នុងប្លង់ផ្គុំដោយអង្កត់បីបិទជិត។
+		\begin{figure}[H]
+			\centering
+			\begin{tikzpicture}
+			\draw (0,0) -- (5,0) -- (2,3) -- (0,0);
+			\node[anchor=east] at (0,0) {$ A $};
+			\node[anchor=west] at (5,0) {$ B $};
+			\node[anchor=south] at (2,3) {$ C $};
+			\end{tikzpicture}
+			\caption{ត្រីកោណ $ \triangle ABC $}
+		\end{figure}
+	\end{definition}
+	\begin{property}
+		គេបែងចែកត្រីកោណជាបួនប្រភេទអាស្រ័យលើមុំក្នុងរបស់វាដូចតទៅ៖
+		\begin{multicols}{2}
+			\begin{enumerate}
+				\item មុំខុសគ្នាពីរៗ៖ \emph{ត្រីកោណសមញ្ញ}
+				\item មុំមួយជាមុំកែង៖ \emph{ត្រីកោណកែង}
+				\item មុំពីរប៉ុនគ្នា៖ \emph{ត្រីកោណសមបាត}
+				\item មុំទាំងបីប៉ុនគ្នា៖ \emph{ត្រីកោណសម័ង្ស។}
+			\end{enumerate}
+		\end{multicols}
+	\end{property}
+	ត្រីកោណមួយកែងផង និងសមបាតផង យើងហៅវាថា \emph{ត្រីកោណកែងសមបាត។}
+	\begin{theorem}
+		ផលបូករង្វាស់មុំក្នុងនៃត្រីកោណមួយស្មើនឹង $ 180^\circ $ ឬ $ \pi $ រ៉ាដ្យ៉ង់។
+	\end{theorem}
+	\begin{proof}
+		សង់ត្រីកោណ $ \triangle ABC $ មួយ រួចគូសបន្ទាត់កាត់តាម $ A $ ស្របនឹង $ BC $ តាមលក្ខណៈមុំឆ្លាស់ក្នុង ទ្រឹស្ដីខាងលើពិត។
+	\end{proof}
+	\begin{theorem}[ពីតាគ័រ]
+		គេឲ្យត្រីកោណ $ \triangle ABC $ មួយ។ ត្រីកោណ $ \triangle ABC $ កែងត្រង់ $ A $ លុះត្រាតែ $ AB^2+AC^2=BC^2 $។
+	\end{theorem}
+	\chapter{ត្រីកោណមាត្រ}
+	\section{និយមន័យ\label{sec:def}}
+	\subsection{ស៊ីនុស}
+	\begin{definition}[ស៊ីនុស]
+		គេឲ្យត្រីកោណ $ \triangle ABC $ មួយកែងត្រង់ $ C $។ \emph{ស៊ីនុស}នៃមុំ $ A $ ជាផលធៀបរង្វាស់ជ្រុងឈមនឹងអ៊ីប៉ូតេនុស។
+		\[ \sin A=\frac{BC}{AB}=\frac{\text{ប្រវែងជ្រុងឈម}}{\text{ប្រវែងអ៊ីប៉ូតេនុស}} \]
+	\end{definition}
+	\subsection{កូស៊ីនុស}
+	\begin{definition}[កូស៊ីនុស]
+		គេឲ្យត្រីកោណ $ \triangle ABC $ មួយកែងត្រង់ $ C $។ \emph{កូស៊ីនុស}នៃមុំ $ A $ ជាផលធៀបរង្វាស់ជ្រុងជាប់នឹងអ៊ីប៉ូតេនុស។
+		\[ \cos A=\frac{AC}{AB}=\frac{\text{ប្រវែងជ្រុងជាប់}}{\text{ប្រវែងអ៊ីប៉ូតេនុស}} \]
+	\end{definition}
+	\subsection{តង់សង់}
+	\begin{definition}[តង់សង់]
+		គេឲ្យត្រីកោណ $ \triangle ABC $ មួយកែងត្រង់ $ C $។ \emph{តង់សង់}នៃមុំ $ A $ ជាផលធៀបរង្វាស់ជ្រុងឈមនឹងជ្រុងជាប់។
+		\[ \tan A=\frac{BC}{AC}=\frac{\text{ប្រវែងជ្រុងឈម}}{\text{ប្រវែងជ្រុងជាប់}} \]
+	\end{definition}
+	\subsection{កូតង់សង់}
+	\begin{definition}[កូតង់សង់]
+		គេឲ្យត្រីកោណ $ \triangle ABC $ មួយកែងត្រង់ $ C $។ \emph{កូតង់សង់}នៃមុំ $ A $ ជាផលធៀបរង្វាស់ជ្រុងជាប់នឹងជ្រុងឈម។
+		\[ \cot A=\frac{BC}{AC}=\frac{\text{ប្រវែងជ្រុងជាប់}}{\text{ប្រវែងជ្រុងឈម}} \]
+	\end{definition}
+	\section{រង្វង់ត្រីកោណមាត្រ}
+	នៅផ្នែក~(\ref{sec:def}) ស៊ីនុស កូស៊ីនុស តង់សង់ និងកូតង់សង់ កំណត់ចំពោះតែមុំស្រួចប៉ុណ្ណោះ។ នៅផ្នែកនេះយើងនឹងធ្វើទូទៅនីយកម្មនៃនិយមន័យទាំងនោះ។
+	\subsection{និយមន័យទូទៅ}
+	\begin{definition}
+		ក្នុងប្លង់ប្រកបដោយតម្រុយអរតូកូណាល់ $ (XOY) $ គេសង់វង្វង់មួយដែលមានផ្ចឹកត្រង់គល់តម្រុយ $ O $ និងកាំមានរង្វាស់មួយឯកត្តា។ គេហៅរង្វង់នេះថា \emph{រង្វង់ត្រីកោណមាត្រ។}
+		\begin{figure}[H]
+			\centering
+			\begin{tikzpicture}[scale=.7]
+			\draw[->] (-2.5,0) -- (2.5,0);
+			\draw[->] (0,-2.5) -- (0,2.5);
+			\draw (0,0) circle (2);
+			\draw (0,0) -- (1.732,1);
+			\draw (0,1) -- (1.732,1) -- (1.732,0);
+			\node[anchor=north east] at (0,0) {$ O $};
+			\node[anchor=north] at (2.5,0) {$ X $};
+			\node[anchor=east] at (0,2.5) {$ Y $};
+			\node[anchor=south west] at (1.732,1) {$ P $};
+			\node[anchor=north] at (1.732,0) {$ x $};
+			\node[anchor=east] at (0,1) {$ y $};
+			\end{tikzpicture}
+			\caption{រង្វង់ឯកត្តា}
+		\end{figure}
+	\end{definition}
+	\begin{definition}
+		តាង $ P $ ជាចំណុចនៅលើរង្វង់ត្រីកោណមាត្រ ដែលមានកូអរដោនេ $ (x,y) $។ តាង $ \alpha $ ជាមុំផ្គុំដោយកន្លះអ័ក្ស $ OX $ នឹងអង្កត់ $ OP $។ គេកំណត់ទិសដៅវិជ្ជមាននៃមុំ ជាទិសដៅដែលផ្ទុយនឹងទិសដៅនៃការវិលរបស់ទ្រនិចនាឡិកា។ គេឲ្យនិយមន័យ
+		\begin{multicols}{2}
+			\begin{enumerate}
+				\item $ \sin\alpha=x $
+				\item $ \cos\alpha=y $
+				\item $ \tan\alpha=x/y $ បើ $ y\neq 0 $
+				\item $ \sin\alpha=y/x $ បើ $ x\neq 0 $។
+			\end{enumerate}
+		\end{multicols}
+	\end{definition}
+	\subsection{តារាងសញ្ញា}
+	\begin{table}[H]
+		\centering
+		\begin{tabular}{|c|c|c|c|c|}
+			\hline
+			អនុគមន៏$ \backslash $កាដ្រង់ & I & II & III & IV\\
+			\hline
+			$ \sin\alpha $ & $ + $ & $ + $ & $ - $ & $ - $\\
+			\hline
+			$ \cos\alpha $ & $ + $ & $ - $ & $ - $ & $ + $\\
+			\hline
+			$ \tan\alpha $ & $ + $ & $ - $ & $ + $ & $ - $\\
+			\hline
+			$ \cot\alpha $ & $ + $ & $ - $ & $ + $ & $ - $\\
+			\hline
+		\end{tabular}
+		\caption{តារាងសញ្ញានៃអនុគមន៏ត្រីកោណមាត្រ}
+	\end{table}
+	\subsection{តារាងតម្លៃ}
+	\begin{table}[H]
+		\centering
+		\begin{tabular}{|c|c|c|c|c|c|}
+			\hline
+			អនុគមន៏$ \backslash $មុំ & $ 0^\circ $ & $ 30^\circ $ & $ 45^\circ $ & $ 60^\circ $ & $ 90^\circ $\\
+			\hline
+			$ \sin\alpha $ & $ 0 $ & $ 1/2 $ & $ \sqrt{2}/2 $ & $ \sqrt{3}/2 $ & $ 1 $\\
+			\hline
+			$ \cos\alpha $ & $ 1 $ & $ \sqrt{3}/2 $ & $ \sqrt{2}/2 $ & $ 1/2 $ & $ 0 $\\
+			\hline
+			$ \tan\alpha $ & $ 0 $ & $ \sqrt{3}/3 $ & $ 1 $ & $ \sqrt{3} $ & $ \parallel $\\
+			\hline
+			$ \cot\alpha $ & $ \parallel $ & $ \sqrt{3} $ & $ 1 $ & $ \sqrt{3}/2 $ & $ 0 $\\
+			\hline
+		\end{tabular}
+		\caption{តារាងតម្លៃនៃអនុគមន៏ត្រីកោណមាត្រ}
+	\end{table}
+	\begin{exercise}\label{exe:cos}
+		ស្រាយបញ្ជាក់ថា $ \cos(\alpha-\beta)=\cos\alpha\cos\beta+\sin\alpha\sin\beta $~។
+	\end{exercise}
+	\begin{remark}
+		មើលដំណោះស្រាយនៅជំពូកបន្ថែម~(\ref{cha:ans})។
+	\end{remark}
+%% ផ្នែកបន្ថែមលើខ្លឹមសារនៃមេរៀន
+	\appendix
+	\chapter{ចម្លើយ}\label{cha:ans}
+	\begin{proof}[\ref{exe:cos}]
+		តាង $ P $ និង $ Q $ ជាពីរចំណុចនៅលើរង្វង់ឯកត្តាស្កាត់ធ្នូរដែលមានរង្វាស់មុំ $ \alpha $ និង $ \beta $ រៀងគ្នាដែល $ \alpha\geq\beta $។ គណនាចម្ងាយរវាងពីរចំណុច $ P $ និង $ Q $ តាមពីររបៀបផ្សេងគ្នា រួចទាញរកលទ្ធផល។
+	\end{proof}
+%	\vspace{\baselineskip}
+	\begin{figure}[H]
+		\includegraphics[width=\textwidth]{coffee.JPG}
+		\caption{សម្រាប់រាត្រីនេះ}
+	\end{figure}
+%% ផ្នែកខាងក្រោយនៃសៀវភៅ
+	\backmatter
+	\begin{thebibliography}{9}
+		\addcontentsline{toc}{chapter}{\bibname}
+		\bibitem{oetiker} Tobias Oetiker, Hubert Partl, Iene Hyna and Elisabeth Schegl,
+		\newblock \emph{The Not So Short Introduction to \LaTeXe\ (Or \LaTeXe\ in 157 minutes)},
+		\newblock User Guide for version 5.01, 2011.
+		\bibitem{kew}Jonathan Kew,
+		\newblock \emph{About \XeTeX},
+		\newblock User Guide for version 0.9998, 2005.
+		
+		\bibitem{robertsonxe} Will Robertson, Khaled Hosny,
+		\newblock \emph{The \XeTeX{} Reference Guide},
+		\newblock User Guide for version 0.9998, 2013.
+		
+		\bibitem{robertsonfs} Will Robertson and Khaled Hosny,
+		\newblock \emph{The \emph{fontspec} package\\ Font selection for \XeLaTeX\ and Lua\LaTeX},
+		\newblock User Guide for version 2.3, 2013.
+		\bibitem{carette} Francois Charette and Arthur Feutenauer,
+		\newblock \emph{Polyglossia: A Babel Replacement for \XeLaTeX},
+		\newblock User Guide for version 1.2.1, 2012.
+		\bibitem{tantau} Till Tantau, Joseph Wright and Vedran Mileti\`c,
+		\newblock \emph{The \textsc{beamer} \textit{class}},
+		\newblock User Guide for version 3.26, 2013.
+	\end{thebibliography}
+\end{document}

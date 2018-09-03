@@ -1,24 +1,24 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2018.6.11)  9 AUG 2018 11:16
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2018.9.2)  3 SEP 2018 08:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **example1.tex
 (./example1.tex
-LaTeX2e <2018-04-01> patch level 4
-Babel <3.20> and hyphenation patterns for 84 language(s) loaded.
+LaTeX2e <2017-04-15>
+Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
 (./xam.cls (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
 File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
-\c@part=\count80
-\c@section=\count81
-\c@subsection=\count82
-\c@subsubsection=\count83
-\c@paragraph=\count84
-\c@subparagraph=\count85
-\c@figure=\count86
-\c@table=\count87
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
@@ -26,16 +26,17 @@ File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 (/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.sty
 (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2018-04-30 L3 programming layer (loader) 
+Package: expl3 2018/02/21 L3 programming layer (loader) 
 
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3-code.tex
-Package: expl3 2018-04-30 L3 programming layer (code)
-\c_max_int=\count88
-\l_tmpa_int=\count89
-\l_tmpb_int=\count90
-\g_tmpa_int=\count91
-\g_tmpb_int=\count92
-\g__kernel_prg_map_int=\count93
+Package: expl3 2018/02/21 L3 programming layer (code)
+\c_max_int=\count87
+\l_tmpa_int=\count88
+\l_tmpb_int=\count89
+\g_tmpa_int=\count90
+\g_tmpb_int=\count91
+\g__intarray_font_int=\count92
+\g__prg_map_int=\count93
 \c_log_iow=\count94
 \l_iow_line_count_int=\count95
 \l__iow_line_target_int=\count96
@@ -69,84 +70,84 @@ Package: expl3 2018-04-30 L3 programming layer (code)
 \c__fp_Bigg_leading_shift_int=\count106
 \c__fp_Bigg_middle_shift_int=\count107
 \c__fp_Bigg_trailing_shift_int=\count108
-\c__intarray_sp_dim=\dimen109
-\g__intarray_font_int=\count109
-\l__sort_length_int=\count110
-\l__sort_min_int=\count111
-\l__sort_top_int=\count112
-\l__sort_max_int=\count113
-\l__sort_true_max_int=\count114
-\l__sort_block_int=\count115
-\l__sort_begin_int=\count116
-\l__sort_end_int=\count117
-\l__sort_A_int=\count118
-\l__sort_B_int=\count119
-\l__sort_C_int=\count120
-\l__tl_analysis_normal_int=\count121
-\l__tl_analysis_index_int=\count122
-\l__tl_analysis_nesting_int=\count123
-\l__tl_analysis_type_int=\count124
-\l__regex_internal_a_int=\count125
-\l__regex_internal_b_int=\count126
-\l__regex_internal_c_int=\count127
-\l__regex_balance_int=\count128
-\l__regex_group_level_int=\count129
-\l__regex_mode_int=\count130
-\c__regex_cs_in_class_mode_int=\count131
-\c__regex_cs_mode_int=\count132
-\l__regex_catcodes_int=\count133
-\l__regex_default_catcodes_int=\count134
-\c__regex_catcode_L_int=\count135
-\c__regex_catcode_O_int=\count136
-\c__regex_catcode_A_int=\count137
-\c__regex_all_catcodes_int=\count138
-\l__regex_show_lines_int=\count139
-\l__regex_min_state_int=\count140
-\l__regex_max_state_int=\count141
-\l__regex_left_state_int=\count142
-\l__regex_right_state_int=\count143
-\l__regex_capturing_group_int=\count144
-\l__regex_min_pos_int=\count145
-\l__regex_max_pos_int=\count146
-\l__regex_curr_pos_int=\count147
-\l__regex_start_pos_int=\count148
-\l__regex_success_pos_int=\count149
-\l__regex_curr_char_int=\count150
-\l__regex_curr_catcode_int=\count151
-\l__regex_last_char_int=\count152
-\l__regex_case_changed_char_int=\count153
-\l__regex_curr_state_int=\count154
-\l__regex_step_int=\count155
-\l__regex_min_active_int=\count156
-\l__regex_max_active_int=\count157
-\l__regex_replacement_csnames_int=\count158
-\l__regex_match_count_int=\count159
-\l__regex_min_submatch_int=\count160
-\l__regex_submatch_int=\count161
-\l__regex_zeroth_submatch_int=\count162
-\g__regex_trace_regex_int=\count163
+\l__sort_length_int=\count109
+\l__sort_min_int=\count110
+\l__sort_top_int=\count111
+\l__sort_max_int=\count112
+\l__sort_true_max_int=\count113
+\l__sort_block_int=\count114
+\l__sort_begin_int=\count115
+\l__sort_end_int=\count116
+\l__sort_A_int=\count117
+\l__sort_B_int=\count118
+\l__sort_C_int=\count119
+\l__tl_build_start_index_int=\count120
+\l__tl_build_index_int=\count121
+\l__tl_analysis_normal_int=\count122
+\l__tl_analysis_index_int=\count123
+\l__tl_analysis_nesting_int=\count124
+\l__tl_analysis_type_int=\count125
+\l__regex_internal_a_int=\count126
+\l__regex_internal_b_int=\count127
+\l__regex_internal_c_int=\count128
+\l__regex_balance_int=\count129
+\l__regex_group_level_int=\count130
+\l__regex_mode_int=\count131
+\c__regex_cs_in_class_mode_int=\count132
+\c__regex_cs_mode_int=\count133
+\l__regex_catcodes_int=\count134
+\l__regex_default_catcodes_int=\count135
+\c__regex_catcode_L_int=\count136
+\c__regex_catcode_O_int=\count137
+\c__regex_catcode_A_int=\count138
+\c__regex_all_catcodes_int=\count139
+\l__regex_show_lines_int=\count140
+\l__regex_min_state_int=\count141
+\l__regex_max_state_int=\count142
+\l__regex_left_state_int=\count143
+\l__regex_right_state_int=\count144
+\l__regex_capturing_group_int=\count145
+\l__regex_min_pos_int=\count146
+\l__regex_max_pos_int=\count147
+\l__regex_curr_pos_int=\count148
+\l__regex_start_pos_int=\count149
+\l__regex_success_pos_int=\count150
+\l__regex_curr_char_int=\count151
+\l__regex_curr_catcode_int=\count152
+\l__regex_last_char_int=\count153
+\l__regex_case_changed_char_int=\count154
+\l__regex_curr_state_int=\count155
+\l__regex_step_int=\count156
+\l__regex_min_active_int=\count157
+\l__regex_max_active_int=\count158
+\l__regex_replacement_csnames_int=\count159
+\l__regex_match_count_int=\count160
+\l__regex_min_submatch_int=\count161
+\l__regex_submatch_int=\count162
+\l__regex_zeroth_submatch_int=\count163
+\g__regex_trace_regex_int=\count164
 \c_empty_box=\box26
 \l_tmpa_box=\box27
 \l_tmpb_box=\box28
 \g_tmpa_box=\box29
 \g_tmpb_box=\box30
-\l__box_top_dim=\dimen110
-\l__box_bottom_dim=\dimen111
-\l__box_left_dim=\dimen112
-\l__box_right_dim=\dimen113
-\l__box_top_new_dim=\dimen114
-\l__box_bottom_new_dim=\dimen115
-\l__box_left_new_dim=\dimen116
-\l__box_right_new_dim=\dimen117
+\l__box_top_dim=\dimen109
+\l__box_bottom_dim=\dimen110
+\l__box_left_dim=\dimen111
+\l__box_right_dim=\dimen112
+\l__box_top_new_dim=\dimen113
+\l__box_bottom_new_dim=\dimen114
+\l__box_left_new_dim=\dimen115
+\l__box_right_new_dim=\dimen116
 \l__box_internal_box=\box31
 \l__coffin_internal_box=\box32
-\l__coffin_internal_dim=\dimen118
-\l__coffin_offset_x_dim=\dimen119
-\l__coffin_offset_y_dim=\dimen120
-\l__coffin_x_dim=\dimen121
-\l__coffin_y_dim=\dimen122
-\l__coffin_x_prime_dim=\dimen123
-\l__coffin_y_prime_dim=\dimen124
+\l__coffin_internal_dim=\dimen117
+\l__coffin_offset_x_dim=\dimen118
+\l__coffin_offset_y_dim=\dimen119
+\l__coffin_x_dim=\dimen120
+\l__coffin_y_dim=\dimen121
+\l__coffin_x_prime_dim=\dimen122
+\l__coffin_y_prime_dim=\dimen123
 \c_empty_coffin=\box33
 \l__coffin_aligned_coffin=\box34
 \l__coffin_aligned_internal_coffin=\box35
@@ -155,45 +156,46 @@ Package: expl3 2018-04-30 L3 programming layer (code)
 \l__coffin_display_coffin=\box38
 \l__coffin_display_coord_coffin=\box39
 \l__coffin_display_pole_coffin=\box40
-\l__coffin_display_offset_dim=\dimen125
-\l__coffin_display_x_dim=\dimen126
-\l__coffin_display_y_dim=\dimen127
-\g__file_internal_ior=\read1
-\l__coffin_bounding_shift_dim=\dimen128
-\l__coffin_left_corner_dim=\dimen129
-\l__coffin_right_corner_dim=\dimen130
-\l__coffin_bottom_corner_dim=\dimen131
-\l__coffin_top_corner_dim=\dimen132
-\l__coffin_scaled_total_height_dim=\dimen133
-\l__coffin_scaled_width_dim=\dimen134
+\l__coffin_display_offset_dim=\dimen124
+\l__coffin_display_x_dim=\dimen125
+\l__coffin_display_y_dim=\dimen126
+\l__coffin_bounding_shift_dim=\dimen127
+\l__coffin_left_corner_dim=\dimen128
+\l__coffin_right_corner_dim=\dimen129
+\l__coffin_bottom_corner_dim=\dimen130
+\l__coffin_top_corner_dim=\dimen131
+\l__coffin_scaled_total_height_dim=\dimen132
+\l__coffin_scaled_width_dim=\dimen133
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3xdvipdfmx.def
-File: l3xdvidpfmx.def 2018-04-30 v L3 Experimental driver: xdvipdfmx
-\g__driver_image_int=\count164
+File: l3xdvidpfmx.def 2017/03/18 v L3 Experimental driver: xdvipdfmx
+\g__driver_image_int=\count165
+\l__driver_tmp_box=\box41
 ))
-Package: xparse 2018-04-30 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count165
-\g__xparse_grabber_int=\count166
-\l__xparse_m_args_int=\count167
-\l__xparse_mandatory_args_int=\count168
-\l__xparse_v_nesting_int=\count169
+Package: xparse 2018/02/21 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count166
+\g__xparse_grabber_int=\count167
+\l__xparse_m_args_int=\count168
+\l__xparse_mandatory_args_int=\count169
+\l__xparse_v_nesting_int=\count170
 )
 Package: fontspec 2017/11/09 v2.6g Font selection for XeLaTeX and LuaLaTeX
 
 (/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
 Package: fontspec-xetex 2017/11/09 v2.6g Font selection for XeLaTeX and LuaLaTe
 X
-\l__fontspec_script_int=\count170
-\l__fontspec_language_int=\count171
-\l__fontspec_strnum_int=\count172
-\l__fontspec_tmp_int=\count173
-\l__fontspec_em_int=\count174
-\l__fontspec_emdef_int=\count175
-\l__fontspec_strong_int=\count176
-\l__fontspec_strongdef_int=\count177
-\l__fontspec_tmpa_dim=\dimen135
-\l__fontspec_tmpb_dim=\dimen136
-\l__fontspec_tmpc_dim=\dimen137
+\l__fontspec_script_int=\count171
+\l__fontspec_language_int=\count172
+\l__fontspec_strnum_int=\count173
+\l__fontspec_tmp_int=\count174
+\l__fontspec_em_int=\count175
+\l__fontspec_emdef_int=\count176
+\l__fontspec_strong_int=\count177
+\l__fontspec_strongdef_int=\count178
+\l__fontspec_tmpa_dim=\dimen134
+\l__fontspec_tmpb_dim=\dimen135
+\l__fontspec_tmpc_dim=\dimen136
+\g__file_internal_ior=\read1
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
@@ -392,7 +394,7 @@ LaTeX Info: Redefining \- on input line 4015.
 . Defining command \liningnums with sig. 'm' on line 4114.
 .................................................
 ))
-\g__fontspec_family_KhmerOSSiemreap_int=\count178
+\g__fontspec_family_KhmerOSSiemreap_int=\count179
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -416,8 +418,8 @@ LaTeX Info: Redefining \- on input line 4015.
 
 . - 'bold italic small caps'  (bx/itsc) with NFSS spec.: 
 .................................................
-LaTeX Info: Redefining \rmfamily on input line 11.
-LaTeX Info: Redefining \sffamily on input line 16.
+LaTeX Info: Redefining \rmfamily on input line 10.
+LaTeX Info: Redefining \sffamily on input line 15.
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -458,7 +460,7 @@ gatures=TeX,AutoFakeBold=1,AutoFakeSlant=.15].
 . \fontdimen 4\font =0\fontdimen 4\font \fontdimen 7\font =0\fontdimen 2\font
 . \tex_hyphenchar:D \font =-1\scan_stop: 
 .................................................
-LaTeX Info: Redefining \ttfamily on input line 21.
+LaTeX Info: Redefining \ttfamily on input line 20.
 
 (/usr/share/texlive/texmf-dist/tex/latex/fontawesome/fontawesome.sty
 Package: fontawesome 2016/05/15 v4.6.3.1 font awesome icons
@@ -477,7 +479,7 @@ Package ifluatex Info: LuaTeX not detected.
 . 
 . Font "FontAwesome" does not contain any OpenType `Script' information.
 .................................................
-\g__fontspec_family_FontAwesome_int=\count179
+\g__fontspec_family_FontAwesome_int=\count180
 .................................................
 . fontspec info: "no-font-shape"
 . 
@@ -534,8 +536,8 @@ Package graphics Info: Driver file: xetex.def on input line 99.
 (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/xetex.def
 File: xetex.def 2017/06/24 v5.0h Graphics/color driver for xetex
 ))
-\Gin@req@height=\dimen138
-\Gin@req@width=\dimen139
+\Gin@req@height=\dimen137
+\Gin@req@width=\dimen138
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
@@ -550,7 +552,7 @@ Package color Info: Driver file: xetex.def on input line 147.
 \sc@wm@fontsize=\skip51
 )
 (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
-Package: geometry 2018/03/24 v5.7 Page Geometry
+Package: geometry 2010/09/12 v5.6 Page Geometry
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
@@ -559,26 +561,26 @@ Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
 Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-\Gm@cnth=\count180
-\Gm@cntv=\count181
-\c@Gm@tempcnt=\count182
-\Gm@bindingoffset=\dimen140
-\Gm@wd@mp=\dimen141
-\Gm@odd@mp=\dimen142
-\Gm@even@mp=\dimen143
-\Gm@layoutwidth=\dimen144
-\Gm@layoutheight=\dimen145
-\Gm@layouthoffset=\dimen146
-\Gm@layoutvoffset=\dimen147
+\Gm@cnth=\count181
+\Gm@cntv=\count182
+\c@Gm@tempcnt=\count183
+\Gm@bindingoffset=\dimen139
+\Gm@wd@mp=\dimen140
+\Gm@odd@mp=\dimen141
+\Gm@even@mp=\dimen142
+\Gm@layoutwidth=\dimen143
+\Gm@layoutheight=\dimen144
+\Gm@layouthoffset=\dimen145
+\Gm@layoutvoffset=\dimen146
 \Gm@dimlist=\toks15
 )
 (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count183
+\c@float@type=\count184
 \float@exts=\toks16
-\float@box=\box41
+\float@box=\box42
 \@float@everytoks=\toks17
-\@floatcapt=\box42
+\@floatcapt=\box43
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2017/09/02 v2.17a AMS math features
@@ -591,46 +593,46 @@ Package: amstext 2000/06/29 v2.01 AMS text
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks18
-\ex@=\dimen148
+\ex@=\dimen147
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen149
+\pmbraise@=\dimen148
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count184
+\inf@bad=\count185
 LaTeX Info: Redefining \frac on input line 213.
-\uproot@=\count185
-\leftroot@=\count186
+\uproot@=\count186
+\leftroot@=\count187
 LaTeX Info: Redefining \overline on input line 375.
-\classnum@=\count187
-\DOTSCASE@=\count188
+\classnum@=\count188
+\DOTSCASE@=\count189
 LaTeX Info: Redefining \ldots on input line 472.
 LaTeX Info: Redefining \dots on input line 475.
 LaTeX Info: Redefining \cdots on input line 596.
-\Mathstrutbox@=\box43
-\strutbox@=\box44
-\big@size=\dimen150
+\Mathstrutbox@=\box44
+\strutbox@=\box45
+\big@size=\dimen149
 LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
-\macc@depth=\count189
-\c@MaxMatrixCols=\count190
+\macc@depth=\count190
+\c@MaxMatrixCols=\count191
 \dotsspace@=\muskip16
-\c@parentequation=\count191
-\dspbrk@lvl=\count192
+\c@parentequation=\count192
+\dspbrk@lvl=\count193
 \tag@help=\toks19
-\row@=\count193
-\column@=\count194
-\maxfields@=\count195
+\row@=\count194
+\column@=\count195
+\maxfields@=\count196
 \andhelp@=\toks20
-\eqnshift@=\dimen151
-\alignsep@=\dimen152
-\tagshift@=\dimen153
-\tagwidth@=\dimen154
-\totwidth@=\dimen155
-\lineht@=\dimen156
+\eqnshift@=\dimen150
+\alignsep@=\dimen151
+\tagshift@=\dimen152
+\tagwidth@=\dimen153
+\totwidth@=\dimen154
+\lineht@=\dimen155
 \@envbody=\toks21
 \multlinegap=\skip53
 \multlinetaggap=\skip54
@@ -664,16 +666,16 @@ Package: amsthm 2017/10/31 v2.20.4
 Package: mathtools 2018/01/08 v1.21 mathematical typesetting tools
 
 (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
-Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count196
-\calc@Bcount=\count197
-\calc@Adimen=\dimen157
-\calc@Bdimen=\dimen158
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count197
+\calc@Bcount=\count198
+\calc@Adimen=\dimen156
+\calc@Bdimen=\dimen157
 \calc@Askip=\skip58
 \calc@Bskip=\skip59
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count198
+\calc@Ccount=\count199
 \calc@Cskip=\skip60
 )
 (/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty
@@ -683,15 +685,15 @@ LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
-\g_MT_multlinerow_int=\count199
-\l_MT_multwidth_dim=\dimen159
+\g_MT_multlinerow_int=\count266
+\l_MT_multwidth_dim=\dimen158
 \origjot=\skip61
-\l_MT_shortvdotswithinadjustabove_dim=\dimen160
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen161
-\l_MT_above_intertext_sep=\dimen162
-\l_MT_below_intertext_sep=\dimen163
-\l_MT_above_shortintertext_sep=\dimen164
-\l_MT_below_shortintertext_sep=\dimen165
+\l_MT_shortvdotswithinadjustabove_dim=\dimen159
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen160
+\l_MT_above_intertext_sep=\dimen161
+\l_MT_below_intertext_sep=\dimen162
+\l_MT_above_shortintertext_sep=\dimen163
+\l_MT_below_shortintertext_sep=\dimen164
 )
 (/usr/share/texlive/texmf-dist/tex/latex/newpx/newpxmath.sty
 Package: newpxmath 2017/05/31 v1.32
@@ -706,10 +708,10 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 \XKV@toks=\toks29
 \XKV@tempa@toks=\toks30
 )
-\XKV@depth=\count266
+\XKV@depth=\count267
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
-\px@Isdigit=\count267
+\px@Isdigit=\count268
 LaTeX Font Info:    Redeclaring symbol font `operators' on input line 67.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/KhmerOSSiemreap(0)/m/n on input lin
@@ -849,29 +851,28 @@ Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
-Package: multicol 2018/04/20 v1.8s multicolumn formatting (FMi)
-\c@tracingmulticols=\count268
-\mult@box=\box45
-\multicol@leftmargin=\dimen166
-\c@unbalance=\count269
-\c@collectmore=\count270
-\doublecol@number=\count271
-\multicoltolerance=\count272
-\multicolpretolerance=\count273
-\full@width=\dimen167
-\page@free=\dimen168
-\premulticols=\dimen169
-\postmulticols=\dimen170
+Package: multicol 2017/04/11 v1.8q multicolumn formatting (FMi)
+\c@tracingmulticols=\count269
+\mult@box=\box46
+\multicol@leftmargin=\dimen165
+\c@unbalance=\count270
+\c@collectmore=\count271
+\doublecol@number=\count272
+\multicoltolerance=\count273
+\multicolpretolerance=\count274
+\full@width=\dimen166
+\page@free=\dimen167
+\premulticols=\dimen168
+\postmulticols=\dimen169
 \multicolsep=\skip62
 \multicolbaselineskip=\skip63
-\partial@page=\box46
-\last@line=\box47
-\maxbalancingoverflow=\dimen171
-\mult@rightbox=\box48
-\mult@grightbox=\box49
-\mult@gfirstbox=\box50
-\mult@firstbox=\box51
-\@tempa=\box52
+\partial@page=\box47
+\last@line=\box48
+\maxbalancingoverflow=\dimen170
+\mult@rightbox=\box49
+\mult@grightbox=\box50
+\mult@gfirstbox=\box51
+\mult@firstbox=\box52
 \@tempa=\box53
 \@tempa=\box54
 \@tempa=\box55
@@ -888,22 +889,23 @@ Package: multicol 2018/04/20 v1.8s multicolumn formatting (FMi)
 \@tempa=\box66
 \@tempa=\box67
 \@tempa=\box68
-\c@columnbadness=\count274
-\c@finalcolumnbadness=\count275
-\last@try=\dimen172
-\multicolovershoot=\dimen173
-\multicolundershoot=\dimen174
-\mult@nat@firstbox=\box69
-\colbreak@box=\box70
-\mc@col@check@num=\count276
+\@tempa=\box69
+\c@columnbadness=\count275
+\c@finalcolumnbadness=\count276
+\last@try=\dimen171
+\multicolovershoot=\dimen172
+\multicolundershoot=\dimen173
+\mult@nat@firstbox=\box70
+\colbreak@box=\box71
+\mc@col@check@num=\count277
 )
 (/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \labelindent=\skip64
-\enit@outerparindent=\dimen175
+\enit@outerparindent=\dimen174
 \enit@toks=\toks31
-\enit@inbox=\box71
-\enitdp@description=\count277
+\enit@inbox=\box72
+\enitdp@description=\count278
 )
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/pifont.sty
 Package: pifont 2005/04/12 PSNFSS-v9.2a Pi font support (SPQR) 
@@ -920,28 +922,28 @@ File: upsy.fd 2001/06/04 font definitions for U/psy.
 (/usr/share/texlive/texmf-dist/tex/latex/tasks/tasks.sty
 (/usr/share/texlive/texmf-dist/tex/latex/eepic/epic.sty
 Enhancements to Picture Environment. Version 1.2 - Released June 1, 1986
-\@@multicnt=\count278
-\d@lta=\count279
-\@delta=\dimen176
-\@@delta=\dimen177
-\@gridcnt=\count280
-\@joinkind=\count281
-\@dotgap=\dimen178
-\@ddotgap=\dimen179
-\@x@diff=\count282
-\@y@diff=\count283
-\x@diff=\dimen180
-\y@diff=\dimen181
-\@dotbox=\box72
-\num@segments=\count284
-\num@segmentsi=\count285
+\@@multicnt=\count279
+\d@lta=\count280
+\@delta=\dimen175
+\@@delta=\dimen176
+\@gridcnt=\count281
+\@joinkind=\count282
+\@dotgap=\dimen177
+\@ddotgap=\dimen178
+\@x@diff=\count283
+\@y@diff=\count284
+\x@diff=\dimen179
+\y@diff=\dimen180
+\@dotbox=\box73
+\num@segments=\count285
+\num@segmentsi=\count286
 \@datafile=\read2
 ) (/usr/share/texlive/texmf-dist/tex/latex/cntformats/cntformats.sty
 Package: cntformats 2014/07/20 v0.7 A different way to read counters. (CN)
 
 (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2018/02/11 v2.5e e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count286
+\etb@tempcnta=\count287
 )
 (/usr/share/texlive/texmf-dist/tex/latex/cnltx/cnltx-base.sty
 Package: cnltx-base 2015/08/17 v0.13 LaTeX tools and documenting facilities (CN
@@ -965,7 +967,7 @@ ex
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2018/01/30 v0.27 Utility functions of pdfTeX for LuaTeX (HO
+Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO
 )
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
@@ -977,9 +979,9 @@ Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode not found.
 )
-\c@cnltx@tmpa=\count287
-\c@cnltx@tmpb=\count288
-\c@cnltx@tmpc=\count289
+\c@cnltx@tmpa=\count288
+\c@cnltx@tmpb=\count289
+\c@cnltx@tmpc=\count290
 \cnltx@tmpa@length=\skip65
 \cnltx@tmpb@length=\skip66
 \cnltx@tmpc@length=\skip67
@@ -988,9 +990,9 @@ Package pdftexcmds Info: \pdfdraftmode not found.
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 )))
 (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty
-Package: xtemplate 2018-04-30 L3 Experimental prototype document functions
-\l__xtemplate_tmp_dim=\dimen182
-\l__xtemplate_tmp_int=\count290
+Package: xtemplate 2018/02/21 L3 Experimental prototype document functions
+\l__xtemplate_tmp_dim=\dimen181
+\l__xtemplate_tmp_int=\count291
 \l__xtemplate_tmp_muskip=\muskip17
 \l__xtemplate_tmp_skip=\skip68
 )
@@ -998,41 +1000,41 @@ Package: xtemplate 2018-04-30 L3 Experimental prototype document functions
 Package: environ 2014/05/04 v0.3 A new way to define environments
 )
 Package: tasks 2016/08/13 v0.12 Horizontalcolumnedlists (CN)
-\l__tasks_depth_int=\count291
-\g__tasks_int=\count292
-\g__tasks_total_items_int=\count293
-\l__tasks_columns_int=\count294
-\l__tasks_rows_int=\count295
-\g__tasks_current_col_num_int=\count296
-\g__tasks_current_row_num_int=\count297
-\l__tasks_item_columns_int=\count298
-\l__tasks_item_indent_dim=\dimen183
-\l__tasks_item_default_indent_dim=\dimen184
-\l__tasks_item_width_dim=\dimen185
-\l__tasks_label_width_dim=\dimen186
-\l__tasks_label_default_width_dim=\dimen187
-\l__tasks_label_offset_dim=\dimen188
-\l__tasks_label_default_offset_dim=\dimen189
-\l__tasks_column_sep_dim=\dimen190
+\l__tasks_depth_int=\count292
+\g__tasks_int=\count293
+\g__tasks_total_items_int=\count294
+\l__tasks_columns_int=\count295
+\l__tasks_rows_int=\count296
+\g__tasks_current_col_num_int=\count297
+\g__tasks_current_row_num_int=\count298
+\l__tasks_item_columns_int=\count299
+\l__tasks_item_indent_dim=\dimen182
+\l__tasks_item_default_indent_dim=\dimen183
+\l__tasks_item_width_dim=\dimen184
+\l__tasks_label_width_dim=\dimen185
+\l__tasks_label_default_width_dim=\dimen186
+\l__tasks_label_offset_dim=\dimen187
+\l__tasks_label_default_offset_dim=\dimen188
+\l__tasks_column_sep_dim=\dimen189
 \l__tasks_after_item_skip=\skip69
 \l__tasks_custom_after_item_skip=\skip70
 \l__tasks_before_list_skip=\skip71
 \l__tasks_after_list_skip=\skip72
-\l__tasks_item_coffin=\box73
-\l__tasks_label_coffin=\box74
-\c@task=\count299
-\l__tasks_tmpa_int=\count300
-\l__tasks_tmpb_int=\count301
-\l__tasks_tmpa_coffin=\box75
+\l__tasks_item_coffin=\box74
+\l__tasks_label_coffin=\box75
+\c@task=\count300
+\l__tasks_tmpa_int=\count301
+\l__tasks_tmpb_int=\count302
+\l__tasks_tmpa_coffin=\box76
 .................................................
 . xtemplate info: "declare-object-type"
 . 
 . Declaring object type 'tasks' taking 3 argument(s) on line 379.
 .................................................
-\l__tasks_choice_width_dim=\dimen191
-\l__tasks_choice_linewidth_dim=\dimen192
-\l__tasks_choice_checkwidth_dim=\dimen193
-\l__tasks_choice_raise_dim=\dimen194
+\l__tasks_choice_width_dim=\dimen190
+\l__tasks_choice_linewidth_dim=\dimen191
+\l__tasks_choice_checkwidth_dim=\dimen192
+\l__tasks_choice_raise_dim=\dimen193
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
@@ -1066,12 +1068,12 @@ File: tasks.cfg 2016/08/13 v0.12 tasks instances
 .................................................
 . LaTeX info: "xparse/define-environment"
 . 
-. Defining environment 'Enumerate' with sig. 'O{}D(){1}' on line 118.
+. Defining environment 'Enumerate' with sig. 'O{}D(){1}' on line 117.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-environment"
 . 
-. Defining environment 'Itemize' with sig. 'O{}D(){1}' on line 129.
+. Defining environment 'Itemize' with sig. 'O{}D(){1}' on line 127.
 .................................................
 
 Document Class: xam 2018/04/19 v1.0 Exam Sheet for Bac II
@@ -1209,12 +1211,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 18235 strings out of 492970
- 364710 string characters out of 6136052
- 471977 words of memory out of 5000000
- 22025 multiletter control sequences out of 15000+600000
+ 18126 strings out of 493007
+ 361470 string characters out of 6136720
+ 466752 words of memory out of 5000000
+ 21879 multiletter control sequences out of 15000+600000
  542005 words of font info for 65 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 68i,14n,68p,10442b,533s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 68i,14n,67p,10441b,540s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on example1.pdf (1 page).

@@ -1,0 +1,67 @@
+%%
+\def\ttc@package@name{titlecolor}
+\def\ttc@package@version{v1.00}
+\def\ttc@package@date{2015/09/12}
+\def\ttc@package@description{draw rectangle top of chapter and title background}
+%%
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{titlecolor}[\ttc@package@date\ \ttc@package@version\ \ttc@package@name: \ttc@package@description]
+%%
+\RequirePackage{tikz}
+\RequirePackage[explicit]{titlesec}
+%%
+\newdimen\ttc@chapter@position
+\ttc@chapter@position1in
+\advance\ttc@chapter@position\hoffset
+\advance\ttc@chapter@position\oddsidemargin
+\advance\ttc@chapter@position\textwidth
+%%
+\tikzstyle{ttc@chapter@background} = [left color=cyan!40!white,right color=blue!80!white]
+\tikzstyle{ttc@chapter@title} = [left,
+rounded corners=19pt,inner sep=11pt,text=white,
+top color=magenta!20!white,bottom color=magenta!30!red]
+\tikzstyle{ttc@section@style} = [right,inner sep=2pt,rounded corners=7pt,right color=cyan!40!white,left color=blue!80!white,text=white]
+\tikzstyle{ttc@subsection@style} = [right,inner sep=2pt,rounded corners=5pt, right color=cyan!40!white,left color=blue!80!white,text=white]
+%
+\gdef\chapterlabel{\thechapter. }
+\def\@makechapterhead#1{%
+	\parindent\z@\raggedright\normalfont%
+	\ifnum\c@secnumdepth>\m@ne%
+	\begin{tikzpicture}[remember picture,overlay]%
+	\node[yshift=-5cm] at (current page.north west)%
+	{\begin{tikzpicture}[remember picture, overlay]%
+		\shade[ttc@chapter@background] (0,0) rectangle (\paperwidth,5cm);%
+		\node[ttc@chapter@title]at(\ttc@chapter@position,0){\Huge\bfseries\chapterlabel#1};%
+		\end{tikzpicture}%
+	};%
+\end{tikzpicture}%
+\fi\par\nobreak\vspace*{30\p@}}
+\def\@makeschapterhead#1{%
+	\parindent\z@\raggedright\normalfont%
+	\ifnum\c@secnumdepth>\m@ne%
+	\begin{tikzpicture}[remember picture,overlay]%
+	\node[yshift=-5cm] at (current page.north west)%
+	{\begin{tikzpicture}[remember picture, overlay]%
+		\shade[ttc@chapter@background] (0,0) rectangle (\paperwidth,5cm);%
+		\node[ttc@chapter@title]at(\ttc@chapter@position,0){\Huge\bfseries#1};%
+		\end{tikzpicture}%
+	};%
+\end{tikzpicture}%
+\fi\par\nobreak\vspace*{30\p@}}
+%%
+\titleformat{\section}[block]%
+{\gdef\ttc@section@label{}\large\bfseries}%
+{\gdef\ttc@section@label{\thesection.\space}}{0pt}{%
+	\begin{tikzpicture}[overlay]
+	\node [ttc@section@style]{\parbox{\textwidth}{\ttc@section@label#1}};
+	\end{tikzpicture}}
+\titlespacing*{\section}{0pt}{5pt}{15pt}
+%%
+\titleformat{\subsection}[block]%
+{\gdef\ttc@subsection@label{}\bfseries}%
+{\gdef\ttc@subsection@label{\thesubsection.\space}}{0pt}{%
+	\begin{tikzpicture}[overlay]
+	\node [ttc@subsection@style]{\parbox{\textwidth}{\ttc@subsection@label#1}};
+	\end{tikzpicture}}
+\titlespacing*{\subsection}{0pt}{5pt}{13pt}
+\endinput

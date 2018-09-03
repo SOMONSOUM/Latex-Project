@@ -1,0 +1,103 @@
+\documentclass{book}
+\parindent0pt
+\let\and\par
+\def\formula#1{\def\printformula{#1}}
+%% information about the book
+\title{អ្នកប្រើ \TeX{} ជាភាសាខ្មែរ}
+\author{ឈ្មោះអ្នកនិពន្ធ១\and ឈ្មោះអ្នកនិពន្ធ២}
+\date{១៦~សីហា~២០១៥}
+\formula{$ a^2+b^2=c^2 $}
+%% customize margin
+\usepackage[margin=0pt]{geometry}
+%% include graphic
+\usepackage{graphicx}
+%% font specification
+\usepackage{fontspec}
+\newfontfamily\enfamily{Times New Roman}
+\newfontfamily\khfamily{Bokor}[%
+Script=Khmer,%
+Scale=.95,%
+BoldFont={Khmer M1}]
+%% write two languages
+\usepackage{ucharclasses}
+\setTransitionTo{Khmer}{\khfamily}
+\setTransitionFrom{Khmer}{\enfamily}
+\XeTeXlinebreaklocale "kh"
+%% draw picture
+\usepackage{tikz}
+\usetikzlibrary{shapes} %% shape=ellipse
+\usetikzlibrary{decorations.pathmorphing} %% decorate, decoration={style}
+\tikzstyle{title style}=[%
+draw=white,%
+ultra thick,%
+text=white,%
+text opacity=1,%
+fill=magenta,%
+fill opacity=.7,%
+rounded corners=34pt,%
+inner sep=9pt]
+\tikzstyle{formula style}=[%
+draw=white,%
+ultra thick,%
+fill=yellow,%
+fill opacity=.9,%
+text=magenta,%
+text opacity=1,%
+inner sep=13pt,%
+decorate,%
+decoration={random steps,segment length=9pt,amplitude=3pt},%
+rotate=9]
+\tikzstyle{author style}=[%
+text=white,%
+text opacity=1,%
+fill=cyan,%
+fill opacity=.6,%
+rounded corners=15pt,%
+inner sep=9pt,%
+below]
+\tikzstyle{date style}=[%
+text=white,%
+text opacity=1,%
+fill=blue,%
+draw=white,%
+ultra thick,%
+fill opacity=.5,%
+shape=ellipse,%
+above]
+%
+\begin{document}
+%
+\begin{titlepage}
+%
+%%% front cover
+\vspace*{-\baselineskip}%
+\begin{tikzpicture}
+%% background image
+\node[inner sep=0pt]{\includegraphics[trim={80 0 800 0},clip,height=\textheight,width=\textwidth]{coffee.JPG}};
+%% figure: trianle
+%\filldraw[fill=blue,fill opacity=.7,draw=white,very thick,rotate=9](-5,2)--(-5,-7)--(7,-7)--cycle;
+%% hanging lines
+\draw[ultra thick,white](-.5\textwidth,8) -- (-6.7,8);
+\draw[ultra thick,white](6.7,8) -- (.5\textwidth,8);
+%% paragraph box
+\makeatletter
+\node[title style]at(0,8){\parbox{.6\textwidth}{%
+	\centering \fontsize{36}{36}\selectfont\bfseries\@title}};
+%% formula
+\node[formula style]at(0,-4){\scalebox{5}{\printformula}};
+%% author box
+\node[author style]at(0,5){\parbox{.33\textwidth}{%
+	\fontsize{28}{28}\selectfont\centering\@author}};
+%% date box
+\node[date style]at(0,-11){\Huge\@date};
+\makeatother
+\end{tikzpicture}
+%
+%%% back cover
+\begin{tikzpicture}
+\fill[red!20!black](-.5\textwidth,-.5\textheight) rectangle (.5\textwidth,.5\textheight);
+\end{tikzpicture}
+%
+\end{titlepage}
+%
+\end{document}

@@ -1,0 +1,57 @@
+\documentclass[a4paper,12pt]{book}
+\usepackage{polyglossia}
+\newfontfamily\khmerfont[%
+Script=Khmer,
+BoldFont={Khmer M1},
+ItalicFont=*,
+ItalicFeatures={FakeSlant=.2},
+Scale=0.95]{Khmer OS}
+\setmainlanguage{khmer}
+%%
+\usepackage{titlecolor}
+%%
+\newtheorem{definition}{និយមន័យ}[chapter]
+%%
+\begin{document}
+	\frontmatter
+	\pagenumbering{alph}
+	\tableofcontents
+	\mainmatter
+	\chapter{ត្រីកោណមាត្រ}
+	ផលធៀបត្រីកោណមាត្រ
+	\section{ស៊ីនុស}
+	\begin{definition}[ស៊ីនុស]
+		\upshape
+		គេឲ្យត្រីកោណ $ \triangle ABC $ មួយកែងត្រង់ $ C $។ \emph{ស៊ីនុស}នៃមុំ $ A $ ជាផលធៀបរង្វាស់ជ្រុងឈមនឹងអ៊ីប៉ូតេនុស។
+		\[ \sin A=\frac{BC}{AB}=\frac{\textnormal{ប្រវែងជ្រុងឈម}}{\textnormal{ប្រវែងអ៊ីប៉ូតេនុស}} \]
+	\end{definition}
+	\section{កូស៊ីនុស}
+	\begin{definition}[កូស៊ីនុស]
+		\upshape
+		គេឲ្យត្រីកោណ $ \triangle ABC $ មួយកែងត្រង់ $ C $។ \emph{កូស៊ីនុស}នៃមុំ $ A $ ជាផលធៀបរង្វាស់ជ្រុងជាប់នឹងអ៊ីប៉ូតេនុស។
+		\[ \cos A=\frac{AC}{AB}=\frac{\textnormal{ប្រវែងជ្រុងជាប់}}{\textnormal{ប្រវែងអ៊ីប៉ូតេនុស}} \]
+	\end{definition}
+	\section{តង់សង់}
+	\begin{definition}[តង់សង់]
+		\upshape
+		គេឲ្យត្រីកោណ $ \triangle ABC $ មួយកែងត្រង់ $ C $។ \emph{តង់សង់}នៃមុំ $ A $ ជាផលធៀបរង្វាស់ជ្រុងឈមនឹងជ្រុងជាប់។
+		\[ \tan A=\frac{BC}{AC}=\frac{\textnormal{ប្រវែងជ្រុងឈម}}{\textnormal{ប្រវែងជ្រុងជាប់}} \]
+	\end{definition}
+	\section{កូតង់សង់}
+	\begin{definition}[កូតង់សង់]
+		\upshape
+		គេឲ្យត្រីកោណ $ \triangle ABC $ មួយកែងត្រង់ $ C $។ \emph{កូតង់សង់}នៃមុំ $ A $ ជាផលធៀបរង្វាស់ជ្រុងជាប់នឹងជ្រុងឈម។
+		\[ \cot A=\frac{BC}{AC}=\frac{\textnormal{ប្រវែងជ្រុងជាប់}}{\textnormal{ប្រវែងជ្រុងឈម}} \]
+	\end{definition}
+	\appendix
+	\chapter{ចំណងជើង}
+	តើមានអ្វីប្លែក
+	\section{ចំណងជើង}
+	តើមានអ្វីប្លែក
+	\backmatter
+	\begin{thebibliography}{2}
+		\bibitem{key} author name,
+		\newblock\emph{book title},
+		\newblock publisher.
+	\end{thebibliography}
+\end{document}

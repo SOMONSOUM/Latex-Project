@@ -1,0 +1,21 @@
+# Fdb version 3
+["pdflatex"] 1535979516 "/home/somon/Latex-Project/hai-cau-trac/main.tex" "main.pdf" "main" 1535979516
+  "/etc/texmf/web2c/texmf.cnf" 1535825845 475 c0e671620eb5563b2130f56340a5fde8 ""
+  "/home/somon/Latex-Project/hai-cau-trac/main.tex" 1535979515 3577 c35cd3307aad87dda47a89d5597cccfa ""
+  "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1480098701 1288 655e228510b4c2a1abe905c368440826 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/base/article.cls" 1480098821 19821 310da678527a7dfe2a02c88af38079b7 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo" 1480098821 8303 1d67e16498f00f63da792fab169302fc ""
+  "/usr/share/texlive/texmf-dist/tex/latex/tools/enumerate.sty" 1480098841 3467 d39e40f25d5fd2b3b49a58d155063dd6 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty" 1492297155 30180 4d723b83c66873ba53f72c4a8730d6d3 ""
+  "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1520210507 32485 c64754543d8ac501bea6e75e209ea521 ""
+  "/usr/share/texmf/web2c/texmf.cnf" 1520210507 32485 c64754543d8ac501bea6e75e209ea521 ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1535876505 4127396 c387afe62ebbc968f59d4090dce27c59 ""
+  "lib/binhduong.tex" 1535979515 1220 870b26aa4d9484d3ca37c3f9245ecda5 ""
+  "lib/examdesign.cls" 1535953914 49524 07e66b301d1e91a1cd79a54eec7ae51b ""
+  "main.aux" 1535979516 8 a94a2480d3289e625eea47cd1b285758 ""
+  "main.tex" 1535979515 3577 c35cd3307aad87dda47a89d5597cccfa ""
+  "shortlst.sty" 0 -1 0 ""
+  (generated)
+  "main.pdf"
+  "main.log"

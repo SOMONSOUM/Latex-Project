@@ -1,0 +1,26 @@
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Motivation}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{Mod\350le lin\351aire mixte gaussien \340 K facteurs al\351atoires}{chapter.1}% 3
+\BOOKMARK [0][-]{chapter.2}{M\351thode ML}{}% 4
+\BOOKMARK [1][-]{section.2.1}{Construction des estimateurs}{chapter.2}% 5
+\BOOKMARK [2][-]{subsection.2.1.1}{Estimation du coefficient }{section.2.1}% 6
+\BOOKMARK [2][-]{subsection.2.1.2}{Estimation des variances k}{section.2.1}% 7
+\BOOKMARK [2][-]{subsection.2.1.3}{Fisher scoring pour l'estimation de }{section.2.1}% 8
+\BOOKMARK [1][-]{section.2.2}{Etude de la qualit\351 des estimateurs}{chapter.2}% 9
+\BOOKMARK [2][-]{subsection.2.2.1}{Etude de la qualit\351 de }{section.2.2}% 10
+\BOOKMARK [2][-]{subsection.2.2.2}{Etude de la qualit\351 de }{section.2.2}% 11
+\BOOKMARK [0][-]{chapter.3}{M\351thode REML}{}% 12
+\BOOKMARK [0][-]{chapter.4}{Tests d'hypoth\350ses et crit\350re de selection}{}% 13
+\BOOKMARK [1][-]{section.4.1}{Test de Wald}{chapter.4}% 14
+\BOOKMARK [1][-]{section.4.2}{Test du ratio Log-Vraisemblance}{chapter.4}% 15
+\BOOKMARK [1][-]{section.4.3}{Crit\350re d'information AIC}{chapter.4}% 16
+\BOOKMARK [1][-]{section.4.4}{Crit\350re d'information BIC}{chapter.4}% 17
+\BOOKMARK [0][-]{chapter.5}{Application}{}% 18
+\BOOKMARK [1][-]{section.5.1}{Introduction du mod\350le lin\351aire mixte pour l'\351tude de la d\351pendance alimentaire des oisillons}{chapter.5}% 19
+\BOOKMARK [2][-]{subsection.5.1.1}{Pr\351sentation des donn\351es}{section.5.1}% 20
+\BOOKMARK [2][-]{subsection.5.1.2}{Pr\351sentation du mod\350le}{section.5.1}% 21
+\BOOKMARK [2][-]{subsection.5.1.3}{Description des donn\351es}{section.5.1}% 22
+\BOOKMARK [1][-]{section.5.2}{Illustration de la r\351gression lin\351aire mixte avec la m\351thode ML }{chapter.5}% 23
+\BOOKMARK [2][-]{subsection.5.2.1}{Selection des variables}{section.5.2}% 24
+\BOOKMARK [2][-]{subsection.5.2.2}{Interpr\351tation des r\351sultats}{section.5.2}% 25
+\BOOKMARK [1][-]{section.5.3}{Illustration de la r\351gression lin\351aire mixte avec la m\351thode REML }{chapter.5}% 26

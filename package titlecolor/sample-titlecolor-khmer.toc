@@ -1,0 +1,8 @@
+\select@language {khmer}
+\contentsline {chapter}{\numberline {១}ត្រីកោណមាត្រ}{១}
+\contentsline {section}{\numberline {១.១}ស៊ីនុស}{១}
+\contentsline {section}{\numberline {១.២}កូស៊ីនុស}{១}
+\contentsline {section}{\numberline {១.៣}តង់សង់}{១}
+\contentsline {section}{\numberline {១.៤}កូតង់សង់}{១}
+\contentsline {chapter}{\numberline {ក}ចំណងជើង}{៣}
+\contentsline {section}{\numberline {ក.១}ចំណងជើង}{៣}

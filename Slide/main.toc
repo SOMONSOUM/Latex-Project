@@ -1,0 +1,11 @@
+\beamer@sectionintoc {1}{Introduction to AMS equations}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Basic introduction}{4}{0}{1}
+\beamer@subsectionintoc {1}{2}{New features}{5}{0}{1}
+\beamer@subsectionintoc {1}{3}{Options}{7}{0}{1}
+\beamer@sectionintoc {2}{Displayed equations}{10}{0}{2}
+\beamer@subsectionintoc {2}{1}{Single Equation}{12}{0}{2}
+\beamer@subsectionintoc {2}{2}{Equation group}{17}{0}{2}
+\beamer@subsectionintoc {2}{3}{Other issues about equations }{25}{0}{2}
+\beamer@sectionintoc {3}{Miscellaneous mathematical features}{32}{0}{3}
+\beamer@sectionintoc {4}{Further study}{50}{0}{4}
+\beamer@sectionintoc {5}{Resource}{52}{0}{5}

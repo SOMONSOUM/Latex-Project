@@ -490,8 +490,8 @@ AutoFakeSlant=0.25]{Battambang}% typewriter font
  %\RequirePackage{expl3}[2017/04/15] 
   % todo: provide new class
    %\ProvidesExplClass{officialexam}{2018/06/24}{1.0}{Official Exam Sheet for Bac II}  
-                       % 
-            \RequirePackage{fancyhdr}
+					   % 
+\RequirePackage{fancyhdr}
 \pagestyle{fancy}
 %\fancyhf{}
 \lhead{}

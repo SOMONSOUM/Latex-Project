@@ -13,7 +13,7 @@
 \tcbuselibrary{skins}
 \tcbuselibrary{breakable}
 \tcbuselibrary{theorems}
-\tcbset{ibox/.style={enhanced,breakable,boxrule=.7pt,titlerule=0pt,	arc=0mm,colback=yellow!23!white,colframe=magenta,colbacktitle=yellow!23!white,fonttitle=\color{blue}\bfseries,left=2pt,right=2pt,toptitle=0pt,bottomtitle=0pt,top=0pt,bottom=2pt,drop lifted shadow,		overlay={\node at ([xshift=-1em,yshift=-1ex]frame.north east){\includegraphics[width=3ex]{img/rightpin.png}};}}}
+\tcbset{ibox/.style={enhanced,breakable,boxrule=.7pt,titlerule=0pt,	arc=0mm,colback=white,colframe=magenta,colbacktitle=pink!23!white,fonttitle=\color{blue}\bfseries,left=2pt,right=2pt,toptitle=0pt,bottomtitle=0pt,top=0pt,bottom=2pt,drop lifted shadow,		overlay={\node at ([xshift=-1em,yshift=-1ex]frame.north east){\includegraphics[width=3ex]{img/rightpin.png}};}}}
 \setlength{\columnsep}{0.7cm}
 \newtcbtheorem[number within=chapter]{definition}{និយមន័យ}{ibox}{}
 \newtcbtheorem[number within=chapter]{theorem}{ទ្រឹស្ដីបទ}{ibox}{}
@@ -47,5 +47,6 @@
 \setlist[enumerate,2]{itemsep=\p@,label=\protect\color{magenta}\alph*}
 \setlist[enumerate,3]{itemsep=\p@,label=\protect\color{magenta}\roman*}
 \renewcommand{\theequation}{\bgroup\color{magenta}\bfseries\arabic{chapter}.\arabic{equation}\egroup}
-\pagecolor{magenta!7!white}
+%\pagecolor{magenta!7!white}
+\pagecolor{white}
 \endinput

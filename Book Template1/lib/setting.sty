@@ -1,0 +1,127 @@
+%% កំណត់ margin ខ្ញុំកំណត់យកស្មើគ្នាគ្រប់ទិសទាំងបួន គឺ 1.5 inches
+\usepackage{geometry}
+\geometry{margin=1.5in}
+%% កំណត់់ទីតាំង floating object ដូចជា table និង figure
+\usepackage{float}
+%% បែងចែកជា columns ឧទាហរណ៏ \begin{multicols}{2} paragraph \end{multicols}
+\usepackage{multicol}
+%% បង្កើតការតភ្ជាប់ និង bookmarks ជាដើម
+\usepackage{hyperref}
+\hypersetup{%
+colorlinks=true,%
+linkcolor=blue,%
+urlcolor=magenta,%
+citecolor=magenta,%
+pdfborder={0 0 0}%
+}
+%% បកប្រែ labels និង captions ទៅជាភាសាខ្មែរ
+\usepackage{polyglossia}
+\newfontfamily\khmerfont[%
+	Script=Khmer,
+	BoldFont={Khmer M1},
+	BoldFeatures={Color=0000FF},
+	ItalicFont={Khmer OS Content},
+	ItalicFeatures={FakeSlant=0.2},
+	SlantedFont={Khmer OS Content},
+	SlantedFeatures={FakeSlant=0.15},
+	Scale=0.95,
+	Mapping=tex-text]{Khmer OS Content}
+\newfontfamily\englishfont[Mapping=tex-text]{TeX Gyre Pagella}
+\setmainlanguage[numerals=khmer]{khmer}
+\setotherlanguage{english}
+\setsansfont[Script=Khmer,Scale=0.95]{Khmer OS Content}
+\setmonofont[Script=Khmer,Scale=0.95]{Khmer OS Content}
+%% គូសរូបភាពផ្សេងៗ
+\usepackage{tikz}
+\tikzstyle{chapter style} = [anchor=east,xshift=7in,very thick,
+rounded corners=19pt,inner sep=7pt,draw=magenta,fill=white]
+\tikzstyle{section style} = [anchor=west,thick,rounded corners=11pt,inner sep=5pt,draw=magenta,fill=white]
+\tikzstyle{subsection style} = [anchor=east,thick,rounded corners=9pt,inner sep=4pt,draw=magenta,fill=white]
+\tikzstyle{page number} = [thick,rounded corners=7pt,inner sep=5pt,draw=magenta,fill=white]
+%% កែប្រែបែបបទចំណងជើង
+\usepackage[explicit]{titlesec}
+\titleformat{\chapter}%
+{\gdef\chapterlabel{}\huge\bfseries}%
+{\gdef\chapterlabel{\thechapter.\space}}{0pt}%
+{\begin{tikzpicture}[remember picture,overlay]%
+	\node[yshift=-1.5in] at (current page.north west)%
+	{\begin{tikzpicture}[remember picture, overlay]%
+		\draw[very thick,magenta] (0,0) -- (\paperwidth,0);%
+		\node[chapter style]{\chapterlabel#1};%
+		\end{tikzpicture}%
+	};%
+\end{tikzpicture}}
+%%
+\titlespacing*{\chapter}{0pt}{50pt}{-60pt}
+%%
+\titleformat{\section}[block]%
+{\gdef\sectionlabel{}\large\bfseries}%
+{\gdef\sectionlabel{\thesection.\space}}{0pt}{%
+\begin{tikzpicture}[remember picture,overlay]
+	\draw[thick,magenta](0,0) -- (\textwidth,0);
+	\node[section style] at (0,0) {\sectionlabel#1};
+\end{tikzpicture}}
+%%
+\titlespacing*{\section}{0pt}{8pt}{16pt}
+%%
+\titleformat{\subsection}[block]%
+{\gdef\subsectionlabel{}\bfseries}%
+{\gdef\subsectionlabel{\thesubsection.\space}}{0pt}{%
+\begin{tikzpicture}[remember picture,overlay]
+	\draw[thick,magenta](0,0) -- (\textwidth,0);
+	\node[subsection style] at (\textwidth,0) {\subsectionlabel#1};
+\end{tikzpicture}}
+%%
+\titlespacing*{\subsection}{0pt}{6pt}{14pt}
+%% កែប្រែ header និង footer
+\usepackage{fancyhdr}
+\fancyhf{}
+\fancyfoot[C]{%
+\begin{tikzpicture}
+	\draw[thick,magenta] (-7,0) -- (7,0);
+	\node[page number]{\bfseries\thepage};
+\end{tikzpicture}}
+\renewcommand{\headrule}{{\color{magenta}\hrule width\headwidth height 0pt \hskip-\headrulewidth}}
+\pagestyle{fancy}
+\fancypagestyle{plain}{\pagestyle{fancy}}
+\setlength{\marginparwidth}{0pt}
+%% ប្រើ font math មួយនេះដែលវាមើលទៅច្បាស់
+\everymath{\displaystyle}
+\RequirePackage{mathpazo}
+\RequirePackage{amsmath}
+\RequirePackage{amssymb}
+\RequirePackage{amsthm}
+\RequirePackage{mathtools}
+%\RequirePackage{newpxmath}
+%\RequirePackage{eulerpx}
+\RequirePackage{mathastext}
+
+\RequirePackage{unicode-math} 
+%\setmathfont{TeX Gyre Termes Math}[version=termes]
+%\setmathfont{TeX Gyre Pagella Math}[version=pagella]
+%\setmathfont{Asana Math}[version=asana]
+%\setmathfont{TeX Gyre DejaVu Math}[version=dejavu]
+
+\setmathfont{Latin Modern Math}
+\setmathfont{TeX Gyre Pagella Math}
+%\setmathfont[range="222B]{Linux Libertine O} 
+%\setmathfont{TeX Gyre DejaVu Math}
+%% ប្រើ commands, environments, symbols មួយចំនួន
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\renewcommand{\qedsymbol}{$ \blacksquare $}
+\theoremstyle{plain}
+\newtheorem{theorem}{ទ្រឹស្ដីបទ}[chapter]
+\newtheorem{corollary}[theorem]{អនុសាធ្យ}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{និយមន័យ}
+\newtheorem{property}[theorem]{លក្ខណៈ}
+\newtheorem{exercise}{លំហាត់}[chapter]
+\theoremstyle{remark}
+\newtheorem{remark}{សម្គាល់}[chapter]
+%% បង្កើត logo \KhTuG
+\def\TuG{T\kern-.13em\lower.26em\hbox{U}\kern-.09emG\@}
+\def\KhTuG{K\kern-.04emh\kern-.15em\TuG}
+%%
+\endinput

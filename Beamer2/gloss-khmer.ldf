@@ -1,0 +1,96 @@
+\ProvidesFile{gloss-khmer.ldf}[polyglossia: module for Khmer]
+\PolyglossiaSetup{khmer}{
+  script=Khmer,
+  scripttag=khmr,
+  langtag=KHM,
+  hyphennames={nohyphenation},
+  fontsetup=true,
+  %TODO localalph={xxx@alph,xxx@Alph}
+  %TODO localdigits=khmernumber
+}
+
+\newif\if@khmer@numerals
+\def\tmp@khmer{khmer}
+\define@key{khmer}{numerals}[arabic]{%
+    \def\@tmpa{#1}%
+    \ifx\@tmpa\tmp@khmer\@khmer@numeralstrue\else
+      \@khmer@numeralsfalse\fi
+}
+
+\setkeys{khmer}{numerals}
+
+\def\captionskhmer{%
+  \def\prefacename{អារម្ភកថា}%
+  \def\refname{ឯកសារយោង}%
+  \def\abstractname{សង្ខេប}%
+  \def\bibname{គន្ថនិទ្ទេស}%
+  \def\chaptername{ជំពួក}%
+  \def\appendixname{បន្ថែម}%
+  \def\contentsname{មាតិការ}%
+  \def\listfigurename{បញ្ជីរូបភាព}%
+  \def\listtablename{បញ្ជីតារាង}%
+  \def\indexname{សន្ទស្សន៍}%
+  \def\figurename{រូប}%
+  \def\tablename{តារាង}%
+  \def\partname{ផ្នែក}%
+  \def\pagename{ទំព័រ}%
+  \def\seename{មើល}%
+  \def\alsoname{មើលបន្ថែម}%
+  \def\enclname{ឯកសារភ្ជាប់}%
+  \def\ccname{ចម្លងជួន}%
+  \def\headtoname{ផ្ញើរទៅ}%
+  \def\proofname{សម្រាយ}%
+  \def\glossaryname{សទានុក្រម}% 
+}
+\def\datekhmer{%   
+   \def\khmer@month{%
+     \ifcase\month\or
+      មករា\or
+      កុម្ភៈ\or
+      មិនា\or
+      មេសា\or
+      ឧសភា\or
+      មិថុនា\or
+      កក្ដដា\or
+      សីហា\or
+      កញ្ញា\or
+      តុលា\or
+      វិច្ឆិកា\or
+      ធ្នូ\fi}%
+   \def\today{\khmernumber\day \space \khmer@month \space \khmernumber\year}%
+}
+
+\def\khmerdigits#1{\expandafter\@khmer@digits #1@}
+\def\@khmer@digits#1{%
+  \ifx @#1% then terminate
+  \else
+    \ifx0#1០\else\ifx1#1១\else\ifx2#1២\else\ifx3#1៣\else\ifx4#1៤\else\ifx5#1៥\else\ifx6#1៦\else\ifx7#1៧\else\ifx8#1៨\else\ifx9#1៩\else#1\fi\fi\fi\fi\fi\fi\fi\fi\fi\fi
+    \expandafter\@khmer@digits
+  \fi
+}
+
+\def\khmernumber#1{%
+  \if@khmer@numerals
+    \khmerdigits{\number#1}%
+  \else
+    \number#1%
+  \fi}
+
+\def\khmer@globalnumbers{%
+   \let\orig@arabic\@arabic%
+   \let\@arabic\khmernumber%
+   \renewcommand{\thefootnote}{\protect\khmernumber{\c@footnote}}%
+}
+\def\nokhmer@globalnumbers{%
+   \let\@arabic\orig@arabic%
+   \renewcommand\thefootnote{\protect\number{\c@footnote}}%
+}
+
+\@ifclassloaded{beamer}{%
+\AtEndDocument{%
+\immediate\write\@auxout{\string\@writefile{nav}%
+{\noexpand\headcommand{\noexpand\def\noexpand\inserttotalframenumber{\khmernumber{\the\c@framenumber}}}}}
+}
+}{}
+
+\endinput

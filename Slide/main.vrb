@@ -1,0 +1,24 @@
+\frametitle{Smash options}
+The command $\backslash$smash adjusts the subformula¡¯s
+position with respect to adjacent symbols.
+    \begin{columns}
+      \column{0.5\textwidth}
+        \begin{block}{}
+        \begin{verbatim}
+$\sqrt{x}
++ \sqrt{\smash[b]
+{y}} + \sqrt{z}$
+
+$\sqrt{x}
++ \sqrt{{y}} +
+\sqrt{z}$
+        \end{verbatim}
+        \end{block}
+      \column{0.5\textwidth}
+        \begin{block}{}
+        $\sqrt{x}
+        + \sqrt{\smash[b]{y}} + \sqrt{z}$
+        $\sqrt{x}
+        + \sqrt{{y}} + \sqrt{z}$
+        \end{block}
+    \end{columns}

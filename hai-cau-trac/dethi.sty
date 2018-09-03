@@ -1,0 +1,186 @@
+\ProvidesPackage{dethi}
+
+\RequirePackage{ifthen}
+\ProcessOptions\relax
+\parskip=0pt
+\parindent=0pt
+\makeatletter
+
+\newcommand{\@ttruong}{}
+\newcommand{\@tkhoa}{}
+\newcommand{\@ldethi}{}
+\newcommand{\@tkythi}{}
+\newcommand{\@tmonhoc}{}%
+\newcommand{\@tlop}{\ }
+\newcommand{\@tgian}{\  }
+\newcommand{\@tchuy}{\ }
+\newcommand{\@hovaten}{\ }
+\newcommand{\@sobaodanh}{\ }
+\newcommand\@scau{\ }
+
+\newcounter{madetracnghiem}
+
+\newcommand{\madethi}[1]{\setcounter{madetracnghiem}{#1}
+\addtocounter{madetracnghiem}{-1}}
+\newcommand{\tentruong}[1]{\renewcommand{\@ttruong}{#1}}
+\newcommand{\loaidethi}[1]{\renewcommand{\@tkhoa}{$\underline{\mbox{#1}}$}}
+\newcommand{\Sotrang}[1]{\renewcommand{\@ldethi}{\small #1}}
+\newcommand{\tenkythi}[1]{\renewcommand{\@tkythi}{#1}}
+\newcommand{\tenmonhoc}[1]{\renewcommand{\@tmonhoc}{#1}}
+\newcommand{\tenlop}[1]{\renewcommand{\@tlop}{#1}}
+\newcommand{\thoigian}[1]{\renewcommand{\@tgian}{#1}}
+\newcommand{\chuy}[1]{\renewcommand{\@tchuy}{#1}}
+\newcommand{\hovaten}[1]{\renewcommand{\@hovaten}{\makebox[10cm]{{\bf #1:}\dotfill} }}
+\newcommand{\sobaodanh}[1]{\renewcommand{\@sobaodanh}{\makebox[10cm]{{\bf  #1:} \dotfill}\\ }}
+\newcommand{\socauhoi}[1]{\renewcommand{\@scau}{ #1}}
+
+\makeatother
+
+\renewcommand{\Fullpages}{\setlength{\topmargin}{0pc}
+                        \setlength{\oddsidemargin}{0pc}
+                        \setlength{\evensidemargin}{0pc}
+                        \setlength{\headheight}{0pt}
+                        \setlength{\headsep}{0pt}
+                        \setlength{\textwidth}{17truecm}
+                        \setlength{\textheight}{25truecm}
+% \setlength{\hoffset}{-0.5cm}
+\setlength{\voffset}{-1cm}
+}
+
+\makeatletter
+\def\tieudetracnghiem{
+\begin{examtop}
+\stepcounter{madetracnghiem}
+\begin{minipage}[b]{0.35\textwidth}
+\centering
+{ \@ttruong}\\
+\@tkhoa\\%\makebox[4cm]{\hrulefill}\\
+\@ldethi
+% {({\it Đề thi \@scau{} câu / \@strang{} trang})}
+\end{minipage}
+\hfill
+\begin{minipage}[b]{0.65\textwidth}
+\centering
+{\bf \@tkythi}\\
+\qquad\qquad\qquad\qquad{\bf  \@tmonhoc}\qquad\qquad\qquad \textbf{\fbox{Mã đề thi \themadetracnghiem}}\\ \bigskip 
+{\it \@tgian}\\
+%\qquad %{\it \@scau}
+% \textbf{\fbox{Mã đề thi \themadetracnghiem}}
+\end{minipage}
+
+
+%\hfill \framebox{\bf Mã đề thi  \themadetracnghiem}%\arabic{version}} 
+\bigskip
+\par
+%\makebox[10cm]{{\bf \@hovaten :} \dotfill}\\
+\@hovaten
+\@sobaodanh
+%\makebox[10cm]{{\bf \@sobaodanh :} \dotfill}\\
+\end{examtop}
+}
+
+
+% 
+%Trang dap an
+\def\tieudedapan{
+\begin{keytop}
+\@@line{\fbox{Mã đề thi \themadetracnghiem}\hfill{\bf\Large ĐÁP ÁN}\hfill}
+
+\setcounter{figure}{0}
+
+\end{keytop}
+}
+%Gach cuoi trang
+\def\@strang{ }
+\newcommand{\sotrang}[1]{\renewcommand{\@strang}{#1}}
+
+\def\tieudeduoi{
+\renewcommand{\@oddfoot}{%
+\parbox{\textwidth}{%
+ \vspace*{-18pt}%
+{\hfill {\it  Trang\ \thepage/\@strang - Mã đề thi \themadetracnghiem}}
+}%
+}}
+
+\def\tieudetren{
+\renewcommand{\@oddhead}{%
+\ifthenelse{\value{page}>1}{
+\parbox{\textwidth}{%
+\fbox{Mã đề thi 0\arabic{version}} \hfill\ifthenelse{\isodd{\value{page}}}{{\it Họ và tên thí sinh:}\phantom{gom muoi tam chu cai la duoc}}{
+{\it Môn thi:~\tmonhoc}\hfill\scau 
+}
+ \hrule%\\
+ }%
+}{}
+ }}
+
+ \DefineAnswerWrapper{\begin{description}\item[Lời giải.]}{\end{description}}
+\newcommand{\chucauhoi}[1]{\renewcommand{\labelenumi}{\textcolor{\@mauchu}{\bf #1\ \theenumi.}}}
+\newcommand{\mauchu}[1]{\renewcommand{\@mauchu}{#1}}
+\newcommand{\daungoac}[2]{\renewcommand{\@leftdot}{#1}\renewcommand{\@rightdot}{#2}}
+\newcommand{\chuphuongan}[1]{\renewcommand{\@upletter}{#1}} 
+
+
+\setlength{\labelwidth}{48truept}
+\newcommand{\bonpa}[4]{
+\examvspace*{-0.6\baselineskip}
+\word{{#1}{#4}{#1}{#1}{#4}{#1}{#1}{#2}{#4}{#2}{#2}{#4}{#2}{#2}{#3}{#4}{#3}{#3}{#4}{#3}{#3}{#1}{#2}{#3}}
+\word{{#2}{#1}{#4}{#3}{#1}{#4}{#3}{#1}{#2}{#4}{#3}{#2}{#4}{#3}{#1}{#3}{#4}{#2}{#3}{#4}{#2}{#2}{#1}{#1}}
+\word{{#3}{#2}{#2}{#2}{#3}{#3}{#4}{#3}{#1}{#1}{#1}{#3}{#3}{#4}{#2}{#1}{#1}{#1}{#2}{#2}{#4}{#4}{#4}{#4}}
+\word{{#4}{#3}{#3}{#4}{#2}{#2}{#2}{#4}{#3}{#3}{#4}{#1}{#1}{#1}{#4}{#2}{#2}{#4}{#1}{#1}{#1}{#3}{#3}{#2}}
+}
+
+                  
+
+
+\def\@datcotphai{ }
+\def\@datcottrai{\examhspace*{-12pt}}
+
+\newcommand{\datcot}[1][0]{\ifthenelse{#1=0}{
+\renewcommand{\@datcotphai}{ }
+%\renewcommand{\@datcottrai}{\examhspace*{-12pt} }
+}{
+\renewcommand{\@datcotphai}{\parbox[t]{#1\shortitemwidth}}
+%\renewcommand{\@datcottrai}{\examhspace*{-12pt} }
+}}
+                        
+\newcommand{\sai}[1]{\choice{\@datcotphai{#1\@datcottrai}}}
+\newcommand{\dung}[1]{\choice[!]{\@datcotphai{#1\@datcottrai}}}
+
+
+\newcommand{\false}[1]{\choice{#1}}
+\newcommand{\true}[1]{\choice[!]{#1}}
+\newcommand{\liencau}{\renewcommand{\@tachcau}{\examvspace*{-0.7\baselineskip}}}
+\newcommand{\motcot}[1]{\parbox[t]{\shortitemwidth}{#1\strut}}
+\newcommand{\haicot}[1]{\parbox[t]{2\shortitemwidth}{#1\strut}}
+\newcommand{\bacot}[1]{\parbox[t]{3\shortitemwidth}{#1\strut}}
+\newcommand{\boncot}[1]{\parbox[t]{4.4\shortitemwidth}{#1}}
+\newcommand{\namcot}[1]{\parbox[t]{5\shortitemwidth}{#1\strut}}
+\newcommand{\saucot}[1]{\parbox[t]{6\shortitemwidth}{#1\strut}}
+
+
+
+
+\makeatother
+  
+\abovedisplayskip=0pt plus 0pt minus 3pt
+\abovedisplayshortskip=0pt plus 0pt minus 3pt
+\belowdisplayskip=\abovedisplayskip
+\belowdisplayshortskip=\abovedisplayshortskip
+\setlength{\afterinstsep}{0truept}
+\setlength{\aftersectsep}{0truept}
+\setlength{\beforeinstsep}{0truept}
+\setlength{\shortitemwidth}{3.5truecm}
+%\setlength{\aftersectsep}{0truept}
+ \setlength{\leftmargin}{0truept}
+\setlength{\rightmargin}{0pc}
+\setlength{\parskip}{0pc}
+\def\ktrang{\makebox[1.5cm]{\hrulefill}}
+%\headheight=2cm
+%\headsep=6mm
+
+\hfuzz=1pt
+
+\sloppy
+
+

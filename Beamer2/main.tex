@@ -1,0 +1,24 @@
+\documentclass[xetex,serif]{beamer}
+
+\setbeamertemplate{theorems}[numbered]
+
+\usetheme{Madrid}
+
+\usepackage{polyglossia}
+\newfontfamily\khmerfont[Script=Khmer]{Khmer OS Content}
+\setdefaultlanguage[numerals=khmer]{khmer}
+\XeTeXlinebreaklocale “KHM”
+
+\begin{document}
+    \begin{frame}
+        \begin{theorem}
+            Please see the bottom right conner\newline
+            [\alert{current page in Khmer}]/[\alert{last page in Arabic}]\newline
+        \end{theorem}
+    \end{frame}
+    \begin{frame}
+        \begin{theorem}
+            How can I change the \alert{last page} from Arabic to Khmer?
+        \end{theorem}
+    \end{frame}
+\end{document}

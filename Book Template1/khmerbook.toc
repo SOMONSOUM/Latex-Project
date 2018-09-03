@@ -1,0 +1,17 @@
+\select@language {khmer}
+\contentsline {chapter}{អារម្ភកថា}{គ}{chapter*.1}
+\contentsline {chapter}{មាតិការ}{ង}{chapter*.2}
+\contentsline {chapter}{\numberline {១}ត្រីកោណ}{១}{chapter.1}
+\contentsline {section}{\numberline {១.១}និយមន័យ}{១}{section.1.1}
+\contentsline {chapter}{\numberline {២}ត្រីកោណមាត្រ}{៣}{chapter.2}
+\contentsline {section}{\numberline {២.១}និយមន័យ}{៣}{section.2.1}
+\contentsline {subsection}{\numberline {២.១.១}ស៊ីនុស}{៣}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {២.១.២}កូស៊ីនុស}{៣}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {២.១.៣}តង់សង់}{៣}{subsection.2.1.3}
+\contentsline {subsection}{\numberline {២.១.៤}កូតង់សង់}{៣}{subsection.2.1.4}
+\contentsline {section}{\numberline {២.២}រង្វង់ត្រីកោណមាត្រ}{៤}{section.2.2}
+\contentsline {subsection}{\numberline {២.២.១}និយមន័យទូទៅ}{៤}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {២.២.២}តារាងសញ្ញា}{៤}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {២.២.៣}តារាងតម្លៃ}{៥}{subsection.2.2.3}
+\contentsline {chapter}{\numberline {ក}ចម្លើយ}{៧}{appendix.Alph1}
+\contentsline {chapter}{គន្ថនិទ្ទេស}{៩}{appendix*.5}
