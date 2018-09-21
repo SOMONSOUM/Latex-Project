@@ -1,0 +1,137 @@
+\ProvidesPackage{library}
+\usepackage[top = 2cm, bottom = 2cm, inner = 2.5cm, outer = 1cm]{geometry}
+\renewcommand{\baselinestretch}{1.7}
+\parindent = 0cm
+% math font
+\everymath{\displaystyle}
+\RequirePackage{mathpazo}
+\RequirePackage{amsmath}
+\RequirePackage{amssymb}
+\RequirePackage{amsthm}
+\RequirePackage{mathtools}
+%\RequirePackage{newpxmath}
+%\RequirePackage{eulerpx}
+\RequirePackage{mathastext}
+
+\RequirePackage{unicode-math} 
+%\setmathfont{TeX Gyre Termes Math}[version=termes]
+%\setmathfont{TeX Gyre Pagella Math}[version=pagella]
+%\setmathfont{Asana Math}[version=asana]
+%\setmathfont{TeX Gyre DejaVu Math}[version=dejavu]
+
+\setmathfont{Latin Modern Math}
+\setmathfont{TeX Gyre Pagella Math}
+%\setmathfont[range="222B]{Linux Libertine O} 
+%\setmathfont{TeX Gyre DejaVu Math}
+\defaultfontfeatures[Script=khmr]{Mapping=tex-text} % to support TeX conventions like ``---'' 
+\XeTeXlinebreaklocale "khm" % allow line breaks 
+\XeTeXlinebreakskip = 0pt plus 1pt minus 1pt % for line breakskip suitable for Khmer Unicode fonts 
+\newfontscript{Khmer}{khmr}  
+\usepackage{tcolorbox}
+\usepackage{xltxtra}  
+\usepackage{titlesec} 
+\usepackage{titletoc} 
+\usepackage[hidelinks]{hyperref} 
+\usepackage[title,page,titletoc]{appendix} 
+\usepackage[integrals]{wasysym}
+\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage{multicol}
+%% កំណត់់ទីតាំង floating object ដូចជា table និង figure
+\usepackage{float}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{pgf}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+\usetikzlibrary{calc,through}
+\usetikzlibrary{shadows}
+\usepackage{framed}
+\usetikzlibrary{snakes}
+\usepackage{xcolor}
+%------------------------------------------------------------
+\usepackage[english]{babel} % English language/hyphenation
+\usepackage{enumitem} % Customize lists
+\setlist{nolistsep} % Reduce spacing between bullet points and numbered lists
+\usepackage{booktabs} % Required for nicer horizontal rules in tables
+\usepackage{xcolor} % Required for specifying colors by name
+\definecolor{ocre}{RGB}{243,102,25} % Define the orange color used for highlighting throughout the book
+%-------------------------------------------------------------------------------------------------------
+\setmainfont [Scale = 0.8333333334, Script=Khmer]{Khmer OS Battambang}
+\setmathrm{Times New Roman}
+\newcommand{\ko}{\fontspec[Scale = 0.8333333334, Script=Khmer]{Khmer OS}\selectfont}
+\newcommand{\kml}{\fontspec[Scale = 0.8333333334, Script=Khmer]{Khmer OS Muol Light}\selectfont}
+\newcommand{\kos}{\fontspec[Scale = 0.8333333334, Script=Khmer]{Khmer OS System}\selectfont}
+\newcommand{\kbk}{\fontspec[Scale = 0.8333333334, Script=Khmer]{Khmer OS Bokor}\selectfont}
+\newcommand{\kb}{\fontspec[Scale = 0.8333333334, Script=Khmer]{Khmer OS Battambang}\selectfont}
+\newcommand{\mc}{\fontspec{Monotype Corsiva}\selectfont}
+\newcommand{\en}{\fontspec{Times New Roman}\selectfont}
+\newtheorem{definition}{\kml និយមន័យ}
+\newtheorem{theorem}{\kml ទ្រឹស្តីបទ}
+\newtheorem{notation}{\kml សំគាល់}
+\newtheorem{exercise}{\kml លំហាត់}
+%-------------------------------newcommend
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\R}{\mathbb{R}}
+%----------------------------------------
+\newtheorem{example}{\kbk \color{red} ឧទាហរណ៍}
+\newtheorem{general}{\kml ជាទូទៅ}[section]
+%----------------------------------------------
+\newcommand{\solution}{{\begin{center}\kml សម្រាយបញ្ជាក់\end{center}}}
+\newcommand{\answer}{{\begin{center}\kml ដំណោះស្រាយ\end{center}}}
+%\newcommand{\arccot}{arccot}
+\DeclareMathOperator{\arccot}{arccot}
+%-------------------------------------------
+% ប្រអប់
+\tcolorboxenvironment{general}{colback=red!6!white,colframe=red!75!black}
+\tcolorboxenvironment{dfn}{colback=red!6!white,colframe=red!75!black}
+\tcolorboxenvironment{exercise}{colback=blue!6!white,colframe=red!75!black}
+%
+%	SECTION NUMBERING IN THE MARGIN
+%----------------------------------------------------------------------------------------
+
+\makeatletter
+\renewcommand{\@seccntformat}[1]{\llap{\textcolor{ocre}{\csname the#1\endcsname}\hspace{1em}}}                    
+\renewcommand{\section}{\@startsection{section}{1}{\z@}
+{-4ex \@plus -1ex \@minus -.4ex}
+{1ex \@plus.2ex }
+{\normalfont\large\sffamily\bfseries\kml }}
+\renewcommand{\subsection}{\@startsection {subsection}{2}{\z@}
+{-3ex \@plus -0.1ex \@minus -.4ex}
+{0.5ex \@plus.2ex }
+{\normalfont\sffamily\bfseries\kml }}
+\renewcommand{\subsubsection}{\@startsection {subsubsection}{3}{\z@}
+{-2ex \@plus -0.1ex \@minus -.2ex}
+{.2ex \@plus.2ex }
+{\normalfont\small\sffamily\bfseries\kml }}                        
+\renewcommand\paragraph{\@startsection{paragraph}{4}{\z@}
+{-2ex \@plus-.2ex \@minus .2ex}
+{.1ex}
+{\normalfont\small\sffamily\bfseries\kml }}
+%%%%%%% This macro is to produce khmer numbering by adopting the thai numbering method
+\makeatletter  
+\def\@khmernum#1{\expandafter\@@khmernum\number#1\@nil}  
+\def\@@khmernum#1{%  
+  \ifx#1\@nil  
+  \else  
+  \char\numexpr#1+"17E0\relax  
+  \expandafter\@@khmernum\fi  
+}  
+\def\khmercounter#1{\expandafter\@khmernum\csname c@#1\endcsname}  
+\renewcommand\@arabic{\@khmernum} % to reset number in \arabic to \khmernum 
+\def\@alph#1{%
+  \ifcase#1\or ក\or ខ\or គ\or ឃ\or ង\or ច\or ឆ\or ជ\or ឈ\or ញ\or  ដ\or ឋ\or ឌ\or ឍ\or ណ\or ត\or ថ\or ទ\or ធ\or ន\or ប\or ផ\or ព\or ភ\or ម\or យ\or រ\or ល\or វ\or ស\or​​ ហ\or ឡ\or អ\else\@ctrerr\fi} 
+\makeatother  
+%-------------------------------------------------------------------------------------------------
+%\renewcommand{\figurename}{\raggedleft\kml  រូប} 
+%	PAGE HEADERS
+%----------------------------------------------------------------------------------------
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+%\rhead{Share\LaTeX}
+\cfoot{\kml \thepage}
+\lfoot{ \kbk លោកគ្រូ \kml ស៊ុំ សំអុន}
+\rfoot{\kml ទូរស័ព្ទលេខ \kbk ០៩៦ ៩៤០ ៥៨៤០ }
+\endinput

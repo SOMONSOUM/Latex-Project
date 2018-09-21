@@ -1,0 +1,61 @@
+\documentclass[11pt, a5paper]{article}
+%%import package named hightest
+\usepackage{hightest}
+\usepackage[export]{adjustbox}
+\usepackage{wrapfig}
+\usepackage{tkz-tab}
+%សរសេរគីមីវិទ្យា
+%\usepackage[version=3]{mhchem}
+%\usepackage{mathpazo}% change math font
+%\usepackage[no-math]{fontspec}% font specfication
+\everymath{\protect\displaystyle\protect\color{blue}}
+\begin{document}
+\maketitle
+\borderline{\circled{១}~វិញ្ញាសាទី~\circled{១}}
+\begin{enumerate}[m]
+	 \item គណនាលីមីតខាងក្រោម៖
+	 \begin{enumerate}[k,4]
+	 	\item $\lim\limits_{x\to0}\frac{\sin34x}{2x}$
+	 	\item $\lim\limits_{x\to0}\frac{\sin34x}{2x}$
+	 	\item $\lim\limits_{x\to0}\frac{\sin34x}{2x}$
+	 \end{enumerate}
+ 	\item គណនាលីមីត
+\end{enumerate}
+	{\color{magenta}.}\dotfill\\
+	{\color{magenta}.}\dotfill\\
+	{\color{magenta}.}\dotfill\\
+	{\color{magenta}.}\dotfill\\
+	{\color{magenta}.}\dotfill\\
+	{\color{magenta}.}\dotfill\\
+ 	\borderline{សូមសំណាងល្អគ្រប់ៗគ្នា}
+\newpage
+\maketitle
+\borderline{\circled{២}~វិញ្ញាសាទី~\circled{២}}
+\begin{enumerate}[m]
+	\item សរសេរលំហាត់ទីនេះ
+	\begin{enumerate}[k,3]
+		\item លំហាត់ទី១
+		\item លំហាត់ទី២
+		\item លំហាត់ទី៣
+	\end{enumerate}
+	\item សរសេរលំហាត់ទីនេះ
+	\begin{enumerate}[k,3]
+		\item លំហាត់ទី១
+		\item លំហាត់ទី២
+		\item លំហាត់ទី៣
+	\end{enumerate}
+	\item សរសេរលំហាត់ទីនេះ
+	\begin{enumerate}[k,3]
+		\item លំហាត់ទី១
+		\item លំហាត់ទី២
+		\item លំហាត់ទី៣
+	\end{enumerate}
+\end{enumerate}
+	{\color{magenta}.}\dotfill\\
+	{\color{magenta}.}\dotfill\\
+	{\color{magenta}.}\dotfill\\
+	{\color{magenta}.}\dotfill\\
+	{\color{magenta}.}\dotfill\\
+	{\color{magenta}.}\dotfill\\
+	\borderline{សូមសំណាងល្អគ្រប់ៗគ្នា}
+\end{document}
