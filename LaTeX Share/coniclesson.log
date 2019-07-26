@@ -1,0 +1,324 @@
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/W32TeX) (preloaded format=xelatex 2017.1.7)  5 APR 2017 19:44
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./coniclesson.tex
+(./coniclesson.tex
+LaTeX2e <2016/03/31>
+Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
+! Undefined control sequence.
+l.1 \chapter
+            {ប៉ារ៉ាបូល}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \chapter{ប
+                ៉ារ៉ាបូល}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no ប in font nullfont!
+Missing character: There is no ៉ in font nullfont!
+Missing character: There is no ា in font nullfont!
+Missing character: There is no រ in font nullfont!
+Missing character: There is no ៉ in font nullfont!
+Missing character: There is no ា in font nullfont!
+Missing character: There is no ប in font nullfont!
+Missing character: There is no ូ in font nullfont!
+Missing character: There is no ល in font nullfont!
+! Undefined control sequence.
+l.2 \section
+            {សញ្ញាណប៉ារ៉ាបូល}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no ស in font nullfont!
+Missing character: There is no ញ in font nullfont!
+Missing character: There is no ្ in font nullfont!
+Missing character: There is no ញ in font nullfont!
+Missing character: There is no ា in font nullfont!
+Missing character: There is no ណ in font nullfont!
+Missing character: There is no ប in font nullfont!
+Missing character: There is no ៉ in font nullfont!
+Missing character: There is no ា in font nullfont!
+Missing character: There is no រ in font nullfont!
+Missing character: There is no ៉ in font nullfont!
+Missing character: There is no ា in font nullfont!
+Missing character: There is no ប in font nullfont!
+Missing character: There is no ូ in font nullfont!
+Missing character: There is no ល in font nullfont!
+
+! LaTeX Error: Environment definition undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4 \begin{definition}
+                      {}{}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Missing character: There is no ប in font nullfont!
+Missing character: There is no ៉ in font nullfont!
+Missing character: There is no ា in font nullfont!
+Missing character: There is no រ in font nullfont!
+Missing character: There is no ៉ in font nullfont!
+Missing character: There is no ា in font nullfont!
+Missing character: There is no ប in font nullfont!
+Missing character: There is no ូ in font nullfont!
+Missing character: There is no ល in font nullfont!
+Missing character: There is no ជ in font nullfont!
+Missing character: There is no ា in font nullfont!
+Missing character: There is no ស in font nullfont!
+Missing character: There is no ំ in font nullfont!
+Missing character: There is no ណ in font nullfont!
+Missing character: There is no ុ in font nullfont!
+Missing character: There is no ំ in font nullfont!
+Missing character: There is no ច in font nullfont!
+Missing character: There is no ំ in font nullfont!
+Missing character: There is no ណ in font nullfont!
+Missing character: There is no ុ in font nullfont!
+Missing character: There is no ច in font nullfont!
+Missing character: There is no ន in font nullfont!
+Missing character: There is no ៅ in font nullfont!
+Missing character: There is no ក in font nullfont!
+Missing character: There is no ្ in font nullfont!
+Missing character: There is no ន in font nullfont!
+Missing character: There is no ុ in font nullfont!
+Missing character: There is no ង in font nullfont!
+Missing character: There is no ប in font nullfont!
+Missing character: There is no ្ in font nullfont!
+Missing character: There is no ល in font nullfont!
+Missing character: There is no ង in font nullfont!
+Missing character: There is no ់ in font nullfont!
+Missing character: There is no ដ in font nullfont!
+Missing character: There is no ែ in font nullfont!
+Missing character: There is no ល in font nullfont!
+Missing character: There is no ម in font nullfont!
+Missing character: There is no ា in font nullfont!
+Missing character: There is no ន in font nullfont!
+Missing character: There is no ច in font nullfont!
+Missing character: There is no ម in font nullfont!
+Missing character: There is no ្ in font nullfont!
+Missing character: There is no ង in font nullfont!
+Missing character: There is no ា in font nullfont!
+Missing character: There is no យ in font nullfont!
+Missing character: There is no ស in font nullfont!
+Missing character: There is no ្ in font nullfont!
+Missing character: There is no ម in font nullfont!
+Missing character: There is no ើ in font nullfont!
+Missing character: There is no ព in font nullfont!
+Missing character: There is no ី in font nullfont!
+Missing character: There is no ច in font nullfont!
+Missing character: There is no ំ in font nullfont!
+Missing character: There is no ណ in font nullfont!
+Missing character: There is no ុ in font nullfont!
+Missing character: There is no ច in font nullfont!
+Missing character: There is no ន in font nullfont!
+Missing character: There is no ឹ in font nullfont!
+Missing character: There is no ង in font nullfont!
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 5.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 5.
+Missing character: There is no ម in font nullfont!
+Missing character: There is no ួ in font nullfont!
+Missing character: There is no យ in font nullfont!
+Missing character: There is no ន in font nullfont!
+Missing character: There is no ិ in font nullfont!
+Missing character: There is no ង in font nullfont!
+Missing character: There is no ប in font nullfont!
+Missing character: There is no ន in font nullfont!
+Missing character: There is no ្ in font nullfont!
+Missing character: There is no ទ in font nullfont!
+Missing character: There is no ា in font nullfont!
+Missing character: There is no ត in font nullfont!
+Missing character: There is no ់ in font nullfont!
+Missing character: There is no ន in font nullfont!
+Missing character: There is no ឹ in font nullfont!
+Missing character: There is no ង in font nullfont!
+Missing character: There is no ម in font nullfont!
+Missing character: There is no ួ in font nullfont!
+Missing character: There is no យ in font nullfont!
+Missing character: There is no ន in font nullfont!
+Missing character: There is no ៅ in font nullfont!
+Missing character: There is no ក in font nullfont!
+Missing character: There is no ្ in font nullfont!
+Missing character: There is no ន in font nullfont!
+Missing character: There is no ុ in font nullfont!
+Missing character: There is no ង in font nullfont!
+Missing character: There is no ប in font nullfont!
+Missing character: There is no ្ in font nullfont!
+Missing character: There is no ល in font nullfont!
+Missing character: There is no ង in font nullfont!
+Missing character: There is no ់ in font nullfont!
+Missing character: There is no ន in font nullfont!
+Missing character: There is no ោ in font nullfont!
+Missing character: There is no ះ in font nullfont!
+Missing character: There is no ។ in font nullfont!
+Missing character: There is no ច in font nullfont!
+Missing character: There is no ំ in font nullfont!
+Missing character: There is no ណ in font nullfont!
+Missing character: There is no ុ in font nullfont!
+Missing character: There is no ច in font nullfont!
+Missing character: There is no ន in font nullfont!
+Missing character: There is no ឹ in font nullfont!
+Missing character: There is no ង in font nullfont!
+Missing character: There is no ហ in font nullfont!
+Missing character: There is no ៅ in font nullfont!
+Missing character: There is no ថ in font nullfont!
+Missing character: There is no ា in font nullfont!
+Missing character: There is no ក in font cmti10!
+Missing character: There is no ំ in font cmti10!
+Missing character: There is no ណ in font cmti10!
+Missing character: There is no ុ in font cmti10!
+Missing character: There is no ំ in font cmti10!
+Missing character: There is no ន in font nullfont!
+Missing character: There is no ិ in font nullfont!
+Missing character: There is no ង in font nullfont!
+Missing character: There is no ប in font nullfont!
+Missing character: There is no ន in font nullfont!
+Missing character: There is no ្ in font nullfont!
+Missing character: There is no ទ in font nullfont!
+Missing character: There is no ា in font nullfont!
+Missing character: There is no ត in font nullfont!
+Missing character: There is no ់ in font nullfont!
+Missing character: There is no ហ in font nullfont!
+Missing character: There is no ៅ in font nullfont!
+Missing character: There is no ថ in font nullfont!
+Missing character: There is no ា in font nullfont!
+Missing character: There is no ប in font cmti10!
+Missing character: There is no ន in font cmti10!
+Missing character: There is no ្ in font cmti10!
+Missing character: There is no ទ in font cmti10!
+Missing character: There is no ា in font cmti10!
+Missing character: There is no ត in font cmti10!
+Missing character: There is no ់ in font cmti10!
+Missing character: There is no ប in font cmti10!
+Missing character: There is no ្ in font cmti10!
+Missing character: There is no រ in font cmti10!
+Missing character: There is no ា in font cmti10!
+Missing character: There is no ប in font cmti10!
+Missing character: There is no ់ in font cmti10!
+Missing character: There is no ទ in font cmti10!
+Missing character: There is no ិ in font cmti10!
+Missing character: There is no ស in font cmti10!
+Missing character: There is no ។ in font nullfont!
+
+! LaTeX Error: \begin{document} ended by \end{definition}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 \end{definition}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+l.8 \chapter
+            {អ៊ីពែបូល}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no អ in font nullfont!
+Missing character: There is no ៊ in font nullfont!
+Missing character: There is no ី in font nullfont!
+Missing character: There is no ព in font nullfont!
+Missing character: There is no ែ in font nullfont!
+Missing character: There is no ប in font nullfont!
+Missing character: There is no ូ in font nullfont!
+Missing character: There is no ល in font nullfont!
+! Undefined control sequence.
+l.9 \section
+            {សញ្ញាណអ៊ីពែបូល}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no ស in font nullfont!
+Missing character: There is no ញ in font nullfont!
+Missing character: There is no ្ in font nullfont!
+Missing character: There is no ញ in font nullfont!
+Missing character: There is no ា in font nullfont!
+Missing character: There is no ណ in font nullfont!
+Missing character: There is no អ in font nullfont!
+Missing character: There is no ៊ in font nullfont!
+Missing character: There is no ី in font nullfont!
+Missing character: There is no ព in font nullfont!
+Missing character: There is no ែ in font nullfont!
+Missing character: There is no ប in font nullfont!
+Missing character: There is no ូ in font nullfont!
+Missing character: There is no ល in font nullfont!
+! Undefined control sequence.
+l.11 \chapter
+             {អេលីប}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no អ in font nullfont!
+Missing character: There is no េ in font nullfont!
+Missing character: There is no ល in font nullfont!
+Missing character: There is no ី in font nullfont!
+Missing character: There is no ប in font nullfont!
+! Undefined control sequence.
+l.12 \section
+             {សញ្ញាណអេលីប}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no ស in font nullfont!
+Missing character: There is no ញ in font nullfont!
+Missing character: There is no ្ in font nullfont!
+Missing character: There is no ញ in font nullfont!
+Missing character: There is no ា in font nullfont!
+Missing character: There is no ណ in font nullfont!
+Missing character: There is no អ in font nullfont!
+Missing character: There is no េ in font nullfont!
+Missing character: There is no ល in font nullfont!
+Missing character: There is no ី in font nullfont!
+Missing character: There is no ប in font nullfont!
+)
+! Emergency stop.
+<*> ./coniclesson.tex
+                     
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 11 strings out of 493591
+ 136 string characters out of 6146795
+ 53754 words of memory out of 5000000
+ 3519 multiletter control sequences out of 15000+600000
+ 3986 words of font info for 15 fonts, out of 8000000 for 9000
+ 1347 hyphenation exceptions out of 8191
+ 18i,1n,12p,239b,69s stack positions out of 5000i,500n,10000p,200000b,80000s
+No pages of output.

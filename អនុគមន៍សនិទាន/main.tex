@@ -1,0 +1,238 @@
+\documentclass[12pt, a4paper]{article}
+%%import package named techno
+\usepackage{techno}
+\usepackage[export]{adjustbox}
+\usepackage{wrapfig}
+\usepackage{tkz-tab}
+%សរសេរគីមីវិទ្យា
+%\usepackage[version=3]{mhchem}
+%\usepackage{mathpazo}% change math font
+%\usepackage[no-math]{fontspec}% font specfication
+\everymath{\protect\displaystyle\protect\color{blue}}
+\begin{document}
+\maketitle\koc
+	\begin{itemize}
+		\item \kml ដែនកំណត់\koc
+		\begin{itemize}
+			\item អនុគមន៍សនិទាន $y=\frac{f(x)}{g(x)}$ មានន័យកាលណា $g(x)\neq$ ។ ដូច្នេះ $\mathbb{D}=\mathbb{R}-\left\lbrace g(x)=0\right\rbrace$
+		\end{itemize}
+		\item \kml អាស៊ីមតូត\koc
+		\begin{itemize}
+			\item បើ $\lim\limits_{x\to a}f(x)=\pm\infty$ នោះគេអាចទាញថាបន្ទាត់ដែលមានសមីការ $x=a$ ជា អាស៊ីមតូតឈរ នៃក្រាបតាងអនុគមន៍ $f$ ។
+			\item បើ $\lim\limits_{x\to \pm\infty}f(x)=b$ នោះគេអាចទាញថាបន្ទាត់ដែលមានសមីការ $y=b$ ជា អាស៊ីមតូតដេក នៃក្រាបតាងអនុគមន៍ $f$ ។
+			\item បើគេមានអនុគមន៍ $f(x)=ax+b+\phi(x)$ ជាទម្រង់កាណូនិច ដែល $\lim\limits_{x\to\pm\infty}\phi(x)=0$ នោះគេអាចទាញថាបន្ទាត់ដែលមានសមីការ $y=ax+b$ ជា អាស៊ីមតូតទ្រេត នៃក្រាបតាងអនុគមន៍ $f$ ។\\
+			ម្យ៉ាងទៀត បើ $\lim\limits_{x\to\pm\infty}\frac{f(x)}{x}=a$ និង $\lim\limits_{x\to\pm\infty}\left[f(x)-ax\right]=b$ នោះបន្ទាត់ដែលមានសមីការ $y=ax+b$ ជាអាស៊ីមតូតទ្រេត នៃក្រាបតាងអនុគមន៍ $f$ ។
+		\end{itemize}
+		\item \kml សមីការបន្ទាត់ប៉ះ\koc
+		\begin{itemize}
+			\item បើគេមានអនុគមន៍ $y=f(x)$ ហើយមានក្រាបតាង $C$ ប៉ះនឹងបន្ទាត់ $(T)$ ត្រង់អាប់ស៊ីស $x_0$ នោះគេបាន\\   $(T): y-y_0=y'_0(x-x_0)$ ឬ $(T): y=f'(x_0)(x-x_o)+f(x_0)$ ដែលយើងត្រូវសរសេរទៅជាទម្រង់ $(T): y=ax+b$ ។
+		\end{itemize}
+	\end{itemize}
+	\begin{enumerate}[m]
+		\item ចូររកដែនកំណត់នៃអនុគមន៍ខាងក្រោម៖
+			\begin{enumerate}[k,2]
+				\item $f(x)=\frac{x+1}{x-1}$
+				\item $f(x)=\frac{2-3x}{x^2-3x+2}$
+				\item $f(x)=\frac{x^2+x+1}{x^2-x+1}$
+				\item $f(x)=\ln\left( x+1\right)+e^{2x}$
+				\item $f(x)=x+1+\ln\left(\frac{3+x}{3-x}\right)$
+				\item $f(x)=x+1+\ln\left(\frac{x+2}{x-2}\right)$
+			\end{enumerate}
+		\item រកសមីការបន្ទាត់ប៉ះ $T$ ដែលប៉ះនឹងខ្សែកោង៖
+			\begin{enumerate}[k]
+				\item $C: f(x)=x^2+1$ ត្រង់ចំណុចដែលមានអាប់ស៊ីស $x_0 =1$
+				\item $C: f(x)=1-x\ln x$ ត្រង់ចំណុចដែលមានអាប់ស៊ីស $x_0 =1$
+				\item $C: f(x)=\frac{e^x}{1-\sin x}$ ត្រង់ចំណុចដែលមានអាប់ស៊ីស $x_0 =0$
+				\item $C: f(x)=e^x+\frac{e^x+1}{e^x-1}$ ត្រង់ចំណុចដែលមានអាប់ស៊ីស $x_0 =\ln2$
+			\end{enumerate}
+		\item គេមានអនុគមន៍ $f$ កំណត់ដោយ $y=f(x)=1+\frac{\ln x}{x}$ និងមានខ្សែកោង $H$ ។
+			\begin{enumerate}[k]
+				\item សរសេរសមីការបន្ទាត់ $d$ ដែលប៉ះខ្សែកោង $H$ ត្រង់ចំណុច $A(1, 1)$ ។
+				\item គេឲ្យខ្សែកោង $K$ តាងអនុគមន៍ $y=g(x)=e^{3x}+x-e^6$ ។ \\
+				ចូរកំណត់កូអរដោនេនៃចំណុចប្រសព្វ $B$ រវាងបន្ទាត់ $d$ និងខ្សែកោង $K$ តាង $g$ ។
+			\end{enumerate}
+		\item រកតម្លៃបរមានៃអនុគមន៍ខាងក្រោម៖
+			\begin{enumerate}[k,3]
+				\item $y=\frac{x^2-x-2}{x+2}$
+				\item $y=\frac{x^2-3x+6}{x-2}$
+				\item $y=\frac{x^2+x+2}{x-1}$
+			\end{enumerate}
+		\item គេឲ្យអនុគមន៍ $f(x)=\frac{ax^2+bx+c}{x-2}$ ។ រកតម្លៃមេគុណ $a, b$ និង$c$ ដើម្បីឲ្យអនុគមន៍ $f$ មានតម្លៃស្មើ $-1$ ចំពោះ $x=1$ ហើយមានតម្លៃបរមាស្មើ $8$ ត្រង់$x=4$ ។
+		\item គេឲ្យអនុគមន៍ $f(x)=\frac{ax^2+bx+c}{x}$ ។ រកតម្លៃមេគុណ $a, b$ និង$c$ ដើម្បីឲ្យអនុគមន៍ $f$ មានតម្លៃស្មើ $8$ ចំពោះ $x=1$ ហើយមានតម្លៃអតិបរមាស្មើ $-1$ ត្រង់$x=-2$ ។
+		\item គេឲ្យអនុគមន៍ $g(x)=ax+a+\frac{b}{x+2}$ ចំពោះ $x\neq -2$ ។ រកតម្លៃមេគុណ $a$ និង $b$ ដើម្បីឲ្យអនុគមន៍ $g$ មានតម្លៃអប្បរមាស្មើ $2$ ចំពោះ $x=1$ ហើយមានតម្លៃអតិបរមាស្មើ $-1$ ត្រង់$x=0$ 
+		\item រកសមីការអាស៊ីមតូតនៃក្រាបតាងអនុគមន៍នីមួយៗដូចខាងក្រោម៖
+			\begin{enumerate}[k,3]
+				\item $y=f(x)=\frac{x^2+x+1}{x-1}$
+				\item $y=f(x)=\frac{x^2+2x-3}{x+2}$
+				\item $y=f(x)=\frac{3x^2+6x+3}{x^2+2}$
+			\end{enumerate}
+		\item គេឲ្យអនុគមន៍ $f$ កំណត់ដោយ $y=f(x)=\frac{x^2-x+1}{x-1}$ និងមានក្រាប $C$។
+			\begin{enumerate}[k]
+				\item រកសមីការអាស៊ីមតូតឈរ និងអាស៊ីមតូតទ្រេតរបស់ក្រាប $C$ ។
+				\item បង្ហាញថាចំណុច $I(1, 1)$ ជាផ្ចិតឆ្លុះរបស់ក្រាប $C$ ។
+			\end{enumerate}
+		\item គេមានអនុគមន៍ $f$ កំណត់ដោយ $y=f(x)=\frac{x}{x^2+1}$ និងមានក្រាប $C$ ។
+		\begin{enumerate}[k]
+			\item រកសមីការអាស៊ីមតូតរបស់ក្រាប $C$ ។
+			\item សិក្សាភាពគូរ-សេស រួចទាញថា គល់ $O$ នៃតម្រុយជាផ្ចិតឆ្លុះនៃក្រាប $C$ ។
+		\end{enumerate}
+	\item សិក្សាអថេរភាព និងសង់ក្រាបនៃអនុគមន៍ខាងក្រោម៖ 
+		\begin{enumerate}[k,3]
+			\item $f(x)=\frac{x^2+x+1}{x+1}$
+			\item $f(x)=\frac{x^2-2x-3}{x-1}$
+			\item $f(x)=\frac{x^2-3x+2}{x+2}$
+		\end{enumerate}
+	\item សិក្សាអថេរភាព និងសង់ក្រាបនៃអនុគមន៍ខាងក្រោម៖ 
+		\begin{enumerate}[k,3]
+			\item $f(x)=\frac{x^2+x+1}{x^2+1}$
+			\item $f(x)=\frac{x^2-2x+1}{x^2-2x}$
+			\item $f(x)=\frac{3x^2+6x+3}{x^2+2}$
+		\end{enumerate}
+	\item អនុវត្តន៍ $ f $ កំណត់ដោយ $f(x)=x+2-\frac{4}{x-1}$ និងមានខ្សែកោង $C$ ។
+		\begin{enumerate}[k]
+			\item រកដែនកំណត់នៃអនុគមន៍ $f$ ។ គណនា និងសិក្សាសញ្ញាដេរីវេ $f'(x)$ ។
+			\item រកតម្លៃអតិបរមា និងអប្យបរមានៃ $f$ ។
+			\item កំណត់សមីការនៃអាស៊ីមតូតឈរ និងទ្រេតនៃខ្សែកោង $C$ ។
+			\item សិក្សាទីតាំងធៀបរវាងអាស៊ីមតូតទ្រេត និងខ្សែកោង $C$ ។
+			\item សង់តារាងអថេរភាពនៃអនុគមន៍ $f$ និងសង់ខ្សែកោង $C$ ។
+		\end{enumerate}
+	\item អនុគមន៍ $f$ កំណត់ចំពោះគ្រប់ $x\neq 1$ ដោយ $f(x)=\frac{x^2-3x+6}{x-1}$ និងមានក្រាប $C$ ។
+		\begin{enumerate}[k]
+			\item រកចំនួនពិត $a, b$ និង $c$ ដើម្បីឲ្យ $f(x)=ax+b+\frac{c}{x-1}$ ចំពោះគ្រប់ $x\neq1$ ។
+			\item រកតម្លៃអតិបរមា និងអប្បបរមានៃ $f$ ។
+			\item រកសមីការនៃអាស៊ីមតូតឈរ និងទ្រេតនៃខ្សែកោង $C$ ។
+			\item សិក្សាទីតាំងធៀបរវាងអាស៊ីមតូតទ្រេត និងខ្សែកោង $C$ ។
+			\item សង់តារាងអថេរភាពនៃអនុគមន៍ $f$ និងសង់ខ្សែកោង $C$ ។
+		\end{enumerate}
+	\item $h$ ជាអនុគមន៍កំនត់ដោយ $h(x)=\frac{x^2}{x-1}, x\in\mathbb{R}$ និង $x\neq1$ ។
+		\begin{enumerate}[k]
+			\item កំណត់រក $a, b$ និង $c$ ដើម្បីឲ្យ $h(x)=ax+b+\frac{c}{x-1}$ ចំពោះ $x\neq1$ ។
+			\item ទាញរកសមីការអាស៊ីមតូតទ្រេតនៃខ្សែកោង $C$ តំណាងអនុគមន៍ $f$ ។
+		\end{enumerate}
+	\item $g$ ជាអនុគមន៍កំណត់ដោយ $g(x)=\frac{x^2-3x-4}{x-2}$ មានក្រាប $C$ ។
+		\begin{enumerate}[k]
+			\item កំណត់ចំនួនពិត $a, b$ និង $c$ ដើម្បីឲ្យ $g(x)=ax+b+\frac{c}{x-2}$ ចំពោះ $x\neq2$ ។
+			\item កំណត់សមីការអាស៊ីមតូតឈរ និងទ្រេតនៃក្រាប $C$ ។
+			\item បង្ហាញថាចំណុច $I(2;1)$ ជាផ្ចិតឆ្លុះនៃក្រាប $C$ ។
+		\end{enumerate}
+	\item គេឲ្យអនុគមន៍ $g$ កំណត់ដោយ $g(x)=\frac{4x-4}{x^2}, x\neq0$ ។ $C$ ជាក្រាបនៃអនុគមន៍ $g$ ។
+		\begin{enumerate}[k]
+			\item គណនា $\lim\limits_{x\to+\infty}g(x),~\lim\limits_{x\to-\infty}g(x)$ និង $\lim\limits_{x\to0}g(x)$ រួចទាញរកអាស៊ីមតូតនៃក្រាប $C$ ។
+			\item គូសតារាងអថេរភាពនៃ $g$ ។
+			\item បង្ហាញថា $C$ មានចំណុចរបត់មួយ រួចរកកូអរដោនេនៃចំណុចរបត់នេះ ។
+			\item គណនា $g(-4),~g(-2),~g(1)$ និង $g(4)$ ។
+			\item សង់ក្រាប $C$ នៅក្នុងតម្រុយអរតូណរម៉ាល់ ។
+		\end{enumerate}
+	\item $f$ ជាអនុគមន៍កំណត់ដោយ $f(x)=\frac{x^2+6x}{2\left(x^2-2x+2\right)}$ មានក្រាប $C$ ក្នុងតម្រុយអរតូណរម៉ាល់ $\left(O, \vec{i}, \vec{j}\right)$ ។
+		\begin{enumerate}[k]
+			\item បង្ហាញថា $f$ កំណត់បានចំពោះគ្រប់ $x\in\mathbb{R}$ ។
+			\item គណនាលីមីតនៃ $f$ កាលណា $x$ ខិតជិត $+\infty,~-\infty$ រួចបង្ហាញថា $C$ មានអាស៊ីមតូតមួយ ដែលត្រូវបញ្ជាក់សមីការ ។
+			\item គណនា $f'(x)$ រួចសិក្សាសញ្ញា $f'(x)$ ។ ទាញថា $f$ មានតម្លៃអតិបរមាមួយ និងអប្បបរមាមួយ រួចគណនាតម្លៃទាំងពីរនេះ ។
+			\item គូសតារាងអថេរភាពនៃ $f$ ។
+			\item គណនាកូអរដោនេចំណុចប្រសព្វរវាង $C$ និងអ័ក្សទាំងពីរនៃតម្រុយ និងចំណុចប្រសព្វរវាង $C$ និងអាស៊ីមតូតដេក ។
+			\item គណនា $f(2)$ និង $f(3)$ ។ សង់ខ្សែកោង $C$ និងអាស៊ីមតូត ។ 
+		\end{enumerate}
+	\item គេឲ្យអនុគមន៍ $f$ កំណត់ដោយ $y=f(x)=x+2+\frac{4}{x-1}$ និងមានខ្សែកោង $C$ ។
+	\begin{enumerate}[k]
+		\item រកដែនកំណត់នៃអនុគន៍ $f$ គណនា និងសិកស្សាសញ្ញាដេរីវេ $f'(x)$ ។ បង្ហាញថា $f$ មានអតិបរមាមួយ និងអប្បបរមាមួយ ហើយគណនាតម្លៃនៃបរមាទាំងពីរនេះ ។
+		\item កំណត់សមីការនៃអាស៊ីមតូតឈរ និងទ្រេតនៃខ្សែកោង $C$ ។
+		\item សិក្សាទីតាំងធៀបរវាងអាស៊ីមតូតទ្រេត នឹងខ្សែកោង $C$ ។
+		\item សង់តារាងអថេរភាពនៃអនុគមន៍ $f$ និងសង់ខ្សែកោង $C$
+	\end{enumerate}
+	\item គេមានអនុគមន៍ $f$ កំណត់ដោយ $f(x)=\frac{2x^2-7x+5}{x^2-5x+7}$ ។ យើងតាងដោយក្រាប $C$ របស់វាលើតម្រុយអរតូណរម៉ាល់ $\left(O, \vec{i}, \vec{j}\right)$ ។
+	\begin{enumerate}[1]
+		\item រកដែនកំណត់ $\mathbb{D}$ នៃអនុគមន៍ $f$ ។
+		\item សិក្សាលីមីតនៃអនុគមន៍ $f(x)$ ត្រង់ $-\infty$ និងត្រង់ $+\infty$ ។ ទាញរកសមីការអាស៊ីមតូត $d$ ទៅនឹងក្រាប $C$ ត្រង់ $-\infty$ និង $+\infty$ ។
+		\item \begin{enumerate}[k]
+			\item ស្រាយបំភ្លឺថាគ្រប់ចំនួនពិត $x\in\mathbb{D}~,$ ដេរីវេ $f'(x)=\frac{-3\left(x^2-6x+8\right)}{\left(x^2-5x+7\right)}$ ។
+			\item សិក្សាអថេរភាពនៃអនុគមន៍ $f$ និងសង់តារាអថេរភាពនៃអនុគមន៍ $f$ ។
+			\item សង់ក្រាប $C$ នៃអនុគមន៍ $f$ ។
+		\end{enumerate}
+	\end{enumerate}
+	\item គេមានអនុគមន៍ $f$ កំណត់លើ $\mathbb{R}-\{2\}$ ដោយ $f(x)=\frac{x^2-x-1}{x-2}$ ។ យើងតាង $C$ ជាក្រាបរបស់វា លើតម្រុយអរតូណរម៉ាល់ $\left(0,\overrightarrow{i},\overrightarrow{j}\right)$ ។
+	\begin{enumerate}[1]
+		\item សិក្សាលីមីតនៃអនុគមន៍ $f$ ត្រង់ $-\infty$ និងត្រង់ $+\infty$ ។
+		\item សិក្សាអថេរភាព និងសង់តារាងអថេរភាពនៃអនុគមន៍ $f$ ។
+		\item \begin{enumerate}[k]
+			\item រកចំនួនពិត $a,b,c$ ដែលគ្រប់ $x\neq 2;\ \ \ f(x)=ax+b+\frac{c}{x-2}$ ។
+			\item គេតាង $\mathrm{d}$ ដែលមានសមីការ $y=x+1$។ បង្ហាញថា $d$ ជាអាស៊ីមតូតនៃ $C$ ត្រង់ $+\infty$ និង $-\infty$។ 
+			\\ សិក្សាទីតាំងនៃក្រាប $C$ ធៀបនឹងបន្ទាត់ $\mathrm{d}$ ។
+			\item សង់ក្រាប $C$ និង បន្ទាត់ $d$ ។
+		\end{enumerate}
+	\end{enumerate}
+	\item $f$ ជាអនុគមន៍កំណត់លើ $\mathrm{I}=\mathbb{R}-\{-2,2\}$ ដោយ $f(x)=\frac{2x^2}{x^2-4}$ ។
+	\begin{enumerate}[k]
+		\item សិក្សាលីមីតនៃ $f$ ត្រង់ $-\infty,\ -2,\ 2 $ និង $+\infty$ ។\\ 
+		ទាញរកសមីការអាស៊ីមតូតដេក និង អាស៊ីមតូតឈរនៃក្រាបតាង $f$ ។
+		\item សិក្សាអថេរភាព និង សង់តារាងអថេរភាពនៃ $f$ ។
+		\item សង់នៅក្នុងតម្រុយអរតូណរម៉ាល់ $\left(o,\overrightarrow{i},\overrightarrow{j}\right)$ ក្រាបតាង $f$ ។
+	\end{enumerate}
+	\item គេមានអនុគមន៍ $f$ ដែល $f(x)=\frac{x^2-x-3}{x+1}$  និង គេតាងដោយ $(C)$  ក្រាបនៃអនុគមន៍ $f$ ។
+	\begin{enumerate}[k]
+		\item រកដែនកំណត់នៃអនុគន៍ $f$ ។
+		\item បង្ហាញថា  $f(x)=x-2-\frac{1}{x+1}$ ។
+		\item បង្ហាញថាបន្ទាត់ដែលមានសមីការ  $y=x-2$ ជាអាស៊ីមតូតទ្រេតនៃក្រាប $(C)$ ។
+		\item សិក្សាអថេរភាព និងសង់ក្រាបនៃ $f$ ។
+	\end{enumerate}
+	\item គេមានអនុគមន៍ $f(x)=\frac{(x+2)(x-2)}{(1-x)}$ ។
+	\begin{enumerate}[k]
+		\item រកដែនកំណត់ $f(x)$ ។
+		\item បង្ហាញថា $f(x)=-x-1+\frac{3}{x-1}$ ។
+		\item សិក្សាអថេរភាពនិង សង់ក្រាប $C$ នៃអនុគមន៍ $f(x)=\frac{(x+2)(x-2)}{(1-x)}$ ។
+	\end{enumerate}
+	\item គេមានអនុគមន៍ $f$ កំណត់លើ $\mathbb{R}$ ដោយ $f(x)=\frac{1}{1+e^x}+\frac{2}{9}x$ និង $C$ តាងក្រាបរបស់ $f$ ។
+	\begin{enumerate}[1]
+		\item អនុគមន៍ $g$ កំណត់លើ $\mathbb{R}$ ដោយ $g(x)=2e^{2x}-5e^x+2$ ។
+		\begin{enumerate}[k]
+			\item ផ្ទៀងផ្ទាត់ថា $g(x)=\left(2e^x-1\right)\left(e^x-2\right)$ ។
+			\item ទាញយកតាមតម្លៃនៃ $x$ ចំពោះសញ្ញានៃ $g(x)$ ។
+		\end{enumerate}
+		\item 
+		\begin{enumerate}[k]
+			\item រក $\lim_{x\to +\infty}f(x)$ និង $\lim_{x\to -\infty}f(x)$ ។
+			\item អនុគមន៍ $f$ មានដេរីវេ $f'$ ។
+			បង្ហាញថាចំពោះគ្រប់ចំនួនពិត $x$ គេបាន $f'(x)$ និង $g(x)$ មានសញ្ញាដូចគ្នា។
+			\item សិក្សាអថេរភាពនៃអនុគមន៍ $f$ លើ $\mathbb{R}$ ។
+		\end{enumerate}
+	\end{enumerate}
+	\item អនុគមន៍ $f$ កំណត់ដោយ $y=f(x)=\frac{x^2-3x-3}{x-2}$ មានក្រាបតំណាង $(C)$ ។
+	\begin{enumerate}[k]
+		\item ចូររកដែនកំណត់នៃអនុគមន៍ $f$ ។
+		\item ចូរគណនា $\lim_{x\to 2}f(x);\ \lim_{x\to -\infty}f(x);\ \lim_{x\to +\infty}f(x)$។ រួចទាញរកសមីការអាស៊ីមតូតឈរនៃក្រាប $(C)$ ។
+		\item ចូរបង្ហាញថា $f(x)=x-1+\frac{-5}{x-2}$ ។ រួចទាញរកសមីការអាស៊ីមតូតទ្រេត។
+		\item សិក្សាអថេរភាព សង់តារាងអថេរភាព និង សង់ក្រាប$(C)$។ 
+	\end{enumerate}
+	\item គេអោយអនុគមន៍ $f$ កំណត់ដោយ $f(x)=\frac{x^2-5x+7}{x-2}$ មានក្រាបតំណាង $(C)$ ។
+	\begin{enumerate}[k]
+		\item រកដែនកំណត់នៃអនុគមន៍ $f$ ។ 
+		\item គណនា $\lim_{x\to 2}f(x);\ \lim_{x\to\pm\infty}f(x)$។ ទាញរកសមីការអាស៊ីមតូតឈរនៃក្រាប $C$ ។
+		\item រកតម្លៃនៃចំនួនពិត $a,b$ និង $c$ ដែលធ្វើអោយ $f(x)=ax+b+\frac{c}{x-2}$។ បង្ហាញថា បន្ទាត់ $d$ ដែលមានសមីការ \\$f(x)=x-3+\frac{1}{x-2}$ ជាអាស៊ីមតូតទ្រេតនៃក្រាប $C$ ត្រង់ $\pm\infty$ ។
+		\item សិក្សាអថេរភាព និងសង់ក្រាប $C$។
+	\end{enumerate}
+	\item គេឲ្យអនុគមន៍ $f$ កំណត់ដោយ $f(x)=\frac{x^2+x+4}{x+1}$ ហើយមានក្រាប $C$ ។
+	\begin{enumerate}[k]
+		\item រកដែនកំណត់នៃអនុគមន៍ $f$។ 
+		\item គណនា $\lim_{x\to -1}f(x),\ \lim_{x\to \pm\infty}f(x)$ ។
+		\item សរសេរសមីការអាស៊ីមតូតឈរ និង អាស៊ីមតូតទ្រេតនៃក្រាប $C$ ។
+		\item  សិក្សាសញ្ញាដេរីវេ $f'(x)$ នៃអនុគមន៍ $f$ ។
+		\item សង់តារាងអថេរភាព អាស៊ីមតូត និង ក្រាប $C$ នៃអនុគមន៍ $f$ ។
+	\end{enumerate}
+	\item  គេមានអនុគមន៍ $f$ កំណត់ដោយ $y=f(x)=\frac{x^2-4}{x-1}$   មានក្រាបតំណាង $C$ ។
+	\begin{enumerate}[m]
+		\item ចូររកដែនកំណត់នៃអនុគមន៍ $f$ ។
+		\item គណនា $\lim_{x\to 1}f(x);\ \lim_{x\to \pm\infty}f(x)$ ។ រួចទាញរកសមីការអាស៊ីមតូតឈរ។
+		\item បង្ហាញថា $f(x)=x+1-\frac{3}{x-1}$ ។ រួចបង្ហាញថាបន្ទាត់ $d$ ដែលមានសមីការ $y=x+1$ ជាអាស៊ីមតូតទ្រេតនៃក្រាប $C$ ខាង $\pm\infty$ ។
+		\item គណនាដេរីវេ $f'(x)$ និងសិក្សាសញ្ញាដេរីវេ $f'(x)$ ។
+		\item 
+		\begin{enumerate}[k]
+			\item សង់តារាងអថេរភាពនៃ $f$។ 
+			\item សិក្សាទីតាំងធៀបរវាងក្រាប $C$ និងបន្ទាត់ $d$ ។
+			\item សង់ក្រាប $C$ និងបន្ទាត់ $d$ ក្នងតម្រុយតែមួយ។
+		\end{enumerate}
+	\end{enumerate}
+	\end{enumerate}
+		\begin{center}
+		\sffamily\color{blue}
+		សូមសំណាងល្អ!
+		\end{center}
+\end{document}

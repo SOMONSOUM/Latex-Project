@@ -1,0 +1,21 @@
+\documentclass[a4paper,11pt]{booki}
+\usepackage[
+europeanresistors
+]{circuitikz}
+\begin{document}
+	\chapter{ចលនាក្នុងប្លង់}
+	\section{ទម្រង់ពិជគណិត}
+	\section{ទម្រង់ធរណីមាត្រ}
+	\subsection{ម៉ូឌុល}
+	\subsection{អាគុយម៉ង់}
+	\begin{circuitikz} 
+		\draw (0,0)
+		node[above] {A}
+		to[R=$R$,*-*] ++(2.5,0)
+		node[above] {B}
+		to[L=$L_r$,-*] ++(2.5,0)
+		node[above] {D}
+		to[C=$C$,-*] ++(2.5,0)
+		node[above] {E};
+	\end{circuitikz}
+\end{document}

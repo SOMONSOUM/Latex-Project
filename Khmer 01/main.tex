@@ -1,0 +1,50 @@
+\documentclass[11pt, a5paper]{article}
+% geometry
+\RequirePackage{geometry}
+% ​បង្កើតទំហំក្រដាស់
+\geometry{%
+	left=0.7cm,%
+	right=0.7cm,%
+	top=1.5cm,%
+	bottom=1.5cm}
+\usepackage[no-math]{fontspec} %ប្រើ package នេះដើម្បីសរសេរភាសាខ្មែរ
+\usepackage{fancyhdr}
+% Set Font ដើម្បីសរសេរជាភាសាខ្មែរ
+\setmainfont{Khmer OS Battambang} %\rmfamily
+\setsansfont{Khmer OS Bokor} %\sffamily
+\setmonofont{Khmer OS Siemreap} %\ttfamily
+% Set ប្រភេទពុម្ភអក្សរ ថ្មី
+\newfontfamily{\en}{Times New Roman} 
+\newfontface{\kml}{Khmer OS Muol Light}
+\newfontface{\kob}{Khmer OS Battambang}
+\newfontface{\kbk}{Khmer OS Bokor}
+% ប្រកាស ប្រភេទពុម្ភអក្សរ ថ្មី
+\DeclareTextFontCommand{\textkhl}{\kml}
+\DeclareTextFontCommand{\texten}{\en}
+\DeclareTextFontCommand{\textbb}{\kbk}
+\XeTeXlinebreaklocale "kh"% line break rule
+\XeTeXlinebreakskip = 0pt plus 1pt minus 1pt% line break skip
+
+\pagestyle{fancy}
+\fancyhf{}
+%\rhead{Share\LaTeX}
+\lhead{\kml រៀនគណិតវិទ្យាទាំងអស់គ្នា}
+\rhead{\LaTeX}
+\lfoot{ \kbk បង្រៀនដោយ \kml ស៊ុំ សំអុន}
+\rfoot{\kbk ទូរស័ព្ទលេខ \kml ០៩៦ ៩៤០ ៥៨៤០ }
+
+%\thispagestyle{empty} % ​បំបាត់លេខទំព័រ
+\begin{document}
+	\section*{\centering \LaTeX \textkhl{(ឡាតិច)}}
+	\quad\LaTeX~ជាភាសាកុំព្យួទ័រដែលអនុញ្ញាតឲ្យយើងប្រើប្រាស់ដើម្បីសរសេរឯកសារបច្ចេកទេស ដែលមានគុណភាពខ្ពស់ ។ \LaTeX~បង្កើតឡើងដើម្បីជួយសម្រួលដល់ការសរសេរអត្ថបទ ដែលមាននិម្មិតសញ្ញាគណិតវិទ្យា រូបមន្តគីមី ស្រៈព្យព្ជានៈ ជាពិសេសការរៀបចំឯកសារ ដើម្បីបោះពុម្ភផ្សាយផ្សេងៗ។ ម្យ៉ាងវិញទៀត បច្ចុប្បន្ននេះនៅតាមសាកលវិទ្យាល័យល្បីៗមួយចំនួនលើសាកលលោក គេតម្រូវឲ្យនិសិ្សតសរសេរនិក្ខេបបទ និងឯកសារវិទ្យាសាស្រ្តដោយប្រើភាសា ឬកម្មវិធី \LaTeX~ នេះ។\\
+	\subsection*{\centering \LaTeX~\textkhl{មានលក្ខណៈសម្បត្តិពិសេសដូចជា៖}}
+	\begin{description}
+		\item[\textkhl{គុណភាព៖}] \LaTeX~ផលិតចេញនូវឯកសារ pdf ដែលមានគុណភាពច្បាស់ល្អ។
+		\item [\textkhl{ស្វ័យប្រវត្តិ៖}] ការរចនាសម្ព័ន្ធអត្ថបទ ដូចជា ជំពួក ផ្នែក ផ្នែករង លេខរៀងបញ្ជី ត្រូវបានរៀបចំឡើងជាស្វ័យប្រវត្តិ។
+		\item[\textkhl{ទម្ងន់ឯកសារ៖}] ឯកសារមានទម្ងន់ស្រាល បើធៀបទៅនឹងកម្មវិធីវាយអត្ថបទផ្សេងៗទៀត។
+		\item[\textkhl{សម្រង់បញ្ជីរ៖}] \LaTeX~អនុញ្ញាតឲ្យយើង ស្រង់ចេញនូវតារាងបញ្ជីមាតិកា បញ្ជីតារាង និងបញ្ជីរូបភាពជាដើម។
+		\item[\textkhl{ពុម្ភអក្សរគណិតវិទ្យា៖}] \LaTeX~អនុញ្ញាតឲ្យយើងផ្លាស់ប្តូរពុម្ភអក្សរគណិតវិទ្យាតាមតម្រូវការ​ ឬតាមប្រភេទពុម្ភអក្សរដែលយើងចូលចិត្ត។
+		\item[\textkhl{សទ្ទានុក្រម៖}] \LaTeX~បង្កភាពងាយស្រួលដល់ការបង្កើតសទ្ទានុក្រមនៅផ្នែកខាងក្រោយនៃសៀវភៅ។
+		\item[\textkhl{ឯកសារយោង៖}] \LaTeX~រៀបចំជាស្រេចនូវលំដាប់លំដោយនៃការសរសេរចូរនូវឯកសារយោង។
+	\end{description}
+\end{document}

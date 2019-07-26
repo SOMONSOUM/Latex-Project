@@ -1,0 +1,114 @@
+\documentclass[12pt, a4paper]{beamer}
+\usetheme{Madrid}
+\usecolortheme{beaver}
+\usefonttheme{serif}     % Font theme: serif
+%\usepackage{ccfonts}     % Font family: Concrete Math
+\usepackage[T1]{fontenc} % Font encoding: T1
+\title{Web Development}
+\subtitle{HTML5}
+\author{Som On Soum}
+\institute[CA]{CODEHUB ACADEMY}
+\date{\today}
+\logo{\includegraphics[height=1cm]{codehublogo.png}}
+%%HTML5
+\usepackage{color}
+\definecolor{lightgray}{rgb}{0.95, 0.95, 0.95}
+\definecolor{darkgray}{rgb}{0.4, 0.4, 0.4}
+\definecolor{purple}{rgb}{0.65, 0.12, 0.82}
+\definecolor{ocherCode}{rgb}{1, 0.5, 0} % #FF7F00 -> rgb(239, 169, 0)
+\definecolor{blueCode}{rgb}{0, 0, 0.93} % #0000EE -> rgb(0, 0, 238)
+\definecolor{greenCode}{rgb}{0, 0.6, 0} % #009900 -> rgb(0, 153, 0) 
+\usepackage{upquote}
+\usepackage{listings}
+\makeatletter
+\lstdefinelanguage{HTML5}{
+	sensitive=true,
+	keywords={%
+		% JavaScript
+		typeof, new, true, false, catch, function, return, null, catch, switch, var, if, in, while, do, else, case, break,
+		% HTML
+		html, title, meta, style, head, body, script, canvas,
+		% CSS
+		border:, transform:, -moz-transform:, transition-duration:, transition-property:,
+		transition-timing-function:
+	},
+	% http://texblog.org/tag/otherkeywords/
+	otherkeywords={<, >, \/},   
+	ndkeywords={class, export, boolean, throw, implements, import, this},   
+	comment=[l]{//},
+	% morecomment=[s][keywordstyle]{<}{>},  
+	morecomment=[s]{/*}{*/},
+	morecomment=[s]{<!}{>},
+	morestring=[b]',
+	morestring=[b]",    
+	alsoletter={-},
+	alsodigit={:}
+}
+\lstset{%
+	% Basic design
+	backgroundcolor=\color{lightgray},
+	basicstyle={\small\ttfamily},   
+	frame=l,
+	% Line numbers
+	xleftmargin={0.75cm},
+	numbers=left,
+	stepnumber=1,
+	firstnumber=1,
+	numberfirstline=true,
+	% Code design
+	identifierstyle=\color{black},
+	keywordstyle=\color{blue}\bfseries,
+	ndkeywordstyle=\color{greenCode}\bfseries,
+	stringstyle=\color{ocherCode}\ttfamily,
+	commentstyle=\color{darkgray}\ttfamily,
+	% Code
+	language={HTML5},
+	tabsize=2,
+	showtabs=false,
+	showspaces=false,
+	showstringspaces=false,
+	extendedchars=true,
+	breaklines=true
+}
+\makeatother
+%%HTML5
+
+\begin{document}
+	\begin{frame}
+		\titlepage
+	\end{frame}
+	\AtBeginSection[]
+	{
+		\begin{frame}
+			\frametitle{Table of Contents}
+			\tableofcontents[currentsection]
+		\end{frame}
+	}
+	\section{Introduction}
+	\begin{frame}{What is HTML?}
+		HTML is the standard markup language for creating Web pages.
+		\begin{itemize}
+			 \item<1-> HTML stands for Hyper Text Markup Language.
+			 \item<2-> HTML describes the structure of Web pages using markup
+			 \item<3-> HTML elements are the building blocks of HTML pages
+			 \item<4-> HTML elements are represented by tags
+			 \item <5-> HTML tags label pieces of content such as "heading", "paragraph", "table", and so on
+			 \item <6-> Browsers do not display the HTML tags, but use them to render the content of the page
+		\end{itemize}
+	\end{frame}
+	\subsection{A Simple HTML Document}
+		\begin{lstlisting}
+			<!DOCTYPE html>
+			<html>
+			<head>
+			<title>Page Title</title>
+			</head>
+			<body>
+			
+			<h1>My First Heading</h1>
+			<p>My first paragraph.</p>
+			
+			</body>
+			</html>
+		\end{lstlisting}
+\end{document}

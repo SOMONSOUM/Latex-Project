@@ -15,9 +15,9 @@
 %\RequirePackage{newpxmath}
 % language
 \usepackage[no-math]{fontspec}% font specfication% no math font
-\setmainfont[Ligatures=TeX,AutoFakeBold=0.25,AutoFakeSlant=0.25]{Khmer OS Content}% roman font
+\setmainfont[Ligatures=TeX,AutoFakeBold=0.25,AutoFakeSlant=0.25]{Kantumruy}% roman font
 \setsansfont[Ligatures=TeX,AutoFakeBold=0,AutoFakeSlant=0.25]{Khmer OS Muol Light}% sans serif font
-\setmonofont[Ligatures=TeX,AutoFakeBold=0.25,AutoFakeSlant=0.25]{Khmer Kep}% typewriter font
+\setmonofont[Ligatures=TeX,AutoFakeBold=0.25,AutoFakeSlant=0.25]{Kantumruy}% typewriter font
 \XeTeXlinebreaklocale "kh"% line break rule
 \XeTeXlinebreakskip = 0pt plus 1pt minus 1pt% line break skip
 % khmer number
@@ -210,6 +210,7 @@
 \def\header#1#2#3{\fancyhead{\color{black} #1\hfill #2\hfill #3}}
 \def\footer#1#2#3{\fancyfoot{\color{black} #1\hfill #2\hfill #3}}
 \pagestyle{fancy}
+\pagenumbering{khmer} 
 %%
 % boxes
 \RequirePackage{tcolorbox}

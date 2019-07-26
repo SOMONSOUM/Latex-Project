@@ -1,8 +1,8 @@
 \contentsline {chapter}{អារម្ភកថា}{iii}{chapter*.2}
 \contentsline {chapter}{អំណរគុណ}{v}{chapter*.3}
-\contentsline {chapter}{\numberline {1}ចំណងជើងជំពូក}{1}{chapter.1}
-\contentsline {section}{\numberline {1.1}ចំណងជើងផ្នែក}{1}{section.1.1}
-\contentsline {subsection}{\numberline {1.1.1}ចំណងជើងផ្នែករង}{1}{subsection.1.1.1}
+\contentsline {chapter}{\numberline {1}សិក្សាអនុគមន៍​ និងខ្សែកោង}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}អនុគមន៍សនិទាន}{1}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}គន្លឹះសិក្សាអនុគមន៍}{1}{subsection.1.1.1}
 \contentsline {chapter}{\numberline {A}ចំណងជើងជំពូក}{3}{appendix.A}
 \contentsline {section}{\numberline {A.1}ចំណងជើងផ្នែក}{3}{section.A.1}
 \contentsline {subsection}{\numberline {A.1.1}ចំណងជើងផ្នែករង}{3}{subsection.A.1.1}

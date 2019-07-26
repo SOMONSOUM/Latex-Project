@@ -1,0 +1,83 @@
+\ProvidesPackage{simple}[2018/02/10]
+\usepackage{geometry}
+\usepackage[table]{xcolor}
+\usepackage{enumitem}
+\usepackage{tocloft}
+\usepackage{blindtext}% dummy text
+%\usepackage[condensed,math]{anttor}
+%\usepackage[T1]{fontenc}
+%\usepackage[sc]{mathpazo}
+%\linespread{1.05}         % Palladio needs more leading (space between lines)
+%\usepackage[T1]{fontenc}
+\geometry{
+	left=0.7cm,%
+	right=0.7cm,%
+	top=1.5cm,%
+	bottom=1.5cm
+}
+\usepackage{amsthm}
+\usepackage{newpxmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\everymath{\protect\displaystyle\protect\color{blue}}
+\usepackage[no-math]{fontspec}
+\setmainfont[Ligatures=TeX,AutoFakeBold=1, AutoFakeSlant=0.25]{Khmer OS Battambang} % roman font
+\setsansfont[AutoFakeBold=0.25,AutoFakeSlant=0.25]{Khmer OS Muol Light}% sans serif font
+\setmonofont[AutoFakeBold=0.25,AutoFakeSlant=0.25]{Khmer OS Bokor}% typewriter font
+\XeTeXlinebreaklocale "kh"
+\XeTeXlinebreakskip = 0pt plus 1pt minus 1pt% line break skip
+\setmainfont[Scale = 0.8333333334, Script=Khmer]{Khmer OS Battambang}
+\setmathrm{Times New Roman}
+%\RequirePackage{unicode-math}
+%\setmathfont{Latin Modern Math}
+%\setmathfont{TeX Gyre Pagella Math}
+\makeatletter 
+% khmer number
+\def\khmer#1{\expandafter\@khmer\csname c@#1\endcsname}
+\def\@khmer#1{\expandafter\@@khmer\number#1\@nil}
+\def\@@khmer#1{%
+	\ifx#1\@nil% terminate when encounter @nil
+	\else%
+	\ifcase#1 ០\or ១\or ២\or ៣\or ៤\or ៥\or ៦\or ៧\or ៨\or ៩\fi%
+	\expandafter\@@khmer% recursively map the following characters
+	\fi}
+\def\khmernumeral#1{\@@khmer#1\@nil}
+\def\alpkh#1{\expandafter\@alpkh\csname c@#1\endcsname}
+\def\@alpkh#1{%
+	\ifcase#1% zero ->none
+	\or ក\or ខ\or គ \or ឃ\or ង%
+	\or ច\or ឆ\or ជ\or ឈ\or ញ%
+	\or ដ\or ឋ\or ឌ\or ឍ\or ណ%
+	\or ត\or ថ\or ទ\or ធ\or ន%
+	\or ប\or ផ\or ព\or ភ\or ម%
+	\or យ\or រ\or ល\ro វ\or ស%
+	\or ហ\or ឡ\or អ%
+	\else%
+	\@ctrerr % Otherwise counter error
+	\fi
+}
+\def\khmershortdate{%
+	\ifnum\day<10\@khmer{0\day}\else\@khmer\day\fi%
+	/\@khmer\month%
+	/\@khmer\year}
+\def\khmerdate{%
+	\ifnum\day<10\@khmer{0\day}\else\@khmer\day\fi~%
+	\ifcase\month\or%
+	មករា\or កុម្ភៈ\or មិនា\or មេសា\or%
+	ឧសភា\or មិថុនា\or កក្កដា\or សីហា\or%
+	កញ្ញា\or តុលា\or វិច្ឆិកា\or ធ្នូ\fi~%
+	\@khmer\year}
+\makeatother
+\AddEnumerateCounter{\alpkh}{\@alpkh}{ឈ}
+\AddEnumerateCounter{\khmer}{\@khmer}{៣}
+% enumerate keys
+\SetEnumitemKey{1}{leftmargin=*,labelsep=1ex,itemsep=1ex,label=\arabic*.}
+\SetEnumitemKey{a}{leftmargin=*,labelsep=1ex,itemsep=1ex,label=\alph*.}
+\SetEnumitemKey{A}{leftmargin=*,labelsep=1ex,itemsep=1ex,label=\Alph*.}
+\SetEnumitemKey{i}{leftmargin=*,labelsep=1ex,itemsep=1ex,label=\roman*.}
+\SetEnumitemKey{I}{leftmargin=*,labelsep=1ex,itemsep=1ex,label=\Roman*.}
+\SetEnumitemKey{k}{leftmargin=*,labelsep=1ex,itemsep=1ex,label=\alpkh*.}
+\SetEnumitemKey{m}{leftmargin=*,labelsep=1ex,itemsep=1ex,label=\khmer*.}
+
+
+\pagenumbering{khmer}

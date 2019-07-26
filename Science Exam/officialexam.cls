@@ -31,7 +31,7 @@
 
 % language
 \newcommand{\Akpj}{\fontspec{AKbalthom KOUPREY Jais}\selectfont}
-\newcommand{\ks}{\fontspec{Khmer Moul}\selectfont}
+\newcommand{\ks}{\fontspec{Khmer OS Muol Light}\selectfont}
 \newcommand{\en}{\fontspec{Abyssinica SIL}\selectfont}
 \newcommand{\kml}{\fontspec{Khmer OS Muol Light}\selectfont}
 \newcommand{\kn}{\fontspec{Khmer OS Niroth}\selectfont}
@@ -40,7 +40,7 @@
 \setmainfont[%
 Ligatures=TeX,%
 AutoFakeBold=0.5,%
-AutoFakeSlant=0.25]{Battambang}% roman font
+AutoFakeSlant=0.25]{Antioch Text}% roman font
 \setsansfont[%
 Ligatures=TeX,%
 AutoFakeBold=0,%
@@ -48,7 +48,7 @@ AutoFakeSlant=0.25]{Khmer OS Bokor}% sans serif font
 \setmonofont[%
 Ligatures=TeX,%
 AutoFakeBold=0.5,%
-AutoFakeSlant=0.25]{Battambang}% typewriter font
+AutoFakeSlant=0.25]{Antioch Text}% typewriter font
 \XeTeXlinebreaklocale "kh"% line break rule
 \XeTeXlinebreakskip = 0pt plus 1pt minus 0.5pt% line break skip
 
@@ -59,7 +59,8 @@ AutoFakeSlant=0.25]{Battambang}% typewriter font
      \SetWatermarkColor{black} 
       \SetWatermarkHorCenter{0.5cm}
        \SetWatermarkFontSize{10pt} 
-        \SetWatermarkText{}
+        \SetWatermarkText{ប្រឡងសញ្ញាបត្រមធ្យមសិក្សាទុតិយភូមិ ថ្ងៃទី ១៩ ខែ សីហា​ ឆ្នាំ ២០១៩}
+
 % khmer number
 \def\khmer#1{\expandafter\@khmer\csname c@#1\endcsname}
 \def\@khmer#1{\expandafter\@@khmer\number#1\@nil}
@@ -409,7 +410,7 @@ AutoFakeSlant=0.25]{Battambang}% typewriter font
 	after-item-skip=0.5ex%
 }
 % todo: define additional commands 
-\def\dashfill{\leavevmode \cleaders \hb@xt@ 6pt{\hss \rule{4pt}{1pt}\hss }\hfill \kern \z@} \def\borderline#1{{\color{khtug}\hrulefill\lower.55ex\hbox{ [{\kml #1}]}\hrulefill}} 
+\def\dashfill{\leavevmode \cleaders \hb@xt@ 6pt{\hss \rule{4pt}{1pt}\hss }\hfill \kern \z@} \def\borderline#1{{\color{khtug}\hrulefill\lower.55ex\hbox{ {\kml #1}}\hrulefill}} 
 \def\baselinestretch{1.25} 
 \parindent=0pt 
 \footskip=15pt
@@ -418,74 +419,35 @@ AutoFakeSlant=0.25]{Battambang}% typewriter font
  % todo: define name macro
  \def\@highschool{មេតូឌីស្ទកម្ពុជា} 
   \def\highschool#1{\def\@highschool{#1}} 
-  \def\@xam{ឆមស២}
+  \def\@xam{សញ្ញាបត្រមធ្យមសិក្សាទុតិយភូមិ}
   \def\xam#1{\def\@xam{#1}}
   \def\@grade{១២}
   \def\grade#1{\def\@grade{#1}}
-  \def\@subject{{\color{khtug}គណិតវិទ្យាថ្នាក់វិទ្យាសាស្រ្ត}}
+  \def\@subject{{\color{khtug}គណិតវិទ្យា~(ថ្នាក់វិទ្យាសាស្រ្ត)}}
   \def\subject#1{\def\@subject{#1}}
   \def\@minute{{\color{khtug}{១៥០}}}
   \def\minute#1{\def\@minute{#1}}
   \def\@score{{\color{khtug}១២៥}}
   \def\score#1{\def\@score{#1}}
-  \def\@xamdate{{\color{khtug}១០ សីហា ២០១៨}}
+  \def\@xamdate{{\color{khtug}១៩ សីហា ២០១៩}}
   \def\xamdate#1{\def\@xamdate{#1}}
   % todo: print exam rule 
   \def\maketitle{% 
  {\ks  \small \begin{minipage}[t]{10cm} 
-   ក្រសួងអប់រំយុវជន និងកីទ្បា \\
-    វិទ្យាល័យ\@highschool\\ 
-     {\color{khtug}ប្រឡងសញ្ញាប័ត្រមធ្យមសិក្សាទុតិយភូមិ} %\@xam~ថ្នាក់ទី\@grade \\ 
+   ត្រៀមប្រឡង\@xam \\
+    សម័យប្រឡង:\quad\@xamdate\\ 
+    វិញ្ញាសា:\quad\@subject\\
+    រយៈពេល:\quad\@minute​~នាទី\\
+    ពិន្ទុ:\quad\@score
+    %\@xam~ថ្នាក់ទី\@grade \\ 
       \end{minipage}
        \hfill 
         \begin{minipage}[t]{7cm}
-         លេខបន្ទប់៖ \dotfill\\
- លេខតុ៖ \dotfill\\ 
- {\color{khtug}មណ្ឌលប្រទ្បង៖} \dotfill 
-  \end{minipage}\\ 
-  \begin{minipage}[b]{6cm}
-   ឈ្មោះ និងហត្ថលេខាអនុរក្ស៖
-   \vspace*{3\baselineskip}
-   \end{minipage} 
-   \begin{minipage}[b]{8cm}
-    សម័យបឡង៖ \@xamdate\\
-     នាមត្រកូលនិងនាមខ្លួន៖ \dotfill\\ 
-      ថ្ងៃខែឆ្នាំកំណើត៖ \dotfill\\ 
-       ហត្ថលេខា៖ \dotfill 
-       \end{minipage} 
-        \hfill 
-         \fbox{%
-         \begin{minipage}[b]{5cm}
-        {\color{khtug} លេខសម្ងាត់៖}
-           \end{minipage}}
-           \\[0.2cm]
-           \begin{minipage}[t]{21cm}
-           
-{\small  បេក្ខជនមិនត្រូវធ្វើសញ្ញាសម្គាល់អ្វីមួយនៅលើសន្លឹកប្រទ្បងទ្បើយ។ សន្លឹកប្រទ្បងដែលមានសញ្ញាសម្គាល់នឹងត្រូវបានពិន្ទុសូន្យ។  }  
-    
-      \end{minipage}
-       \hfill 
-        \begin{minipage}[t]{0cm}
-        .
-  \end{minipage}
-   {\Large\lower.6ex\hbox{\ding{34}}}\dashfill\\[.7ex] 
-    វិញ្ញាសា៖ \@subject \quad រយៈពេល៖ \@minute~នាទី \quad ពិន្ទុ         ៖ \@score \hfill 
-     \fbox{% 
- \begin{minipage}[b]{5cm}
-{\color{khtug}លេខសម្ងាត់៖}
-   \end{minipage}}\\
-    \begin{minipage}[t]{3cm}
-     \begin{tikzpicture}[overlay]
-      \draw(1.5,-.5)ellipse(1.5 and 1);
-       \node at(1.5,0){ពិន្ទុសរុប}; 
-        \end{tikzpicture} 
-         \end{minipage}
-          \begin{minipage}[t]{17cm}
-          {\color{khtug} បទបញ្ជារ៖~~~~ ១.} បេក្ខជនមិនត្រូវអនុញ្ញាត្តិឲ្យប្រើម៉ាស៊ីនគិតលេខឡើយ។\\ 
-             \hphantom{សេចក្តីណែនាំ៖} 
-            {\color{khtug}  ២. }បេក្ខជនមិនត្រូវអនុញ្ញាត្តិឲ្យលួចចម្លងសន្លឹកកិច្ចការគ្នាឡើយ សូមរក្សាភាពស្មោះត្រង់ និងសេចក្តីថ្លៃថ្នូររបស់ខ្លួន។
-               \end{minipage} 
-                \vskip1em} }
+        {មណ្ឌលប្រទ្បង} \dotfill \\
+         លេខបន្ទប់ \dotfill លេខតុ \dotfill\\
+		 ឈ្មោះបេក្ខជន \dotfill\\
+		 ហត្ថលេខាបេក្ខជន \dotfill 
+  \end{minipage} } }
                  % todo: declare experimental latex 3 package to use new language syntax
  %\RequirePackage{expl3}[2017/04/15] 
   % todo: provide new class
@@ -497,9 +459,9 @@ AutoFakeSlant=0.25]{Battambang}% typewriter font
 \lhead{}
 %\chead{\en \LaTeX}
 \rhead{}
-\lfoot{ }
+\lfoot{រៀបរៀង និងបង្រៀនដោយ: ស៊ុំ សំអុន }
 \cfoot{\thepage}
-\rfoot{ }       
+\rfoot{ទូរស័ព្ទលេខ: ០៨៩ ៨៩៨ ៦៦១​ }         
 %
 \def\arraystretch{1.25}
 %

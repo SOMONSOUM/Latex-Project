@@ -32,19 +32,19 @@
 % language
 \newcommand{\Akpj}{\fontspec{AKbalthom KOUPREY Jais}\selectfont}
 \newcommand{\ks}{\fontspec{Bokor}\selectfont}
-\newcommand{\en}{\fontspec{Abyssinica SIL}\selectfont}
-\newcommand{\kml}{\fontspec{Khmer OS Muol Light}\selectfont}
-\newcommand{\kn}{\fontspec{Khmer OS Niroth}\selectfont}
+\newcommand{\en}{\fontspec{Times New Roman}\selectfont}
+\newcommand{\kml}{\fontspec{Battambang}\selectfont}
+\newcommand{\kn}{\fontspec{Khmer OS}\selectfont}
 %\RequirePackage[no-math]{fontspec}% no math font
 \RequirePackage{fontspec}
 \setmainfont[%
 Ligatures=TeX,%
 AutoFakeBold=0.5,%
-AutoFakeSlant=0.25]{Battambang}% roman font
+AutoFakeSlant=0.25]{Kantumruy}% roman font
 \setsansfont[%
 Ligatures=TeX,%
 AutoFakeBold=0,%
-AutoFakeSlant=0.25]{Khmer OS Bokor}% sans serif font
+AutoFakeSlant=0.25]{Kantumruy}% sans serif font
 \setmonofont[%
 Ligatures=TeX,%
 AutoFakeBold=0.5,%
@@ -500,7 +500,7 @@ AutoFakeSlant=0.25]{Battambang}% typewriter font
 \rhead{}
 \lfoot{រៀបរៀងដោយ ស៊ុំ សំអុន }
 \cfoot{\thepage}
-\rfoot{ ទូរស័ព្ទ:  ០៩៦៩៤០៥៨៤០}       
+\rfoot{ ទូរស័ព្ទ:  ០៨៩៨៩៨៦៦១      
 %
 \def\arraystretch{1.25}
 %

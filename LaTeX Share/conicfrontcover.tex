@@ -1,0 +1,108 @@
+\documentclass[a5paper]{book}
+% Define new command
+\def\printbooktitle{}
+\def\printauthorname{}
+\def\printinstitutename{}
+\def\printbookedition{}
+\def\printpublishyear{}
+\def\booktitle#1{\def\printbooktitle{#1}}
+\def\authorname#1{\def\printauthorname{#1}}
+\def\institutename#1{\def\printinstitutename{#1}}
+\def\bookedition#1{\def\printbookedition{#1}}
+\def\publishyear#1{\def\printpublishyear{#1}}
+% Load packages
+\usepackage{yfonts}
+\usepackage{tikz}
+\usetikzlibrary{patterns,shapes,arrows.meta,quotes,angles}
+\tikzstyle{formula style} = [rotate=90,rounded rectangle,left color=red!89!black,right color=red,fill opacity=0.5,draw=white,line width=0.5ex,text=white,text opacity=1,inner sep=1em]
+\tikzstyle{formula rotate style} = [rotate=90,rounded rectangle,left color=red!89!black,right color=red,fill opacity=0.5,draw=white,line width=0.5ex,text=white,text opacity=1,inner sep=1em]
+\tikzset{rarrow/.style={-{Stealth[]}}}
+\usepackage{amsmath}
+\usepackage{newpxmath}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{anyfontsize}
+\usepackage[no-math]{fontspec}
+\newfontfamily{\mlfamily}[BoldFont=*]{Khmer OS Muol}
+\newfontfamily{\bkfamily}[BoldFont=*]{Khmer OS Bokor}
+\newfontfamily{\arfamily}{Arial}
+\newfontfamily{\wdfamily}{Waltograph}
+\newcommand{\textwalt}[1]{\begingroup\wdfamily#1\endgroup}
+\newcommand*{\formulafont}{\fontsize{20}{\baselineskip}\selectfont}
+\newcommand*{\titlefont}{\fontsize{29}{\baselineskip}\selectfont\mlfamily\bfseries}
+\newcommand*{\authorfont}{\fontsize{36}{\baselineskip}\selectfont\mlfamily\bfseries}
+% Choose page color
+\pagecolor{red}
+% page style
+\pagestyle{empty}
+% Book information
+\booktitle{កោនិក}
+\authorname{Bunny Book Series}
+%\institutename{វិទ្យាល័យ~សុខ~អាន~ទន្លេបាទី}
+\institutename{គណិតវិទ្យាកម្រិតវិទ្យាល័យ}
+\bookedition{បោះពុម្ភលើកទី~១}
+\publishyear{ឆ្នាំ~២០១៧}
+% Cover design
+\begin{document}
+\begin{tikzpicture}[remember picture, overlay]
+% Title background
+\fill[left color=blue!89!black,right color=blue](current page.north west)rectangle([xshift=3cm]current page.south west);
+% Institute background
+\fill[left color=red!89!black,right color=red](current page.north west)rectangle([yshift=-3cm]current page.north east);
+% bunny book logo
+\node (bb) at ([xshift=2cm,yshift=-2cm]current page.north west) {\includegraphics[width=2cm,height=2cm]{bb.pdf}};
+% Stylish pattern
+\pattern[pattern color=gray,pattern=bricks]([xshift=3.1cm,yshift=-3.1cm]current page.north west)rectangle(current page.south east);
+% Vertical line
+\fill[fill=cyan]([xshift=3cm]current page.north west)rectangle([xshift=3.1cm]current page.south west);
+% Horizontal line
+\fill[fill=cyan]([yshift=-3cm]current page.north west)rectangle([yshift=-3.1cm]current page.north east);
+% Book title
+\node[right,text=white](title) at ([xshift=3.5cm,yshift=-2cm]current page.north west) {\titlefont\printbooktitle};
+% Author name
+\node[right,text=white](author) at ([xshift=3.5cm,yshift=-4cm]current page.north west) {\authorfont\textwalt{\printauthorname}};
+% Book edition
+\node[right,text=white](edition) at ([xshift=3.5cm,yshift=-5.5cm]current page.north west) {\formulafont\bkfamily\printbookedition\hspace{2em}\printpublishyear};
+% Institute name
+\node[left,text=white](institute) at ([xshift=2cm,yshift=-3.5cm]current page.north west) [rotate=90]{\titlefont\printinstitutename};
+% graph
+\begin{scope}[shift={(5.2cm,-8cm)},every node/.style={text=white},every path/.style={white,line width=1.5pt}]
+\large
+\coordinate(O)at(0,0);
+\coordinate(X')at(-4,0);
+\coordinate(X)at(4,0);
+\coordinate(Y')at(0,-3);
+\coordinate(Y)at(0,4);
+\coordinate(V)at(O);
+\coordinate(F)at(0,1);
+\coordinate(D)at(0,-1);
+\coordinate(Q)at(2.5,1.56);
+\coordinate(R)at(2.5,-1);
+\coordinate(I)at(Q|-Y);
+\coordinate(T)at(-1.16,-3.01);
+\coordinate(U)at(4.02,3.46);
+\coordinate(L)at(-3.76,4);
+\coordinate(M)at(4,-2.21);
+\draw[rarrow](X')node[left]{$ x' $}--(X)node[right]{$ x $};
+\draw[rarrow](Y')node[below]{$ y' $}--(Y)node[above]{$ y $};
+\draw([yshift=1ex]O)--([xshift=1ex,yshift=1ex]O)--([xshift=1ex]O);
+\draw[samples=50,domain=-4:4]plot(\x,{.25*\x*\x});
+\draw(D-|X')--node[very near start,below]{$ (\Delta) $}(D-|X);
+\draw[rarrow](I)--node[near start,right]{$ i $}(Q);
+\draw[rarrow](Q)--(F);
+\draw(T)--node[sloped,very near end,below]{$ (T) $}(U);
+%\draw(L)--node[sloped,very near start,above]{$ (FR) $}(M);
+\draw[dotted](Q)--(R);
+\draw([yshift=1ex]R)--([xshift=1ex,yshift=1ex]R)--([xshift=1ex]R);
+\node[below left]at(O){$ O $};
+\node[left]at(F){$ F $};
+\node[right]at(Q){$ Q $};
+\node[below]at(R){$ R $};
+\node[below left]at(-2,1){$ (P) $};
+\pic[draw,angle radius=.7cm,angle eccentricity=1.25,"$ \alpha $"]{angle=U--Q--I};
+\pic[draw,angle radius=.7cm,angle eccentricity=1.25,"$ \alpha $"]{angle=F--Q--T};
+\foreach\p in{V,F,Q}\fill[white](\p)circle(1.5pt);
+\pic[draw,dotted,angle radius=.7cm,angle eccentricity=1.25,"$ \alpha $"]{angle=T--Q--R};
+\end{scope}
+\end{tikzpicture}
+\end{document}

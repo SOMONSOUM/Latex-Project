@@ -1,0 +1,615 @@
+\documentclass[12pt, a4paper]{article}
+%%import package named techno
+\usepackage{techno}
+\usepackage[export]{adjustbox}
+\usepackage{wrapfig}
+\usepackage{tkz-tab}
+%សរសេរគីមីវិទ្យា
+%\usepackage[version=3]{mhchem}
+%\usepackage{mathpazo}% change math font
+%\usepackage[no-math]{fontspec}% font specfication
+\everymath{\protect\displaystyle\protect\color{blue}}
+\begin{document}
+\maketitle\koc
+\begin{enumerate}[m]
+	\item គេឲ្យ $E$ ជាសំណុំប្ញសទាំងអស់នៃសមីការ $x^2+5x+6=0$ ។ 
+	\begin{enumerate}[k,5]
+		\item $E=\lbrace-2\rbrace$
+		\item $E=\lbrace-3\rbrace$
+		\item $E=\lbrace3,2\rbrace$
+		\item $E=\lbrace3,-2\rbrace$
+		\item $E=\lbrace-3,-2\rbrace$
+	\end{enumerate}
+	\answer
+	\begin{center}
+		តាម  $Vieta's~Theorem$ គេមាន $X^2-SX+P=0$ ដែល $\alpha$ និង $\beta$ ជាប្ញសនៃសមីការនេះ គេបាន $\alpha+\beta=S$ និង $\alpha\cdot\beta=P$ \\
+		ដើម្បី ឲ្យបានសមីការមានទម្រង់ $x^2+5x+6=0$ លុះត្រាតែ ផលបូកប្ញស $\alpha+\beta=-5$ និង $\alpha\cdot\beta=6$\\
+		$\therefore \quad$ \kml ចម្លើយ \kbk ង
+	\end{center}
+	\kml សម្គាល់ \kb យើងអាចដោះស្រាយតាមវីធីផ្សេងទៀតក៏បាន តែខ្លះអាចនឹងចំណាយពេលច្រើន ។\\
+	{\color{blue}\hrulefill}
+	\item សំណុំ $I$ នៃប្ញសទាំងអស់របស់វិសមីការ $2^{2x}-4\ge0$ គឺ
+	\begin{enumerate}[k,3]
+		\item $I=\left(-\infty;1\right)$
+		\item $I=\left[1;+\infty\right)$
+		\item $I=\left(1;\infty\right)$
+		\item $I=\left(-\infty;1\right]$
+		\item ចម្លើយផ្សេង
+	\end{enumerate}
+	\answer
+	\begin{center}
+		គេមាន $2^{2x}-4\ge0$ នោះ
+		\begin{align*}
+		2^{2x} \ge 2^{2}\\
+		\Leftrightarrow 2x \ge 2\\
+		\Rightarrow x\ge1
+		\end{align*}
+		$\therefore \quad$ \kml ចម្លើយ \kbk ខ
+	\end{center}
+	{\color{blue}\hrulefill}
+	\item ចូរគណនា $\lim\limits_{x\to0}\dfrac{x}{\sqrt{1+x}-1}$ គឺ
+	\begin{enumerate}[k,5]
+		\item $-3$
+		\item $3$
+		\item $2$
+		\item $-2$
+		\item ចម្លើយផ្សេង
+	\end{enumerate}
+	\answer
+	\begin{align*}
+	\lim\limits_{x\to0}\dfrac{x}{\sqrt{1+x}-1} &= 	\lim\limits_{x\to0}\dfrac{x\left(\sqrt{1+x}-1\right)}{x} \\
+	&=\lim\limits_{x\to0}\sqrt{1+x}+1 = 2\\
+	\therefore \quad \lim\limits_{x\to0}\dfrac{x}{\sqrt{1+x}-1} &= 2
+	\end{align*}
+	\begin{center}
+		$\therefore \quad$ \kml ចម្លើយ \kbk គ
+	\end{center}
+	\newpage
+	\item តម្លៃនៃ$\lim\limits_{x\to0}\dfrac{1-\cos2x}{x^2}$ គឺ
+	\begin{enumerate}[k,5]
+		\item $2$
+		\item $1$
+		\item $-2$
+		\item $1$
+		\item ចម្លើយផ្សេង
+	\end{enumerate}
+	\answer
+	\begin{align*}
+	\lim\limits_{x\to0}\dfrac{1-\cos2x}{x^2} &=
+	\lim\limits_{x\to0}\dfrac{2\sin^2x}{x^2}~~\left(1-\cos\alpha=2\sin^2\dfrac{\alpha}{2}\right)\\
+	&=2\left(1\right)^2=2
+	\end{align*}
+	\begin{center}
+		$\therefore \quad$ \kml ចម្លើយ \kbk ក
+	\end{center}
+	{\color{blue}\hrulefill}
+	
+	\item បើ $f'(x)$ ជាដេរីវេនៃអនុគមន៍ $f(x)=\left(x-1\right)e^x$ នោះ
+	\begin{enumerate}[k,3]
+		\item $f'(x)=e^x$
+		\item $f'(x)=\left(x-1\right)e^x$
+		\item $f'(x)=\left(x-1\right)$
+		\item $f'(x)=2xe^x$
+		\item $f'(x)=xe^x$
+	\end{enumerate}
+	\answer
+	\begin{center}
+		\begin{align*}
+		f(x)&=\left(x-1\right)e^x\\
+		f'(x)&=\left(x-1\right)'e^x+\left(e^x\right)'\left(x-1\right)\\
+		Hint: \left(u(x)\cdot v(x)\right)'&=u'(x)v(x)+v'(x)u(x)\\
+		&=xe^x
+		\end{align*}
+		$\therefore \quad$ \kml ចម្លើយ \kbk ង
+	\end{center}
+	{\color{blue}\hrulefill}
+	\item យក $f(x)=3\sin\left(2x+3\right)$ ជាអនុគមន៍ និង $f'(x)$ ជាដេរីវេនៃ $f(x)$ ។ គេបាន
+	\begin{enumerate}[k,3]
+		\item $f'(x)=2\cos\left(2x+3\right)$
+		\item $f'(x)=6\cos\left(2x+3\right)$
+		\item $f'(x)=3\cos\left(2x+3\right)$
+		\item $f'(x)=6\sin\left(2x+3\right)$
+		\item ចម្លើយផ្សេង
+	\end{enumerate}
+	\answer
+	\begin{align*}
+	f(x)&=3\sin\left(2x+3\right)\\
+	f'(x)&=3\left(2x+3\right)'\cos\left(2x+3\right)\\
+	Hint: \left(\sin u(x)\right)'&=u'(x)\cos u(x)\\
+	&=6\cos\left(2x+3\right)
+	\end{align*}
+	\begin{center}
+		$\therefore \quad$ \kml ចម្លើយ \kbk ខ
+	\end{center}
+	{\color{blue}\hrulefill}
+	\item គេយក $r$ ជាម៉ូឌុល និង $\theta$ ជាអាគុយម៉ងនៃចំនួនកុំផ្លិច $z=2\sqrt{2}-2\sqrt{2}i$ គេបាន
+	\begin{enumerate}[k,3]
+		\item $r=4,\theta=\dfrac{3\pi}{4}$
+		\item $r=4,\theta=\dfrac{\pi}{4}$
+		\item $r=4,\theta=-\dfrac{3\pi}{4}$
+		\item $r=4,\theta=-\dfrac{\pi}{4}$
+		\item ចម្លើយផ្សេង
+	\end{enumerate}
+	\answer
+	\begin{center}
+		គេមាន $z=2\sqrt{2}-2\sqrt{2}i$ នោះ $z=4\left(\dfrac{\sqrt{2}}{2}-\frac{\sqrt{2}}{2}i\right)=4\left[\cos\left(-\dfrac{\pi}{4}\right)+i\sin\left(-\dfrac{\pi}{4}\right)\right]$\\
+		$\Rightarrow r=4, \theta=-\frac{\pi}{4}$\\
+		$\therefore \quad$ \kml ចម្លើយ \kbk ឃ
+	\end{center}
+	{\color{blue}\hrulefill}
+	\item ចូរគណនា $\int_{0}^{1}\left(6\sqrt{x}+6x\right)dx$ ស្មើនឹង
+	\begin{enumerate}[k,5]
+		\item $7$
+		\item $-7$
+		\item $\dfrac{7}{6}$
+		\item $-\dfrac{7}{6}$
+		\item ចម្លើយផ្សេង
+	\end{enumerate}
+	\answer
+	\begin{center}
+		គេមាន $\int_{0}^{1}\left(6\sqrt{x}+6x\right)dx$\\
+		\begin{align*}
+		&=4\sqrt{x^3}+3x^2\bigg|_{0}^{1}\\
+		\int_{0}^{1}\left(6\sqrt{x}+6x\right)dx&=4\left(\sqrt{1^3}\right)+3\left(1\right)^2-0=7\\
+		\end{align*}
+		$\therefore \quad$ \kml ចម្លើយ \kbk ក
+	\end{center}
+	{\color{blue}\hrulefill}
+	\item បើ $f(x)=\int4xe^{x^2}dx$នោះ
+	\begin{enumerate}[k,3]
+		\item $f(x)=4e^{x^2}+c$
+		\item $f(x)=e^{x^2}+c$
+		\item $f(x)=2e^{x^2}+c$
+		\item $f(x)=4xe^{x^2}+c$
+		\item ចម្លើយផ្សេង
+	\end{enumerate}
+	\answer
+	\begin{center}
+		ដែល $f(x)=\int4xe^{x^2}dx=2\int2xe^{x^2}dx$ តាង $t = x^2 \Rightarrow dt=2xdx$\\
+		នោះ $f(x)=2\int e^{t}dt=2e^t+c$\\
+		$\Rightarrow f(x)=\int4xe^{x^2}dx=2e^{x^2}+c$\\
+		$\therefore \quad$ \kml ចម្លើយ \kbk  គ
+	\end{center}
+	{\color{blue}\hrulefill}
+	\item កន្សោម $S_n=1+\dfrac{1}{2}+\dfrac{1}{4}+\dots+\dfrac{1}{2^{n-1}}$ ស្មើនឹង
+	\begin{enumerate}[k,3]
+		\item $S_n=2\left(1-2^{-n}\right)$
+		\item $S_n=\dfrac{2^n-1}{2}$
+		\item $S_n=\dfrac{1-2^n}{2}$
+		\item $S_n=2\left(2^n-1\right)$
+		\item ចម្លើយផ្សេង
+	\end{enumerate}
+	\answer
+	\begin{center}
+		តាម $S_n=u_1\cdot\dfrac{1-q^n}{1-q}$ ដែល $q=\dfrac{1}{2}$ ចំពោះ $0<q<1$\\
+		$\Rightarrow S_n=1\cdot\dfrac{1-\left(\dfrac{1}{2}\right)^n}{1-\dfrac{1}{2}}=\dfrac{1-\left(2\right)^{-n}}{\dfrac{1}{2}}$\\
+		$S_n=2\left(1-2^{-n}\right)$\\
+		$\therefore \quad$ \kml ចម្លើយ \kbk ក
+	\end{center}
+	{\color{blue}\hrulefill}
+	\item ក្នុងចំណោមអនុគមន៍ខាងក្រោម តើអនុគមន៍មួយណាមិនមែនជាអនុគមន៍ខួប?
+	\begin{enumerate}[k,3]
+		\item $f_1(x)=\dfrac{8-\cos\left(\sqrt{2}x\right)}{4+\cos\left(\sqrt{2}x\right)}$
+		\item $f_5(x)=\frac{\cos\left(5x\right)-\cos\left(3x\right)}{4+\cos\left(7x\right)+\cos\left(2x\right)}$
+		\item $f_2(x)=\frac{8-3\cos\left(\pi x\right)}{4+\cos\left(3\pi x\right)}$
+		\item $f_4(x)=\frac{8-\cos\left(3x\right)}{4+\cos\left(2x\right)}$
+		\item $f_3(x)=\dfrac{5+\cos\left(3\pi x\right)}{4+3\cos\left(3x\right)}$
+	\end{enumerate}
+	\answer
+	\begin{center}
+		$\therefore \quad$ \kml ចម្លើយ \kbk ង
+	\end{center}
+	{\color{blue}\hrulefill}
+	\item គេឲ្យ $\vec{a}$ និង $\vec{b}$ ជាវ៉ិចទ័រពីរក្នុងលំហដែល $\norm{\vec{a}}=3, \norm{\vec{b}}=4$ និង $\norm{\vec{a}-\vec{b}}=\sqrt{43}$ ។ ចូររកតម្លៃលេខនៃ $\norm{2\vec{a}+\vec{b}}$ ។
+	\begin{enumerate}[k,5]
+		\item $5$
+		\item $6$
+		\item $7$
+		\item $8$
+		\item ចម្លើយផ្សេង
+	\end{enumerate}
+	\answer
+	\begin{center}
+		គេមាន $\norm{\vec{a}-\vec{b}}=\sqrt{43}\Leftrightarrow \norm{\vec{a}-\vec{b}}^2=\sqrt{43}^2$
+		\begin{align*}
+		\norm{\vec{a}-\vec{b}}^2&=\norm{a}^2+\norm{b}^2-2\vec{a}\cdot\vec{b}\\
+		\sqrt{43}^2&=3^2+4^2-2\vec{a}\cdot \vec{b}\\
+		\vec{a}\cdot \vec{b}&=-9
+		\end{align*}
+		និង $\norm{2\vec{a}+\vec{b}}^2$
+		\begin{align*}
+		\norm{2\vec{a}+\vec{b}}^2&=4\norm{a}^2+\norm{b}^2+4\vec{a}\cdot \vec{b}\\
+		&=4\cdot3^2+4^2+4\left(-9\right)=4^2\\
+		\Rightarrow \norm{2\vec{a}+\vec{b}} &= \sqrt{4^2}=4
+		\end{align*}
+		$\therefore \quad$ \kml ចម្លើយ \kbk ង
+	\end{center}
+	\newpage
+	\item គេឲ្យវ៉ិចទ័របី $\vec{a}=\left(1,1,1\right),\vec{b}=\left(1,-2,-1\right),\vec{c}=\left(-1,-2,1\right)$ ។ ចូររកមាឌ $V$ នៃតេត្រាអែតដែលកំណត់ដោយវ៉ិចទ័រទាំងបីនេះ ។
+	\begin{enumerate}[k,5]
+		\item $V=4$
+		\item $V=\dfrac{4}{3}$
+		\item $V=8$
+		\item $V=\dfrac{8}{3}$
+		\item ចម្លើយផ្សេង
+	\end{enumerate}
+	\answer
+	\begin{center}
+		មាឌតេត្រាអែត $V=\dfrac{1}{6}\left(\vec{a}\times\vec{b}\right)\cdot\vec{c}=\dfrac{1}{6}\abs{-8}=\dfrac{4}{3}$
+		\begin{eqnarray*}
+			\frac{1}{6}\left(\vec{a}\times\vec{b}\right)\cdot\vec{c}&=
+			\begin{vmatrix}
+				1 & 1 & 1\\ 
+				1 & -2 & -1 \\ 
+				-1 & -2 & 1 \notag
+			\end{vmatrix}
+			=1\cdot
+			\begin{vmatrix}
+				-2 & -1\\ 
+				-2 & 1 \notag
+			\end{vmatrix}
+			-1\cdot
+			\begin{vmatrix}
+				1 & 1\\ 
+				-1 & 1 \notag
+			\end{vmatrix}
+			+1\cdot
+			\begin{vmatrix}
+				1 & -2\\ 
+				-1 & -2 \notag
+			\end{vmatrix}\\
+			&=\left(-2-2\right)-\left(1-1\right)+\left(-2-2\right)=-8\\
+		\end{eqnarray*}
+		$\therefore \quad$ \kml ចម្លើយ \kbk ខ
+	\end{center}
+	{\color{blue}\hrulefill}
+	\item គេយក $a,b$ ជាប្រវែងជ្រុងជាប់នឹងមុំកែង និង $c$ ជាប្រវែងអ៊ីប៉ូតេនុសនៃត្រីកោណកែងមួយ។ បើ $a$ កើនឡើងដោយអត្រា $5 cm/s$ នៅពេល $a=4cm$ និង $b$ កើនឡើងដោយអត្រា $10 cm/s$ នៅពេល $b=3cm$ ចូររកអត្រាកំណើននៃបរិមាត្រត្រីកោណនេះ ។
+	\begin{enumerate}[k,5]
+		\item $20 cm/s$
+		\item $10 cm/s$
+		\item $15 cm/s$
+		\item $25 cm/s$
+		\item ចម្លើយផ្សេង
+	\end{enumerate}
+	\answer
+	\begin{center}
+		គេមាន $c^2=a^2+b^2$ (ពីតាគ័រ) និង $p=a+b+c$ (បរិមាត្រ)\\
+		គេបាន $2cdc=2ada+2bdb$ និង $dp=da+db+dc$\\
+		$dc=\dfrac{ada+bdb}{c}=\dfrac{ada+bdb}{\sqrt{a^2+b^2}}$\\
+		$dc=\dfrac{4\cdot5+3\cdot10}{\sqrt{4^2+3^2}}=10cm/s$\\
+		$\Rightarrow dp=5cm/s+10cm/s+10cm/s=25cm/s$\\
+		$\therefore \quad$ \kml ចម្លើយ \kbk ឃ
+	\end{center}
+	{\color{blue}\hrulefill}
+	\item ចូរគណនាដេរីវេនៃអនុគមន៍ $f(x)=x^{x^{2017}}$ ។
+	\begin{enumerate}[k,2]
+		\item $x^{x^{2017}}\left(2017\ln\left(x\right)+1\right)$
+		\item $x^{x^{2017}+2016}\left(2016\ln\left(x\right)+1\right)$
+		\item $x^{x^{2017}+2016}\left(2017\ln\left(x\right)+1\right)$
+		\item $x^{x^{2017}+2016}\left(2017\ln\left(x\right)-1\right)$
+		\item ចម្លើយផ្សេង
+	\end{enumerate}
+	\answer
+	\begin{align*}
+	f(x)&=x^{x^{2017}}\\
+	\ln f(x)&=x^{2017}\ln x\\
+	\dfrac{f'(x)}{f(x)}&=2017x^{2016}\ln x +x^{2016}\\
+	f'(x)&=f(x)x^{2016}\left(2017ln x+1\right)\\
+	f'(x)&=x^{x^{2017}}x^{2016}\left(2017ln x+1\right)\\
+	\Rightarrow f'(x)&=x^{x^{2017}+2016}\left(2017ln x+1\right)
+	\end{align*}
+	\begin{center}
+		$\therefore \quad$ \kml ចម្លើយ \kbk គ
+	\end{center}
+	{\color{blue}\hrulefill}
+	\item តម្លៃនៃ $\lim\limits_{x\to0}\left(x^{x^{2017}}\right)$ គឺ៖
+	\begin{enumerate}[k,5]
+		\item $1$
+		\item $2$
+		\item $e$
+		\item $e^{-1}$
+		\item ចម្លើយផ្សេង
+	\end{enumerate}
+	\answer
+	\begin{center}
+		\begin{align*}
+		\lim\limits_{x\to0}\left(x^{x^{2017}}\right)&=e^{\lim\limits_{x\to0^+}\ln\left(x^{x^{2017}}\right)}\\
+		&=e^{\lim\limits_{x\to0^+}x^{2017}\ln x}\\
+		&=e^{\lim\limits_{x\to0^+}\dfrac{\ln x}{\dfrac{1}{x^{2017}}}}=e^{\lim\limits_{x\to0^+}\dfrac{\dfrac{d}{dx}\left(\ln x\right)}{\dfrac{d}{dx}\left(\dfrac{1}{x^{2017}}\right)}}\\
+		&=e^{\lim\limits_{x\to0^+}\dfrac{\dfrac{1}{x}}{-\dfrac{2017}{x^{2018}}}}=e^{\lim\limits_{x\to0^+}\dfrac{x^{2017}}{-2017}}\\
+		&=e^0=1
+		\end{align*}
+		$\therefore \quad$ \kml ចម្លើយ \kbk ក
+	\end{center}
+	{\color{blue}\hrulefill}
+	\item គេយក $a_{n+1}=\sqrt[3]{6+a_n}$ និង $a_0=0$ ។ ចូររកលីមីត $A$ នៃស្វ៊ីត $a_n$ ។
+	\begin{enumerate}[k,5]
+		\item $A=3$
+		\item $A=2$
+		\item $A=1$
+		\item $A=0$
+		\item ចម្លើយផ្សេង
+	\end{enumerate}
+	\answer
+	\begin{center}
+		តាង $A>0$ ជាលីមីតរបស់ស៊្វីត $a_n$\\
+		\begin{align*}
+		\lim\limits_{n\to +\infty}a_n&=\lim\limits_{n\to +\infty}a_{n+1}=A\\
+		\lim\limits_{n\to +\infty}a_{n+1}&=\lim\limits_{n\to +\infty}\sqrt[3]{6+a_n}\\
+		A&=\lim\limits_{n\to +\infty}\sqrt[3]{6+A}\\
+		A^3&=6+A\\
+		A^3-A-6&=0 \Rightarrow A=2
+		\end{align*}
+		$\therefore \quad$ \kml ចម្លើយ \kbk ខ
+	\end{center}
+	{\color{blue}\hrulefill}
+	\item គេយក $f(x)=x^3-3x+m+2$ ដែល $m$ ជាប៉ារ៉ាម៉ែត្រ។ ចូរកំណត់តម្លៃទាំងអស់នៃ $m$ ដើម្បីឲ្សខ្សែកោងតាងអនុគមន៍នេះកាត់អ័ក្សអាប់ស៊ីសបាន៣ចំណុចខុសគ្នា។
+	\begin{enumerate}[k,5]
+		\item $m<-8$
+		\item $-8\le m<-4$
+		\item $-4<m<0$
+		\item $-4\le m \le0$
+		\item ចម្លើយផ្សេង
+	\end{enumerate}
+	\answer
+	\begin{center}
+		គេមាន $f(x)=x^3-3x+m+2$\\
+		$f'(x)=3x^2-3$\\
+		$f'(x)=0$
+		$\Leftrightarrow 3x^2-3=0$\\
+		$\Rightarrow x=\pm 1$\\
+		ដើម្បីឲ្យអនុគមន៍នេះកាត់អ័ក្សអាប់ស៊ីសបាន៣ចំណុចខុសគ្នា លុះត្រាតែ $f(-1)f(1)<0$\\
+		គេបាន $\left(-1+3+m+2\right)\left(1-3+m+2\right)<0$\\
+		$\left(m+4\right)\left(m\right)<0$\\
+		$\Rightarrow m>-4$ និង $m<0$ ឬ $-4<m<0$\\
+		$\therefore \quad$ \kml ចម្លើយ \kbk គ
+	\end{center}
+	{\color{blue}\hrulefill}
+	\item គេមាន $f(x)$ ជាអនុគមន៍	កំណត់បាន និងមានអាំងតេក្រាលលើចន្លោះបិទ $\left[0;\pi\right]$ ដែលផ្ទៀងផ្ទាត់ $f\left(\pi-x\right)=f(x)$ និង $I=\int_{0}^{\pi}xf(x)dx$។ គេបាន
+	\begin{enumerate}[k,4]
+		\item $I=\dfrac{\pi}{3}\int_{0}^{\pi}f(x)dx$
+		\item $I=\int_{0}^{\pi}f(x)dx$
+		\item $I=\dfrac{\pi}{2}\int_{0}^{\pi}f(x)dx$
+		\item $I=\dfrac{\pi}{4}\int_{0}^{\pi}f(x)dx$
+		\item ចម្លើយផ្សេង
+	\end{enumerate}
+	\answer
+	{\color{blue}\hrulefill}
+	\item គេយក $x_1,x_2$ ជាប្ញសពីរនៃមីការ $x^2-\left(3\sin t-\cos t\right)x-8\cos^2t=0$ និង $G=x_1^2+x_2^2$ ។ ចូររកតម្លៃតូចជាងគេ $G_{min}$ និងតម្លៃធំជាងគេ $G_{max}$ នៃកន្សោម $G$។ 
+	\begin{enumerate}[k,3]
+		\item $G_{min}=6, G_{max}=16$
+		\item $G_{min}=6, G_{max}=19$
+		\item $G_{min}=2, G_{max}=4$
+		\item $G_{min}=8, G_{max}=18$
+		\item ចម្លើយផ្សេង
+	\end{enumerate}
+	\answer
+	\begin{center}
+		ប្រើ $Vieta's~Theorem$ នោះ $x_1+x_1=-\dfrac{b}{a}=\left(3\sin t-\cos t\right)$ \kb និង $x_1\cdot x_2=\dfrac{c}{a}=-8\cos^2t$ \\
+		យើងមាន $x_1^2+x_2^2=\left(x_1+x_2\right)^2-2x_1 x_2$\\
+		\begin{align*}
+		x_1^2+x_2^2&=\left(x_1+x_2\right)^2-2x_1 x_2\\
+		&=\left(3\sin t-\cos t\right)^2-2\left(-8\cos^2t\right)\\
+		&=\left(3\sin t-\cos t\right)^2+16\cos^2t\\
+		&=9\sin^2t-6\sin t\cos t +17\cos^2t\\
+		&=\left(3\cos t-\sin t\right)^2 +8\left(\sin^2t+\cos^2t\right)\\
+		&=\left(3\cos t-\sin t\right)^2 +8~~ (*)
+		\end{align*}
+		\begin{center}
+			ប្រើ $Chauchy-Schwarz$ ដែល $\forall a_1,a_2, a_3,\dots,a_n,$ និង $b_1, b_2, b_3,\dots,b_n \in\mathbb{R}$\\
+			$\Rightarrow\left(a_1b_1+a_2b_2+\dots+a_nb_n\right)^2\le\left(a_1^2+a_2^2+\dots a_n^2\right)\left(b_1^2+b_2^2+\dots +b_n^2\right)$\\
+			សមភាពនេះកើតមានពេល $\dfrac{a_1}{b_1}=\dfrac{a_2}{b_2}=\dots=\dfrac{a_n}{b_n}$\\
+			នោះ $\left(3\cos t-\sin t\right)^2\le\left(3^2+\left(-1\right)^2\right)\left(\sin^2t+\cos^2t\right)$\\
+			$\left(3\cos t-\sin t\right)^2\le10~(**)$\\
+			តាម $(*)$ និង $(**)$\\
+			គេបាន $\left(3\cos t-\sin t\right)^2\le10+8$\\
+			$\Rightarrow \left(3\cos t-\sin t\right)^2\le18$\\
+			គេបានតម្លៃធំបំផុត គឺ $G_{max}=18$ និង តម្លៃតូចបំផុត គឺ $G_{min}=8$\\
+			\kml ចម្លើយ \kbk ឃ
+		\end{center}
+	\end{center}
+	{\color{blue}\hrulefill}
+	\item គេឲ្យ $f$ ជាអនុគមន៍កំណត់បាន និងមានអាំងតេក្រាលលើចន្លោះ $\left[0;\dfrac{\pi}{2}\right]$។ ចូរគណនារកតម្លៃនៃ $I=\int_{0}^{\dfrac{\pi}{2}}\dfrac{f\left(\cos x\right)}{f\left(\cos x\right)+f\left(\sin x\right)}dx$ ។\\
+	\begin{enumerate}[k,5]
+		\item $I=\dfrac{\pi}{3}$
+		\item $I=\dfrac{2\pi}{3}$
+		\item $I=\dfrac{\pi}{2}$
+		\item $I=\dfrac{\pi}{4}$
+		\item ចម្លើយផ្សេង
+	\end{enumerate}
+	\answer
+	\begin{center}
+		ដោយ $I=\int_{0}^{\dfrac{\pi}{2}}\dfrac{f\left(\cos x\right)}{f\left(\cos x\right)+f\left(\sin x\right)}dx~~(i)$\\
+		នោះ $I=\int_{0}^{\dfrac{\pi}{2}}\dfrac{f\left[\cos \left(\dfrac{\pi}{2}-x\right)\right]}{f\left[\cos \left(\dfrac{\pi}{2}-x\right)\right]+f\left[\sin \left(\dfrac{\pi}{2}-x\right)\right]}dx$\\
+		$\Rightarrow I=\int_{0}^{\dfrac{\pi}{2}}\dfrac{f\left(\sin x\right)}{f\left(\sin x\right)+f\left(\cos x\right)}dx~~(ii)$\\
+		គេបាន $(i)+(ii)$\\
+		$2I=\int_{0}^{\dfrac{\pi}{2}}dx$\\
+		$\Rightarrow I=\dfrac{1}{2}\int_{0}^{\dfrac{\pi}{2}}dx=\dfrac{\pi}{4}$\\
+		\kml ចម្លើយ \kbk ឃ
+	\end{center}
+	\item ផលបូកនៃលេខខ្ទង់រាយ និងលេខខ្ទង់ដប់នៃ $2018^{2017}$ គឺ
+	\begin{enumerate}[k,5]
+		\item $13$
+		\item $14$
+		\item $5$
+		\item $6$
+		\item ចម្លើយផ្សេង
+	\end{enumerate}
+	\answer
+	\begin{center}
+		យើងអាចធ្វើ តាម $2018^{2017}\equiv68 \pmod{100}$\\
+		ផលបូកនៃលេខខ្ទង់រាយ និងលេខខ្ទង់ដប់នៃ $2018^{2017}$ គឺ $6+8=14$\\
+		$\therefore \quad$ \kml ចម្លើយ \kbk ខ
+	\end{center}
+	{\color{blue}\hrulefill}
+	\item យក $\lambda$ ជាមេគុណប្រាប់ទិសនៃបន្ទាត់ $\left(L_\lambda\right)$ ដែលកាត់តាមចំណុច $P\left(-1;2\right)$ ។ $\left(C\right)$ ជាខ្សែកោងតាងសមីការ $y=x^2$ និង $A_\lambda$ ជាក្រឡាផ្ទៃនៃដែនប្លង់ដែលខណ្ឌដោយ $\left(L_\lambda\right)$ និង $\left(C\right)$។ តម្លៃនៃ $\lambda$ ដែលនាំឲ្យ $A_\lambda$ មានតម្លៃតូចជាងគេគឺ
+	\begin{enumerate}[k,5]
+		\item $\lambda=2$
+		\item $\lambda=-2$
+		\item $\lambda=3$
+		\item $\lambda=-3$
+		\item ចម្លើយផ្សេង
+	\end{enumerate}
+	\answer
+	{\color{blue}\hrulefill}
+	\item ចូររកតម្លៃលេខនៃ $\cos\left(\dfrac{\pi}{5}\right)$ ។
+	\begin{enumerate}[k,3]
+		\item $\cos\left(\dfrac{\pi}{5}\right)=\dfrac{\sqrt{\sqrt{5}-1}}{2}$
+		\item $\cos\left(\dfrac{\pi}{5}\right)=\dfrac{\sqrt{\sqrt{5}+1}}{2}$
+		\item $\cos\left(\dfrac{\pi}{5}\right)=\dfrac{\sqrt{5}+1}{2}$
+		\item $\cos\left(\dfrac{\pi}{5}\right)=\dfrac{\sqrt{5}-1}{2}$
+		\item ចម្លើយផ្សេង
+	\end{enumerate}
+	\answer
+	\begin{center}
+		តាង $\theta=\dfrac{\pi}{5},~0<\cos\theta<1$
+		\begin{align*}
+		5\theta &= \pi\\
+		3\theta &= \pi -2\theta\\
+		\sin3\theta &= \sin\left(\pi-2\theta\right)\\
+		3\sin\theta-4\sin^3\theta&=2\sin\theta\cos\theta\\
+		\sin\theta\left(3-4\sin^2\theta\right)&=2\sin\theta\cos\theta\\
+		3-4\left(1-\cos^2\theta\right)&=2\cos\theta\\
+		4\cos^2\theta-2\cos\theta-1&=0\\
+		\Rightarrow \cos\theta=\dfrac{1+\sqrt{5}}{2}&=\dfrac{\sqrt{5}+1}{2}
+		\end{align*}
+		\kml ចម្លើយ \kbk គ
+	\end{center}
+	\newpage
+	\item តាង $E=a+a^2+a^4$ និង $F=a^3+a^5+a^6$ ដែល $a=\cos\left(\dfrac{2\pi}{7}\right)+i\sin\left(\dfrac{2\pi}{7}\right)$ និង $i^2=-1$ ។
+	\begin{enumerate}[k,2]
+		\item $\left(E=\dfrac{2+i\sqrt{7}}{2},F=\dfrac{2-i\sqrt{7}}{2}\right)$
+		\item $\left(E=\dfrac{1+i\sqrt{7}}{2},F=\frac{1-i\sqrt{7}}{2}\right)$
+		\item $\left(E=\dfrac{-1+i\sqrt{7}}{2},F=\dfrac{-1-i\sqrt{7}}{2}\right)$
+		\item $\left(E=\dfrac{-2+i\sqrt{7}}{2},F=\dfrac{-2-i\sqrt{7}}{2}\right)$
+		\item ចម្លើយផ្សេង
+	\end{enumerate}
+	\answer
+	\begin{center}
+		យើងមាន $E=a+a^2+a^4$ និង $F=a^3+a^5+a^6$ នោះ\\
+		\begin{align*}
+		E+F&=1+a+a^2+a^3+a^4+a^5+a^6-1=\dfrac{a^7-1}{a-1}-1\\
+		a^7&=\cos\left[\left(\dfrac{2\pi}{7}\right)+i\sin\left(\dfrac{2\pi}{7}\right)\right]^7\\
+		&=\cos\left(2\pi\right)+i\sin\left(2\pi\right)=1 \\
+		\Rightarrow E+F&=\frac{1-1}{a-1}-1=-1
+		\end{align*}
+		\kml ពិនិត្យ៖ \kb មានតែចម្លើយ (\kml គ) \kb តែមួយប៉ុណ្ណោះ ដែលផ្ទៀងផ្ទាត់ $E+F=\dfrac{-1+i\sqrt{7}}{2}+\frac{-1-i\sqrt{7}}{2}=-1$\\
+		$\therefore \quad$ \kml ចម្លើយ \kbk គ
+	\end{center}
+	{\color{blue}\hrulefill}
+	\item យក $x_1,x_2,x_3,x_4,x_5$ ជាចំនួនពិតដែលផ្ទៀងផ្ទាត់លក្ខខណ្ឌ $x_1^2+x_2^2+x_3^2+x_4^2+x_5^2=4$ ។\\
+	ចូររកតម្លៃតូចជាងគេ $F_{min}$ និងតម្លៃធំជាងគេ $F_{max}$ នៃកន្សោម $F=\sqrt{6}x_1-4x_2+3x_3-2x_4+x_5$ ។
+	\begin{enumerate}[k,3]
+		\item $F_{min}=-16,F_{max}=16$
+		\item $F_{min}=-6,F_{max}=6$
+		\item $F_{min}=-4,F_{max}=4$
+		\item $F_{min}=-12,F_{max}=12$
+		\item ចម្លើយផ្សេង
+	\end{enumerate}
+	\answer
+	\begin{center}
+		គេមាន $x_1^2+x_2^2+x_3^2+x_4^2+x_5^2=4$ និង $F=\sqrt{6}x_1-4x_2+3x_3-2x_4+x_5$ \\
+		ដោយប្រើ $Chauchy-Schwarz$ ដែល $\forall a_1,a_2, a_3,\dots,a_n$ និង $b_1, b_2, b_3,\dots,b_n \in\mathbb{R}$\\
+		$\Rightarrow\left(a_1b_1+a_2b_2+\dots+a_nb_n\right)^2\le\left(a_1^2+a_2^2+\dots a_n^2\right)\left(b_1^2+b_2^2+\dots +b_n^2\right)$\\
+		សមភាពនេះកើតមានពេល
+		$\dfrac{a_1}{b_1}=\frac{a_2}{b_2}=\dots=\dfrac{a_n}{b_n}$
+		\begin{align*}
+		\left(\sqrt{6}x_1-4x_2+3x_3-2x_4+x_5\right)^2&\le\left(\left(\sqrt{6}\right)^2+\left(-4\right)^2+3^3+\left(-2\right)^2+1^2\right)\left(x_1^2+x_2^2+x_3^2+x_4^2+x_5^2\right)\\
+		F^2&\le\left(36\right)\left(4\right)\\
+		F&\le\sqrt{36\times4}=\pm12\\
+		\end{align*}
+		$\therefore \quad$ \kml ចម្លើយ \kbk ឃ
+	\end{center}
+	\newpage
+	\item គេមាន $E_n=\dfrac{20}{\left(5-4\right)\left(5^2-4^2\right)}+\dfrac{20^2}{\left(5^2-4^2\right)\left(5^3-4^3\right)}+\dots+\dfrac{20^n}{\left(5^n-4^n\right)\left(5^{n+1}-4^{n+1}\right)}$ និង $E=\lim\limits_{n\to+\infty}E_n$ ។ គេបាន\\
+	\begin{enumerate}[k,5]
+		\item $E=5$
+		\item $4$
+		\item $3$
+		\item $2$
+		\item ចម្លើយផ្សេង
+	\end{enumerate}
+	\answer
+	\begin{center}
+		លំហាត់ អាចមើលដោយ ចំណាំបាន គឺ \kml ចម្លើយ \kbk ខ គឺ $E=\lim\limits_{n\to+\infty}E_n=4$\\
+		\begin{align*}
+			\dfrac{20^k}{\left(5^k-4^k\right)\left(5^{k+1}-4^{k+1}\right)}&=\dfrac{a_{k}}{5^k-4^k}-\dfrac{a_{k+1}}{5^{k+1}-4^{k+1}}\\
+			&=\frac{a_{k}\left(5^{k+1}-4^{k+1}\right)}{5^k-4^k}-\dfrac{a_{k+1}\left(5^k-4^k\right)}{5^{k+1}-4^{k+1}}\\
+			&=\dfrac{5^k\left(5a_{k}-a_{k+1}\right)-4^k\left(a_{k+1}-4a_{k}\right)}{\left(5^k-4^k\right)\left(5^{k+1}-4^{k+1}\right)}\\
+			5^k\left(5a_{k}-a_{k+1}\right)-4^k\left(a_{k+1}-4a_{k}\right)&=4^{k}\cdot5^{k}\\
+		\end{align*}
+		\begin{align*}
+			\begin{cases}
+				5a_{k}-a_{k+1}=0\\
+				a_{k+1}-4a_{k}=5^{k}
+			\end{cases}
+			\Leftrightarrow&
+			\begin{cases}
+				a_{k+1}=5a_{k}\\
+				a_{k+1}-4a_{k}=5^{k}
+			\end{cases}
+			\Rightarrow
+			\begin{cases}
+				a_{k+1}=5^{k+1}\\
+				a_{k}=5^{k}
+			\end{cases}\\
+			\sum_{k=1}^{n}\dfrac{20^k}{\left(5^k-4^k\right)\left(5^{k+1}-4^{k+1}\right)}&=\sum_{k=1}^{n}\left(\dfrac{5^{k}}{5^{k}-4^{k}}-\dfrac{5^{k+1}}{5^{k+1}-4^{k+1}}\right)\\
+			&=\dfrac{5}{5-4}-\dfrac{5^{n+1}}{5^{n+1}-4^{n+1}}\\
+			\lim\limits_{n \to +\infty}E_n&=\lim\limits_{n \to +\infty}\left(\dfrac{5}{5-4}-\dfrac{5^{n+1}}{5^{n+1}-4^{n+1}}\right)\\
+			&=\lim\limits_{n \to +\infty}\left(5-\dfrac{1}{1-\left(\dfrac{4}{5}\right)^{n+1}}\right)\\
+			&=5-1=4
+		\end{align*}
+		$\therefore \quad $\kml ចម្លើយ \kbk ខ
+	\end{center}
+	{\color{blue}\hrulefill}
+	\item យក $a_1,a_2,\dots,a_m$ ជាចំនួនគត់ធំជាងសូន្យដែលខុសគ្នាពីរៗ និងមានតួចែកបឋមតូចជាង $5$ ។ បើ $F_m=\dfrac{1}{a_1}+\dfrac{1}{a_2}+\dots+\dfrac{1}{a_m}$គេបាន\\
+	\begin{enumerate}[k,5]
+		\item $F_m<3$
+		\item $8<F_m<12$
+		\item $3\le F_m\le 8$
+		\item $12\le F_m<20$
+		\item ចម្លើយផ្សេង
+	\end{enumerate}
+	\answer
+	\begin{center}
+		$a_m$ មានតួចែកបឋម តូចជាង $5$ នោះគេបាន $a_m$ មានទម្រង់\\
+		$2^x\cdot3^y$ ដែល $x,y\ge0$ ជាចំនួនគត់\\
+		$F_m$ មានតម្លៃអតិបរមា កាលណា ផលបូករាយ គ្រប់តម្លៃនៃ $x,y$ ពីតូចទៅដល់ធំ ។\\
+		ហើយ $F_m<F_\infty, \forall m\in\mathbb{N}$\\
+		យើងបាន $F_m<\sum_{x=0}^{\infty}\sum_{y=0}^{\infty}\frac{1}{2^x\cdot3^y}=\left(\sum_{x=0}^{\infty}\frac{1}{2^x}\right)\left(\sum_{y=0}^{\infty}\frac{1}{3^y}\right)$\\ 
+		$F_m<\dfrac{1}{1-\dfrac{1}{2}}\cdot\dfrac{1}{1-\dfrac{1}{3}}=2\cdot\dfrac{3}{2}$\\
+		$\Rightarrow F_m<3$\\
+		$\therefore \quad $\kml ចម្លើយ \kbk ក
+	\end{center}
+	{\color{blue}\hrulefill}
+	\item គេឲ្យ $f$ ជាអនុគមន៍មានដេរីវេគ្រប់លំដាប់ដែលផ្ទៀងផ្ទាត់ $f(y)-f(x)=\left(y-x\right)f'\left(\frac{x+y}{2}\right)$ ចំពោះគ្រប់ចំនួនពិត $x$ និង $y$ ។ នោះគេបាន
+	\begin{enumerate}[k,3]
+		\item $f(x)=\dfrac{ax+b}{x^2+2}$
+		\item $f(x)=ax^2+bx+c$
+		\item $f(x)=\dfrac{x^2+ax+b}{x^2+9}$
+		\item $f(x)=x^6+ax^4+b$
+		\item ចម្លើយផ្សេង
+	\end{enumerate}
+	\answer
+	{\color{blue}\hrulefill}
+	\item រកក្រឡាផ្ទៃនៃដែនប្លង់ដែលខណ្ឌដោយក្រាបតាង $x=0,x=\dfrac{\pi}{2},y=0$ និង $y=\frac{\cos x}{\sin^6x+1}$ ។
+	\begin{enumerate}[k,3]
+		\item $\dfrac{\sqrt{3}\ln\left(2+\sqrt{3}\right)+\pi}{8}$
+		\item $\dfrac{\sqrt{3}\ln\left(2-\sqrt{3}\right)+\pi}{6}$
+		\item $\dfrac{\sqrt{3}\ln\left(2-\sqrt{3}\right)+\pi}{6}$
+		\item $\dfrac{\sqrt{3}\ln\left(2+\sqrt{3}\right)+\pi}{6}$
+		\item ចម្លើយផ្សេង
+	\end{enumerate}
+	\answer
+	\begin{center}
+		លំហាត់នេះបើធ្វើវែង ខ្ញុំ សូមធ្វើដំណោះស្រាយនៅពេលក្រោយ\\
+		ចម្លើយដែលត្រឹមត្រូវគឺ \kml ចម្លើយ \kbk ឃ
+	\end{center}
+	{\color{blue}\hrulefill}
+	\makeads
+	\vspace{10pt}
+	\centering \huge \kml{\color{magenta}
+		សូមអរគុណ\\
+		$~~~~\therefore\quad \therefore\quad$}
+\end{enumerate}
+\end{document}

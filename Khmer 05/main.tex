@@ -1,0 +1,232 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{geometry}
+\geometry{
+	left=0.7cm,%
+	right=0.7cm,%
+	top=1.5cm,%
+	bottom=1.5cm
+}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{wasysym}
+\usepackage{mathpazo}% change math font
+\usepackage{enumitem}% change list environment like enumerate, itemize and description
+\usepackage{multicol}% multi columns
+\usepackage{tikz}% graphic drawing
+\usepackage[no-math]{fontspec}% font specfication
+\RequirePackage{unicode-math}
+%\setmathfont{Latin Modern Math}
+\setmathfont{TeX Gyre Pagella Math}
+\setmainfont{Khmer OS Battambang}% set default font to Khmer OS
+\setsansfont[Ligatures=TeX,AutoFakeBold=0,AutoFakeSlant=0.25]{Khmer OS Bokor}% sans serif font
+\setmonofont[AutoFakeBold=0.25,AutoFakeSlant=0.25]{Khmer OS Muol Light}% sans serif font
+\XeTeXlinebreaklocale "kh"
+\XeTeXlinebreakskip = 0pt plus 1pt minus 1pt% line break skip
+
+\setmathrm{Times New Roman}
+\newcommand{\kos}{\fontspec[Scale = 0.875, Script=Khmer]{Khmer OS System}\selectfont}
+\newcommand{\en}{\fontspec{Times New Roman}\selectfont}
+\newcommand{\km}{\fontspec[Scale = 0.875, Script=Khmer]{Khmer OS Muol}\selectfont}
+\newcommand{\kml}{\fontspec[Scale = 0.875, Script=Khmer]{Khmer OS Muol Light}\selectfont}
+
+\newcommand{\heart}{\ensuremath\heartsuit}
+\newcommand{\butt}{\rotatebox[origin=c]{180}{\heart}}
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+\node[shape=circle,draw,inner sep=2pt] (char) {#1};}}
+%
+\SetEnumitemKey{I}{%
+leftmargin=*,
+label={\protect\tikz[baseline=-0.9ex]\protect\node[draw=gray,thick,circle,minimum height=.65cm,inner sep=1pt,text=black,fill=white]{\Roman*};},%
+font=\small\sffamily\bfseries,%
+labelsep=1ex,%
+topsep=0pt}
+%
+\SetEnumitemKey{a}{%
+leftmargin=*,%
+label={\protect\tikz[baseline=-0.9ex]\protect\node[draw=gray,thick,circle,minimum height=.5cm,inner sep=1pt,text=blue,fill=magenta!5!white]{\alph*};},%
+font=\small\sffamily\bfseries,%
+labelsep=1ex,%
+topsep=0pt}
+%
+\SetEnumitemKey{1}{leftmargin=*,%
+label={\protect\tikz[baseline=-0.9ex]\protect\node[draw=gray,thick,circle,minimum height=.5cm,inner sep=1pt,text=black,fill=cyan!20!white]{\arabic*};},%
+font=\small\sffamily\bfseries,%
+labelsep=1ex,%
+topsep=0pt}
+%
+\def\hard{\leavevmode\makebox[0pt][r]{\large\ensuremath{\star}\hspace{2em}}}
+%
+\def\hhard{\leavevmode\makebox[0pt][r]{\large\ensuremath{\star\star}\hspace{2em}}}
+%
+\everymath{\protect\displaystyle\protect\color{blue}}
+\makeatletter 
+% khmer number
+\def\khmer#1{\expandafter\@khmer\csname c@#1\endcsname}
+\def\@khmer#1{\expandafter\@@khmer\number#1\@nil}
+\def\@@khmer#1{%
+	\ifx#1\@nil% terminate when encounter @nil
+	\else%
+	\ifcase#1 ០\or ១\or ២\or ៣\or ៤\or ៥\or ៦\or ៧\or ៨\or ៩\fi%
+	\expandafter\@@khmer% recursively map the following characters
+	\fi}
+\def\khmernumeral#1{\@@khmer#1\@nil}
+\def\alpkh#1{\expandafter\@alpkh\csname c@#1\endcsname}
+\def\@alpkh#1{%
+	\ifcase#1% zero ->none
+	\or ក\or ខ\or គ \or ឃ\or ង%
+	\or ច\or ឆ\or ជ\or ឈ\or ញ%
+	\or ដ\or ឋ\or ឌ\or ឍ\or ណ%
+	\or ត\or ថ\or ទ\or ធ\or ន%
+	\or ប\or ផ\or ព\or ភ\or ម%
+	\or យ\or រ\or ល\ro វ\or ស%
+	\or ហ\or ឡ\or អ%
+	\else%
+	\@ctrerr % Otherwise counter error
+	\fi
+}
+\def\khmershortdate{%
+	\ifnum\day<10\@khmer{0\day}\else\@khmer\day\fi%
+	/\@khmer\month%
+	/\@khmer\year}
+\def\khmerdate{%
+	\ifnum\day<10\@khmer{0\day}\else\@khmer\day\fi~%
+	\ifcase\month\or%
+	មករា\or កុម្ភៈ\or មិនា\or មេសា\or%
+	ឧសភា\or មិថុនា\or កក្កដា\or សីហា\or%
+	កញ្ញា\or តុលា\or វិច្ឆិកា\or ធ្នូ\fi~%
+	\@khmer\year}
+\makeatother
+\AddEnumerateCounter{\alpkh}{\@alpkh}{ឈ}
+\AddEnumerateCounter{\khmer}{\@khmer}{៣}
+% enumerate keys
+%\SetEnumitemKey{1}{leftmargin=*,labelsep=1ex,itemsep=1ex,label=\arabic*.}
+%\SetEnumitemKey{a}{leftmargin=*,labelsep=1ex,itemsep=1ex,label=\alph*.}
+\SetEnumitemKey{A}{leftmargin=*,labelsep=1ex,itemsep=1ex,label=\Alph*.}
+\SetEnumitemKey{i}{leftmargin=*,labelsep=1ex,itemsep=1ex,label=\roman*.}
+%\SetEnumitemKey{I}{leftmargin=*,labelsep=1ex,itemsep=1ex,label=\Roman*.}
+\SetEnumitemKey{k}{leftmargin=*,%
+	label={\protect\tikz[baseline=-0.9ex]\protect\node[draw=gray,thick,circle,minimum height=.5cm,inner sep=1pt,text=blue,fill=magenta!5!white]{\alpkh*};},%
+	font=\small\sffamily\bfseries,%
+	labelsep=1ex,%
+	topsep=0pt}
+%
+\SetEnumitemKey{m}{leftmargin=*,%
+	label={\protect\tikz[baseline=-0.9ex]\protect\node[draw=gray,thick,circle,minimum height=.5cm,inner sep=1pt,text=magenta,fill=cyan!20!white]{\khmer*};},%
+	font=\small\sffamily\bfseries,%
+	labelsep=1ex,%
+	topsep=0pt}
+%
+
+\DeclareMathSizes{12pt}{13pt}{11pt}{10pt}
+
+
+\pagenumbering{khmer}
+%
+\pagecolor{cyan!1!white}
+%
+\begin{document}
+\begin{center}
+\kml\color{blue}
+\circled{១}\\
+\heart គន្លឹះសិក្សាអនុគមន៍ និង ខ្សែកោង\heart \\
+រៀបរៀងដោយ៖ ស៊ុំ សំអុន\\
+\phone ទូរស័ព្ទលេខៈ ០៩៦ ៩៤០ ៥៨៤០\phone
+\end{center}
+\begin{enumerate}[m]
+\item ចូររកដែនកំណត់នៃអនុគមន៍ខាងក្រោម៖
+	\begin{multicols}{3}
+		\begin{enumerate}[k]
+		\item $f(x)=\frac{x+1}{x-1}$
+		\item $f(x)=\frac{2-3x}{x^2-3x+2}$
+		\item $f(x)=\frac{x^2+x+1}{x^2-x+1}$
+		\item $f(x)=\ln\left( x+1\right)+e^{2x}$
+		\item $f(x)=x+1+\ln\left(\frac{3+x}{3-x}\right)$
+		\item $f(x)=x+1+\ln\left(\frac{x+2}{x-2}\right)$
+		\end{enumerate}
+	\end{multicols}
+\item រកសមីការបន្ទាត់ប៉ះ $T$ ដែលប៉ះនឹងខ្សែកោង៖
+	\begin{enumerate}[k]
+		\item $C: f(x)=x^2+1$ ត្រង់ចំណុចដែលមានអាប់ស៊ីស $x_0 =1$
+		\item $C: f(x)=1-x\ln x$ ត្រង់ចំណុចដែលមានអាប់ស៊ីស $x_0 =1$
+		\item $C: f(x)=\frac{e^x}{1-\sin x}$ ត្រង់ចំណុចដែលមានអាប់ស៊ីស $x_0 =0$
+		\item $C: f(x)=e^x+\frac{e^x+1}{e^x-1}$ ត្រង់ចំណុចដែលមានអាប់ស៊ីស $x_0 =\ln2$
+	\end{enumerate}
+\item គេមានអនុគមន៍ $f$ កំណត់ដោយ $y=f(x)=1+\frac{\ln x}{x}$ និងមានខ្សែកោង $H$ ។
+	\begin{enumerate}[k]
+	\item សរសេរសមីការបន្ទាត់ $d$ ដែលប៉ះខ្សែកោង $H$ ត្រង់ចំណុច $A(1, 1)$ ។
+	\item គេឲ្យខ្សែកោង $K$ តាងអនុគមន៍ $y=g(x)=e^{3x}+x-e^6$ ។ \\
+	ចូរកំណត់កូអរដោនេនៃចំណុចប្រសព្វ $B$ រវាងបន្ទាត់ $d$ និងខ្សែកោង $K$ តាង $g$ ។
+	\end{enumerate}
+\item រកតម្លៃបរមានៃអនុគមន៍ខាងក្រោម៖
+	\begin{multicols}{3}
+		\begin{enumerate}[k]
+		\item $y=\frac{x^2-x-2}{x+2}$
+		\item $y=\frac{x^2-3x+6}{x-2}$
+		\item $y=\frac{x^2+x+2}{x-1}$
+		\end{enumerate}
+	\end{multicols}
+\item គេឲ្យអនុគមន៍ $f(x)=\frac{ax^2+bx+c}{x-2}$ ។ រកតម្លៃមេគុណ $a, b$ និង$c$ ដើម្បីឲ្យអនុគមន៍ $f$ មានតម្លៃស្មើ $-1$ ចំពោះ $x=1$ ហើយមានតម្លៃបរមាស្មើ $8$ ត្រង់$x=4$ ។
+\item គេឲ្យអនុគមន៍ $f(x)=\frac{ax^2+bx+c}{x}$ ។ រកតម្លៃមេគុណ $a, b$ និង$c$ ដើម្បីឲ្យអនុគមន៍ $f$ មានតម្លៃស្មើ $8$ ចំពោះ $x=1$ ហើយមានតម្លៃអតិបរមាស្មើ $-1$ ត្រង់$x=-2$ ។
+\item គេឲ្យអនុគមន៍ $g(x)=ax+a+\frac{b}{x+2}$ ចំពោះ $x\neq -2$ ។ រកតម្លៃមេគុណ $a$ និង $b$ ដើម្បីឲ្យអនុគមន៍ $g$ មានតម្លៃអប្បរមាស្មើ $2$ ចំពោះ $x=1$ ហើយមានតម្លៃអតិបរមាស្មើ $-1$ ត្រង់$x=0$ 
+\item រកសមីការអាស៊ីមតូតនៃក្រាបតាងអនុគមន៍នីមួយៗដូចខាងក្រោម៖
+	\begin{multicols}{3}
+		\begin{enumerate}[k]
+		\item $y=f(x)=\frac{x^2+x+1}{x-1}$
+		\item $y=f(x)=\frac{x^2+2x-3}{x+2}$
+		\item $y=f(x)=\frac{3x^2+6x+3}{x^2+2}$
+		\end{enumerate}
+	\end{multicols}
+\item គេឲ្យអនុគមន៍ $f$ កំណត់ដោយ $y=f(x)=\frac{x^2-x+1}{x-1}$ និងមានក្រាប $C$។
+\begin{enumerate}[k]
+\item រកសមីការអាស៊ីមតូតឈរ និងអាស៊ីមតូតទ្រេតរបស់ក្រាប $C$ ។
+\item បង្ហាញថាចំណុច $I(1, 1)$ ជាផ្ចិតឆ្លុះរបស់ក្រាប $C$ ។
+\end{enumerate}
+\item គេមានអនុគមន៍ $f$ កំណត់ដោយ $y=f(x)=\frac{x}{x^2+1}$ និងមានក្រាប $C$ ។
+	\begin{enumerate}[k]
+		\item រកសមីការអាស៊ីមតូតរបស់ក្រាប $C$ ។
+		\item សិក្សាភាពគូរ-សេស រួចទាញថា គល់ $O$ នៃតម្រុយជាផ្ចិតឆ្លុះនៃក្រាប $C$ ។
+	\end{enumerate}
+\item សិក្សាអថេរភាព និងសង់ក្រាបនៃអនុគមន៍ខាងក្រោម៖ 
+	\begin{multicols}{3}
+		\begin{enumerate}[k]
+		\item $f(x)=\frac{x^2+x+1}{x+1}$
+		\item $f(x)=\frac{x^2-2x-3}{x-1}$
+		\item $f(x)=\frac{x^2-3x+2}{x+2}$
+		\end{enumerate}
+	\end{multicols}
+\item សិក្សាអថេរភាព និងសង់ក្រាបនៃអនុគមន៍ខាងក្រោម៖ 
+	\begin{multicols}{3}
+		\begin{enumerate}[k]
+		\item $f(x)=\frac{x^2+x+1}{x^2+1}$
+		\item $f(x)=\frac{x^2-2x+1}{x^2-2x}$
+		\item $f(x)=\frac{3x^2+6x+3}{x^2+2}$
+		\end{enumerate}
+	\end{multicols}
+
+\item អនុវត្តន៍ $ f $ កំណត់ដោយ $f(x)=x+2-\frac{4}{x-1}$ និងមានខ្សែកោង $C$ ។
+	\begin{enumerate}[k]
+		\item រកដែនកំណត់នៃអនុគមន៍ $f$ ។ គណនា និងសិក្សាសញ្ញាដេរីវេ $f'(x)$ ។
+		\item រកតម្លៃអតិបរមា និងអប្យបរមានៃ $f$ ។
+		\item កំណត់សមីការនៃអាស៊ីមតូតឈរ និងទ្រេតនៃខ្សែកោង $C$ ។
+		\item សិក្សាទីតាំងធៀបរវាងអាស៊ីមតូតទ្រេត និងខ្សែកោង $C$ ។
+		\item សង់តារាងអថេរភាពនៃអនុគមន៍ $f$ និងសង់ខ្សែកោង $C$ ។
+	\end{enumerate}
+\item អនុគមន៍ $f$ កំណត់ចំពោះគ្រប់ $x\neq 1$ ដោយ $f(x)=\frac{x^2-3x+6}{x-1}$ និងមានក្រាប $C$ ។
+	\begin{enumerate}[k]
+		\item រកចំនួនពិត $a, b$ និង $c$ ដើម្បីឲ្យ $f(x)=ax+b+\frac{c}{x-1}$ ចំពោះគ្រប់ $x\neq1$ ។
+		\item រកតម្លៃអតិបរមា និងអប្បបរមានៃ $f$ ។
+		\item រកសមីការនៃអាស៊ីមតូតឈរ និងទ្រេតនៃខ្សែកោង $C$ ។
+		\item សិក្សាទីតាំងធៀបរវាងអាស៊ីមតូតទ្រេត និងខ្សែកោង $C$ ។
+		\item សង់តារាងអថេរភាពនៃអនុគមន៍ $f$ និងសង់ខ្សែកោង $C$ ។
+	\end{enumerate}
+\item  គេមានអនុគមន៍ $f$ កំណត់ដោយ $f(x)=\frac{x^2+5x+15}{x+3}$ មានខ្សែកោង $C$ ។
+	\begin{enumerate}[k]
+		\item សិក្សាអថេរភាព និងគូសខ្សែកោងនៃអនុគមន៍ $f$ ។
+		\item រកគ្រប់ចំណុចនៅលើខ្សែកោងនៃ $f$ ដែលមានកូអរដោនេជាចំនួនគត់រ៉ឺឡាទីប ។
+	\end{enumerate}
+\end{enumerate}
+\begin{center}
+\sffamily\color{blue}
+សូមសំណាងល្អ!
+\end{center}
+\end{document}

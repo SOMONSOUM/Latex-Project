@@ -1,0 +1,15 @@
+\contentsline {chapter}{សេចក្ដីថ្លែងអំណរគុណ}{ក}{chapter*.1}
+\contentsline {chapter}{អារម្ភកថា}{គ}{chapter*.2}
+\contentsline {chapter}{មាតិកា}{ង}{chapter*.3}
+\contentsline {chapter}{\numberline {១}ប៉ារ៉ាបូល}{១}{chapter.1}
+\contentsline {section}{\numberline {១}សញ្ញាណប៉ារ៉ាបូល}{១}{section.1.1}
+\contentsline {section}{\numberline {២}របៀបសង់ប៉ារ៉ាបូល}{២}{section.1.2}
+\contentsline {section}{\numberline {៣}សមីការស្តង់ដានៃប៉ារ៉ាបូល}{៤}{section.1.3}
+\contentsline {subsection}{\numberline {ក}បន្ទាត់ប្រាប់ទិសស្របអ័ក្សអាប់ស៊ីស}{៤}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {ខ}បន្ទាត់ប្រាប់ទិសស្របអ័ក្សអរដោនេ}{៦}{subsection.1.3.2}
+\contentsline {section}{\numberline {៤}សមីការទូទៅនៃប៉ារ៉ាបូល}{៩}{section.1.4}
+\contentsline {subsection}{\numberline {ក}បន្ទាត់ប្រាប់ទិសស្របអ័ក្សអាប់ស៊ីស}{៩}{subsection.1.4.1}
+\contentsline {subsection}{\numberline {ខ}បន្ទាត់ប្រាប់ទិសស្របអ័ក្សអរដោនេ}{១១}{subsection.1.4.2}
+\contentsline {section}{\numberline {៥}អ័ក្សឆ្លុះនៃប៉ារ៉ាបូល}{១៤}{section.1.5}
+\contentsline {section}{\numberline {៦}លក្ខណៈអុបទិចនៃប៉ារ៉ាបូល}{១៥}{section.1.6}
+\contentsline {section}{\numberline {៧}លំហាត់ប៉ារ៉ាបូល}{១៦}{section.1.7}

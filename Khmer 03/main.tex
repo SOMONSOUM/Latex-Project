@@ -1,0 +1,44 @@
+\documentclass[12pt, 4appaer]{book}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[no-math]{fontspec}
+\setmainfont[Ligatures=TeX,AutoFakeBold=1, AutoFakeSlant=0.25]{Khmer OS Battambang} % roman font
+\setsansfont[Ligatures=TeX,AutoFakeBold=0.25,AutoFakeSlant=0.25]{Khmer OS Muol Light}% sans serif font
+\setmonofont[Ligatures=TeX,AutoFakeBold=0.25,AutoFakeSlant=0.25]{Khmer OS Bokor}% typewriter font
+\XeTeXlinebreaklocale "kh"
+\XeTeXlinebreakskip = 0pt plus 1pt minus 1pt% line break skip
+\setmainfont[Scale = 0.8333333334, Script=Khmer]{Khmer OS Battambang}
+\setmathrm{Times New Roman}
+\newfontfamily{\kbk}{Khmer OS Bokor}
+\newfontfamily{\kml}{Khmer OS Muol Light}
+\def\absractname{\kml សង្ខេប}
+\def\appendixname{\kml សេចក្តីផ្តើម}
+\def\bibname{\kml គន្ថនិទ្ទេស}
+\def\chaptername{\kml ជំពូក}
+\def\contentsname{\kml មាតិកា}
+\def\figurename{\kml រូបភាព}
+\def\indexname{\kml លិបិក្រម}
+\def\listfigurename{\kml បញ្ជីរូបភាព}
+\def\listtablename{\kml បញ្ជីតារាង}
+\def\partname{\kml ផ្នែក}
+\def\refname{\kml ឯកសារយោង}
+\def\tablename{\kml តារាង}
+\begin{document}
+	\frontmatter
+	\tableofcontents
+	\mainmatter
+	\part{ចំណងជើង}
+	\chapter{ចំណងជើង}
+	\section{ចំណងជើង}
+	\chapter{ចំណងជើង}
+	\section{ចំណងជើង}
+	\appendix
+	\backmatter
+	\begin{thebibliography}{2}
+		\bibitem{tobias15} Tobias Oetiker , \emph{The Not So Short Introduction to
+			\LaTeXe}, Version 5.05, July 18, 2015
+		\bibitem{leslie94} Leslie Lamport , \emph{\LaTeX: A Document Preparation
+			System}, 2nd Edition , Addison -Wesley Professional , 1994.
+	\end{thebibliography}
+\end{document}

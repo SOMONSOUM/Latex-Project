@@ -1,11 +1,19 @@
-\documentclass{beamer}
+\documentclass[12pt,ignorenonframetext]{beamer}
 \mode<presentation>{
 \usetheme{Madrid}
-\usefonttheme[onlymath]{serif}
 %\usecolortheme{beaver}
 }
 %\usepackage[utf8]{inputenc}
 %\usepackage{default}
+\usepackage[no-math]{fontspec}
+\everymath{\protect\displaystyle\protect\color{blue}}
+\RequirePackage{mathpazo}
+\RequirePackage{amsmath}
+\RequirePackage{amssymb}
+\RequirePackage{amsthm}
+\RequirePackage{mathtools}
+\usepackage[utf8]{inputenc}
+\usefonttheme{professionalfonts}
 \usepackage{varwidth}
 \usepackage{pgfplots}
 \pgfplotsset{/pgf/number format/use comma,compat=newest}
@@ -15,17 +23,183 @@
 \usepackage{tikz}
 \usepackage{enumerate}
 \usepackage{fontspec}
-\newcommand{\en}{\fontspec[Script=Khmer]{Ubuntu}}
+\newcommand{\en}{\fontspec[Script=Khmer]{Times New Roman}}
 \newcommand{\Kml}{\fontspec[Script=Khmer]{Khmer OS Muol Light}}
-\newcommand{\Kmp}{\fontspec[Script=Khmer]{Khmer  OS Muol Pali}}
-\newcommand{\Kh}{\fontspec[Script=Khmer]{Ang DaunTep}}
-\newcommand{\Kos}{\fontspec[Script=Khmer]{Khmer OS }}
+\newcommand{\Kmp}{\fontspec[Script=Khmer]{Khmer  OS Bokor}}
+\newcommand{\Kh}{\fontspec[Script=Khmer]{Khmer OS System}}
+\newcommand{\Kos}{\fontspec[Script=Khmer]{Khmer OS Battambang}}
+% khmer number
+\def\khmer#1{\expandafter\@khmer\csname c@#1\endcsname}
+\def\@khmer#1{\expandafter\@@khmer\number#1\@nil}
+\def\@@khmer#1{%
+	\ifx#1\@nil% terminate when encounter @nil
+	\else%
+	\ifcase#1 ០\or ១\or ២\or ៣\or ៤\or ៥\or ៦\or ៧\or ៨\or ៩\fi%
+	\expandafter\@@khmer% recursively map the following characters
+	\fi}
+\def\khmernumeral#1{\@@khmer#1\@nil}
+% khmer alphabet
+\def\alpkh#1{\expandafter\@alpkh\csname c@#1\endcsname}
+\def\@alpkh#1{%
+	\ifcase#1% zero -> none
+	\or ក\or ខ\or គ\or ឃ\or ង%
+	\or ច\or ឆ\or ជ\or ឈ\or ញ%
+	\or ដ\or ឋ\or ឌ\or ឍ\or ណ%
+	\or ត\or ថ\or ទ\or ធ\or ន%
+	\or ប\or ផ\or ព\or ភ\or ម%
+	\or យ\or រ\or ល\or វ\or ស%
+	\or ហ\or ឡ\or អ%
+	\else%
+	\@ctrerr% otherwise, counter error!
+	\fi}
+%
+\def\khmershortdate{%
+	\ifnum\day<10\@khmer{0\day}\else\@khmer\day\fi%
+	/\@khmer\month%
+	/\@khmer\year}
+\def\khmerdate{%
+	\ifnum\day<10\@khmer{0\day}\else\@khmer\day\fi~%
+	\ifcase\month\or%
+	មករា\or កុម្ភៈ\or មិនា\or មេសា\or%
+	ឧសភា\or មិថុនា\or កក្កដា\or សីហា\or%
+	កញ្ញា\or តុលា\or វិច្ឆិកា\or ធ្នូ\fi~%
+	\@khmer\year}
+\def\borderline#1{{\color{blue}\hrulefill\lower.55ex\hbox{ {\kml #1}}\hrulefill}} 
+% floating object
+\RequirePackage{float}
+% graphicx
+\RequirePackage{graphicx}
+% picture
+\RequirePackage{tikz}
+\usetikzlibrary{shapes}
+\usetikzlibrary{calc}
+\usetikzlibrary{angles}
+\usetikzlibrary{quotes}
+\usetikzlibrary{arrows.meta}
+\tikzset{%
+	every picture/.style={%
+		line width=0.7pt,%
+		draw=magenta,%
+		text=blue,%
+	},%
+	>={Stealth[]}%
+}
+% enumerate
+\RequirePackage{enumitem}
+\RequirePackage{multicol}
+\RequirePackage{pifont}
+\newcommand{\answer}{{\begin{center}\kml ដំណោះស្រាយ\end{center}}}
+\usepackage{amsmath}
+% set enumerate and itemize key for number of columns
+% \RequirePackage{multicol}
+\SetEnumitemKey{2}{before=\raggedcolumns\setlength{\multicolsep}{\topsep}\begin{multicols}{2},after=\end{multicols}}
+\SetEnumitemKey{3}{before=\raggedcolumns\setlength{\multicolsep}{\topsep}\begin{multicols}{3},after=\end{multicols}}
+\SetEnumitemKey{4}{before=\raggedcolumns\setlength{\multicolsep}{\topsep}\begin{multicols}{4},after=\end{multicols}}
+\SetEnumitemKey{5}{before=\raggedcolumns\setlength{\multicolsep}{\topsep}\begin{multicols}{5},after=\end{multicols}}
+\SetEnumitemKey{6}{before=\raggedcolumns\setlength{\multicolsep}{\topsep}\begin{multicols}{6},after=\end{multicols}}
+% set enumerate and itemize key for numerals
+\AddEnumerateCounter{\alpkh}{\@alpkh}{ឈ}
+\AddEnumerateCounter{\khmer}{\@khmer}{៣}
+\newfontfamily{\tmfamily}{Times New Roman}
+% enumerate keys
+\SetEnumitemKey{1}{label=\protect\color{magenta}\arabic*.,font=\tmfamily\bfseries}
+\SetEnumitemKey{a}{label=\protect\color{magenta}\alph*.,font=\tmfamily\bfseries}
+\SetEnumitemKey{A}{label=\protect\color{magenta}\Alph*.,font=\tmfamily\bfseries}
+\SetEnumitemKey{i}{label=\protect\color{magenta}\roman*,font=\tmfamily\bfseries}
+\SetEnumitemKey{I}{label=\protect\color{blue}\Roman*.,font=\tmfamily\bfseries}
+\SetEnumitemKey{k}{label=\protect\color{magenta}(\alpkh*),font=\rmfamily\bfseries}
+\SetEnumitemKey{m}{label=\protect\color{magenta}\khmer*.,font=\ttfamily\bfseries}
+% itemize keys
+\SetEnumitemKey{b}{label=\protect\color{magenta}\protect\ensuremath{\bullet}}
+\SetEnumitemKey{c}{label=\protect\color{magenta}\protect\ensuremath{\circ}}
+\SetEnumitemKey{d}{label=\protect\color{magenta}\protect\ensuremath{\diamond}}
+\SetEnumitemKey{t}{label=\protect\color{magenta}\protect\ensuremath{\triangleright}}
+\SetEnumitemKey{p}{label=\protect\color{magenta}\protect\ding{43}}
+\SetEnumitemKey{w}{label=\protect\color{magenta}\protect\ding{45}}
+% styling enumerate
+\setlist[enumerate]{%
+	parsep=0pt,%
+	topsep=1ex,%
+	partopsep=0pt,%
+	leftmargin=*,%
+	itemsep=1ex,%
+	labelsep=.5ex}
+\setlist[enumerate,1]{I}
+\setlist[enumerate,2]{1}
+\setlist[enumerate,3]{k}
+\setlist[enumerate,4]{a}
+% styling itemize
+\setlist[itemize]{%
+	parsep=0pt,%
+	topsep=1ex,%
+	partopsep=0pt,%
+	leftmargin=*,%
+	itemsep=1ex,%
+	labelsep=.7ex}
+\setlist[itemize,1]{b}
+\setlist[itemize,2]{c}
+\setlist[itemize,3]{d}
+\setlist[itemize,4]{t}
+% sub enumerate
+\RequirePackage{tasks}
+\NewPatternFormat{k}{\@alpkh}% cntformats package
+\NewPatternFormat{m}{\@khmer}% counter-format=tsk[l]
+\settasks{%
+	counter-format=tsk[k].,%
+	label-format=\color{black},%
+	label-offset=0.5ex,%
+	label-align=right,%
+	label-width=3.5ex,%
+	item-indent=4ex,%
+	column-sep=2ex,%
+	before-skip=0ex,%
+	after-skip=0ex,%
+	after-item-skip=0ex%
+}
+\NewTasks[%
+style=enumerate,%
+counter-format=tsk[a].,%
+label-format=\color{black},%
+label-offset=0.5ex,%
+label-align=right,%
+label-width=3.5ex,%
+item-indent=4ex,%
+column-sep=1ex,%
+before-skip=0ex,%
+after-skip=0ex,%
+after-item-skip=0ex]{Enumerate}[\item]
+\NewTasks[%
+style=itemize,
+label=\ensuremath{\bullet},
+label-format=\color{black},%
+label-offset=0.7ex,%
+label-align=right,%
+label-width=1ex,%
+item-indent=1.7ex,%
+column-sep=1ex,%
+after-item-skip=0ex]{Itemize}[\item]
+% caption
+\RequirePackage{caption}
+\RequirePackage{subcaption}
+\DeclareCaptionFont{black}{\color{black}}
+\captionsetup{%
+	font=small,%
+	skip=0pt,%
+	labelfont={black,sf},%
+	textfont={black,sf},%
+	labelsep=period}
+\captionsetup[sub]{%
+	font=small,%
+	skip=0.5ex,%
+	labelfont={black,sf},%
+	textfont={black,sf},%
+	labelsep=period}
 \title{ {\Kml គណិតវិទ្យា ថ្នាក់ទី១២}}\vspace{1cm}
 \author{ \bf {\Kmp បង្រៀនដោយ: ស្រ៊ុន ប៉េងហួរ}}
 %\institute[]{\includegraphics[height=1in]{logo.png}{\vspace{.3cm}}\\
 %\bf Chapter 2: Analytic Functions {\vspace{.3cm}} \\ Lecture by
 %: {\vspace{.3cm}}\\ {\bf Ph.D SEAM NGONN }}
-\date{\en \today} 
+\date{ថ្ងៃច័ន្ទ ទី១៤ ខែឧសភា ឆ្នាំ២០១៨} 
 
 \begin{document}
 \begin{frame}
