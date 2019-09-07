@@ -1,0 +1,38 @@
+\usepackage[usenames, dvipsnames]{xcolor}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.9}
+\usetikzlibrary{calc,arrows,fadings,decorations.pathreplacing,decorations.markings,patterns,shapes.geometric}
+\usepackage{fp}
+\usepackage{verbatim}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength\PreviewBorder{5pt}
+
+
+
+%------ styles tikz ---------------
+\colorlet{darkblue}{blue!50!black} 
+\tikzset{>=stealth,inner sep=0pt, outer sep=2pt,}
+\tikzset{tiret/.style={gray,dashed}}
+\tikzset{doublefleche/.style={|<->|,>=stealth,thin}}
+\tikzset{titre/.style={inner sep=0pt, outer sep=0pt,above right,text justified,fill=orange!50}}
+\tikzset{bloc/.style={rounded corners=4pt,color=white,ball color=purple,smooth}}
+\tikzset{force/.style={->,ultra thick,rounded corners=4pt,color=blue,smooth,line cap=round}}
+\tikzset{vecteur/.style={->,thick,color=black,smooth}}
+\tikzset{verre/.style={draw=SkyBlue,fill=SkyBlue!30}}
+\tikzset{axis/.style={thin,gray}}
+\tikzset{figure/.style={thick,color=#1,fill=purple, opacity=0.5}}
+\tikzset{ressort/.style={very thick,black,smooth}}
+\tikzset{eau/.style={draw=black,fill=blue,opacity=0.5}}
+%-----------------------------------
+
+%-------- patatoide ----------
+\newcommand{\patate}[1][fill=white] 
+{\draw [#1][preaction={fill=white}] (0,0) .. controls +(0.1,0.2) and +(0.3,0.3) .. (1,0) .. controls +(-0.3,-0.3) and +(-0.05,0.15) .. (1,-1) .. controls +(0.2,-0.6) and +(0.1,-0.2) .. (0,-1) .. controls +(-0.1,0.15) and +(-0.2,-0.4) .. (0,0);}
+%------ aimant -------
+\newcommand{\aimant}[1][ultra thick]{
+\draw[fill, color=red,#1] (0,0.2) rectangle(1,-0.2) node[color=white,midway]{\tiny S};
+\draw[fill, color=black,#1] (1,0.2) rectangle(2,-0.2) node[color=white,midway]{\tiny N};}

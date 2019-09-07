@@ -59,7 +59,7 @@ AutoFakeSlant=0.25]{Antioch Text}% typewriter font
      \SetWatermarkColor{black} 
       \SetWatermarkHorCenter{0.5cm}
        \SetWatermarkFontSize{10pt} 
-        \SetWatermarkText{ប្រឡងសញ្ញាបត្រមធ្យមសិក្សាទុតិយភូមិ ថ្ងៃទី ១៩ ខែ សីហា​ ឆ្នាំ ២០១៩}
+        \SetWatermarkText{}
 
 % khmer number
 \def\khmer#1{\expandafter\@khmer\csname c@#1\endcsname}
@@ -355,13 +355,13 @@ AutoFakeSlant=0.25]{Antioch Text}% typewriter font
 \AddEnumerateCounter{\alpkh}{\@alpkh}{ឈ}
 \AddEnumerateCounter{\khmer}{\@khmer}{៣}
 % enumerate keys
-\SetEnumitemKey{1}{label=\protect\color{khtug}\arabic*.}
+\SetEnumitemKey{1}{label=\protect\color{khtug}\en\arabic*.}
 \SetEnumitemKey{a}{label=\protect\color{khtug}\en\alph*.}
 \SetEnumitemKey{A}{label=\protect\color{khtug}\en\Alph*}
 \SetEnumitemKey{i}{label=\protect\color{khtug}\en\roman*.}
 \SetEnumitemKey{I}{label=\protect\color{khtug}\en\Roman*.}
 \SetEnumitemKey{k}{label=\protect\color{khtug}\alpkh*.}
-\SetEnumitemKey{m}{label=\protect\color{khtug}\khmer*.}
+\SetEnumitemKey{m}{label=\protect\color{khtug}\kml\khmer*.}
 % itemize keys
 \SetEnumitemKey{b}{label=\protect\color{khtug}\protect\ensuremath{\bullet}}
 \SetEnumitemKey{c}{label=\protect\color{khtug}\protect\ensuremath{\circ}}
@@ -434,11 +434,12 @@ AutoFakeSlant=0.25]{Antioch Text}% typewriter font
   % todo: print exam rule 
   \def\maketitle{% 
  {\ks  \small \begin{minipage}[t]{10cm} 
-   ត្រៀមប្រឡង\@xam \\
+   ប្រឡង\@xam \\
     សម័យប្រឡង:\quad\@xamdate\\ 
     វិញ្ញាសា:\quad\@subject\\
     រយៈពេល:\quad\@minute​~នាទី\\
-    ពិន្ទុ:\quad\@score
+    ពិន្ទុ:\quad\@score\\
+    ប្រធានៈ
     %\@xam~ថ្នាក់ទី\@grade \\ 
       \end{minipage}
        \hfill 
@@ -455,13 +456,14 @@ AutoFakeSlant=0.25]{Antioch Text}% typewriter font
                        % 
             \RequirePackage{fancyhdr}
 \pagestyle{fancy}
+\pagestyle{empty}
 %\fancyhf{}
 \lhead{}
 %\chead{\en \LaTeX}
 \rhead{}
-\lfoot{រៀបរៀង និងបង្រៀនដោយ: ស៊ុំ សំអុន }
-\cfoot{\thepage}
-\rfoot{ទូរស័ព្ទលេខ: ០៨៩ ៨៩៨ ៦៦១​ }         
+%\lfoot{រៀបរៀង និងបង្រៀនដោយ: ស៊ុំ សំអុន }
+%\cfoot{\thepage}
+%\rfoot{ទូរស័ព្ទលេខ: ០៨៩ ៨៩៨ ៦៦១​ }         
 %
 \def\arraystretch{1.25}
 %

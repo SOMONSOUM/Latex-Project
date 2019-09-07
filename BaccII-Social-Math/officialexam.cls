@@ -59,7 +59,7 @@ AutoFakeSlant=0.25]{Antioch Text}% typewriter font
      \SetWatermarkColor{black} 
       \SetWatermarkHorCenter{0.5cm}
        \SetWatermarkFontSize{10pt} 
-        \SetWatermarkText{ប្រឡងសញ្ញាបត្រមធ្យមសិក្សាទុតិយភូមិ ថ្ងៃទី ១៩ ខែ សីហា​ ឆ្នាំ ២០១៩}
+        \SetWatermarkText{}
 
 % khmer number
 \def\khmer#1{\expandafter\@khmer\csname c@#1\endcsname}
@@ -361,7 +361,7 @@ AutoFakeSlant=0.25]{Antioch Text}% typewriter font
 \SetEnumitemKey{i}{label=\protect\color{khtug}\en\roman*.}
 \SetEnumitemKey{I}{label=\protect\color{khtug}\en\Roman*.}
 \SetEnumitemKey{k}{label=\protect\color{khtug}\alpkh*.}
-\SetEnumitemKey{m}{label=\protect\color{khtug}\khmer*.}
+\SetEnumitemKey{m}{label=\protect\color{khtug}\khmer*.,font=\kml\bfseries}
 % itemize keys
 \SetEnumitemKey{b}{label=\protect\color{khtug}\protect\ensuremath{\bullet}}
 \SetEnumitemKey{c}{label=\protect\color{khtug}\protect\ensuremath{\circ}}
@@ -438,13 +438,14 @@ AutoFakeSlant=0.25]{Antioch Text}% typewriter font
     សម័យប្រឡង\quad\@xamdate\\ 
     វិញ្ញាសា\quad\@subject\\
     រយៈពេល\quad\@minute​~នាទី\\
-    ពិន្ទុ\quad\@score
+    ពិន្ទុ\quad\@score\\
+    {\kml \color{khtug}ប្រធានៈ}
     %\@xam~ថ្នាក់ទី\@grade \\ 
       \end{minipage}
        \hfill 
         \begin{minipage}[t]{7cm}
         {មណ្ឌលប្រទ្បង} \dotfill \\
-         លេខបន្ទប់ \dotfill\\
+         លេខបន្ទប់ \dotfill លេខតុ\dotfill\\
 		 ឈ្មោះបេក្ខជន \dotfill\\
 		 ហត្ថលេខាបេក្ខជន \dotfill 
   \end{minipage} } }
@@ -458,14 +459,15 @@ AutoFakeSlant=0.25]{Antioch Text}% typewriter font
 %\fancyhf{}
 \lhead{}
 %\chead{\en \LaTeX}
-\rhead{}
-\lfoot{រៀបរៀង និងបង្រៀនដោយ: ស៊ុំ សំអុន }
-\cfoot{\thepage}
-\rfoot{ទូរស័ព្ទលេខ: ០៨៩ ៨៩៨ ៦៦១​ }         
+%\rhead{}
+%\lfoot{រៀបរៀង និងបង្រៀនដោយ: ស៊ុំ សំអុន }
+%\cfoot{\thepage}
+%\rfoot{ទូរស័ព្ទលេខ: ០៨៩ ៨៩៨ ៦៦១​ }         
 %
 \def\arraystretch{1.25}
 %
 \def\baselinestretch{1.5}
+\pagestyle{empty}
 %
 \usepackage{tikz}                                               
 \usepackage{tikz,tkz-tab} %variation table

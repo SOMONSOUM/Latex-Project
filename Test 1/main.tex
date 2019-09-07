@@ -1,0 +1,149 @@
+% !TEX encoding = UTF-8 Unicode
+% J.Roussel
+% MAJ : 2014-06-03
+%-------------------------------------------
+\documentclass[11pt]{article}
+\input{styles_meca}
+\title{Figures TikZ du cours sur l'énergie mécanique}
+\begin{document}
+	
+	%============================================================
+	% 	profil énergétique du pendule simple
+	%============================================================
+	
+	\begin{tikzpicture} [scale=0.8]
+	\begin{scope}
+	\coordinate (O) at (0, 0);
+	\coordinate (M) at (-55:5);
+	\draw[thick] (O)--(M); 
+	\draw[thick,->] (0,-1.2) arc(-90:-55:1.2) ;
+	\draw (-85:1.5) node[right]{$\theta(t)$} (-57:2.5) node[above right]{$\ell$};
+	\draw[vecteur] (M)--++({cos(55)},{-sin(55)}) node[below right ]{$\overrightarrow{u_{r}}$};
+	\draw[vecteur] (M)--++({sin(55)},{cos(55)}) node[above right ]{$\overrightarrow{u_{\theta}}$};
+	\draw[force] (M)--(-55:3) node[below left]{$\overrightarrow{T}$};
+	\draw[force] (M)--++(0,-2) node[right]{$\overrightarrow{P}=m\overrightarrow{g}$};
+	\draw[bloc] (M) circle(0.15) node[black,right=5pt]{M($\ell$,$\theta$)};
+	\draw [ultra thick,gray] (-1,0)--(1,0); 
+	\draw [thin,gray]  (0,0.5) --(0,-6);   
+	\draw[vecteur] (-1,-1)--++(0,-1) node[midway,right]{$\overrightarrow{g}$};
+	\end{scope}
+	\begin{scope}[xshift=9cm,yshift=-3cm]
+	\def \xLabel {$\theta$}; % legende sur x
+	\def \yLabel {$E_{\rm p}$}; % legende sur y
+	\def \xmin{-3.5}; 
+	\def \xmax{3.5};
+	\def \ymin{-2.5};
+	\def \ymax{3};
+	\def \stepGrid{0.5cm}; % pas de la grille
+	\def \titleWidth {7cm}; % largeur de la vignette de titre
+	\draw[->] (\xmin,0) -- (\xmax,0) node[above=2pt] {\xLabel};
+	\draw[->] (0,\ymin) -- (0,\ymax) node[below right] {\yLabel};
+	\draw[style=help lines,step=\stepGrid,color=gray,opacity=0.5] (\xmin,\ymin) grid (\xmax,\ymax);% a commenter si pas de grille
+	\foreach \x/\xtext in {-pi/-\pi,pi/\pi}
+	\draw[shift={(\x,0)}] (0pt,2pt) -- (0pt,-2pt) node[below] {$\xtext$};
+	\foreach \x/\xtext in {{-pi/3}/-\theta_{\rm max},{pi/3}/\theta_{\rm max}}
+	\draw[shift={(\x,0)}] (0pt,2pt) -- (0pt,-2pt) node[above=4pt] {$\xtext$};
+	\foreach \y/\ytext in {-2/-mg\ell,2/mg\ell}
+	\draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt) node[right] {$\ytext$};
+	\draw[thick,color=purple, variable=\x, samples at={\xmin,-3.4,...,\xmax}]
+	plot ({\x}, {-2*cos(\x r)}) ;% fonction à tracer
+	\fill[fill=gray!20,draw=black,opacity=0.5] (pi/3,0) -- (pi/3,-1) -- plot[domain=pi/3:-pi/3] ({\x}, {-2*cos(\x r)})  -- (-pi/3,0) -- cycle;
+	\draw[tiret] (-3,2.5)--++(6,0) node[pos=0.2,fill=white]{$E_{m2}$};
+	\draw[tiret] (-3,-1)--++(6,0) node[pos=0.2,fill=white]{$E_{m1}$};
+	\end{scope}
+	\end{tikzpicture} 
+	
+	
+	
+	%============================================================
+	% 	Travail d'une force	
+	%============================================================
+	\begin{tikzpicture} [scale=0.8] 
+	\coordinate (A) at (0, 0);
+	\coordinate (M) at (3,1);
+	\coordinate (B) at (6,-2);  
+	\draw (A)  node[below=0.2em]{A};
+	\draw (M)  node[above=0.2em]{M};
+	\draw (B)  node[below=0.2em]{B};
+	\draw[force] (M)--++(-1,-1.2) node[pos=0.8,above left]{$\overrightarrow{f}$};
+	\draw[vecteur] (M)--++(0.25,-0.4) node[above right]{$\overrightarrow{ \mathrm{d}\ell}$};
+	\draw[color=gray] (A) node{\small $\bullet$} .. controls +(1,1) and +(-0.5,0.5) .. (M) node{\small $\bullet$} .. controls +(0.5,-0.5) and +(-2,-1) .. (B) node{\small $\bullet$};
+	\end{tikzpicture}
+	%-------------------
+	
+	
+	
+	%--------- TIKZ ------------
+	\begin{tikzpicture} [scale=0.8] 
+	\coordinate (A) at (0, 0);
+	\coordinate (M) at (3,1);
+	\coordinate (B) at (6,-2);  
+	\draw[bloc,rotate=-30] (M) ellipse(0.6 and 0.3);
+	\draw (A)  node[below=0.2em]{A};
+	\draw (M)  node[above=0.2em]{G};
+	\draw (B)  node[below=0.2em]{B};
+	\draw[force] (M)--++(0,-1.5) node[below]{$\overrightarrow{P}$};
+	\draw[color=gray] (A) node{\small $\bullet$} .. controls +(1,1) and +(-0.5,0.5) .. (M) node{\small $\bullet$} .. controls +(0.5,-0.5) and +(-2,-1) .. (B) node{\small $\bullet$};
+	\draw[vecteur] (5,1)--++(0,-0.6) node[pos=0.5,right]{$\overrightarrow{g}$};
+	\draw[tiret] (-1,0)--++(7,0);
+	\draw[tiret] (-1,-2)--++(7,0);
+	\draw[<->] (-1,0)--(-1,-2) node[midway,fill=white]{$h$};
+	\end{tikzpicture}
+	%----------------------------
+	
+	
+	
+	%--------- TIKZ ------------
+	\begin{tikzpicture} [scale=0.8]
+	\begin{scope}[rotate=-30] 
+	\draw[vecteur,rotate=20] (2,1) --++(0,-0.6) node[pos=0.5,right]{$\overrightarrow{g}$};
+	\draw[color=black,fill=gray,pattern=north east lines] (-2,0)node{\small $\bullet$}.. controls +(1,0) and +(-0.5,0) ..(2,0) .. controls +(0.5,0) and +(-1,-1) .. (4,1)node{\small $\bullet$} --++(0.6,-1.2)--++(-4,-2)--cycle;
+	\draw (-2,0)  node[above=0.2em]{A};
+	\draw (4,1)  node[above=0.2em]{B};
+	\fill[shift={(0.5,0.25)},rotate=-10] (0,0)ellipse(0.12 and 0.25) (0,0.35)circle(0.1);
+	\fill (0,0)--(0.5,0) .. controls +(0.2,0) and +(0,-0.2) ..(1,0.25) --++(-1,0)--cycle;
+	\draw[force] (0.4,0) --++(-1,0) node[above right]{$\overrightarrow{T}$};
+	\draw[force] (0.4,0) --++(0,2) node[above right]{$\overrightarrow{N}$};
+	\end{scope}
+	\end{tikzpicture}
+	
+	
+	%============================================================
+	% 	Date : 25/02/2011  
+	%	Exemple de profil énergétique à un puits. Suivant la valeur de l’énergie mécanique, les valeurs de $r$ sont bornées ou pas.
+	%============================================================
+	\begin{tikzpicture}[scale=1]
+	\def \xLabel {$x$}; % legende sur x
+	\def \yLabel {$E_{\rm p}$}; % legende sur y
+	\def \xmin{0}; 
+	\def \xmax{7};
+	\def \ymin{-2};
+	\def \ymax{3};
+	\draw[tiret] (7,0.6)--++(-7,0) node[left]{$E_{m}$};
+	\draw[thick] (0.8,0.6)--++(2.05,0) node[pos=0.5, above]{\small \'etats li\'es};
+	\draw[thick] (4.5,0.6)--++(2.5,0) node[pos=0.5, above]{\small \'etats non li\'es};
+	\draw[thick,color=purple, variable=\x, samples at={0.7,0.75,...,6.5}] plot ({\x}, {5/(\x*\x)-(10*sin(1.1*\x r)*exp(-0.4*\x))/(\x)}) ;
+	\draw[dashed] (0.8,0.6)--(0.8,0) node[below,fill=white]{\small $x_1$};
+	\draw[dashed] (2.85,0.6)--(2.85,0) node[below,fill=white]{\small $x_2$};
+	\draw[dashed] (4.5,0.6)--(4.5,0) node[below,fill=white]{\small $x_3$};
+	\draw[->] (\xmin,0) -- (\xmax,0) node[right=2pt] {\xLabel};
+	\draw[->] (0,\ymin) -- (0,\ymax) node[below left] {\yLabel};
+	\end{tikzpicture}
+	
+	
+	\begin{tikzpicture} [scale=3]
+	\coordinate (M) at (0.2,-0.1);
+	\coordinate (N) at (0.8,-1);
+	\coordinate (G) at (0.36,-0.5);
+	\patate[ball color=lightgray];
+	\draw[force] (M) -- ++($0.3*(N)-0.3*(M)$) node[right]{$\overrightarrow{f_{ji}}$};
+	\draw[force] (M) -- ++(0.3,0.5) node[left]{$\overrightarrow{f_{i}^{\rm ext}}$};
+	\draw[force] (N) -- ++($0.3*(M)-0.3*(N)$) node[above right]{$\overrightarrow{f_{ij}}$};
+	\draw[force] (N) -- ++(-0.3,-0.2) node[left]{$\overrightarrow{f_{j}^{\rm ext}}$};
+	\draw (M) node{$\bullet$}node[right=2pt]{$\textrm{M}_{i}(m_{i})$};
+	\draw (N) node{$\bullet$}node[right=2pt]{$\textrm{M}_{j}(m_{j})$};
+	\draw (G) node{$\bullet$} node[left=2pt]{$\textrm{G}$};
+	\end{tikzpicture}
+	
+	
+\end{document}
